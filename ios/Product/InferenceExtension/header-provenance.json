@@ -1,0 +1,27 @@
+{
+  "executorchReleaseCommit": "f7140a46ff38e919c557d45b102d3ff26097c8c9",
+  "executorchReleaseVersion": "1.5.0",
+  "purpose": "Public release runner dependency-injection interfaces, with Module/core ABI supplied by matching pinned 1.5 device framework. No 1.4 native vendor headers are used.",
+  "swiftPackageRevision": "56cc93a96d5fb8d21554ec5f00fbad5a5b228bc4",
+  "tokenizersGitlink": "61a10ac61245a68374ace4900e49cd2aba65fb39",
+  "vendoredHeaderSHA256": {
+    "executorch/extension/data_loader/buffer_data_loader.h": "e6c2bbb604b2f08e05b6884cc75e389d9291619b28e4e07302a515c9822e6aa8",
+    "executorch/extension/llm/runner/constants.h": "5b2e6e989827aeb5f823e3d5c9c823aa97468a6df1386bf57d5f58e6d5868cb7",
+    "executorch/extension/llm/runner/io_manager/io_manager.h": "37424535a55603a1648a04ca0f32d2bfe63df92ee79a36b7fc7676924b45b921",
+    "executorch/extension/llm/runner/irunner.h": "170cab2174d9c2da47d85837f5d63af917234d0a92b28514c874aed22231c059",
+    "executorch/extension/llm/runner/llm_runner_helper.h": "720a3fddd4de2ac61470d6d5bc6789c8706a3973d471018f9fb951b9d0f9490a",
+    "executorch/extension/llm/runner/stats.h": "f25fa6f8902fc678890015fbab2f64d12090406e6aba9111735f19a0cb367085",
+    "executorch/extension/llm/runner/text_decoder_runner.h": "20d70f6f81c8597f3e287198db3e71a8b91e37f3d2c91fdd168478f7195a0129",
+    "executorch/extension/llm/runner/text_llm_runner.h": "4386b641a49c1e2fa5e58ef534f1096bc524c5eb857076bd391cd9dc299260c7",
+    "executorch/extension/llm/runner/text_prefiller.h": "4bbc01ce050fea9e77327caae0bde7881143891b5cc0326aae3d53f54ff9e728",
+    "executorch/extension/llm/runner/text_token_generator.h": "1d3e13898c752d274e563c6dc434bb484028fa91014766ca5d196b72bf701947",
+    "executorch/extension/llm/runner/util.h": "9f1a35f56d90bde5c7bf61dc821c6552bd81c5a589bc971a566c34d730c478a8",
+    "executorch/extension/llm/sampler/logit_processor.h": "4894b20a1b9b9c62b18468f90d95c23598f8cbbd2565be70afb323cba816e706",
+    "executorch/extension/llm/sampler/sampler.h": "22bed2474b72e30a7535531c07f63a8d8b8a3d03f87f8dec148d1fe33aebf949",
+    "executorch/extension/llm/sampler/util.h": "676458fe8fe6826b09227cb7375aca9174e124dbaa6f7403de59e02c55352299",
+    "pytorch/tokenizers/error.h": "f2d4611b1f8bd03b58fe32e385879be4bfa3174dc49512800df11293747c23c1",
+    "pytorch/tokenizers/log.h": "850733f2341869b178e935ea27a119a988991546b27fb05a8508336d39b573c2",
+    "pytorch/tokenizers/result.h": "af6da2c9647ea0e528cb7f7cd99bc54e4a0ddf990651f31ef274341cf8186b04",
+    "pytorch/tokenizers/tokenizer.h": "234b0a35564e6422dceec2310b2e3ab4f57f12bcc9105cc2eb611ff35ac70196"
+  }
+}

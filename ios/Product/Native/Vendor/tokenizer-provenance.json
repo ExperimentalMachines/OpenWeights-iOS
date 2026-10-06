@@ -1,0 +1,15 @@
+{
+  "executorchReleaseCommit": "3dd7ccd1d863fad22639dd2d918ae34a41ce45f0",
+  "executorchVersion": "1.4.0",
+  "factoryHeaderGitBlob": "b4c7c59806d470b3de2c181fab8b287b308af134",
+  "factoryHeaderSource": "https://github.com/pytorch/executorch/blob/3dd7ccd1d863fad22639dd2d918ae34a41ce45f0/extension/llm/runner/llm_runner_helper.h",
+  "interface": "Only the upstream factory declaration is repeated. Its definition remains in the pinned ExecuTorchLLM library. Tokenizer instances use the exact release gitlink headers, not private runner fields.",
+  "swiftPackageRevision": "a4e0fe851341665f0a8af56651d6eca870a856fa",
+  "tokenizersGitlink": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+  "vendoredHeaderSHA256": {
+    "error.h": "f2d4611b1f8bd03b58fe32e385879be4bfa3174dc49512800df11293747c23c1",
+    "log.h": "850733f2341869b178e935ea27a119a988991546b27fb05a8508336d39b573c2",
+    "result.h": "af6da2c9647ea0e528cb7f7cd99bc54e4a0ddf990651f31ef274341cf8186b04",
+    "tokenizer.h": "234b0a35564e6422dceec2310b2e3ab4f57f12bcc9105cc2eb611ff35ac70196"
+  }
+}

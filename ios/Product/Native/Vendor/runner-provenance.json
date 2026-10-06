@@ -1,0 +1,72 @@
+{
+  "executorchReleaseCommit": "3dd7ccd1d863fad22639dd2d918ae34a41ce45f0",
+  "executorchVersion": "1.4.0",
+  "headers": {
+    "extension/llm/runner/audio.h": {
+      "gitBlob": "ce71513ed175aacdfb890e04dc174399f66735a2",
+      "sha256": "cbb6367fed31cfa70e69a699ffb97782bb7d5d610bec27c9c4a47a493b7de17e"
+    },
+    "extension/llm/runner/constants.h": {
+      "gitBlob": "d7b36077757c0398861f7780fd4c880c9cdef54b",
+      "sha256": "1e2dd0b1e9c7af02261bdb16e591b9b4a8cc95818c7cd2eb475039247fc37fd4"
+    },
+    "extension/llm/runner/image.h": {
+      "gitBlob": "dbdba2735361d519b059fceb20d27e53a46d0330",
+      "sha256": "65a86f21e57aefbb86eac7d466282fcbbdc67e1c28d6ea97cbf3487eeb65b6c0"
+    },
+    "extension/llm/runner/io_manager/io_manager.h": {
+      "gitBlob": "fc9a8f0641bf5ddc47ea5bc2a191e10d20e124bd",
+      "sha256": "37424535a55603a1648a04ca0f32d2bfe63df92ee79a36b7fc7676924b45b921"
+    },
+    "extension/llm/runner/irunner.h": {
+      "gitBlob": "c9584dda879a8a9465f1e2f4f474bd8351cecb83",
+      "sha256": "170cab2174d9c2da47d85837f5d63af917234d0a92b28514c874aed22231c059"
+    },
+    "extension/llm/runner/llm_runner_helper.h": {
+      "gitBlob": "b4c7c59806d470b3de2c181fab8b287b308af134",
+      "sha256": "86378874af8dc6f9459764957d8b0752356958018012ae6e95929dd94d752c64"
+    },
+    "extension/llm/runner/multimodal_input.h": {
+      "gitBlob": "01f73e3314c36c8d7d8fd67b2dfe89ab7d62f4df",
+      "sha256": "888356084cb87a8e65d77d01847876fc941882b7ac0b0682cefd2bf45227d86a"
+    },
+    "extension/llm/runner/stats.h": {
+      "gitBlob": "3c84511de3a416a019c9fc9400e7e2ca72edbbda",
+      "sha256": "08a698b26912b10216fd787101f6d2336ff96c5841ad1085261d6df1ac40ae07"
+    },
+    "extension/llm/runner/text_decoder_runner.h": {
+      "gitBlob": "486a9f5490f35af154fe85bce7c0d34f98b8560a",
+      "sha256": "421f1fa47642b99ba815e2ea27dd20b7115cf1c6d32fa15b570447ea63a20c60"
+    },
+    "extension/llm/runner/text_llm_runner.h": {
+      "gitBlob": "c73b6a4bed66d260027af4870f491335fac6fdf1",
+      "sha256": "6be7918b7a2271d1c5b0bd38416c8a67cd0578d259b02e7f012674ae427a1f38"
+    },
+    "extension/llm/runner/text_prefiller.h": {
+      "gitBlob": "9f032122349532720ffe0526d34928a4478d4584",
+      "sha256": "4bbc01ce050fea9e77327caae0bde7881143891b5cc0326aae3d53f54ff9e728"
+    },
+    "extension/llm/runner/text_token_generator.h": {
+      "gitBlob": "d64927f6559153ff16484dc84a1576bb4a9a6df1",
+      "sha256": "1d3e13898c752d274e563c6dc434bb484028fa91014766ca5d196b72bf701947"
+    },
+    "extension/llm/runner/util.h": {
+      "gitBlob": "f5bcb945dbf8d088a24ac74e0fcbdedd691d180c",
+      "sha256": "9f1a35f56d90bde5c7bf61dc821c6552bd81c5a589bc971a566c34d730c478a8"
+    },
+    "extension/llm/sampler/logit_processor.h": {
+      "gitBlob": "1e499cc18a6a6b18985bcf0304dce97ca679b5de",
+      "sha256": "4894b20a1b9b9c62b18468f90d95c23598f8cbbd2565be70afb323cba816e706"
+    },
+    "extension/llm/sampler/sampler.h": {
+      "gitBlob": "e340c12c83db9cd86c42d49139a14aa29b1701a7",
+      "sha256": "11a030fa7bc6a72fce952fc1abddae89785d9754c856d7fddd8e94f88e737619"
+    },
+    "extension/llm/sampler/util.h": {
+      "gitBlob": "50a0c52d4dec1d743a68b377f1d37839e3aa6fe1",
+      "sha256": "676458fe8fe6826b09227cb7375aca9174e124dbaa6f7403de59e02c55352299"
+    }
+  },
+  "remainingDependencies": "Public runtime/module headers shipped in the same pinned Apple package.",
+  "swiftPackageRevision": "a4e0fe851341665f0a8af56651d6eca870a856fa"
+}

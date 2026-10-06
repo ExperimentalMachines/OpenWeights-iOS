@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.22)
+project(openweights_script C CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+set(QJS_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../../../../core/sandbox/src/main/cpp/quickjs")
+execute_process(COMMAND git -C "${QJS_ROOT}" rev-parse HEAD OUTPUT_VARIABLE QJS_REV OUTPUT_STRIP_TRAILING_WHITESPACE COMMAND_ERROR_IS_FATAL ANY)
+if(NOT QJS_REV STREQUAL "954dc53628e36891f93c359aa60895c2ae3dac6b")
+    message(FATAL_ERROR "Initialize the pinned QuickJS submodule before building the iOS interpreter.")
+endif()
+# Compile only the interpreter. quickjs-libc would introduce host file/socket APIs.
+add_library(openweights_script STATIC ../OWScriptInterpreter.cpp
+    "${QJS_ROOT}/quickjs.c" "${QJS_ROOT}/dtoa.c"
+    "${QJS_ROOT}/libregexp.c" "${QJS_ROOT}/libunicode.c")
+target_include_directories(openweights_script PRIVATE "${QJS_ROOT}" PUBLIC ..)
+target_compile_definitions(openweights_script PRIVATE _GNU_SOURCE)
+target_compile_options(openweights_script PRIVATE -funsigned-char)
+if(OW_SCRIPT_TESTS)
+    add_executable(script_checks ../../Tests/ScriptHarness/Checks.cpp)
+    target_link_libraries(script_checks PRIVATE openweights_script)
+endif()
