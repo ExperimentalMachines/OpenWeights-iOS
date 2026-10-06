@@ -1,0 +1,38 @@
+{
+  "files": [
+    {
+      "bytes": 2104931648,
+      "path": "Qwen2.5-Omni-3B-Q4_K_M.gguf",
+      "sha256": "4b0bd358c1e9ec55dd3055ef6d71c958c821533d85916a10cfa89c4552a86e29",
+      "url": "https://huggingface.co/ggml-org/Qwen2.5-Omni-3B-GGUF/resolve/75f1b73b657a50f5092502799457ccb4a4a1f9df/Qwen2.5-Omni-3B-Q4_K_M.gguf"
+    },
+    {
+      "bytes": 1538031328,
+      "path": "mmproj-Qwen2.5-Omni-3B-Q8_0.gguf",
+      "sha256": "4e6c816cd33f7298d07cb780c136a396631e50e62f6501660271f8c6e302e565",
+      "url": "https://huggingface.co/ggml-org/Qwen2.5-Omni-3B-GGUF/resolve/75f1b73b657a50f5092502799457ccb4a4a1f9df/mmproj-Qwen2.5-Omni-3B-Q8_0.gguf"
+    }
+  ],
+  "fixtures": [
+    {
+      "bytes": 123772,
+      "generator": "macOS /usr/bin/say, Samantha, 145 words per minute",
+      "path": "Lisbon.aiff",
+      "sha256": "73cac8bf8902956b98ade2bfb1a519fae7b67b2ce7c37d91df36e1110e320e18",
+      "text": "The city is Lisbon. The project is Cedar."
+    },
+    {
+      "bytes": 131964,
+      "generator": "macOS /usr/bin/say, Samantha, 145 words per minute",
+      "path": "Osaka.aiff",
+      "sha256": "8d7c0f1105faadb54953482b2123e92ddb625637b5d97ca61909c30e3d91b498",
+      "text": "The city is Osaka. The project is Maple."
+    }
+  ],
+  "limitations": [
+    "Two locally synthesized English utterances, not a speech dataset or general speech-quality evaluation. No model-generated audio output is exercised."
+  ],
+  "purpose": "pinned-audio-input-validation-not-default-or-benchmark",
+  "repository": "ggml-org/Qwen2.5-Omni-3B-GGUF",
+  "revision": "75f1b73b657a50f5092502799457ccb4a4a1f9df"
+}

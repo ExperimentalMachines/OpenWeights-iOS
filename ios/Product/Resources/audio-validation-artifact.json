@@ -1,0 +1,38 @@
+{
+  "files": [
+    {
+      "bytes": 1246253184,
+      "path": "LFM2-Audio-1.5B-Q8_0.gguf",
+      "sha256": "adbe49974b252414b4748669e741cc8bd64517e10fdb9ffffd6a3b00a4c1e214",
+      "url": "https://huggingface.co/ggml-org/LFM2-Audio-1.5B-GGUF/resolve/61c34984ac1bb29df56abb591bd95b50eb2029aa/LFM2-Audio-1.5B-Q8_0.gguf"
+    },
+    {
+      "bytes": 332716256,
+      "path": "mmproj-LFM2-Audio-1.5B-Q8_0.gguf",
+      "sha256": "e6f0d0c7f303a38e6be3deaa5562b362d8d73f8aaf38a01b526774b2710af65f",
+      "url": "https://huggingface.co/ggml-org/LFM2-Audio-1.5B-GGUF/resolve/61c34984ac1bb29df56abb591bd95b50eb2029aa/mmproj-LFM2-Audio-1.5B-Q8_0.gguf"
+    }
+  ],
+  "fixtures": [
+    {
+      "bytes": 123772,
+      "generator": "macOS /usr/bin/say, Samantha, 145 words per minute",
+      "path": "Lisbon.aiff",
+      "sha256": "73cac8bf8902956b98ade2bfb1a519fae7b67b2ce7c37d91df36e1110e320e18",
+      "text": "The city is Lisbon. The project is Cedar."
+    },
+    {
+      "bytes": 131964,
+      "generator": "macOS /usr/bin/say, Samantha, 145 words per minute",
+      "path": "Osaka.aiff",
+      "sha256": "8d7c0f1105faadb54953482b2123e92ddb625637b5d97ca61909c30e3d91b498",
+      "text": "The city is Osaka. The project is Maple."
+    }
+  ],
+  "limitations": [
+    "Two locally synthesized English utterances, not a speech dataset or general speech-quality evaluation. No model-generated audio output is exercised."
+  ],
+  "purpose": "pinned-audio-input-validation-not-default-or-benchmark",
+  "repository": "ggml-org/LFM2-Audio-1.5B-GGUF",
+  "revision": "61c34984ac1bb29df56abb591bd95b50eb2029aa"
+}

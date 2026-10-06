@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "bytes": 436806912,
+      "path": "SmolVLM-500M-Instruct-Q8_0.gguf",
+      "sha256": "9d4612de6a42214499e301494a3ecc2be0abdd9de44e663bda63f1152fad1bf4",
+      "url": "https://huggingface.co/ggml-org/SmolVLM-500M-Instruct-GGUF/resolve/72e986006ef53e37cdd3f6d4241c90b0f01df376/SmolVLM-500M-Instruct-Q8_0.gguf"
+    },
+    {
+      "bytes": 108783360,
+      "path": "mmproj-SmolVLM-500M-Instruct-Q8_0.gguf",
+      "sha256": "d1eb8b6b23979205fdf63703ed10f788131a3f812c7b1f72e0119d5d81295150",
+      "url": "https://huggingface.co/ggml-org/SmolVLM-500M-Instruct-GGUF/resolve/72e986006ef53e37cdd3f6d4241c90b0f01df376/mmproj-SmolVLM-500M-Instruct-Q8_0.gguf"
+    }
+  ],
+  "limitations": [
+    "A paired SmolVLM artifact for native attachment validation. No cross-runtime or general quality ranking."
+  ],
+  "purpose": "pinned-vision-validation-artifact-not-default-or-benchmark",
+  "repository": "ggml-org/SmolVLM-500M-Instruct-GGUF",
+  "revision": "72e986006ef53e37cdd3f6d4241c90b0f01df376"
+}

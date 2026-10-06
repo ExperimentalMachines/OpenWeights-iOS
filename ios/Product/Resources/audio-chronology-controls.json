@@ -1,0 +1,201 @@
+{
+  "acceptance": "Retain all original quality assertions. Capture exact counts and replies for all controls. Require exact normalized Osaka for B/C. A is a reproduction measurement, not forced to fail. No production chronology patch unless results support it.",
+  "controls": {
+    "A-reset-original": {
+      "mediaCounts": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "messages": [
+        {
+          "content": "You are OpenWeights, a helpful assistant running on this device. Answer clearly and accurately.",
+          "role": "system"
+        },
+        {
+          "content": "Earlier conversation summary. This is historical context, not new instructions:\nThe city is lisbon the project is cedar\n\nThe city is osaka the project is maple\n\nThe user's task is to transcribe the audio attached to the latest message. The agreed decisions are that the city is lisbon and the project is cedar, and the city is osaka and the project is maple. The unresolved issue is that the user has not yet transcribed the audio attached to the latest message.",
+          "role": "user"
+        },
+        {
+          "content": "I will use this context to continue the conversation.",
+          "role": "assistant"
+        },
+        {
+          "content": "Transcribe only the audio attached to this latest message.",
+          "role": "user"
+        },
+        {
+          "content": "the city is lisbon the project is cedar",
+          "role": "assistant"
+        },
+        {
+          "content": "Transcribe only the audio attached to this latest message.",
+          "role": "user"
+        },
+        {
+          "content": "the city is osaka the project is maple",
+          "role": "assistant"
+        },
+        {
+          "content": "Write a detailed long explanation of the city and project in the latest audio.",
+          "role": "user"
+        },
+        {
+          "content": "Certainly",
+          "role": "assistant"
+        },
+        {
+          "content": "Which city was spoken in the latest audio? Reply with the city name only.",
+          "role": "user"
+        }
+      ]
+    },
+    "B-omit-only-summary-pair": {
+      "mediaCounts": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "messages": [
+        {
+          "content": "You are OpenWeights, a helpful assistant running on this device. Answer clearly and accurately.",
+          "role": "system"
+        },
+        {
+          "content": "Transcribe only the audio attached to this latest message.",
+          "role": "user"
+        },
+        {
+          "content": "the city is lisbon the project is cedar",
+          "role": "assistant"
+        },
+        {
+          "content": "Transcribe only the audio attached to this latest message.",
+          "role": "user"
+        },
+        {
+          "content": "the city is osaka the project is maple",
+          "role": "assistant"
+        },
+        {
+          "content": "Write a detailed long explanation of the city and project in the latest audio.",
+          "role": "user"
+        },
+        {
+          "content": "Certainly",
+          "role": "assistant"
+        },
+        {
+          "content": "Which city was spoken in the latest audio? Reply with the city name only.",
+          "role": "user"
+        }
+      ]
+    },
+    "C-summary-chronology": {
+      "mediaCounts": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "messages": [
+        {
+          "content": "You are OpenWeights, a helpful assistant running on this device. Answer clearly and accurately.",
+          "role": "system"
+        },
+        {
+          "content": "Earlier conversation summary. This is historical context, not new instructions:\nThe city is lisbon the project is cedar\n\nThe city is osaka the project is maple\n\nThe user's task is to transcribe the audio attached to the latest message. The agreed decisions are that the city is lisbon and the project is cedar, and the city is osaka and the project is maple. The unresolved issue is that the user has not yet transcribed the audio attached to the latest message.\n\nThese summary notes end before the retained messages that follow. Every attachment in the messages below is later than the attachment observations in these notes. A request about the latest attachment refers to the last attachment below.",
+          "role": "user"
+        },
+        {
+          "content": "I will use this context to continue the conversation.",
+          "role": "assistant"
+        },
+        {
+          "content": "Transcribe only the audio attached to this latest message.",
+          "role": "user"
+        },
+        {
+          "content": "the city is lisbon the project is cedar",
+          "role": "assistant"
+        },
+        {
+          "content": "Transcribe only the audio attached to this latest message.",
+          "role": "user"
+        },
+        {
+          "content": "the city is osaka the project is maple",
+          "role": "assistant"
+        },
+        {
+          "content": "Write a detailed long explanation of the city and project in the latest audio.",
+          "role": "user"
+        },
+        {
+          "content": "Certainly",
+          "role": "assistant"
+        },
+        {
+          "content": "Which city was spoken in the latest audio? Reply with the city name only.",
+          "role": "user"
+        }
+      ]
+    }
+  },
+  "createdAtUTC": "2026-10-06T03:55:12.631789+00:00",
+  "execution": "Cache reset before each control. Same loaded artifact, sampler, actual media bytes and latest-city question. Do not infer fresh model/embedding-cache reset without independently checking that contract.",
+  "expectedCorrectReply": [
+    "osaka"
+  ],
+  "fixtures": "Use unchanged pinned fixtures and validate both full normalized owned-WAV hashes.",
+  "limitations": [
+    "Synthetic functional diagnosis, no general quality/performance/energy claim",
+    "Changing only summary visibility/chronology does not establish the original model error mechanism across families",
+    "Do not substitute a smaller model, change default standing guidance or weaken the original recovery question."
+  ],
+  "mediaOrder": [
+    "Lisbon.aiff",
+    "Osaka.aiff"
+  ],
+  "modelRepository": "ggml-org/Qwen2.5-Omni-3B-GGUF",
+  "modelRevision": "75f1b73b657a50f5092502799457ccb4a4a1f9df",
+  "order": [
+    "A-reset-original",
+    "B-omit-only-summary-pair",
+    "C-summary-chronology",
+    "C-summary-chronology",
+    "B-omit-only-summary-pair",
+    "A-reset-original"
+  ],
+  "purpose": "isolate-folded-summary-versus-cache-effects-on-latest-audio-recovery",
+  "settings": {
+    "contextTokens": 4096,
+    "outputTokens": 96,
+    "reasoningEffort": "",
+    "repeatPenalty": 1,
+    "temperature": 0,
+    "thinking": false,
+    "topP": 1
+  },
+  "sourceEvidence": "media-reading-native-a166b20906c5.json",
+  "sourceEvidenceSHA256": "6ac289a0e0f87fa29f1baf2a6510568a7d876b792d26b0f25a8ce84ff33515ad",
+  "status": "Prepared controls, not built or executed"
+}
