@@ -1,0 +1,12 @@
+[
+{"charset":"UTF-8","hex":"41c328","codePoints":[65,65533,40]},
+{"charset":"UTF-16BE","hex":"0041d80000","codePoints":[65,65533]},
+{"charset":"UTF-16BE","hex":"d8000041","codePoints":[65533]},
+{"charset":"UTF-32BE","hex":"0000d800","codePoints":[55296]},
+{"charset":"UTF-32BE","hex":"0000004100","codePoints":[65,65533]},
+{"charset":"US-ASCII","hex":"41e942","codePoints":[65,65533,66]},
+{"charset":"UTF-16","hex":"00430065006400610072","codePoints":[67,101,100,97,114]},
+{"charset":"UTF-32","hex":"00000043","codePoints":[67]},
+{"charset":"Shift_JIS","hex":"8220","codePoints":[65533,32]},
+{"charset":"windows-1252","hex":"418142","codePoints":[65,65533,66]}
+]
