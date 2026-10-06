@@ -1,0 +1,200 @@
+name: OpenWeights
+options:
+  deploymentTarget:
+    iOS: "17.0"
+packages:
+  OpenWeightsCore:
+    path: .
+  Highlighter:
+    url: https://github.com/smittytone/HighlighterSwift
+    exactVersion: 3.1.0
+  MLX:
+    url: https://github.com/ml-explore/mlx-swift
+    exactVersion: 0.31.4
+  MLXLM:
+    url: https://github.com/ml-explore/mlx-swift-lm
+    exactVersion: 3.31.3
+  Transformers:
+    url: https://github.com/huggingface/swift-transformers
+    exactVersion: 1.3.0
+  ExecuTorch:
+    url: https://github.com/pytorch/executorch
+    revision: a4e0fe851341665f0a8af56651d6eca870a856fa
+settings:
+  base:
+    OW_NATIVE_BUILD: ../Benchmark/.build/native-17C52-ninja
+    OW_APP_BUNDLE_ID: org.experimentalmachines.openweights.ios
+    OW_INFERENCE_ENTITLEMENTS: InferenceExtension/InferenceHelper.entitlements
+    SWIFT_VERSION: "5.0"
+    SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited) $(OW_SCRIPT_BINDING_CONDITION) $(OW_SCRIPT_VALIDATION_CONDITION) $(OW_BACKGROUND_VALIDATION_CONDITION)
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    DEVELOPMENT_TEAM: DK95L4JCWY
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_BITCODE: NO
+    ENABLE_TESTABILITY: YES
+    GENERATE_INFOPLIST_FILE: YES
+    CURRENT_PROJECT_VERSION: "1"
+    MARKETING_VERSION: "0.1.0"
+    SWIFT_OPTIMIZATION_LEVEL: -O
+    DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+targets:
+  OpenWeights:
+    type: application
+    platform: iOS
+    sources:
+      - App
+      - Native/OWRuntimeSession.mm
+      - Native/OWExecuTorchTokenizer.mm
+      - Native/OWExecuTorchRunner.mm
+      - Native/OWScriptSession.mm
+      - Native/Script/ScriptWire.swift
+      - path: Resources
+        excludes: [Canvas]
+        buildPhase: resources
+      - path: Resources/Canvas
+        type: folder
+        buildPhase: resources
+      - path: .build/inference-deps/executorch_backend_mlx_resources.bundle
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(OW_APP_BUNDLE_ID)
+        EX_ENABLE_EXTENSION_POINT_GENERATION: YES
+        SWIFT_OBJC_BRIDGING_HEADER: Native/Product-Bridging-Header.h
+        HEADER_SEARCH_PATHS: $(SRCROOT)/Native $(SRCROOT)/Native/Vendor $(SRCROOT)/../../core/engine/src/main/cpp $(SRCROOT)/../../core/engine/src/main/cpp/llama.cpp/include $(SRCROOT)/../../core/engine/src/main/cpp/llama.cpp/ggml/include
+        CLANG_CXX_LANGUAGE_STANDARD: c++17
+        LIBRARY_SEARCH_PATHS: $(SRCROOT)/$(OW_NATIVE_BUILD)/** $(SRCROOT)/.build/script-ios
+        OTHER_LDFLAGS: -ObjC -force_load "$(BUILT_PRODUCTS_DIR)/libexecutorch_ios.a" -force_load "$(SRCROOT)/$(OW_NATIVE_BUILD)/libow_regex_lookahead.a" -lpcre2-8 -force_load "$(BUILT_PRODUCTS_DIR)/libkernels_torchao_ios.a" -force_load "$(BUILT_PRODUCTS_DIR)/libkernels_quantized_ios.a" -force_load "$(BUILT_PRODUCTS_DIR)/libkernels_optimized_ios.a" -force_load "$(BUILT_PRODUCTS_DIR)/libkernels_llm_ios.a" -force_load "$(BUILT_PRODUCTS_DIR)/libbackend_xnnpack_ios.a" -lopenweights_apple -lopenweights_script -lllama-common -lllama-common-base -lvendor-hash -lmtmd -lllama -lggml -lggml-base -lggml-cpu -lggml-metal -lggml-blas -lcpp-httplib -lc++ -framework Accelerate -framework Metal -framework MetalKit
+    info:
+      path: .build/Info.plist
+      properties:
+        CFBundleDisplayName: OpenWeights
+        UIAppFonts: [hanken_grotesk.ttf, schibsted_grotesk.ttf, geist_mono.ttf]
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight, UIInterfaceOrientationPortraitUpsideDown]
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: YES
+        NSCameraUsageDescription: Attach a photo to a conversation with a vision model.
+        LSSupportsOpeningDocumentsInPlace: YES
+        UIApplicationSupportsIndirectInputEvents: YES
+        UIBackgroundModes: [processing]
+        BGTaskSchedulerPermittedIdentifiers: [org.experimentalmachines.openweights.watches]
+    dependencies:
+      - target: ScriptSandbox
+      - target: InferenceHelper
+      - target: OWInferenceProbe
+      - package: OpenWeightsCore
+        product: OpenWeightsCore
+      - package: Highlighter
+        product: Highlighter
+      - package: MLXLM
+        product: MLXLLM
+      - package: MLXLM
+        product: MLXLMCommon
+      - package: Transformers
+        product: Tokenizers
+      - package: ExecuTorch
+        product: executorch_llm
+      - package: ExecuTorch
+        product: backend_xnnpack
+      - package: ExecuTorch
+        product: kernels_llm
+      - package: ExecuTorch
+        product: kernels_optimized
+      - package: ExecuTorch
+        product: kernels_quantized
+      - package: ExecuTorch
+        product: kernels_torchao
+  ScriptSandbox:
+    type: extensionkit-extension
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - ScriptExtension
+      - Native/OWScriptSession.mm
+      - Native/Script/ScriptWire.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(OW_APP_BUNDLE_ID).script
+        SWIFT_OBJC_BRIDGING_HEADER: ScriptExtension/Script-Bridging-Header.h
+        HEADER_SEARCH_PATHS: $(SRCROOT)/Native
+        LIBRARY_SEARCH_PATHS: $(SRCROOT)/.build/script-ios
+        OTHER_LDFLAGS: -lopenweights_script -lc++
+        CLANG_CXX_LANGUAGE_STANDARD: c++17
+        APPLICATION_EXTENSION_API_ONLY: YES
+        EX_ENABLE_EXTENSION_POINT_GENERATION: YES
+        CODE_SIGN_ENTITLEMENTS: ScriptExtension/ScriptSandbox.entitlements
+        GENERATE_INFOPLIST_FILE: YES
+        SKIP_INSTALL: YES
+  InferenceHelper:
+    type: extensionkit-extension
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: InferenceExtension
+        excludes: [dependencies.json, header-provenance.json, Vendor]
+      - path: .build/inference-deps/executorch_backend_mlx_resources.bundle
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(OW_APP_BUNDLE_ID).inference
+        SWIFT_OBJC_BRIDGING_HEADER: InferenceExtension/Inference-Bridging-Header.h
+        HEADER_SEARCH_PATHS: $(SRCROOT)/InferenceExtension/Vendor $(SRCROOT)/.build/inference-deps/core-headers
+        CLANG_CXX_LANGUAGE_STANDARD: c++17
+        OTHER_LDFLAGS: -ObjC -force_load "$(SRCROOT)/.build/inference-deps/executorch/libexecutorch_ios.a" -force_load "$(SRCROOT)/.build/inference-deps/backend_mlx/libbackend_mlx_ios.a" -force_load "$(SRCROOT)/.build/inference-deps/kernels_llm/libkernels_llm_ios.a" -force_load "$(SRCROOT)/.build/inference-deps/kernels_optimized/libkernels_optimized_ios.a" "$(SRCROOT)/.build/inference-deps/executorch_llm/libexecutorch_llm_ios.a" "$(SRCROOT)/.build/inference-deps/threadpool/libthreadpool_ios.a" -lc++ -framework Accelerate -framework Metal -framework Foundation -framework QuartzCore -framework CoreGraphics -framework CoreImage -framework CoreVideo
+        APPLICATION_EXTENSION_API_ONLY: YES
+        EX_ENABLE_EXTENSION_POINT_GENERATION: YES
+        CODE_SIGN_ENTITLEMENTS: $(OW_INFERENCE_ENTITLEMENTS)
+        GENERATE_INFOPLIST_FILE: YES
+        SKIP_INSTALL: YES
+  OWInferenceProbe:
+    type: framework
+    platform: iOS
+    sources:
+      - path: InferenceFramework/OWInferenceProbe.h
+        headerVisibility: public
+      - path: InferenceExtension/OWDescriptorProbe.h
+        headerVisibility: public
+      - InferenceExtension/OWDescriptorProbe.mm
+      - path: InferenceFramework/OWMLXSession.h
+        headerVisibility: public
+      - InferenceFramework/OWMLXSession.mm
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(OW_APP_BUNDLE_ID).inference-probe
+        PRODUCT_NAME: OWInferenceProbe
+        DEFINES_MODULE: YES
+        HEADER_SEARCH_PATHS: $(SRCROOT)/InferenceExtension/Vendor $(SRCROOT)/.build/inference-deps/core-headers
+        CLANG_CXX_LANGUAGE_STANDARD: c++17
+        EXPORTED_SYMBOLS_FILE: $(SRCROOT)/InferenceFramework/exports.txt
+        OTHER_LDFLAGS: >-
+          "$(SRCROOT)/.build/inference-deps/executorch/libexecutorch_ios.a" -force_load "$(SRCROOT)/.build/inference-deps/backend_mlx/libbackend_mlx_ios.a" -force_load "$(SRCROOT)/.build/inference-deps/kernels_llm/libkernels_llm_ios.a" -force_load "$(SRCROOT)/.build/inference-deps/kernels_optimized/libkernels_optimized_ios.a" "$(SRCROOT)/.build/inference-deps/executorch_llm/libexecutorch_llm_ios.a" "$(SRCROOT)/.build/inference-deps/threadpool/libthreadpool_ios.a" -lc++ -framework Accelerate -framework Metal -framework Foundation -framework QuartzCore -framework CoreGraphics -framework CoreImage -framework CoreVideo
+        GENERATE_INFOPLIST_FILE: YES
+        SKIP_INSTALL: YES
+  ProductTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: DeviceTests
+    dependencies:
+      - target: OpenWeights
+      - target: OWInferenceProbe
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(OW_APP_BUNDLE_ID).tests
+        SWIFT_OBJC_BRIDGING_HEADER: DeviceTests/Sampler-Probe-Bridging-Header.h
+        HEADER_SEARCH_PATHS: $(SRCROOT)/DeviceTests $(SRCROOT)/../../core/engine/src/main/cpp/llama.cpp/include $(SRCROOT)/../../core/engine/src/main/cpp/llama.cpp/ggml/include
+        CLANG_CXX_LANGUAGE_STANDARD: c++17
+schemes:
+  OpenWeights:
+    build:
+      targets:
+        OpenWeights: all
+        ProductTests: [test]
+    test:
+      config: Release
+      targets: [ProductTests]
+      gatherCoverageData: false
+    run:
+      config: Release

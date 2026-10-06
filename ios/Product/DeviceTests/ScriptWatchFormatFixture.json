@@ -1,0 +1,32 @@
+{
+  "messages": [
+    {
+      "content": "You are running a scheduled check on the user's phone. Do the check with the tools available and report what you found in the format the task requests. When no format is requested, use one or two short sentences. Do not claim current facts without evidence. If this is a due reminder, delivering the reminder is the check. Nobody is present to approve tools. Do not ask questions or change a conversation plan.",
+      "role": "system"
+    },
+    {
+      "content": "Use run_script to calculate 48273 * 1179. After the tool returns, report the numerical result only.",
+      "role": "user"
+    },
+    {
+      "content": "<tool_call>\n{\"name\": \"run_script\", \"arguments\": {\"source\": \"console.log(48273 * 1179);\"}}\n</tool_call>",
+      "role": "assistant"
+    },
+    {
+      "content": "56913867\n",
+      "role": "tool",
+      "tool_call_id": "run_script-0",
+      "tool_name": "run_script"
+    }
+  ],
+  "settings": {
+    "contextTokens": 2048,
+    "outputTokens": 192,
+    "temperature": 0,
+    "topP": 1,
+    "repeatPenalty": 1,
+    "thinking": false
+  },
+  "expectedFailingAnswer": "The result of 48273 multiplied by 1179 is 56913867.",
+  "sourceCohort": "product-script-watch-20261004T063527Z-build.json"
+}

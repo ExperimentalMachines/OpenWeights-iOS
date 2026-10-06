@@ -1,0 +1,9 @@
+.build/
+.build*.log
+__pycache__/
+*.xcodeproj/
+*.xcworkspace/
+Results/*.xcresult/
+Results/*.log
+Results/*.zip
+Results/*-attachments/
