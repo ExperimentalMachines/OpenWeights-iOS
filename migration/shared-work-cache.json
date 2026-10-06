@@ -1,0 +1,32 @@
+{
+  "status": "relocated-cache-with-preserved-old-paths",
+  "paths": [
+    {
+      "originalPath": "openweights/ios/Benchmark/.build/packages",
+      "sharedPath": ".benchmark-work/Benchmark/packages",
+      "newCheckoutLink": "openweights-ios/ios/Benchmark/.build/packages"
+    },
+    {
+      "originalPath": "openweights/ios/Benchmark/.build/packages-delegates",
+      "sharedPath": ".benchmark-work/Benchmark/packages-delegates",
+      "newCheckoutLink": "openweights-ios/ios/Benchmark/.build/packages-delegates"
+    },
+    {
+      "originalPath": "openweights/ios/Benchmark/.build/toolchains",
+      "sharedPath": ".benchmark-work/Benchmark/toolchains",
+      "newCheckoutLink": "openweights-ios/ios/Benchmark/.build/toolchains"
+    },
+    {
+      "originalPath": "openweights/ios/Benchmark/.build/build-tools",
+      "sharedPath": ".benchmark-work/Benchmark/build-tools",
+      "newCheckoutLink": "openweights-ios/ios/Benchmark/.build/build-tools"
+    },
+    {
+      "originalPath": "openweights/ios/Benchmark/.build/deps",
+      "sharedPath": ".benchmark-work/Benchmark/deps",
+      "newCheckoutLink": "openweights-ios/ios/Benchmark/.build/deps"
+    }
+  ],
+  "sourceInputsMoved": false,
+  "signedProductOutputsMoved": false
+}

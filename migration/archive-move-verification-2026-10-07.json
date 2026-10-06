@@ -1,0 +1,41 @@
+{
+  "availableDiskBytes": 29693861888,
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "bucketFileCount": 74,
+  "bucketSizeReportedBytes": 8556418131,
+  "compressedHostArchiveBytes": 3513908347,
+  "currentBenchmarkExecutionStatus": "native-execution-terminal-results-await-inspection",
+  "currentBenchmarkExitCode": 0,
+  "hostBuildDirectoryCount": 27,
+  "hostBuildFileManifestChecks": true,
+  "hostBuildLogicalBytesRemoved": 9271627476,
+  "initialAvailableGiBApproximate": 13,
+  "keptPreparedPackages": {
+    "OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.zip": {
+      "bytes": 1485895423,
+      "sha256": "899f8fc09879525cfe2818b776a32a8f4c5faade041a7862470cb8a847c1da1b"
+    },
+    "OpenWeightsGGUFBundledBench-S1-e526baa0d3f9.zip": {
+      "bytes": 396313444,
+      "sha256": "e526baa0d3f9a68679b4aae8010b18a2cea51c2feca8d26069eaa9a8eb0dca39"
+    },
+    "OpenWeightsGGUFBundledBench-smoke-6411575bf29e.zip": {
+      "bytes": 396313417,
+      "sha256": "6411575bf29eefe615a0c26a93fb986f7c215206d92059713248c2b960ee91ed"
+    }
+  },
+  "localReceiptsMatchCatalogs": true,
+  "newPaidComputeSubmitted": false,
+  "originalAndCopiedSourceFilesStillMatch": 492,
+  "packageCount": 10,
+  "packageLogicalBytesRemoved": 5027982738,
+  "packageZipCRCChecks": true,
+  "private": true,
+  "publicationDatasetCreated": false,
+  "remoteObjectsAndManifestsChecked": 74,
+  "restoreTest": "OpenWeightsBench-tests.zip restored, SHA-256 and ZIP CRC verified, then rearchived",
+  "roundTripDownloadHashChecks": true,
+  "schemaVersion": 1,
+  "status": "selected-transfers-complete-and-verified",
+  "verifiedAtUTC": "2026-10-06T16:52:23.101890+00:00"
+}

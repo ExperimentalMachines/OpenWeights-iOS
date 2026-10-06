@@ -1,0 +1,51 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsDelegatesBench-CoreML-S1-block0-7767cc534cbe.zip",
+      "bytes": 1485895393
+    },
+    {
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsDelegatesBench-smoke-tests.zip",
+      "bytes": 1485689606
+    },
+    {
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsDelegatesBench-tests.zip",
+      "bytes": 795887640
+    },
+    {
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsGGUFBundledBench-S1-352c756318c3.zip",
+      "bytes": 396315930
+    },
+    {
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsGGUFBundledBench-smoke-731a7475dc78.zip",
+      "bytes": 396315903
+    },
+    {
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsBench-study-tests.zip",
+      "bytes": 93711860
+    },
+    {
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsBench-study-S1-block1-tests.zip",
+      "bytes": 93711860
+    },
+    {
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsBench-study-S1-block0-tests.zip",
+      "bytes": 93711857
+    },
+    {
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsBench-smoke-tests.zip",
+      "bytes": 93614235
+    },
+    {
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsBench-tests.zip",
+      "bytes": 93128454
+    }
+  ],
+  "keptPreparedPackages": [
+    "OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.zip",
+    "OpenWeightsGGUFBundledBench-S1-e526baa0d3f9.zip",
+    "OpenWeightsGGUFBundledBench-smoke-6411575bf29e.zip"
+  ],
+  "evictAfterDownloadedSHA256AndZipCRCVerification": true
+}

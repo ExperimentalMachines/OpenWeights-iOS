@@ -1,0 +1,31 @@
+{
+  "appAndSharedEngineSourcesChanged": false,
+  "changes": [
+    {
+      "currentSHA256": "181fabd449b49b3e2f0ec7665027103158e0d3882889978f167a4beef626b2b0",
+      "initialCopySHA256": "e11e6166a71f6587a5fec225387c79cf3b40618f70b4deb41f577617d51f8798",
+      "path": "docs/research/ios-repeated-artifact-study.md"
+    },
+    {
+      "currentSHA256": "8ca67462296e860d297883f9f19d707389d3c86b705bf1123ff3a8f79c49e7b8",
+      "initialCopySHA256": "fadfcf8c4599b56e3c6af3eef845b462723a95503f1f69d64471d0c486d776c6",
+      "path": "ios/Benchmark/README.md"
+    },
+    {
+      "currentSHA256": "da162b92a91b09bffc5dbdd92defff85375f651a00a25d59965f36f86e765a3f",
+      "initialCopySHA256": "df2a0aee11e13fb47a533998f7ace286529a2fc0abf8b6ea7aba2d1448bef32a",
+      "path": "ios/Benchmark/Study/execution-ledger-2026-10-03.json"
+    },
+    {
+      "currentSHA256": "98ae2a4524684eac815fd1c5186bedc637a8429ba1c85ac95957fa7343caa9b7",
+      "initialCopySHA256": "ad3716b4c574b330fac92c633db46ea43aaffb3eb9e6b327cf26b9dec724652c",
+      "path": "ios/Benchmark/Study/report-appendix-2026-10-04.md"
+    },
+    {
+      "currentSHA256": "2c554934aeb883fe497aeabd5dc3048d182ac0080cefacd9b459c29baadb7da0",
+      "initialCopySHA256": "5f52f41bd10e9f090508a07f16325caec2f6d8bbaf46f22a98200fe5783f8625",
+      "path": "ios/Benchmark/Study/report_study.py"
+    }
+  ],
+  "status": "historical-copy-manifest-preserved-intentional-study-and-build-instruction-updates-recorded"
+}

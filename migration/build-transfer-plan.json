@@ -1,0 +1,114 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "directories": [
+    {
+      "localRelativePath": "openweights/ios/Product/.build/synchronized-prefill-sanitizers-Xcode265",
+      "logicalBytes": 1271141669
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/synchronized-prefill-sanitizers",
+      "logicalBytes": 1248939876
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/core-watch-tests",
+      "logicalBytes": 559143041
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/canvas-core-host-swift63",
+      "logicalBytes": 468052001
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/controller-harness-build",
+      "logicalBytes": 425223553
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/background-bootstrap-before-build",
+      "logicalBytes": 404719064
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/core-adapter-tests",
+      "logicalBytes": 371588999
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/plan-review-core-host-swift63",
+      "logicalBytes": 365267503
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/markdown-core-build",
+      "logicalBytes": 355981924
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/import-harness-build",
+      "logicalBytes": 332567393
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/discovery-harness-build",
+      "logicalBytes": 330915003
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/canvas-model-repair-core-host-swift63",
+      "logicalBytes": 273747475
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/script-core-host-swift63",
+      "logicalBytes": 271825997
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/instructions-core-build",
+      "logicalBytes": 269582256
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/canvas-builder-cutoff-core-host-swift63",
+      "logicalBytes": 268592696
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/settings-core-host",
+      "logicalBytes": 268563293
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/canvas-isolated-safari-core-host-swift63",
+      "logicalBytes": 268141684
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/mlx-discovery-integrated-build",
+      "logicalBytes": 221107529
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/mlx-discovery-candidate-build",
+      "logicalBytes": 221027858
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/core-context-tests",
+      "logicalBytes": 178118342
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/media-harness-build",
+      "logicalBytes": 162678684
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/memory-row-before-build",
+      "logicalBytes": 145683008
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/proxy-harness-build",
+      "logicalBytes": 138260911
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/large-page-live-harness-build",
+      "logicalBytes": 137440059
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/fetch-compatibility-harness-build",
+      "logicalBytes": 137244147
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/search-harness-build",
+      "logicalBytes": 132641220
+    },
+    {
+      "localRelativePath": "openweights/ios/Product/.build/public-web-harness-build",
+      "logicalBytes": 43432291
+    }
+  ],
+  "scope": "Inactive host test builds. Current iPhone builds, model weights, toolchains and proof files retained."
+}

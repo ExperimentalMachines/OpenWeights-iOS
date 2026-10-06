@@ -1,0 +1,47 @@
+{
+  "files": [
+    {
+      "currentSHA256": "2c554934aeb883fe497aeabd5dc3048d182ac0080cefacd9b459c29baadb7da0",
+      "path": "ios/Benchmark/Study/report_study.py",
+      "previousCopiedSHA256": "5f52f41bd10e9f090508a07f16325caec2f6d8bbaf46f22a98200fe5783f8625"
+    },
+    {
+      "currentSHA256": "98ae2a4524684eac815fd1c5186bedc637a8429ba1c85ac95957fa7343caa9b7",
+      "path": "ios/Benchmark/Study/report-appendix-2026-10-04.md",
+      "previousCopiedSHA256": "ad3716b4c574b330fac92c633db46ea43aaffb3eb9e6b327cf26b9dec724652c"
+    },
+    {
+      "currentSHA256": "da162b92a91b09bffc5dbdd92defff85375f651a00a25d59965f36f86e765a3f",
+      "path": "ios/Benchmark/Study/execution-ledger-2026-10-03.json",
+      "previousCopiedSHA256": "df2a0aee11e13fb47a533998f7ace286529a2fc0abf8b6ea7aba2d1448bef32a"
+    },
+    {
+      "currentSHA256": "181fabd449b49b3e2f0ec7665027103158e0d3882889978f167a4beef626b2b0",
+      "path": "docs/research/ios-repeated-artifact-study.md",
+      "previousCopiedSHA256": "e11e6166a71f6587a5fec225387c79cf3b40618f70b4deb41f577617d51f8798"
+    },
+    {
+      "currentSHA256": "d7e281a9df82892012e7d31fd9722415c50f33a445ea34c1633c1cf2d8a8bf6e",
+      "path": "docs/research/assets/ios-study-coreml-five-20261007/ios-study-S1-local-final-turn-seven-configurations.json",
+      "previousCopiedSHA256": null
+    },
+    {
+      "currentSHA256": "e36f57365013ba7f8f4ef03b91d94bb897c555a901ef09bd0c718fc3da80bb91",
+      "path": "docs/research/assets/ios-study-coreml-five-20261007/ios-study-S1-local-final-turn-seven-configurations.svg",
+      "previousCopiedSHA256": null
+    },
+    {
+      "currentSHA256": "0367bd8c61d33bfdc98ca11e176846bd2049bf97b409fa5d11f2ae755579467f",
+      "path": "docs/research/assets/ios-study-coreml-five-20261007/ios-study-S1-local-final-turn-seven-configurations.png",
+      "previousCopiedSHA256": null
+    },
+    {
+      "currentSHA256": "7ed7685db71841df168d02830e249a5e092f3f240b8ccc6ca746b9894ec859ef",
+      "path": "docs/research/assets/ios-study-coreml-five-20261007/ios-study-S1-local-final-turn-seven-configurations.pdf",
+      "previousCopiedSHA256": null
+    }
+  ],
+  "historicalSourceManifestPreserved": true,
+  "recordedAtUTC": "2026-10-06T17:21:52.289975+00:00",
+  "status": "latest-five-block-study-source-and-figures-synced"
+}

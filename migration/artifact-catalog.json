@@ -1,0 +1,116 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": {
+    "openweights/ios/Benchmark/Results/OpenWeightsBench-smoke-tests.zip": {
+      "bytes": 93614235,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsBench-smoke-tests.zip",
+      "remotePath": "packages/c70a5f9de407033836a66928ec6fb785f01fedea7707186b74d20c9032f42090/OpenWeightsBench-smoke-tests.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/c70a5f9de407033836a66928ec6fb785f01fedea7707186b74d20c9032f42090/OpenWeightsBench-smoke-tests.zip",
+      "sha256": "c70a5f9de407033836a66928ec6fb785f01fedea7707186b74d20c9032f42090",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T16:40:56.869227+00:00"
+    },
+    "openweights/ios/Benchmark/Results/OpenWeightsBench-study-S1-block0-tests.zip": {
+      "bytes": 93711857,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsBench-study-S1-block0-tests.zip",
+      "remotePath": "packages/b03471eff65b3ae9e572c6e06f2e7344640005393413d8c8a197c409159310bb/OpenWeightsBench-study-S1-block0-tests.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/b03471eff65b3ae9e572c6e06f2e7344640005393413d8c8a197c409159310bb/OpenWeightsBench-study-S1-block0-tests.zip",
+      "sha256": "b03471eff65b3ae9e572c6e06f2e7344640005393413d8c8a197c409159310bb",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T16:40:37.112350+00:00"
+    },
+    "openweights/ios/Benchmark/Results/OpenWeightsBench-study-S1-block1-tests.zip": {
+      "bytes": 93711860,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsBench-study-S1-block1-tests.zip",
+      "remotePath": "packages/36880cd5f7eb4883eab8affa8e12c84b4771ee9768b011c11005225097cb179d/OpenWeightsBench-study-S1-block1-tests.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/36880cd5f7eb4883eab8affa8e12c84b4771ee9768b011c11005225097cb179d/OpenWeightsBench-study-S1-block1-tests.zip",
+      "sha256": "36880cd5f7eb4883eab8affa8e12c84b4771ee9768b011c11005225097cb179d",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T16:40:26.785794+00:00"
+    },
+    "openweights/ios/Benchmark/Results/OpenWeightsBench-study-tests.zip": {
+      "bytes": 93711860,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsBench-study-tests.zip",
+      "remotePath": "packages/36880cd5f7eb4883eab8affa8e12c84b4771ee9768b011c11005225097cb179d/OpenWeightsBench-study-tests.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/36880cd5f7eb4883eab8affa8e12c84b4771ee9768b011c11005225097cb179d/OpenWeightsBench-study-tests.zip",
+      "sha256": "36880cd5f7eb4883eab8affa8e12c84b4771ee9768b011c11005225097cb179d",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T16:40:18.215153+00:00"
+    },
+    "openweights/ios/Benchmark/Results/OpenWeightsBench-tests.zip": {
+      "bytes": 93128454,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsBench-tests.zip",
+      "remotePath": "packages/850e4de85b5bfe9f5da622097b6fc4898e7f599f331fefd7d5ad8d7540c1c529/OpenWeightsBench-tests.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/850e4de85b5bfe9f5da622097b6fc4898e7f599f331fefd7d5ad8d7540c1c529/OpenWeightsBench-tests.zip",
+      "sha256": "850e4de85b5bfe9f5da622097b6fc4898e7f599f331fefd7d5ad8d7540c1c529",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T16:43:07.352599+00:00"
+    },
+    "openweights/ios/Benchmark/Results/OpenWeightsDelegatesBench-CoreML-S1-block0-7767cc534cbe.zip": {
+      "bytes": 1485895393,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsDelegatesBench-CoreML-S1-block0-7767cc534cbe.zip",
+      "remotePath": "packages/7767cc534cbe686cc54c0d8e302869dfa608d0bbd60a60f4c39ab0fc540553d3/OpenWeightsDelegatesBench-CoreML-S1-block0-7767cc534cbe.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/7767cc534cbe686cc54c0d8e302869dfa608d0bbd60a60f4c39ab0fc540553d3/OpenWeightsDelegatesBench-CoreML-S1-block0-7767cc534cbe.zip",
+      "sha256": "7767cc534cbe686cc54c0d8e302869dfa608d0bbd60a60f4c39ab0fc540553d3",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T16:37:18.441357+00:00"
+    },
+    "openweights/ios/Benchmark/Results/OpenWeightsDelegatesBench-smoke-tests.zip": {
+      "bytes": 1485689606,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsDelegatesBench-smoke-tests.zip",
+      "remotePath": "packages/aa245dd8201fc1fbea1004d264fff910ddb450ce38827072d4d0414c1dcb24b9/OpenWeightsDelegatesBench-smoke-tests.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/aa245dd8201fc1fbea1004d264fff910ddb450ce38827072d4d0414c1dcb24b9/OpenWeightsDelegatesBench-smoke-tests.zip",
+      "sha256": "aa245dd8201fc1fbea1004d264fff910ddb450ce38827072d4d0414c1dcb24b9",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T16:38:01.273997+00:00"
+    },
+    "openweights/ios/Benchmark/Results/OpenWeightsDelegatesBench-tests.zip": {
+      "bytes": 795887640,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsDelegatesBench-tests.zip",
+      "remotePath": "packages/a5cdc3e154082a84b6f4dfdfeab035e87d7b45a619e838334b3013a9bf6c9c7c/OpenWeightsDelegatesBench-tests.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/a5cdc3e154082a84b6f4dfdfeab035e87d7b45a619e838334b3013a9bf6c9c7c/OpenWeightsDelegatesBench-tests.zip",
+      "sha256": "a5cdc3e154082a84b6f4dfdfeab035e87d7b45a619e838334b3013a9bf6c9c7c",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T16:38:58.594081+00:00"
+    },
+    "openweights/ios/Benchmark/Results/OpenWeightsGGUFBundledBench-S1-352c756318c3.zip": {
+      "bytes": 396315930,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsGGUFBundledBench-S1-352c756318c3.zip",
+      "remotePath": "packages/352c756318c31f9b1bc12e4505eca06305e57f0c42a0af72716d50fc5d49f1e6/OpenWeightsGGUFBundledBench-S1-352c756318c3.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/352c756318c31f9b1bc12e4505eca06305e57f0c42a0af72716d50fc5d49f1e6/OpenWeightsGGUFBundledBench-S1-352c756318c3.zip",
+      "sha256": "352c756318c31f9b1bc12e4505eca06305e57f0c42a0af72716d50fc5d49f1e6",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T16:39:41.751255+00:00"
+    },
+    "openweights/ios/Benchmark/Results/OpenWeightsGGUFBundledBench-smoke-731a7475dc78.zip": {
+      "bytes": 396315903,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsGGUFBundledBench-smoke-731a7475dc78.zip",
+      "remotePath": "packages/731a7475dc7840410787e75099bf5cfd2391be2749e7f8c47ce849785acee2f1/OpenWeightsGGUFBundledBench-smoke-731a7475dc78.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/731a7475dc7840410787e75099bf5cfd2391be2749e7f8c47ce849785acee2f1/OpenWeightsGGUFBundledBench-smoke-731a7475dc78.zip",
+      "sha256": "731a7475dc7840410787e75099bf5cfd2391be2749e7f8c47ce849785acee2f1",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T16:39:59.211464+00:00"
+    }
+  },
+  "schemaVersion": 1
+}

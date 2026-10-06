@@ -1,0 +1,30 @@
+{
+  "copiedBytes": 0,
+  "historicalCompiledProductsMoved": false,
+  "historicalSourceManifestPreserved": true,
+  "paths": [
+    {
+      "files": 2644,
+      "newCheckoutLink": "openweights-ios/ios/Benchmark/Results",
+      "originalPath": "openweights/ios/Benchmark/Results",
+      "sharedPath": ".benchmark-work/Benchmark/Results"
+    },
+    {
+      "files": 6,
+      "newCheckoutLink": "openweights-ios/ios/Benchmark/Models",
+      "originalPath": "openweights/ios/Benchmark/Models",
+      "sharedPath": ".benchmark-work/Benchmark/Models"
+    },
+    {
+      "files": 12876,
+      "newCheckoutLink": "openweights-ios/ios/Product/Results",
+      "newResultEntriesMoved": 6,
+      "originalPath": "openweights/ios/Product/Results",
+      "sharedPath": ".benchmark-work/Product/Results"
+    }
+  ],
+  "productReportsRelocatedAtUTC": "2026-10-06T17:27:37.953635+00:00",
+  "rawReportsRevalidated": 45,
+  "recordedAtUTC": "2026-10-06T17:22:59.623471+00:00",
+  "status": "working-reports-and-active-model-inputs-relocated-with-original-paths-preserved"
+}

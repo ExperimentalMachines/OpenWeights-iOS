@@ -1,0 +1,38 @@
+{
+  "artifactsCopied": false,
+  "checkedAtUTC": "2026-10-06T17:35:47.527359+00:00",
+  "copiedFileLogicalBytes": 6456563,
+  "copiedFilesChecked": 492,
+  "dependencies": [
+    {
+      "comparedTrackedFiles": 3444,
+      "matchesOriginalWorkingTree": true,
+      "path": "core/engine/src/main/cpp/llama.cpp",
+      "revision": "b2e5e9b28b2484fbf94b543432ece638996a8b97"
+    },
+    {
+      "comparedTrackedFiles": 201,
+      "matchesOriginalWorkingTree": true,
+      "path": "core/sandbox/src/main/cpp/quickjs",
+      "revision": "954dc53628e36891f93c359aa60895c2ae3dac6b"
+    }
+  ],
+  "gitPublicationStatus": "Inspect Git history and the private remote for commit/push status.",
+  "huggingFaceCreatedOrUploaded": true,
+  "independentNativeValidation": "migration/native-validation-2026-10-07.json",
+  "independentProductBuildAndDeviceValidation": {
+    "failedTests": 0,
+    "passedTests": 6,
+    "proof": "ios/Product/Results/migration-product-native-20261006T172240Z-verification.json",
+    "skippedTests": 0
+  },
+  "originalSourcesModified": false,
+  "pending": [
+    "Device validation of the newly built delegate benchmark binaries",
+    "Remaining original A1-A3 study and Android parity requirements"
+  ],
+  "privateArchivalProof": "migration/archive-move-verification-2026-10-07.json",
+  "schemaVersion": 1,
+  "sourceManifestSHA256": "53ba4dfef7623d92464dd2bcea6667b2da83d41c7f4384deb2c00cba701d755d",
+  "status": "independent-checkout-product-and-baseline-device-validation-verified-delegate-execution-pending"
+}

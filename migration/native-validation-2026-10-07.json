@@ -1,0 +1,93 @@
+{
+  "builds": {
+    "baseline": {
+      "compiledSourceFiles": 24,
+      "compiledSourcesAndExecutablesMatch": true,
+      "configurations": [
+        "llama.cpp CPU",
+        "ExecuTorch XNNPACK",
+        "llama.cpp Metal",
+        "MLX Metal",
+        "llama.cpp partial Metal"
+      ],
+      "executables": {
+        "Release-iphoneos/OpenWeightsBench.app/OpenWeightsBench": "c9dfcc466eea40a280e11db737cde09972a0b1dfbe17de8b1b909eadcb1a67e2",
+        "Release-iphoneos/OpenWeightsBench.app/PlugIns/BenchmarkTests.xctest/BenchmarkTests": "c686849c3e5a1cbffa61c1166727b4767e74c2216829b3a06c6da61ff8b39d73"
+      },
+      "executionReceipt": "ios/Benchmark/Results/migration-benchmark-native-20261006T172938Z-execution.json",
+      "executionReceiptSHA256": "f28928253f1614a5a89dd414d528afa99afc338fe564addc4f3adc106f1bea09",
+      "rawReport": "ios/Benchmark/Results/migration-benchmark-native-20261006T172938Z-attachments/27F9C049-5877-45C2-A11C-F2BF71E520DC.json",
+      "rawReportSHA256": "656c73ba3ccb51e46d5ceb712d13b51908918dc55207d484af30fc22bfdc08ae",
+      "receipt": "ios/Benchmark/.build/DerivedData/Build/Products/openweights-build.json",
+      "receiptSHA256": "03c7cfa0b780a031ebc93677a53545c6ba0f9527fdf4191c89064161d5a0b741",
+      "requests": 45,
+      "sdk": "26.2",
+      "status": "native-selected-migration-validation-passed",
+      "testSummary": {
+        "failedTests": 0,
+        "passedTests": 3,
+        "result": "Passed",
+        "skippedTests": 0,
+        "totalTestCount": 3
+      },
+      "xcode": "Xcode 26.2\nBuild version 17C52"
+    },
+    "delegates": {
+      "compiledSourceFiles": 20,
+      "compiledSourcesAndExecutablesMatch": true,
+      "executables": {
+        "Release-iphoneos/OpenWeightsBench.app/OpenWeightsBench": "6056533b67c3c2b56f88b8611c8741be702d98d20ea752601edebebc01cdb971",
+        "Release-iphoneos/OpenWeightsBench.app/PlugIns/BenchmarkTests.xctest/BenchmarkTests": "a1ccee6b760f4a0fbbce56d6c028ed2634dafa1cb56b12eec1ac5d856f8d92c3"
+      },
+      "receipt": "ios/Benchmark/.build/DerivedData-delegates/Build/Products/openweights-build.json",
+      "receiptSHA256": "a09c12ee0a7ccec4564337265664b75de633a4734b64a147e3997047a940f8b3",
+      "sdk": "26.2",
+      "status": "signed-build-verified",
+      "xcode": "Xcode 26.2\nBuild version 17C52"
+    },
+    "product": {
+      "compiledSourceFiles": 405,
+      "compiledSourcesAndExecutablesMatch": true,
+      "executables": {
+        "Extensions/InferenceHelper.appex/InferenceHelper": "f1ea5766bcb5aad8bfd0e2b2d804171f4ead2d1726a61946d583b7d9f8689460",
+        "Extensions/ScriptSandbox.appex/ScriptSandbox": "c8808e24c9f3422924fc1e21758f99710351c3aea1e804359eb816d6d159ebe2",
+        "Frameworks/OWInferenceProbe.framework/OWInferenceProbe": "c836123a71cac847da355c1fc6dce6382f2049793593d0008ec1335426027cde",
+        "OpenWeights": "ea58dd97e31468c8694c753a09c97705938510016b5a950bdfa3cd596ac2b48d",
+        "PlugIns/ProductTests.xctest/ProductTests": "bb30e6cf60b285f494371ec082087dac95db08b9a222ad14cdecff7f49a3fbd1"
+      },
+      "executionReceipt": "ios/Product/Results/migration-product-native-20261006T172240Z-execution.json",
+      "executionReceiptSHA256": "a3cc5799997c79dc489f29a4f36b90d99a2c4a39ab5204290c4548c65b1dd4b6",
+      "receipt": "ios/Product/.build/DerivedData/Build/Products/openweights-product-build.json",
+      "receiptSHA256": "8cb7b0a00301edfbbfe2057776bf3fce6dcf339baeac400fb86639b9c0445fa2",
+      "sdk": "26.2",
+      "status": "native-selected-migration-validation-passed",
+      "testSummary": {
+        "failedTests": 0,
+        "passedTests": 6,
+        "result": "Passed",
+        "skippedTests": 0,
+        "totalTestCount": 6
+      },
+      "xcode": "Xcode 26.2\nBuild version 17C52"
+    }
+  },
+  "checkedAtUTC": "2026-10-06T17:35:47.527359+00:00",
+  "freshHostChecks": {
+    "SwiftCore": {
+      "failed": 0,
+      "logSHA256": "63ebfd8f4c128f3bc2927beb5e10baa0d1907aaaacc4440d81db70723a9d065f",
+      "passed": 325
+    },
+    "studyControls": {
+      "failed": 0,
+      "passed": 7
+    }
+  },
+  "limits": [
+    "The product cohort covers six selected native methods, not complete Android feature parity.",
+    "The 45-request baseline is migration validation, not a new primary study block.",
+    "Delegate targets compile but their newly built binaries have not executed on the phone.",
+    "Raw bundles and signed products remain outside Git. Historical source fingerprints are preserved."
+  ],
+  "status": "independent-checkout-product-and-baseline-device-validation-verified-delegate-execution-pending"
+}
