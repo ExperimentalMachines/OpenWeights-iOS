@@ -1,0 +1,11 @@
+{
+  "command": "swift test --package-path ios/Product",
+  "failures": 0,
+  "sources": {
+    "ios/Product/Package.swift": "2746e1aa079b34690953dcb727a6c5201a59b26e09bd3c33e2efa8a48fc2ebc1",
+    "ios/Product/Sources/OpenWeightsCore/ConversationStore.swift": "916333d8b20669d0e1688c34580b941948326d5acb1bfbce76f5a42075de4866",
+    "ios/Product/Tests/OpenWeightsCoreTests/ConversationStoreTests.swift": "3b4cc8bf46df50e397b60a4e71f59ff235abd7c69a30186905de5abf3472bd40"
+  },
+  "status": "host-tests-passed-product-device-integration-pending",
+  "testCount": 5
+}

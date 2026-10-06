@@ -1,0 +1,51 @@
+{
+  "executables": {
+    "OpenWeights": "345386a588d65e3ac2c9ffa1c142c7bd710b24f4d12809ddac2fc453aff36528",
+    "PlugIns/ProductTests.xctest/ProductTests": "422eb4d0e9ae10e4fa1b6f52dd203503130370746664b4057ebe4377c5199d93"
+  },
+  "hostTests": {
+    "failed": 0,
+    "passed": 7,
+    "scope": "ConversationStore and ModelLibrary"
+  },
+  "nativeArchiveSHA256": "5b26bedfe3cd0788b638e17a8c81767a4ebb0896ce2a1ef002d90bf607e1c83d",
+  "sdk": "26.2",
+  "sourceSnapshot": {
+    "file": "product-sources-f38ee103cef0.zip",
+    "sha256": "077b678f734854e67dec586ce6347ba45a9c1982b52aa6787502c8cdf6fa7a65"
+  },
+  "sources": {
+    "core/engine/src/main/cpp/engine_session.cpp": "f506aaa1d72b1f43146ebd814c6a8f81f5eb29e7cad0afc42980093e179d75bb",
+    "core/engine/src/main/cpp/engine_session.h": "a03c4738a25dc606ae047334b18ae28a0d5ebdd2657d16b564d7f66aecba1844",
+    "ios/Product/App-Package.resolved": "570c2a94987c8bd73166313df0fd5746070e5a1c2af7f5896d65169c3a882179",
+    "ios/Product/App/AppleRuntimes.swift": "55487b841e7a3d4c5bbae8b7a186ef994310a5c3b7e348f35f952c5fefa3be71",
+    "ios/Product/App/ChatController.swift": "2d5439b0dfac9fb66101fc9fe8d41d0f661149b283d6a6cb34f4fa9e5a863877",
+    "ios/Product/App/ChatScreen.swift": "5b7185e308dd3135dcde878656683b8a9570dbc3f3b771d07e1189df27a88b2c",
+    "ios/Product/App/ConversationList.swift": "f87eba1c984623914b3bce9112778660968413b0f31b3c4f9873284e05ebe2b8",
+    "ios/Product/App/HubClient.swift": "0cf1cd7620ee3de01d369f094c619594db1d9af9709ef5340f2251a60ddfa487",
+    "ios/Product/App/ModelDownloads.swift": "c4539076db4514d95677f3ea08ba2fca56b2e63104216b2212916163f0ba6404",
+    "ios/Product/App/ModelsScreen.swift": "0d1c3129566dc318861f68cd928ad6f77af6af67c7d42b73394503974b3bc4bb",
+    "ios/Product/App/OpenWeightsApp.swift": "bfcd344cb364f7de6940b2ecba3424096ffe2de816b1d3c0dad01fd60f2c8a4c",
+    "ios/Product/App/Runtime.swift": "51a8305026e45af81f3e6c959561f00bc4a9163fdaa5200c6e69ac70c980f4df",
+    "ios/Product/App/SettingsScreen.swift": "55aac0cdc70b42eedacbfaac4385349ecc2f6f2ecc6fe3970d0034b450348943",
+    "ios/Product/App/Theme.swift": "26639951ae288ef8998d4e81b9968241177469fe76b40d91bc089a45e14d9edf",
+    "ios/Product/DeviceTests/ProductTests.swift": "e1ecf2ef8d94d359b9192629f51d733bcdd801b2fbf1feffb56252d281794c72",
+    "ios/Product/Native/OWRuntimeSession.h": "b3f6743c75b8bdc60c172901a7a053373a2464fe227474ec9d0a4dcbf0841678",
+    "ios/Product/Native/OWRuntimeSession.mm": "9ca64b9555810de1ceed47098e04de7224a03e32ebc2a6cfcd53bcad091e6fcf",
+    "ios/Product/Native/Product-Bridging-Header.h": "2c9130ce32410065033b324151b27adafdca9acea3784003c7905f6ab18fd56b",
+    "ios/Product/Package.swift": "2746e1aa079b34690953dcb727a6c5201a59b26e09bd3c33e2efa8a48fc2ebc1",
+    "ios/Product/Resources/Fonts/geist_mono.ttf": "d00e590b8eb3a59acc329b2d044fd143ae935090b7da33199ebee27cc7de8196",
+    "ios/Product/Resources/Fonts/hanken_grotesk.ttf": "813b3f8fa0965405669a89b38e51bbefd95eef6b8e20d1cb2d8c10cce062662f",
+    "ios/Product/Resources/Fonts/schibsted_grotesk.ttf": "6ceeadf6be8e1fd7687011c7fa38ed0edd1abe967a0b73d97caec183552e823d",
+    "ios/Product/Resources/model-catalogue.json": "6b29fdb603eee2edd55c045843f711e78c17f41b1f84ec2a4dabdd4c36bc6e89",
+    "ios/Product/Sources/OpenWeightsCore/ConversationStore.swift": "916333d8b20669d0e1688c34580b941948326d5acb1bfbce76f5a42075de4866",
+    "ios/Product/Sources/OpenWeightsCore/Models.swift": "a73de06d583486bba1ce6bb3dfe43ae76149c66a63c48fb63e6874d424f9e140",
+    "ios/Product/Tests/OpenWeightsCoreTests/ConversationStoreTests.swift": "3b4cc8bf46df50e397b60a4e71f59ff235abd7c69a30186905de5abf3472bd40",
+    "ios/Product/Tests/OpenWeightsCoreTests/ModelLibraryTests.swift": "3a7123ce57b8c2e2c0b3e9454d9c2f983fb11ffbf1c4ed0232c370b943315d49",
+    "ios/Product/build.sh": "4d2fc4e817d153e89e47d4fa69abd917e562d492c12ce2e2f644a724dd67b0f4",
+    "ios/Product/build_receipt.py": "783bb62f21d63ea361501b6bdb12fb43b9353bb4e37457da200e685fffdfa801",
+    "ios/Product/project.yml": "017c1e96ce8b5bb5d88b9b4a3de83e305b6038c677cd2f8beb7775e4db767b1a"
+  },
+  "status": "release-build-verified-device-product-flows-pending",
+  "xcode": "Xcode 26.2\nBuild version 17C52"
+}

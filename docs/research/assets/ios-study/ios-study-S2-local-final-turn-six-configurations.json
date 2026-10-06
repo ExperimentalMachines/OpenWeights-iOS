@@ -1,0 +1,1211 @@
+{
+  "analysisFile": "study-analysis-in-progress-v3-2026-10-03.json",
+  "analysisSHA256": "631c4e9c7b9aba7ed9f282949992695bf1dba1cfc2975752501f809bf45c4aa5",
+  "assets": [
+    {
+      "file": "ios-study-S2-local-final-turn-six-configurations.png",
+      "sha256": "bce84707864de05bac625346d39fc29e32b140fd13fd9e7f6ca0dd39df77f811"
+    },
+    {
+      "file": "ios-study-S2-local-final-turn-six-configurations.svg",
+      "sha256": "315bc94fe4a0c16a37abafa75543e53525793197223022fc96aa40d17ebaeafa"
+    },
+    {
+      "file": "ios-study-S2-local-final-turn-six-configurations.pdf",
+      "sha256": "27731eea5282ad27e1c0a492cc3cf3c799b254be52f5bb4a0cfdffe1da68559f"
+    }
+  ],
+  "cells": [
+    {
+      "artifactHashes": {
+        "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+      },
+      "artifactID": "gguf",
+      "belowPlannedReplication": false,
+      "cachePolicy": "retain-prefix",
+      "completeReportFactualRecall": {
+        "graded": 5,
+        "passed": 5
+      },
+      "completeReportMetrics": {
+        "cachedTokens": {
+          "maximum": 866,
+          "median": 866,
+          "minimum": 866,
+          "n": 5,
+          "p25": 866.0,
+          "p75": 866.0
+        },
+        "elapsedMs": {
+          "maximum": 5190.750625014305,
+          "median": 4929.011749982834,
+          "minimum": 4394.262832999229,
+          "n": 5,
+          "p25": 4565.550625026226,
+          "p75": 4937.041249990463
+        },
+        "firstCallbackMs": {
+          "maximum": 3919.926958978176,
+          "median": 3703.495707988739,
+          "minimum": 3207.392082989216,
+          "n": 5,
+          "p25": 3394.0619170069695,
+          "p75": 3704.1737499833107
+        },
+        "peakFootprintBytes": {
+          "maximum": 468043704,
+          "median": 452069256,
+          "minimum": 328386200,
+          "n": 5,
+          "p25": 350553656.0,
+          "p75": 463898408.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 30.76158883340284,
+          "median": 29.385553310777247,
+          "minimum": 28.386734258688836,
+          "n": 5,
+          "p25": 29.16511017257325,
+          "p75": 30.32827540208538
+        },
+        "totalPromptTokens": {
+          "maximum": 1559,
+          "median": 1559,
+          "minimum": 1559,
+          "n": 5,
+          "p25": 1559.0,
+          "p75": 1559.0
+        }
+      },
+      "completeReportStrictFormatting": {
+        "graded": 5,
+        "passed": 5
+      },
+      "completeReportStrictProbeSuccess": {
+        "graded": 5,
+        "passed": 5
+      },
+      "contextTokens": 2048,
+      "device": "iPhone17,3",
+      "engine": "llama.cpp CPU",
+      "factualRecall": {
+        "graded": 7,
+        "passed": 7
+      },
+      "fullyCompletedReports": 5,
+      "independentReports": 7,
+      "maxOutputTokens": 64,
+      "metrics": {
+        "cachedTokens": {
+          "maximum": 866,
+          "median": 866,
+          "minimum": 866,
+          "n": 7,
+          "p25": 866.0,
+          "p75": 866.0
+        },
+        "elapsedMs": {
+          "maximum": 12795.863624989986,
+          "median": 4929.011749982834,
+          "minimum": 4394.262832999229,
+          "n": 7,
+          "p25": 4701.423541516066,
+          "p75": 5063.895937502384
+        },
+        "firstCallbackMs": {
+          "maximum": 9627.144374966621,
+          "median": 3703.495707988739,
+          "minimum": 3207.392082989216,
+          "n": 7,
+          "p25": 3506.3916249871254,
+          "p75": 3812.0503544807434
+        },
+        "peakFootprintBytes": {
+          "maximum": 481773400,
+          "median": 452069256,
+          "minimum": 328386200,
+          "n": 7,
+          "p25": 397944472.0,
+          "p75": 465971056.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 30.76158883340284,
+          "median": 29.385553310777247,
+          "minimum": 11.349464427452075,
+          "n": 7,
+          "p25": 28.77592221563104,
+          "p75": 30.012204328401488
+        },
+        "totalPromptTokens": {
+          "maximum": 1559,
+          "median": 1559,
+          "minimum": 1559,
+          "n": 7,
+          "p25": 1559.0,
+          "p75": 1559.0
+        }
+      },
+      "nominalOnlyMetrics": {
+        "cachedTokens": {
+          "maximum": 866,
+          "median": 866,
+          "minimum": 866,
+          "n": 5,
+          "p25": 866.0,
+          "p75": 866.0
+        },
+        "elapsedMs": {
+          "maximum": 4937.041249990463,
+          "median": 4837.296458005905,
+          "minimum": 4394.262832999229,
+          "n": 5,
+          "p25": 4565.550625026226,
+          "p75": 4929.011749982834
+        },
+        "firstCallbackMs": {
+          "maximum": 3704.1737499833107,
+          "median": 3618.7213329672813,
+          "minimum": 3207.392082989216,
+          "n": 5,
+          "p25": 3394.0619170069695,
+          "p75": 3703.495707988739
+        },
+        "peakFootprintBytes": {
+          "maximum": 468043704,
+          "median": 445335288,
+          "minimum": 328386200,
+          "n": 5,
+          "p25": 350553656.0,
+          "p75": 463898408.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 30.76158883340284,
+          "median": 29.696133254717594,
+          "minimum": 29.16511017257325,
+          "n": 5,
+          "p25": 29.385553310777247,
+          "p75": 30.32827540208538
+        },
+        "totalPromptTokens": {
+          "maximum": 1559,
+          "median": 1559,
+          "minimum": 1559,
+          "n": 5,
+          "p25": 1559.0,
+          "p75": 1559.0
+        }
+      },
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "samples": 7,
+      "scenario": "S2-workshop-corrections",
+      "shortOutputSamples": 0,
+      "strictFormatting": {
+        "graded": 7,
+        "passed": 7
+      },
+      "strictProbeSuccess": {
+        "graded": 7,
+        "passed": 7
+      },
+      "turn": 6,
+      "workload": "multi-turn"
+    },
+    {
+      "artifactHashes": {
+        "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+        "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+      },
+      "artifactID": "executorch",
+      "belowPlannedReplication": false,
+      "cachePolicy": "rebuild-each-turn",
+      "completeReportFactualRecall": {
+        "graded": 5,
+        "passed": 5
+      },
+      "completeReportMetrics": {
+        "cachedTokens": {
+          "maximum": 0,
+          "median": 0,
+          "minimum": 0,
+          "n": 5,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "elapsedMs": {
+          "maximum": 6973.576917052269,
+          "median": 6344.987249970436,
+          "minimum": 5566.744916975498,
+          "n": 5,
+          "p25": 5811.573292016983,
+          "p75": 6859.1206250190735
+        },
+        "firstCallbackMs": {
+          "maximum": 5835.208208024502,
+          "median": 5416.955541968346,
+          "minimum": 4716.782707989216,
+          "n": 5,
+          "p25": 4932.191375017166,
+          "p75": 5712.618750035763
+        },
+        "peakFootprintBytes": {
+          "maximum": 1102891128,
+          "median": 1062553600,
+          "minimum": 1051035504,
+          "n": 5,
+          "p25": 1061750688.0,
+          "p75": 1073662144.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 42.460052512310426,
+          "median": 39.00681046409075,
+          "minimum": 28.61486378630524,
+          "n": 5,
+          "p25": 35.342278160995775,
+          "p75": 40.93592186539556
+        }
+      },
+      "completeReportStrictFormatting": {
+        "graded": 5,
+        "passed": 5
+      },
+      "completeReportStrictProbeSuccess": {
+        "graded": 5,
+        "passed": 5
+      },
+      "contextTokens": 2048,
+      "device": "iPhone17,3",
+      "engine": "ExecuTorch XNNPACK",
+      "factualRecall": {
+        "graded": 6,
+        "passed": 6
+      },
+      "fullyCompletedReports": 5,
+      "independentReports": 6,
+      "maxOutputTokens": 64,
+      "metrics": {
+        "cachedTokens": {
+          "maximum": 0,
+          "median": 0.0,
+          "minimum": 0,
+          "n": 6,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "elapsedMs": {
+          "maximum": 6973.576917052269,
+          "median": 6585.227791488171,
+          "minimum": 5566.744916975498,
+          "n": 6,
+          "p25": 5944.926781505346,
+          "p75": 6850.707552015781
+        },
+        "firstCallbackMs": {
+          "maximum": 5835.208208024502,
+          "median": 5508.445854485035,
+          "minimum": 4716.782707989216,
+          "n": 6,
+          "p25": 5053.382416754961,
+          "p75": 5684.448104277253
+        },
+        "peakFootprintBytes": {
+          "maximum": 1102891128,
+          "median": 1062152144.0,
+          "minimum": 1050724184,
+          "n": 6,
+          "p25": 1053714300.0,
+          "p75": 1070885008.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 42.460052512310426,
+          "median": 37.17454431254326,
+          "minimum": 28.61486378630524,
+          "n": 6,
+          "p25": 30.902130274103506,
+          "p75": 40.45364401506936
+        }
+      },
+      "nominalOnlyMetrics": {
+        "cachedTokens": {
+          "maximum": 0,
+          "median": 0.0,
+          "minimum": 0,
+          "n": 6,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "elapsedMs": {
+          "maximum": 6973.576917052269,
+          "median": 6585.227791488171,
+          "minimum": 5566.744916975498,
+          "n": 6,
+          "p25": 5944.926781505346,
+          "p75": 6850.707552015781
+        },
+        "firstCallbackMs": {
+          "maximum": 5835.208208024502,
+          "median": 5508.445854485035,
+          "minimum": 4716.782707989216,
+          "n": 6,
+          "p25": 5053.382416754961,
+          "p75": 5684.448104277253
+        },
+        "peakFootprintBytes": {
+          "maximum": 1102891128,
+          "median": 1062152144.0,
+          "minimum": 1050724184,
+          "n": 6,
+          "p25": 1053714300.0,
+          "p75": 1070885008.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 42.460052512310426,
+          "median": 37.17454431254326,
+          "minimum": 28.61486378630524,
+          "n": 6,
+          "p25": 30.902130274103506,
+          "p75": 40.45364401506936
+        }
+      },
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "samples": 6,
+      "scenario": "S2-workshop-corrections",
+      "shortOutputSamples": 0,
+      "strictFormatting": {
+        "graded": 6,
+        "passed": 6
+      },
+      "strictProbeSuccess": {
+        "graded": 6,
+        "passed": 6
+      },
+      "turn": 6,
+      "workload": "multi-turn"
+    },
+    {
+      "artifactHashes": {
+        "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+      },
+      "artifactID": "gguf",
+      "belowPlannedReplication": false,
+      "cachePolicy": "retain-prefix",
+      "completeReportFactualRecall": {
+        "graded": 5,
+        "passed": 5
+      },
+      "completeReportMetrics": {
+        "cachedTokens": {
+          "maximum": 866,
+          "median": 866,
+          "minimum": 866,
+          "n": 5,
+          "p25": 866.0,
+          "p75": 866.0
+        },
+        "elapsedMs": {
+          "maximum": 1335.4803749918938,
+          "median": 1259.5137919783592,
+          "minimum": 1213.9986250400543,
+          "n": 5,
+          "p25": 1217.300625026226,
+          "p75": 1281.7570829987526
+        },
+        "firstCallbackMs": {
+          "maximum": 869.8433750271797,
+          "median": 790.6746670007706,
+          "minimum": 749.3540830016136,
+          "n": 5,
+          "p25": 754.3101670145988,
+          "p75": 817.4204159975052
+        },
+        "peakFootprintBytes": {
+          "maximum": 494306968,
+          "median": 475514520,
+          "minimum": 369231392,
+          "n": 5,
+          "p25": 473810776.0,
+          "p75": 490964992.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 77.70144336161341,
+          "median": 77.41950456317332,
+          "minimum": 76.72292284039798,
+          "n": 5,
+          "p25": 77.25457119346953,
+          "p75": 77.55203672224653
+        },
+        "totalPromptTokens": {
+          "maximum": 1559,
+          "median": 1559,
+          "minimum": 1559,
+          "n": 5,
+          "p25": 1559.0,
+          "p75": 1559.0
+        }
+      },
+      "completeReportStrictFormatting": {
+        "graded": 5,
+        "passed": 5
+      },
+      "completeReportStrictProbeSuccess": {
+        "graded": 5,
+        "passed": 5
+      },
+      "contextTokens": 2048,
+      "device": "iPhone17,3",
+      "engine": "llama.cpp Metal",
+      "factualRecall": {
+        "graded": 7,
+        "passed": 7
+      },
+      "fullyCompletedReports": 5,
+      "independentReports": 7,
+      "maxOutputTokens": 64,
+      "metrics": {
+        "cachedTokens": {
+          "maximum": 866,
+          "median": 866,
+          "minimum": 866,
+          "n": 7,
+          "p25": 866.0,
+          "p75": 866.0
+        },
+        "elapsedMs": {
+          "maximum": 1564.0552920103073,
+          "median": 1281.7570829987526,
+          "minimum": 1213.9986250400543,
+          "n": 7,
+          "p25": 1238.4072085022926,
+          "p75": 1325.8670209944248
+        },
+        "firstCallbackMs": {
+          "maximum": 1062.7276250123978,
+          "median": 817.4204159975052,
+          "minimum": 749.3540830016136,
+          "n": 7,
+          "p25": 772.4924170076847,
+          "p75": 862.8518959879875
+        },
+        "peakFootprintBytes": {
+          "maximum": 494306968,
+          "median": 475514520,
+          "minimum": 369231392,
+          "n": 7,
+          "p25": 430663356.0,
+          "p75": 492406604.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 78.23979838681042,
+          "median": 77.41950456317332,
+          "minimum": 71.60418434981725,
+          "n": 7,
+          "p25": 76.98874701693376,
+          "p75": 77.62674004192996
+        },
+        "totalPromptTokens": {
+          "maximum": 1559,
+          "median": 1559,
+          "minimum": 1559,
+          "n": 7,
+          "p25": 1559.0,
+          "p75": 1559.0
+        }
+      },
+      "nominalOnlyMetrics": {
+        "cachedTokens": {
+          "maximum": 866,
+          "median": 866,
+          "minimum": 866,
+          "n": 7,
+          "p25": 866.0,
+          "p75": 866.0
+        },
+        "elapsedMs": {
+          "maximum": 1564.0552920103073,
+          "median": 1281.7570829987526,
+          "minimum": 1213.9986250400543,
+          "n": 7,
+          "p25": 1238.4072085022926,
+          "p75": 1325.8670209944248
+        },
+        "firstCallbackMs": {
+          "maximum": 1062.7276250123978,
+          "median": 817.4204159975052,
+          "minimum": 749.3540830016136,
+          "n": 7,
+          "p25": 772.4924170076847,
+          "p75": 862.8518959879875
+        },
+        "peakFootprintBytes": {
+          "maximum": 494306968,
+          "median": 475514520,
+          "minimum": 369231392,
+          "n": 7,
+          "p25": 430663356.0,
+          "p75": 492406604.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 78.23979838681042,
+          "median": 77.41950456317332,
+          "minimum": 71.60418434981725,
+          "n": 7,
+          "p25": 76.98874701693376,
+          "p75": 77.62674004192996
+        },
+        "totalPromptTokens": {
+          "maximum": 1559,
+          "median": 1559,
+          "minimum": 1559,
+          "n": 7,
+          "p25": 1559.0,
+          "p75": 1559.0
+        }
+      },
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "samples": 7,
+      "scenario": "S2-workshop-corrections",
+      "shortOutputSamples": 0,
+      "strictFormatting": {
+        "graded": 7,
+        "passed": 7
+      },
+      "strictProbeSuccess": {
+        "graded": 7,
+        "passed": 7
+      },
+      "turn": 6,
+      "workload": "multi-turn"
+    },
+    {
+      "artifactHashes": {
+        "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+        "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "artifactID": "mlx",
+      "belowPlannedReplication": false,
+      "cachePolicy": "retain-prefix",
+      "completeReportFactualRecall": {
+        "graded": 5,
+        "passed": 5
+      },
+      "completeReportMetrics": {
+        "cachedTokens": {
+          "maximum": 869,
+          "median": 869,
+          "minimum": 869,
+          "n": 5,
+          "p25": 869.0,
+          "p75": 869.0
+        },
+        "elapsedMs": {
+          "maximum": 1355.6889590024948,
+          "median": 1192.1836670041084,
+          "minimum": 1145.6130410432816,
+          "n": 5,
+          "p25": 1188.5657910108566,
+          "p75": 1222.5893339514732
+        },
+        "firstCallbackMs": {
+          "maximum": 913.8083750009537,
+          "median": 749.4042910337448,
+          "minimum": 710.0703330039978,
+          "n": 5,
+          "p25": 713.0313330292702,
+          "p75": 787.1387499570847
+        },
+        "peakFootprintBytes": {
+          "maximum": 1976845760,
+          "median": 1897661984,
+          "minimum": 1893696960,
+          "n": 5,
+          "p25": 1895761344.0,
+          "p75": 1899709936.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 92.96605502360948,
+          "median": 92.21830233206443,
+          "minimum": 84.35698023883862,
+          "n": 5,
+          "p25": 91.56804099353741,
+          "p75": 92.95381304251423
+        },
+        "totalPromptTokens": {
+          "maximum": 1562,
+          "median": 1562,
+          "minimum": 1562,
+          "n": 5,
+          "p25": 1562.0,
+          "p75": 1562.0
+        }
+      },
+      "completeReportStrictFormatting": {
+        "graded": 5,
+        "passed": 0
+      },
+      "completeReportStrictProbeSuccess": {
+        "graded": 5,
+        "passed": 0
+      },
+      "contextTokens": 2048,
+      "device": "iPhone17,3",
+      "engine": "MLX Metal",
+      "factualRecall": {
+        "graded": 7,
+        "passed": 7
+      },
+      "fullyCompletedReports": 5,
+      "independentReports": 7,
+      "maxOutputTokens": 64,
+      "metrics": {
+        "cachedTokens": {
+          "maximum": 869,
+          "median": 869,
+          "minimum": 869,
+          "n": 7,
+          "p25": 869.0,
+          "p75": 869.0
+        },
+        "elapsedMs": {
+          "maximum": 1406.9272920489311,
+          "median": 1222.5893339514732,
+          "minimum": 1145.6130410432816,
+          "n": 7,
+          "p25": 1190.3747290074825,
+          "p75": 1308.7192505002022
+        },
+        "firstCallbackMs": {
+          "maximum": 953.9311250448227,
+          "median": 787.1387499570847,
+          "minimum": 710.0703330039978,
+          "n": 7,
+          "p25": 731.2178120315075,
+          "p75": 870.9176250100136
+        },
+        "peakFootprintBytes": {
+          "maximum": 1976845760,
+          "median": 1897661984,
+          "minimum": 1886406080,
+          "n": 7,
+          "p25": 1894729152.0,
+          "p75": 1899021772.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 93.32848883586175,
+          "median": 92.21830233206443,
+          "minimum": 84.35698023883862,
+          "n": 7,
+          "p25": 90.4449665549339,
+          "p75": 92.95993403306186
+        },
+        "totalPromptTokens": {
+          "maximum": 1562,
+          "median": 1562,
+          "minimum": 1562,
+          "n": 7,
+          "p25": 1562.0,
+          "p75": 1562.0
+        }
+      },
+      "nominalOnlyMetrics": {
+        "cachedTokens": {
+          "maximum": 869,
+          "median": 869,
+          "minimum": 869,
+          "n": 5,
+          "p25": 869.0,
+          "p75": 869.0
+        },
+        "elapsedMs": {
+          "maximum": 1406.9272920489311,
+          "median": 1192.1836670041084,
+          "minimum": 1145.6130410432816,
+          "n": 5,
+          "p25": 1188.5657910108566,
+          "p75": 1222.5893339514732
+        },
+        "firstCallbackMs": {
+          "maximum": 953.9311250448227,
+          "median": 749.4042910337448,
+          "minimum": 710.0703330039978,
+          "n": 5,
+          "p25": 713.0313330292702,
+          "p75": 787.1387499570847
+        },
+        "peakFootprintBytes": {
+          "maximum": 1976845760,
+          "median": 1898333608,
+          "minimum": 1895761344,
+          "n": 5,
+          "p25": 1897661984.0,
+          "p75": 1899709936.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 92.96605502360948,
+          "median": 92.21830233206443,
+          "minimum": 84.35698023883862,
+          "n": 5,
+          "p25": 89.32189211633039,
+          "p75": 92.95381304251423
+        },
+        "totalPromptTokens": {
+          "maximum": 1562,
+          "median": 1562,
+          "minimum": 1562,
+          "n": 5,
+          "p25": 1562.0,
+          "p75": 1562.0
+        }
+      },
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "samples": 7,
+      "scenario": "S2-workshop-corrections",
+      "shortOutputSamples": 0,
+      "strictFormatting": {
+        "graded": 7,
+        "passed": 0
+      },
+      "strictProbeSuccess": {
+        "graded": 7,
+        "passed": 0
+      },
+      "turn": 6,
+      "workload": "multi-turn"
+    },
+    {
+      "artifactHashes": {
+        "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+      },
+      "artifactID": "gguf",
+      "belowPlannedReplication": false,
+      "cachePolicy": "retain-prefix",
+      "completeReportFactualRecall": {
+        "graded": 5,
+        "passed": 5
+      },
+      "completeReportMetrics": {
+        "cachedTokens": {
+          "maximum": 866,
+          "median": 866,
+          "minimum": 866,
+          "n": 5,
+          "p25": 866.0,
+          "p75": 866.0
+        },
+        "elapsedMs": {
+          "maximum": 3172.540250003338,
+          "median": 3093.898416996002,
+          "minimum": 2716.0007089972496,
+          "n": 5,
+          "p25": 2841.5167080163956,
+          "p75": 3112.938957989216
+        },
+        "firstCallbackMs": {
+          "maximum": 2148.0982500314713,
+          "median": 2066.198041975498,
+          "minimum": 1754.7522919774055,
+          "n": 5,
+          "p25": 1819.1909580230713,
+          "p75": 2082.0439159870148
+        },
+        "peakFootprintBytes": {
+          "maximum": 421332872,
+          "median": 408684328,
+          "minimum": 384517808,
+          "n": 5,
+          "p25": 392398608.0,
+          "p75": 411092752.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 37.59302595635301,
+          "median": 35.16385622048611,
+          "minimum": 35.13680222312824,
+          "n": 5,
+          "p25": 35.162198827379314,
+          "p75": 35.20881761889218
+        },
+        "totalPromptTokens": {
+          "maximum": 1559,
+          "median": 1559,
+          "minimum": 1559,
+          "n": 5,
+          "p25": 1559.0,
+          "p75": 1559.0
+        }
+      },
+      "completeReportStrictFormatting": {
+        "graded": 5,
+        "passed": 5
+      },
+      "completeReportStrictProbeSuccess": {
+        "graded": 5,
+        "passed": 5
+      },
+      "contextTokens": 2048,
+      "device": "iPhone17,3",
+      "engine": "llama.cpp partial Metal",
+      "factualRecall": {
+        "graded": 7,
+        "passed": 7
+      },
+      "fullyCompletedReports": 5,
+      "independentReports": 7,
+      "maxOutputTokens": 64,
+      "metrics": {
+        "cachedTokens": {
+          "maximum": 866,
+          "median": 866,
+          "minimum": 866,
+          "n": 7,
+          "p25": 866.0,
+          "p75": 866.0
+        },
+        "elapsedMs": {
+          "maximum": 3172.540250003338,
+          "median": 3030.4121659994125,
+          "minimum": 2716.0007089972496,
+          "n": 7,
+          "p25": 2848.2291245162487,
+          "p75": 3103.418687492609
+        },
+        "firstCallbackMs": {
+          "maximum": 2148.0982500314713,
+          "median": 1878.5651660561562,
+          "minimum": 1754.7522919774055,
+          "n": 7,
+          "p25": 1821.3471455276012,
+          "p75": 2074.1209789812565
+        },
+        "peakFootprintBytes": {
+          "maximum": 421332872,
+          "median": 397920016,
+          "minimum": 352814792,
+          "n": 7,
+          "p25": 388458208.0,
+          "p75": 409888540.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 37.59302595635301,
+          "median": 35.162198827379314,
+          "minimum": 31.398202319387746,
+          "n": 7,
+          "p25": 35.00176498989019,
+          "p75": 35.18633691968915
+        },
+        "totalPromptTokens": {
+          "maximum": 1559,
+          "median": 1559,
+          "minimum": 1559,
+          "n": 7,
+          "p25": 1559.0,
+          "p75": 1559.0
+        }
+      },
+      "nominalOnlyMetrics": {
+        "cachedTokens": {
+          "maximum": 866,
+          "median": 866,
+          "minimum": 866,
+          "n": 7,
+          "p25": 866.0,
+          "p75": 866.0
+        },
+        "elapsedMs": {
+          "maximum": 3172.540250003338,
+          "median": 3030.4121659994125,
+          "minimum": 2716.0007089972496,
+          "n": 7,
+          "p25": 2848.2291245162487,
+          "p75": 3103.418687492609
+        },
+        "firstCallbackMs": {
+          "maximum": 2148.0982500314713,
+          "median": 1878.5651660561562,
+          "minimum": 1754.7522919774055,
+          "n": 7,
+          "p25": 1821.3471455276012,
+          "p75": 2074.1209789812565
+        },
+        "peakFootprintBytes": {
+          "maximum": 421332872,
+          "median": 397920016,
+          "minimum": 352814792,
+          "n": 7,
+          "p25": 388458208.0,
+          "p75": 409888540.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 37.59302595635301,
+          "median": 35.162198827379314,
+          "minimum": 31.398202319387746,
+          "n": 7,
+          "p25": 35.00176498989019,
+          "p75": 35.18633691968915
+        },
+        "totalPromptTokens": {
+          "maximum": 1559,
+          "median": 1559,
+          "minimum": 1559,
+          "n": 7,
+          "p25": 1559.0,
+          "p75": 1559.0
+        }
+      },
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "samples": 7,
+      "scenario": "S2-workshop-corrections",
+      "shortOutputSamples": 0,
+      "strictFormatting": {
+        "graded": 7,
+        "passed": 7
+      },
+      "strictProbeSuccess": {
+        "graded": 7,
+        "passed": 7
+      },
+      "turn": 6,
+      "workload": "multi-turn"
+    },
+    {
+      "artifactHashes": {
+        "export-provenance.json": "f992ecc3d1a9bc750df76c57fa32146cde850d6359cc2f51f1cf63bcc4b18e6c",
+        "model.pte": "9035e10cd708d03c5a3788aa2893f7ccabfa34302eae44c9be1bfe80c7dc5737",
+        "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+      },
+      "artifactID": "executorch-mlx",
+      "belowPlannedReplication": false,
+      "cachePolicy": "rebuild-each-turn",
+      "completeReportFactualRecall": {
+        "graded": 5,
+        "passed": 5
+      },
+      "completeReportMetrics": {
+        "cachedTokens": {
+          "maximum": 0,
+          "median": 0,
+          "minimum": 0,
+          "n": 5,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "elapsedMs": {
+          "maximum": 1895.3840839862823,
+          "median": 1883.7331659793854,
+          "minimum": 1849.6730000376701,
+          "n": 5,
+          "p25": 1876.29675000906,
+          "p75": 1890.9364579916
+        },
+        "firstCallbackMs": {
+          "maximum": 1374.6371669769287,
+          "median": 1350.347665965557,
+          "minimum": 1327.4867910146713,
+          "n": 5,
+          "p25": 1350.3332909941673,
+          "p75": 1366.648707985878
+        },
+        "peakFootprintBytes": {
+          "maximum": 2163459664,
+          "median": 2163295800,
+          "minimum": 2163164728,
+          "n": 5,
+          "p25": 2163246648.0,
+          "p75": 2163377720.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 69.07923146115631,
+          "median": 68.56640778407792,
+          "minimum": 67.39173213096846,
+          "n": 5,
+          "p25": 68.3848244429995,
+          "p75": 68.87219480507139
+        }
+      },
+      "completeReportStrictFormatting": {
+        "graded": 5,
+        "passed": 5
+      },
+      "completeReportStrictProbeSuccess": {
+        "graded": 5,
+        "passed": 5
+      },
+      "contextTokens": 2048,
+      "device": "iPhone17,3",
+      "engine": "ExecuTorch MLX",
+      "factualRecall": {
+        "graded": 5,
+        "passed": 5
+      },
+      "fullyCompletedReports": 5,
+      "independentReports": 5,
+      "maxOutputTokens": 64,
+      "metrics": {
+        "cachedTokens": {
+          "maximum": 0,
+          "median": 0,
+          "minimum": 0,
+          "n": 5,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "elapsedMs": {
+          "maximum": 1895.3840839862823,
+          "median": 1883.7331659793854,
+          "minimum": 1849.6730000376701,
+          "n": 5,
+          "p25": 1876.29675000906,
+          "p75": 1890.9364579916
+        },
+        "firstCallbackMs": {
+          "maximum": 1374.6371669769287,
+          "median": 1350.347665965557,
+          "minimum": 1327.4867910146713,
+          "n": 5,
+          "p25": 1350.3332909941673,
+          "p75": 1366.648707985878
+        },
+        "peakFootprintBytes": {
+          "maximum": 2163459664,
+          "median": 2163295800,
+          "minimum": 2163164728,
+          "n": 5,
+          "p25": 2163246648.0,
+          "p75": 2163377720.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 69.07923146115631,
+          "median": 68.56640778407792,
+          "minimum": 67.39173213096846,
+          "n": 5,
+          "p25": 68.3848244429995,
+          "p75": 68.87219480507139
+        }
+      },
+      "nominalOnlyMetrics": {
+        "cachedTokens": {
+          "maximum": 0,
+          "median": 0,
+          "minimum": 0,
+          "n": 5,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "elapsedMs": {
+          "maximum": 1895.3840839862823,
+          "median": 1883.7331659793854,
+          "minimum": 1849.6730000376701,
+          "n": 5,
+          "p25": 1876.29675000906,
+          "p75": 1890.9364579916
+        },
+        "firstCallbackMs": {
+          "maximum": 1374.6371669769287,
+          "median": 1350.347665965557,
+          "minimum": 1327.4867910146713,
+          "n": 5,
+          "p25": 1350.3332909941673,
+          "p75": 1366.648707985878
+        },
+        "peakFootprintBytes": {
+          "maximum": 2163459664,
+          "median": 2163295800,
+          "minimum": 2163164728,
+          "n": 5,
+          "p25": 2163246648.0,
+          "p75": 2163377720.0
+        },
+        "streamTokensPerSecond": {
+          "maximum": 69.07923146115631,
+          "median": 68.56640778407792,
+          "minimum": 67.39173213096846,
+          "n": 5,
+          "p25": 68.3848244429995,
+          "p75": 68.87219480507139
+        }
+      },
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "runtimeVersions": {
+        "ExecuTorch": "1.5.0",
+        "SwiftPM": "56cc93a96d5fb8d21554ec5f00fbad5a5b228bc4",
+        "export source": "f7140a46ff38e919c557d45b102d3ff26097c8c9"
+      },
+      "samples": 5,
+      "scenario": "S2-workshop-corrections",
+      "shortOutputSamples": 0,
+      "strictFormatting": {
+        "graded": 5,
+        "passed": 5
+      },
+      "strictProbeSuccess": {
+        "graded": 5,
+        "passed": 5
+      },
+      "turn": 6,
+      "workload": "multi-turn"
+    }
+  ],
+  "figureIsQualityRanking": false,
+  "includedEngines": [
+    "llama.cpp CPU",
+    "ExecuTorch XNNPACK",
+    "llama.cpp Metal",
+    "MLX Metal",
+    "llama.cpp partial Metal",
+    "ExecuTorch MLX"
+  ],
+  "matplotlib": "3.10.8",
+  "metricCohort": "complete-independent-reports-only",
+  "metrics": [
+    "firstCallbackMs",
+    "peakFootprintBytes"
+  ],
+  "plotSourceSHA256": "8bb5245afd9fe8832beade7d6177388d53b77e4c81c649c593f4e13dc8838247",
+  "python": "3.14.7",
+  "scenario": "S2-workshop-corrections",
+  "status": "replicated-local-subset-multi-device-CoreML-study-incomplete"
+}
