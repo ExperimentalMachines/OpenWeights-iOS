@@ -1,0 +1,16 @@
+**/.DS_Store
+**/.build/
+**/Results/
+**/Models/
+**/Results
+**/Models
+**/outputs/
+**/.swiftpm/
+**/__pycache__/
+**/*.xcodeproj/
+**/*.xcresult/
+core/engine/src/main/cpp/llama.cpp/
+core/sandbox/src/main/cpp/quickjs/
+local.properties
+*.mobileprovision
+*.p12

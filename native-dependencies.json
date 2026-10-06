@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "dependencies": [
+    {
+      "path": "core/engine/src/main/cpp/llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp.git",
+      "revision": "b2e5e9b28b2484fbf94b543432ece638996a8b97"
+    },
+    {
+      "path": "core/sandbox/src/main/cpp/quickjs",
+      "url": "https://github.com/quickjs-ng/quickjs.git",
+      "revision": "954dc53628e36891f93c359aa60895c2ae3dac6b"
+    }
+  ],
+  "llamaGraphOffsetPatch": "core/engine/src/main/cpp/PatchGGMLGraphOffset.cmake",
+  "patchedGGMLSHA256": "e415a848a03c75e8bfe00ac0ce4a96c3aa40dc8afa7dbc89ecde7d2cc70a2212"
+}
