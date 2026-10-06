@@ -1,0 +1,40 @@
+{
+  "id": "openweights-ios-artifact-study-v1-gguf-ios16.6-bundled-addendum",
+  "definedAtUTC": "2026-10-06",
+  "parentProtocol": "openweights-ios-artifact-study-v1",
+  "parentOlderDeviceAddendum": "Study/older-ios-gguf-addendum.json",
+  "variant": "gguf-ios16.6-bundled-v1",
+  "status": "protocol-defined-build-and-execution-pending",
+  "reason": "The original iPhone 11 Pro smoke timed out downloading the pinned GGUF before inference. A separate bundled-delivery package removes that network dependency from inference measurements while retaining the failed remote-acquisition evidence.",
+  "artifact": {
+    "repo": "unsloth/Qwen3-0.6B-GGUF",
+    "revision": "50968a4468ef4233ed78cd7c3de230dd1d61a56b",
+    "file": "Qwen3-0.6B-Q4_K_M.gguf",
+    "bytes": 396705472,
+    "sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+    "delivery": "Read-only application bundle, verified by the existing ModelStore size and SHA-256 checks before timing. No model acquisition network request in the selected smoke or study methods."
+  },
+  "controls": {
+    "nativeEngine": "Reuse the hash-verified existing GGUF-only iOS 16.6 native archives without rebuilding or changing the shared engine.",
+    "runtimeIDs": ["O1", "O3", "O5"],
+    "fixtures": "Unchanged S1-S3 workload bytes and original strict graders.",
+    "contextTokens": 2048,
+    "maximumOutputTokens": 64,
+    "decoding": "greedy, thinking off, repeat penalty disabled",
+    "minimumIndependentBlocksPerCell": 5,
+    "sourceIsolation": "Copy the registered benchmark inputs into a separate build directory. Only the GGUF manifest delivery and runtime variant/measurement disclosure change in that copy. Existing canonical sources and all historical products remain unchanged."
+  },
+  "gates": [
+    "Verify pinned weight bytes and SHA-256 before building and inside the signed package.",
+    "Retain signed Xcode 26.2 build, minimum OS, source-before/after receipt, native archive hashes, exact selected plans and immutable source/package snapshots.",
+    "Validate exact smoke and S1 packages on the local iPhone before any new older-device cloud job.",
+    "Obtain fresh concrete paid-execution approval. No current approval covers an older-device retry.",
+    "Require successful actual older-OS smoke inference before expanding that older-device cohort."
+  ],
+  "analysis": [
+    "Record benchmarkVariant=gguf-ios16.6-bundled-v1 in raw runtimeVersions so analysis never pools this variant with remote-delivery or full-framework packages.",
+    "Bundled delivery does not prove the original remote acquisition timeout or subsequent infrastructure failures are fixed.",
+    "Verify actual cloud OS after execution. Hardware, OS, delivery and lab conditions may differ, so no hardware-only causal claim follows.",
+    "Keep every original seven-runtime/three-device/three-scenario requirement. Older GGUF coverage is supplemental and cannot replace missing delegate or SE 3 cells."
+  ]
+}

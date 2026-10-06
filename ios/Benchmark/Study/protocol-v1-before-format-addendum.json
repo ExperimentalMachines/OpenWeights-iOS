@@ -1,0 +1,136 @@
+{
+  "id": "openweights-ios-artifact-study-v1",
+  "status": "protocol-defined-execution-pending",
+  "definedAtUTC": "2026-10-02",
+  "question": "How do these pinned Qwen3-0.6B artifacts behave across supported Apple phones and growing conversations?",
+  "minimumIndependentBlocksPerCell": 5,
+  "unitOfReplication": "a full conversation with its own fresh adapter and report, not an individual output token",
+  "devices": [
+    {
+      "model": "iPhone17,3",
+      "name": "local iPhone 16",
+      "os": "26.6.2",
+      "environment": "local"
+    },
+    {
+      "model": "iphone16pro",
+      "name": "Firebase iPhone 16 Pro",
+      "os": "18.3",
+      "environment": "Firebase"
+    },
+    {
+      "model": "iphonese3",
+      "name": "Firebase iPhone SE 3",
+      "os": "18.4",
+      "environment": "Firebase"
+    }
+  ],
+  "deviceLimitations": [
+    "The current catalog puts iPhone 8, 11 Pro and 14 Pro on iOS 16.6, below this harness's baseline iOS 17 and delegate iOS 18 minimums.",
+    "OS and lab environment differ. Hardware differences cannot be isolated as a sole cause.",
+    "Verify runtime availability and memory fit by smoke test on each device. Preserve unavailable cells instead of silently omitting them."
+  ],
+  "runtimeIDs": {
+    "O1": "llama.cpp CPU",
+    "O2": "ExecuTorch XNNPACK",
+    "O3": "llama.cpp Metal",
+    "O4": "MLX Metal",
+    "O5": "llama.cpp partial Metal",
+    "O6": "ExecuTorch Core ML",
+    "O7": "ExecuTorch MLX"
+  },
+  "controls": {
+    "modelFamily": "Qwen3-0.6B",
+    "contextTokens": 2048,
+    "maximumOutputTokens": 64,
+    "decoding": "greedy",
+    "thinking": false,
+    "repeatPenalty": "disabled",
+    "artifacts": "Resources/model-manifest*.json",
+    "initialThermalState": "nominal",
+    "lowPowerMode": false
+  },
+  "scenarios": [
+    {
+      "id": "S1-stable-facts",
+      "turns": 6,
+      "purpose": "retain original facts while history grows"
+    },
+    {
+      "id": "S2-workshop-corrections",
+      "turns": 6,
+      "fixture": "Resources/multiturn-workload.json",
+      "purpose": "retain original facts and replace stale values",
+      "historicalID": "W4-workshop-memory"
+    },
+    {
+      "id": "S3-interruption-recovery",
+      "turns": 6,
+      "purpose": "cancel an auxiliary generation after three callbacks, reset, then recover the recorded conversation and probe facts"
+    }
+  ],
+  "execution": {
+    "blocks": "Run one repetition per separate XCTest invocation or isolated report block. Record block index and source/build hashes.",
+    "order": "Rotate the fast runtime order by block index. Core ML runs alone in a separate invocation, with a 40-minute XCTest allowance and 45-minute Firebase limit.",
+    "cache": "Record primary retained-prefix or rebuild-each-turn requests. For prefix-enabled runtimes, also replay the identical recorded message arrays with a fresh conversation reset before each request.",
+    "coldStart": "Measure adapter load once per block. Label fresh process startup separately. Do not claim cold filesystem caches.",
+    "thermal": "Wait at most three minutes for nominal before each adapter load. Preserve non-nominal samples with flags and report nominal-only sensitivity analysis separately.",
+    "failures": "Checkpoint every request. Preserve download, load, generation, timeout, memory and thermal failures in the denominator. Retry as a new attempt with linkage, never overwrite.",
+    "cloudBudget": "Estimate each job before submission. Obtain approval for paid execution when required. Installation and result collection are excluded from Firebase execution billing."
+  },
+  "metrics": [
+    "firstCallbackMs",
+    "streamTokensPerSecond",
+    "elapsedMs",
+    "loadMs",
+    "totalPromptTokens",
+    "cachedTokens",
+    "peakFootprintBytes",
+    "thermalStart",
+    "thermalEnd",
+    "cancellationLatencyMs",
+    "stopReason",
+    "factualRecall",
+    "strictRequestedFormatting",
+    "completionRate"
+  ],
+  "analysis": {
+    "statistics": [
+      "n",
+      "median",
+      "p25",
+      "p75",
+      "minimum",
+      "maximum"
+    ],
+    "groupBy": [
+      "device",
+      "operatingSystem",
+      "runtime",
+      "artifact hashes",
+      "scenario",
+      "turn",
+      "cachePolicy"
+    ],
+    "shortAnswerThroughput": "Report but flag answers under eight generated tokens as unstable throughput estimates.",
+    "quality": "Facts and requested format are scored separately. Factual JSON grading permits one Markdown fence. Expected-text factual grading permits an explicit dietary-rule prefix, diet suffix and final punctuation. Strict grading preserves exact one-word or unwrapped JSON requirements.",
+    "gradingVersion": 2,
+    "gradingAudit": "Version 2 was clarified after the first local S3 harness-validation block and before expanded matrix execution. The initial analyzer treated a correct value with dietary-rule prefix as a factual miss. Preserve version-1 analysis and all original raw outputs."
+  },
+  "claimsExcluded": [
+    "runtime-only superiority across differing quantization/export/template/cache policy",
+    "general conversational quality from synthetic recall",
+    "battery efficiency without energy measurement",
+    "Neural Engine placement from Core ML allowed compute units",
+    "hardware-only causation across different OS/lab conditions",
+    "repeated-study conclusions from historical single-conversation pilots"
+  ],
+  "deliverables": [
+    "raw complete and partial reports",
+    "build and source fingerprints",
+    "artifact and fixture hashes",
+    "reproducible analysis CLI",
+    "comparison tables with failed cells",
+    "publication-ready report with methods and limitations"
+  ]
+}

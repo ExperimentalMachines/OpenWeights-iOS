@@ -1,0 +1,60 @@
+{
+  "archiveVerified": true,
+  "attempt": 0,
+  "authorization": "JC approved this exact cloud job on 2026-10-02",
+  "billingLimitations": [
+    "Daily free allowance remaining and failed infrastructure charges are unverified.",
+    "Estimate conservatively assumes no remaining free minutes.",
+    "No flaky retries requested; Firebase can retry infrastructure automatically."
+  ],
+  "block": 1,
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsBench-study-S1-block1-tests.zip",
+    "--device=model=iphone16pro,version=18.3",
+    "--device=model=iphonese3,version=26.3",
+    "--xcode-version=26.2",
+    "--timeout=10m",
+    "--num-flaky-test-attempts=0",
+    "--no-record-video",
+    "--async",
+    "--format=json"
+  ],
+  "devices": [
+    {
+      "model": "iphone16pro",
+      "version": "18.3"
+    },
+    {
+      "model": "iphonese3",
+      "version": "26.3"
+    }
+  ],
+  "freeAllowanceAssumedMinutes": 0,
+  "matrix": "matrix-2ha1dnu69g2ja",
+  "matrixState": "FINISHED",
+  "maximumExecutionChargeUSDExcludingStorageAndInfrastructure": 1.67,
+  "maximumExecutionMinutes": 20,
+  "package": "OpenWeightsBench-study-S1-block1-tests.zip",
+  "packageSHA256": "36880cd5f7eb4883eab8affa8e12c84b4771ee9768b011c11005225097cb179d",
+  "proDeviceStatus": "partial-report-thermal-cooldown-failure",
+  "proObservedOS": "18.3.2 (22D82)",
+  "proPhysicalMinutesRounded": 6,
+  "proRetainedRequests": 30,
+  "protocolAmendment": "SE 3 iOS 26.3 replaces the unavailable 18.4 infrastructure cell for new execution only. Preserve the failed 18.4 job; group all observed OS versions separately.",
+  "resultsURL": "https://console.firebase.google.com/project/zeraphim-wealth-integration/testlab/histories/bh.3932635c5bf30a5c/matrices/8315862003632067101",
+  "scenario": "S1-stable-facts",
+  "seDeviceStatus": "ERROR-after-three-infrastructure-attempts-no-usable-report",
+  "sourceSnapshot": {
+    "file": "study-baseline-sources-3cb1584ef118.zip",
+    "sha256": "c5c822feaa268b2b8ba68189493b4cc9e6e01fcf8690f7a360037926403df965"
+  },
+  "status": "terminal-pro-partial-thermal-se-infrastructure-failed",
+  "suite": "study",
+  "timeoutMinutesPerDevice": 10
+}

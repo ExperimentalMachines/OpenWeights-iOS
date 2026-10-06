@@ -1,0 +1,29 @@
+{
+  "base": {
+    "model_class": "qwen3_0_6b",
+    "checkpoint": ".build/qwen3-checkpoint.pt",
+    "params": "Export/qwen3-params.json",
+    "tokenizer_path": ".build/source-model/tokenizer.json",
+    "metadata": "{\"get_bos_id\":151643,\"get_eos_ids\":[151645,151643]}"
+  },
+  "model": {
+    "use_kv_cache": true,
+    "use_sdpa_with_kv_cache": false,
+    "dtype_override": "fp16",
+    "enable_dynamic_shape": false
+  },
+  "export": {
+    "max_seq_length": 1,
+    "max_context_length": 2048,
+    "output_name": "Models/coreml/model.pte"
+  },
+  "quantization": {},
+  "backend": {
+    "coreml": {
+      "enabled": true,
+      "ios": 18,
+      "quantize": null,
+      "compute_units": "cpu_and_gpu"
+    }
+  }
+}

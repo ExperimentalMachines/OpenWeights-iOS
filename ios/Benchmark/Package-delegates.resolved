@@ -1,0 +1,14 @@
+{
+  "originHash" : "18bbbaa47c24d88e1d32540f35aedf6e1bd14398eb435a331199a9d3995e4e24",
+  "pins" : [
+    {
+      "identity" : "executorch",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pytorch/executorch",
+      "state" : {
+        "revision" : "56cc93a96d5fb8d21554ec5f00fbad5a5b228bc4"
+      }
+    }
+  ],
+  "version" : 3
+}

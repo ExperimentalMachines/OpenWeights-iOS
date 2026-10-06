@@ -1,0 +1,51 @@
+{
+  "upstream": "Qwen/Qwen3-0.6B",
+  "artifacts": [
+    {
+      "id": "coreml",
+      "repo": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "quantization": "Core ML uncompressed FP16 weights; FP16 KV cache",
+      "files": [
+        {
+          "file": "export-provenance.json",
+          "bytes": 1655,
+          "sha256": "4818b5a815132308deaf53025d04cf208d582115f2625dbe2bb17c5712adbcae"
+        },
+        {
+          "file": "model.pte",
+          "bytes": 1205798090,
+          "sha256": "5969c1d55bde2dc3bf921703f23b8316c3cb5c905abfffae51e3f73a088993bf"
+        },
+        {
+          "file": "tokenizer.json",
+          "bytes": 11422654,
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+        }
+      ]
+    },
+    {
+      "id": "executorch-mlx",
+      "repo": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "quantization": "TorchAO int4 linear weights, group 32, HQQ scale-only; FP16 embedding and KV cache",
+      "files": [
+        {
+          "file": "export-provenance.json",
+          "bytes": 1563,
+          "sha256": "f992ecc3d1a9bc750df76c57fa32146cde850d6359cc2f51f1cf63bcc4b18e6c"
+        },
+        {
+          "file": "model.pte",
+          "bytes": 646789248,
+          "sha256": "9035e10cd708d03c5a3788aa2893f7ccabfa34302eae44c9be1bfe80c7dc5737"
+        },
+        {
+          "file": "tokenizer.json",
+          "bytes": 11422654,
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+        }
+      ]
+    }
+  ]
+}

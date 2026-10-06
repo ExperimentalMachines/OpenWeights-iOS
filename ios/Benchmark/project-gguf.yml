@@ -1,0 +1,59 @@
+name: OpenWeightsGGUFBench
+options:
+  deploymentTarget:
+    iOS: "16.6"
+settings:
+  base:
+    OW_NATIVE_BUILD: .build/native-gguf16
+    SWIFT_VERSION: "5.0"
+    SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited) GGUF_ONLY
+    IPHONEOS_DEPLOYMENT_TARGET: "16.6"
+    DEVELOPMENT_TEAM: DK95L4JCWY
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_BITCODE: NO
+    ENABLE_TESTABILITY: YES
+    GENERATE_INFOPLIST_FILE: YES
+    SWIFT_OPTIMIZATION_LEVEL: -O
+    DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+targets:
+  OpenWeightsBench:
+    type: application
+    platform: iOS
+    sources:
+      - App
+      - path: Resources
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.experimentalmachines.openweights.benchmark
+        SWIFT_OBJC_BRIDGING_HEADER: Native/Benchmark-Bridging-Header.h
+        HEADER_SEARCH_PATHS: $(SRCROOT)/Native
+        LIBRARY_SEARCH_PATHS: $(SRCROOT)/$(OW_NATIVE_BUILD)/**
+        OTHER_LDFLAGS: -ObjC -lopenweights_apple -lllama-common -lllama-common-base -lvendor-hash -lmtmd -lllama -lggml -lggml-base -lggml-cpu -lggml-metal -lggml-blas -lcpp-httplib -lc++ -framework Accelerate -framework Metal -framework MetalKit
+    info:
+      path: .build/Info-gguf.plist
+      properties:
+        CFBundleDisplayName: OpenWeights Bench
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight, UIInterfaceOrientationPortraitUpsideDown]
+        UIFileSharingEnabled: YES
+        LSSupportsOpeningDocumentsInPlace: YES
+        UIApplicationSupportsIndirectInputEvents: YES
+  BenchmarkTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: Tests
+    dependencies:
+      - target: OpenWeightsBench
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.experimentalmachines.openweights.benchmark.tests
+schemes:
+  OpenWeightsGGUFBench:
+    build:
+      targets:
+        OpenWeightsBench: all
+        BenchmarkTests: [test]
+    test:
+      config: Release
+      targets: [BenchmarkTests]

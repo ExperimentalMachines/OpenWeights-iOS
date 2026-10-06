@@ -1,0 +1,62 @@
+{
+  "actualBillingVerified": false,
+  "archive": {
+    "entries": {
+      ".build/firebase/coreml-S1-block1-billing-20261006.json": "2cc315ad7625fd7e4c1dd42e54c133fd51d2a975241cfff4802585ce0baa8a1e",
+      ".build/firebase/coreml-S1-block1-models-20261006.json": "f7bddff4dde7536af313db953a64b170e6ce6bbdf9839819e550c9ba7b0efca7",
+      ".build/firebase/coreml-S1-block1-versions-20261006.json": "314d82781d3275cc8d10201c76f7cc958a5632cb7634610a6d6a8acb78654284",
+      ".build/firebase/package-coreml-S1-block1.py": "8b1903c1dbae2b8205ec784c1a32754b5e8bf21f30dc3bb0ce9b7670ed622ef5",
+      "Results/OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.build.json": "95c4576659cdafd85a67ee7cdee8688b521d4452353be2e9e98d798503398579",
+      "Results/OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.json": "7b24ec1a2dbc2dca1cbeb4e61cf4eeac50f60fd62b1bac456516e37c7f3e13d3",
+      "Results/study-coreml-S1-stable-facts-block1-20261006T075958Z-execution.json": "8ee6470c7dfcf1deae22564e0bfcba216782f7707c8403c2bfbc2ef574d84853"
+    },
+    "file": "firebase-coreml-S1-block1-preflight-2026-10-06.zip",
+    "sha256": "97ba6974137649514f4564b0b93cbcef4d16255fe72b58e043cb2d0f4ec14d4e"
+  },
+  "attempt": 0,
+  "billingEnabled": true,
+  "block": 1,
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.zip",
+    "--device=model=iphone16pro,version=18.3",
+    "--xcode-version=26.2",
+    "--timeout=45m",
+    "--num-flaky-test-attempts=0",
+    "--no-record-video",
+    "--async",
+    "--format=json"
+  ],
+  "freeAllowanceVerified": false,
+  "limits": [
+    "This proposal is one new primary block, not all remaining study jobs. No upload or matrix submission has occurred.",
+    "Exact selected plan and binaries match the completed locally verified S1 block 1. Package includes unused MLX model and delegate libraries.",
+    "Actual OS will be checked in returned native results and kept in separate cohorts if it changes. Catalog capacity is not a live queue-state measurement.",
+    "The goal and protocol require fresh authorization for each new paid job. Prior approval is consumed by successful block 0."
+  ],
+  "maximumRequestedExecutionUSDWithoutFreeAllowance": 3.75,
+  "package": {
+    "bytes": 1485895423,
+    "file": "OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.zip",
+    "sha256": "899f8fc09879525cfe2818b776a32a8f4c5faade041a7862470cb8a847c1da1b",
+    "verification": "Results/OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.json"
+  },
+  "pricingSource": "https://firebase.google.com/docs/test-lab/usage-quotas-pricing",
+  "recordedAtUTC": "2026-10-06T15:20:21.477860+00:00",
+  "runtime": "ExecuTorch Core ML",
+  "scenario": "S1-stable-facts",
+  "selectedCatalogDevice": {
+    "actualOSUnverifiedBeforeExecution": true,
+    "model": "iphone16pro",
+    "version": "18.3"
+  },
+  "status": "prepared-verified-awaiting-fresh-paid-execution-approval",
+  "storageTransferAndAutomaticInfrastructureRetryChargesVerified": false,
+  "timeoutSeconds": 2700,
+  "toolchain": "Xcode 26.2 / 17C52"
+}

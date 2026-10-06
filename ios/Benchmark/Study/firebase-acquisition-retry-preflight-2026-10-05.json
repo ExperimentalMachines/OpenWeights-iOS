@@ -1,0 +1,69 @@
+{
+  "approvalRequirement": {
+    "quote": "Concrete paid-execution approval before each new cloud job.",
+    "source": "Study/older-ios-gguf-addendum.json"
+  },
+  "archiveReverification": {
+    "file": ".build/gguf16-acquisition-retry-archive-reverification-2026-10-05.json",
+    "sha256": "26673e909bb0cf0501d25ccf27aa5bca6c032d23a2f67fe243e764e01300f2ef"
+  },
+  "authorization": "No authorization for this new cloud matrix. Prior two-device approval was consumed by terminal matrix-1g8dydeuyj44q. Await separate approval.",
+  "billingEnabled": true,
+  "billingLimitations": [
+    "Remaining daily free allowance is unverified. Estimate assumes none.",
+    "Storage rates/usage and automatic infrastructure-attempt charges are unverified. $0.42 covers only requested five-minute device execution, not a total invoice ceiling.",
+    "No requested flaky-test retries. Firebase may independently retry infrastructure failures."
+  ],
+  "catalogEvidence": {
+    "acquisition-retry-billing-2026-10-05.json": "2cc315ad7625fd7e4c1dd42e54c133fd51d2a975241cfff4802585ce0baa8a1e",
+    "acquisition-retry-models-2026-10-05.json": "f7bddff4dde7536af313db953a64b170e6ce6bbdf9839819e550c9ba7b0efca7",
+    "acquisition-retry-versions-2026-10-05.json": "314d82781d3275cc8d10201c76f7cc958a5632cb7634610a6d6a8acb78654284"
+  },
+  "checkedAtUTC": "2026-10-05T04:01:13.968656+00:00",
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsGGUFBench-smoke-75c18833e20a.zip",
+    "--device=model=iphone11pro,version=16.6",
+    "--xcode-version=26.2",
+    "--timeout=5m",
+    "--num-flaky-test-attempts=0",
+    "--no-record-video",
+    "--async",
+    "--format=json"
+  ],
+  "commandWorkingDirectory": "ios/Benchmark",
+  "conservativeRoundedExecutionEstimateUSD": 0.42,
+  "devices": [
+    {
+      "model": "iphone11pro",
+      "version": "16.6"
+    }
+  ],
+  "documentedBlazeDailyPhysicalFreeMinutes": 30,
+  "executionChargeUSDWithoutFreeAllowance": 0.4166666666666667,
+  "freeAllowanceMinutesAssumed": 0,
+  "localEvidenceRerunToday": false,
+  "localEvidenceRevalidatedOn": "2026-10-05",
+  "localValidation": {
+    "proof": "acquisition-retry-local-validation-f2abcb9fccf3.json",
+    "sha256": "1ea5bd6c7b48f624696d5d3ce149e281f6f27173cd4d2a7143a5bbd680b6d853"
+  },
+  "maximumRequestedPhysicalMinutes": 5,
+  "package": "OpenWeightsGGUFBench-smoke-75c18833e20a.zip",
+  "packageBytes": 10874991,
+  "packageSHA256": "75c18833e20a1c5bde42e13bc85157856e230fda380e067356ad363d3a526144",
+  "physicalDeviceUSDPerHour": 5,
+  "pricingCheckedOn": "2026-10-05",
+  "pricingReference": "https://firebase.google.com/docs/test-lab/usage-quotas-pricing",
+  "project": "zeraphim-wealth-integration",
+  "purpose": "Verify model-acquisition retries and retained sanitized acquisition events on older iOS, plus the existing Metal smoke/inference/cancellation suite. Not study replication.",
+  "status": "prepared-awaiting-new-cloud-job-approval",
+  "suite": "smoke",
+  "timeoutMinutesPerDevice": 5,
+  "xcode": "26.2"
+}

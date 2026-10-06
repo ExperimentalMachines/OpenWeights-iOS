@@ -1,0 +1,142 @@
+{
+  "approvalRequirement": {
+    "quote": "Concrete paid-execution approval before each new cloud job.",
+    "source": "Study/older-ios-gguf-addendum.json"
+  },
+  "approvedAtUTC": "2026-10-04T00:59:30.114829+00:00",
+  "authorization": "JC approved this exact two-device smoke job on 2026-10-04. No study replication approved.",
+  "benchmarkVariant": "gguf-ios16.6-v1",
+  "billingEnabled": true,
+  "billingLimitations": [
+    "Remaining daily free allowance is unverified. Conservative estimate assumes none. Billing linkage is enabled.",
+    "Execution time is charged per device rounded up to minutes. Expected shorter run is not a total charge guarantee.",
+    "Storage usage/rates and billing of automatic infrastructure attempts remain unverified. No user-requested flaky retries."
+  ],
+  "catalogEvidence": {
+    "billing-2026-10-04.json": "2cc315ad7625fd7e4c1dd42e54c133fd51d2a975241cfff4802585ce0baa8a1e",
+    "models-2026-10-04.json": "f7bddff4dde7536af313db953a64b170e6ce6bbdf9839819e550c9ba7b0efca7",
+    "versions-2026-10-04.json": "314d82781d3275cc8d10201c76f7cc958a5632cb7634610a6d6a8acb78654284"
+  },
+  "checkedAtUTC": "2026-10-04T00:58:12.013776+00:00",
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsGGUFBench-smoke-f83e424de0b9.zip",
+    "--device=model=iphone11pro,version=16.6",
+    "--device=model=iphone14pro,version=16.6",
+    "--xcode-version=26.2",
+    "--timeout=5m",
+    "--num-flaky-test-attempts=0",
+    "--no-record-video",
+    "--async",
+    "--format=json"
+  ],
+  "commandWorkingDirectory": "ios/Benchmark",
+  "conservativeRoundedExecutionEstimateUSD": 0.84,
+  "devices": [
+    {
+      "model": "iphone11pro",
+      "version": "16.6"
+    },
+    {
+      "model": "iphone14pro",
+      "version": "16.6"
+    }
+  ],
+  "documentedBlazeDailyPhysicalFreeMinutes": 30,
+  "executionChargeUSDWithoutFreeAllowance": 0.8333333333333334,
+  "freeAllowanceMinutesAssumed": 0,
+  "lastObservedExecutions": [
+    {
+      "attempts": 3,
+      "device": {
+        "iosModelId": "iphone14pro",
+        "iosVersionId": "16.6",
+        "locale": "en",
+        "orientation": "portrait"
+      },
+      "errorMessage": "Internal System Error 3",
+      "outcome": {
+        "inconclusiveDetail": {
+          "infrastructureFailure": true
+        },
+        "summary": "inconclusive"
+      },
+      "progressMessages": [
+        "Starting attempt 1.",
+        "Infrastructure error occurred. Retrying...",
+        "Starting attempt 2.",
+        "Infrastructure error occurred. Retrying...",
+        "Starting attempt 3.",
+        "Infrastructure error occurred."
+      ],
+      "state": "ERROR",
+      "testProcessSeconds": null
+    },
+    {
+      "attempts": 3,
+      "device": {
+        "iosModelId": "iphone11pro",
+        "iosVersionId": "16.6",
+        "locale": "en",
+        "orientation": "portrait"
+      },
+      "errorMessage": "A non-retryable error occurred.",
+      "outcome": {
+        "summary": "failure"
+      },
+      "progressMessages": [
+        "Starting attempt 1.",
+        "Infrastructure error occurred. Retrying...",
+        "Starting attempt 2.",
+        "Infrastructure error occurred. Retrying...",
+        "Starting attempt 3.",
+        "A non-retryable error occurred.",
+        "Done. Test time = 95 (secs)",
+        "Starting results processing. Attempt: 1",
+        "Completed results processing. Time taken = 3 (secs)"
+      ],
+      "state": "FINISHED",
+      "testProcessSeconds": "95"
+    }
+  ],
+  "lastObservedState": "FINISHED",
+  "localValidation": {
+    "proof": "retained-gguf16-local-validation-9f5bf2e44b05.json",
+    "sha256": "48987bcca52e90467c81af7c53de634af50524373d7c42ece1eb39b1befbdfd1"
+  },
+  "matrix": "matrix-1g8dydeuyj44q",
+  "matrixState": "FINISHED",
+  "maximumRequestedPhysicalMinutes": 10,
+  "numFlakyTestAttempts": 0,
+  "package": "OpenWeightsGGUFBench-smoke-f83e424de0b9.zip",
+  "packageBytes": 10730056,
+  "packageSHA256": "f83e424de0b96ee9b0ceb29e39b982234129cbf3efffc9a281a7d532ec25fe06",
+  "physicalDeviceUSDPerHour": 5,
+  "pricingCheckedOn": "2026-10-04",
+  "pricingReference": "https://firebase.google.com/docs/test-lab/usage-quotas-pricing",
+  "project": "zeraphim-wealth-integration",
+  "publicStatusCheck": {
+    "checkedOnAsiaManila": "2026-10-04",
+    "observed": "No incidents listed, last updated 2026-10-03 17:55 PDT. This does not establish the cause of device-specific infrastructure errors.",
+    "url": "https://status.firebase.google.com/"
+  },
+  "purpose": "Verify actual older-OS model acquisition/hash, Metal inference/cancellation/recovery and retained raw attachment before study expansion.",
+  "quotaInspection": "gcloud beta component absent, not installed. Read-only Service Usage attempt returned HTTP 404. No live usage counter obtained.",
+  "recordVideo": false,
+  "resultsURL": "https://console.firebase.google.com/project/zeraphim-wealth-integration/testlab/histories/bh.3932635c5bf30a5c/matrices/8967564663282317856",
+  "status": "cloud-smoke-terminal-iphone11pro-download-timeout-iphone14pro-infrastructure-no-inference",
+  "submissionLogSHA256": "957b79692d2554b8bbab0ad1f8f314135fdd3bbb4ed2265b89dceba085b0af7f",
+  "submissionObservedAtUTC": "2026-10-04T01:00:20.188470+00:00",
+  "submissionOutputSHA256": "8647ff68831d4586728730cbfcec8b723d780bbff5fd9aa7f2625ad2be2b8feb",
+  "submissionParsingLimitation": "gcloud async JSON returned the results URL string rather than a matrix object. Matrix recovered from successful creation log, no resubmission.",
+  "suite": "smoke",
+  "terminalProof": "firebase-gguf16-smoke-outcome-2026-10-04.json",
+  "terminalProofSHA256": "65596b40106fcc013f9f8bf2d7f0196ae4017f31bdf9e5a18c4b45b113289b89",
+  "timeoutMinutesPerDevice": 5,
+  "xcode": "26.2"
+}

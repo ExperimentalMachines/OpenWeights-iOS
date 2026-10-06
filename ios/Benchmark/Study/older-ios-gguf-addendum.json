@@ -1,0 +1,80 @@
+{
+  "analysis": [
+    "The runtimeVersions dictionary records benchmarkVariant and minimumIOS. The analyzer already includes the entire runtimeVersions dictionary in cell identities. A regression verifies variants are not pooled even on the same device/OS/block.",
+    "This package excludes unused MLX/ExecuTorch frameworks. Process footprint and startup may therefore differ from baseline packaging independently of hardware.",
+    "Hardware generation, OS version and lab conditions remain confounded. Do not claim hardware-only causation.",
+    "All original seven-runtime study requirements and raw results remain. This adds older-device GGUF coverage and does not replace delegate/newer-device replication."
+  ],
+  "artifact": {
+    "files": [
+      {
+        "bytes": 396705472,
+        "file": "Qwen3-0.6B-Q4_K_M.gguf",
+        "sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+        "url": "https://huggingface.co/unsloth/Qwen3-0.6B-GGUF/resolve/50968a4468ef4233ed78cd7c3de230dd1d61a56b/Qwen3-0.6B-Q4_K_M.gguf"
+      }
+    ],
+    "id": "gguf",
+    "quantization": "Q4_K_M",
+    "repo": "unsloth/Qwen3-0.6B-GGUF",
+    "revision": "50968a4468ef4233ed78cd7c3de230dd1d61a56b"
+  },
+  "candidateDevices": [
+    {
+      "catalogID": "iphone11pro",
+      "catalogOS": "16.6"
+    },
+    {
+      "catalogID": "iphone14pro",
+      "catalogOS": "16.6"
+    }
+  ],
+  "cloudExecutionSubmitted": false,
+  "controls": {
+    "batchThreads": 4,
+    "cachePolicies": "Retained prefix, matched recorded-history fresh replay, interruption reset/recovery as in the parent protocol.",
+    "contextTokens": 2048,
+    "decoding": "greedy",
+    "fixtures": {
+      "Resources/multiturn-workload.json": "b7d461411e16ac8ffac329dd42a13c68ace1eaaf6982e8e8657b6a1301b5164f",
+      "Resources/study-workloads.json": "c528061e987071db50527d832a24a525a5a34920c26d1f42c48bee5c736988e3"
+    },
+    "gpuLayers": [
+      0,
+      99,
+      14
+    ],
+    "loadAndThermal": "Same isolated adapter loads, nominal cooldown limit, low-power checks and 50ms footprint sampling as in the parent protocol.",
+    "maximumOutputTokens": 64,
+    "minimumDeploymentIOS": "16.6",
+    "repeatPenalty": "disabled",
+    "thinking": false,
+    "threads": 4
+  },
+  "definedAtUTC": "2026-10-02",
+  "excludedConfigurations": "O2/O4/O6/O7 remain in the newer-OS packages. Their absence in this package is not a hardware/runtime failure.",
+  "gates": [
+    "Signed Xcode 26.2 package, actual binary/native minimum OS inspection, source-before/after receipt and immutable package/source hashes.",
+    "Local smoke and S1 study validation of the new exact package before any older-device cloud submission.",
+    "Concrete paid-execution approval before each new cloud job.",
+    "Cloud smoke must demonstrate successful model acquisition and inference on the actual older OS before replication claims."
+  ],
+  "id": "openweights-ios-artifact-study-v1-gguf-ios16.6-addendum",
+  "localValidationDevice": "iPhone17,3 on its actual installed iOS, not an iOS 16.6 compatibility test",
+  "minimumIndependentBlocksPerCell": 5,
+  "nativeEngineSourceSHA256": "f506aaa1d72b1f43146ebd814c6a8f81f5eb29e7cad0afc42980093e179d75bb",
+  "parentProtocol": "openweights-ios-artifact-study-v1",
+  "reason": "Firebase older-generation catalog phones offer only iOS 16.6. The pinned MLX and ExecuTorch SwiftPM packages declare iOS 17 minimums, and the existing delegate harness requires iOS 18.",
+  "runtimeIDs": {
+    "O1": "llama.cpp CPU",
+    "O3": "llama.cpp Metal",
+    "O5": "llama.cpp partial Metal"
+  },
+  "scenarios": [
+    "S1-stable-facts",
+    "S2-workshop-corrections",
+    "S3-interruption-recovery"
+  ],
+  "status": "protocol-defined-variant-build-and-device-execution-pending",
+  "variant": "gguf-ios16.6-v1"
+}

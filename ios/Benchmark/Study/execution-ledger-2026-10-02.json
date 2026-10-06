@@ -1,0 +1,2918 @@
+{
+  "analysisGradingVersion": 3,
+  "failedLaunches": [
+    {
+      "attempt": 0,
+      "block": 0,
+      "inferenceObserved": false,
+      "receipt": "../Results/executorch-mlx-S1-block0-launch-failure-2026-10-02.json",
+      "runtime": "ExecuTorch MLX",
+      "scenario": "S1-stable-facts"
+    }
+  ],
+  "notes": [
+    "Completion is counted by full primary reports, not partial rows or explicit retries.",
+    "Observed OS versions and artifact identities remain separated in the analysis.",
+    "SE 3 iOS 26.3 is a prospective replacement, not a reinterpretation of failed 18.4 execution."
+  ],
+  "plannedCells": [
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "blocks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S1-stable-facts-block0-attempt0-23393F8D-3BF9-4661-9BFC-4CF3BD666BAA.json",
+        "iPhone17,3-study-S1-stable-facts-block1-attempt0-65171B1F-9537-4696-933F-2630A031787A.json",
+        "iPhone17,3-study-S1-stable-facts-block2-attempt0-6AFE8E7F-D948-41BE-9CFC-9C4489694088.json",
+        "iPhone17,3-study-S1-stable-facts-block3-attempt0-B8144ECB-EEA9-4E45-9C06-24517FE55687.json",
+        "iPhone17,3-study-S1-stable-facts-block4-attempt0-DFF38525-E2CD-4E9A-90AD-5D6B1BD2B3CF.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp CPU",
+      "scenario": "S1-stable-facts",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "blocks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S1-stable-facts-block0-attempt0-23393F8D-3BF9-4661-9BFC-4CF3BD666BAA.json",
+        "iPhone17,3-study-S1-stable-facts-block1-attempt0-65171B1F-9537-4696-933F-2630A031787A.json",
+        "iPhone17,3-study-S1-stable-facts-block2-attempt0-6AFE8E7F-D948-41BE-9CFC-9C4489694088.json",
+        "iPhone17,3-study-S1-stable-facts-block3-attempt0-B8144ECB-EEA9-4E45-9C06-24517FE55687.json",
+        "iPhone17,3-study-S1-stable-facts-block4-attempt0-DFF38525-E2CD-4E9A-90AD-5D6B1BD2B3CF.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch XNNPACK",
+      "scenario": "S1-stable-facts",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "blocks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S1-stable-facts-block0-attempt0-23393F8D-3BF9-4661-9BFC-4CF3BD666BAA.json",
+        "iPhone17,3-study-S1-stable-facts-block1-attempt0-65171B1F-9537-4696-933F-2630A031787A.json",
+        "iPhone17,3-study-S1-stable-facts-block2-attempt0-6AFE8E7F-D948-41BE-9CFC-9C4489694088.json",
+        "iPhone17,3-study-S1-stable-facts-block3-attempt0-B8144ECB-EEA9-4E45-9C06-24517FE55687.json",
+        "iPhone17,3-study-S1-stable-facts-block4-attempt0-DFF38525-E2CD-4E9A-90AD-5D6B1BD2B3CF.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp Metal",
+      "scenario": "S1-stable-facts",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "blocks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S1-stable-facts-block0-attempt0-23393F8D-3BF9-4661-9BFC-4CF3BD666BAA.json",
+        "iPhone17,3-study-S1-stable-facts-block1-attempt0-65171B1F-9537-4696-933F-2630A031787A.json",
+        "iPhone17,3-study-S1-stable-facts-block2-attempt0-6AFE8E7F-D948-41BE-9CFC-9C4489694088.json",
+        "iPhone17,3-study-S1-stable-facts-block3-attempt0-B8144ECB-EEA9-4E45-9C06-24517FE55687.json",
+        "iPhone17,3-study-S1-stable-facts-block4-attempt0-DFF38525-E2CD-4E9A-90AD-5D6B1BD2B3CF.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "MLX Metal",
+      "scenario": "S1-stable-facts",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "blocks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S1-stable-facts-block0-attempt0-23393F8D-3BF9-4661-9BFC-4CF3BD666BAA.json",
+        "iPhone17,3-study-S1-stable-facts-block1-attempt0-65171B1F-9537-4696-933F-2630A031787A.json",
+        "iPhone17,3-study-S1-stable-facts-block2-attempt0-6AFE8E7F-D948-41BE-9CFC-9C4489694088.json",
+        "iPhone17,3-study-S1-stable-facts-block3-attempt0-B8144ECB-EEA9-4E45-9C06-24517FE55687.json",
+        "iPhone17,3-study-S1-stable-facts-block4-attempt0-DFF38525-E2CD-4E9A-90AD-5D6B1BD2B3CF.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp partial Metal",
+      "scenario": "S1-stable-facts",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch Core ML",
+      "scenario": "S1-stable-facts",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch MLX",
+      "scenario": "S1-stable-facts",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "blocks": [
+            0,
+            3,
+            4,
+            6,
+            7
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S2-workshop-corrections-block0-attempt0-4FDFD0E0-3E1E-4348-A043-3937AB2B4568.json",
+        "iPhone17,3-study-S2-workshop-corrections-block1-attempt0-AD099C32-57D7-4F33-92FE-3E1126840F5A.json",
+        "iPhone17,3-study-S2-workshop-corrections-block1-attempt1-1E6C480A-16E1-4124-8543-76385B2636BB.json",
+        "iPhone17,3-study-S2-workshop-corrections-block2-attempt0-F1E9068C-C2FB-4311-AF17-82D2E7D3830C.json",
+        "iPhone17,3-study-S2-workshop-corrections-block3-attempt0-4956E41F-C4D1-471F-9CA6-2FCC7D2CC175.json",
+        "iPhone17,3-study-S2-workshop-corrections-block4-attempt0-06853FAA-E68F-4B19-89F6-F93D2A592148.json",
+        "iPhone17,3-study-S2-workshop-corrections-block6-attempt0-73EED75C-9890-431E-B521-7F6DAAF765F5.json",
+        "iPhone17,3-study-S2-workshop-corrections-block7-attempt0-C0C83DCA-88F3-45C0-8880-4B7B7C8079FA.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp CPU",
+      "scenario": "S2-workshop-corrections",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "blocks": [
+            0,
+            3,
+            4,
+            6,
+            7
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S2-workshop-corrections-block0-attempt0-4FDFD0E0-3E1E-4348-A043-3937AB2B4568.json",
+        "iPhone17,3-study-S2-workshop-corrections-block1-attempt0-AD099C32-57D7-4F33-92FE-3E1126840F5A.json",
+        "iPhone17,3-study-S2-workshop-corrections-block1-attempt1-1E6C480A-16E1-4124-8543-76385B2636BB.json",
+        "iPhone17,3-study-S2-workshop-corrections-block2-attempt0-F1E9068C-C2FB-4311-AF17-82D2E7D3830C.json",
+        "iPhone17,3-study-S2-workshop-corrections-block3-attempt0-4956E41F-C4D1-471F-9CA6-2FCC7D2CC175.json",
+        "iPhone17,3-study-S2-workshop-corrections-block4-attempt0-06853FAA-E68F-4B19-89F6-F93D2A592148.json",
+        "iPhone17,3-study-S2-workshop-corrections-block6-attempt0-73EED75C-9890-431E-B521-7F6DAAF765F5.json",
+        "iPhone17,3-study-S2-workshop-corrections-block7-attempt0-C0C83DCA-88F3-45C0-8880-4B7B7C8079FA.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch XNNPACK",
+      "scenario": "S2-workshop-corrections",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "blocks": [
+            0,
+            3,
+            4,
+            6,
+            7
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S2-workshop-corrections-block0-attempt0-4FDFD0E0-3E1E-4348-A043-3937AB2B4568.json",
+        "iPhone17,3-study-S2-workshop-corrections-block1-attempt0-AD099C32-57D7-4F33-92FE-3E1126840F5A.json",
+        "iPhone17,3-study-S2-workshop-corrections-block1-attempt1-1E6C480A-16E1-4124-8543-76385B2636BB.json",
+        "iPhone17,3-study-S2-workshop-corrections-block2-attempt0-F1E9068C-C2FB-4311-AF17-82D2E7D3830C.json",
+        "iPhone17,3-study-S2-workshop-corrections-block3-attempt0-4956E41F-C4D1-471F-9CA6-2FCC7D2CC175.json",
+        "iPhone17,3-study-S2-workshop-corrections-block4-attempt0-06853FAA-E68F-4B19-89F6-F93D2A592148.json",
+        "iPhone17,3-study-S2-workshop-corrections-block6-attempt0-73EED75C-9890-431E-B521-7F6DAAF765F5.json",
+        "iPhone17,3-study-S2-workshop-corrections-block7-attempt0-C0C83DCA-88F3-45C0-8880-4B7B7C8079FA.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp Metal",
+      "scenario": "S2-workshop-corrections",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "blocks": [
+            0,
+            3,
+            4,
+            6,
+            7
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S2-workshop-corrections-block0-attempt0-4FDFD0E0-3E1E-4348-A043-3937AB2B4568.json",
+        "iPhone17,3-study-S2-workshop-corrections-block1-attempt0-AD099C32-57D7-4F33-92FE-3E1126840F5A.json",
+        "iPhone17,3-study-S2-workshop-corrections-block1-attempt1-1E6C480A-16E1-4124-8543-76385B2636BB.json",
+        "iPhone17,3-study-S2-workshop-corrections-block2-attempt0-F1E9068C-C2FB-4311-AF17-82D2E7D3830C.json",
+        "iPhone17,3-study-S2-workshop-corrections-block3-attempt0-4956E41F-C4D1-471F-9CA6-2FCC7D2CC175.json",
+        "iPhone17,3-study-S2-workshop-corrections-block4-attempt0-06853FAA-E68F-4B19-89F6-F93D2A592148.json",
+        "iPhone17,3-study-S2-workshop-corrections-block6-attempt0-73EED75C-9890-431E-B521-7F6DAAF765F5.json",
+        "iPhone17,3-study-S2-workshop-corrections-block7-attempt0-C0C83DCA-88F3-45C0-8880-4B7B7C8079FA.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "MLX Metal",
+      "scenario": "S2-workshop-corrections",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "blocks": [
+            0,
+            3,
+            4,
+            6,
+            7
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S2-workshop-corrections-block0-attempt0-4FDFD0E0-3E1E-4348-A043-3937AB2B4568.json",
+        "iPhone17,3-study-S2-workshop-corrections-block1-attempt0-AD099C32-57D7-4F33-92FE-3E1126840F5A.json",
+        "iPhone17,3-study-S2-workshop-corrections-block1-attempt1-1E6C480A-16E1-4124-8543-76385B2636BB.json",
+        "iPhone17,3-study-S2-workshop-corrections-block2-attempt0-F1E9068C-C2FB-4311-AF17-82D2E7D3830C.json",
+        "iPhone17,3-study-S2-workshop-corrections-block3-attempt0-4956E41F-C4D1-471F-9CA6-2FCC7D2CC175.json",
+        "iPhone17,3-study-S2-workshop-corrections-block4-attempt0-06853FAA-E68F-4B19-89F6-F93D2A592148.json",
+        "iPhone17,3-study-S2-workshop-corrections-block6-attempt0-73EED75C-9890-431E-B521-7F6DAAF765F5.json",
+        "iPhone17,3-study-S2-workshop-corrections-block7-attempt0-C0C83DCA-88F3-45C0-8880-4B7B7C8079FA.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp partial Metal",
+      "scenario": "S2-workshop-corrections",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch Core ML",
+      "scenario": "S2-workshop-corrections",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch MLX",
+      "scenario": "S2-workshop-corrections",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "blocks": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S3-interruption-recovery-block1-attempt0-D4C6D5DD-E25F-458F-BFBA-0B024E5BA9A0.json",
+        "iPhone17,3-study-S3-interruption-recovery-block2-attempt0-C65FB68A-8E0C-4517-A021-EB42B5E4D31B.json",
+        "iPhone17,3-study-S3-interruption-recovery-block4-attempt0-BD1C4111-96FA-4FF9-8E8E-117A3F0420E8.json",
+        "iPhone17,3-study-S3-interruption-recovery-block5-attempt0-D38EBA7D-9D20-4A94-8A8A-64F27442B25E.json",
+        "iphone16-study-S3-block0-2026-10-02.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp CPU",
+      "scenario": "S3-interruption-recovery",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "blocks": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S3-interruption-recovery-block1-attempt0-D4C6D5DD-E25F-458F-BFBA-0B024E5BA9A0.json",
+        "iPhone17,3-study-S3-interruption-recovery-block2-attempt0-C65FB68A-8E0C-4517-A021-EB42B5E4D31B.json",
+        "iPhone17,3-study-S3-interruption-recovery-block4-attempt0-BD1C4111-96FA-4FF9-8E8E-117A3F0420E8.json",
+        "iPhone17,3-study-S3-interruption-recovery-block5-attempt0-D38EBA7D-9D20-4A94-8A8A-64F27442B25E.json",
+        "iphone16-study-S3-block0-2026-10-02.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch XNNPACK",
+      "scenario": "S3-interruption-recovery",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "blocks": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S3-interruption-recovery-block1-attempt0-D4C6D5DD-E25F-458F-BFBA-0B024E5BA9A0.json",
+        "iPhone17,3-study-S3-interruption-recovery-block2-attempt0-C65FB68A-8E0C-4517-A021-EB42B5E4D31B.json",
+        "iPhone17,3-study-S3-interruption-recovery-block4-attempt0-BD1C4111-96FA-4FF9-8E8E-117A3F0420E8.json",
+        "iPhone17,3-study-S3-interruption-recovery-block5-attempt0-D38EBA7D-9D20-4A94-8A8A-64F27442B25E.json",
+        "iphone16-study-S3-block0-2026-10-02.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp Metal",
+      "scenario": "S3-interruption-recovery",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "blocks": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S3-interruption-recovery-block1-attempt0-D4C6D5DD-E25F-458F-BFBA-0B024E5BA9A0.json",
+        "iPhone17,3-study-S3-interruption-recovery-block2-attempt0-C65FB68A-8E0C-4517-A021-EB42B5E4D31B.json",
+        "iPhone17,3-study-S3-interruption-recovery-block3-attempt0-90D4FC1B-B6A1-4338-95A4-DD13A52B241C.json",
+        "iPhone17,3-study-S3-interruption-recovery-block4-attempt0-BD1C4111-96FA-4FF9-8E8E-117A3F0420E8.json",
+        "iPhone17,3-study-S3-interruption-recovery-block5-attempt0-D38EBA7D-9D20-4A94-8A8A-64F27442B25E.json",
+        "iphone16-study-S3-block0-2026-10-02.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "MLX Metal",
+      "scenario": "S3-interruption-recovery",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "blocks": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "operatingSystem": "Version 26.6.2 (Build 23G90)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 5,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [
+        "iPhone17,3-study-S3-interruption-recovery-block1-attempt0-D4C6D5DD-E25F-458F-BFBA-0B024E5BA9A0.json",
+        "iPhone17,3-study-S3-interruption-recovery-block2-attempt0-C65FB68A-8E0C-4517-A021-EB42B5E4D31B.json",
+        "iPhone17,3-study-S3-interruption-recovery-block3-attempt0-90D4FC1B-B6A1-4338-95A4-DD13A52B241C.json",
+        "iPhone17,3-study-S3-interruption-recovery-block4-attempt0-BD1C4111-96FA-4FF9-8E8E-117A3F0420E8.json",
+        "iPhone17,3-study-S3-interruption-recovery-block5-attempt0-D38EBA7D-9D20-4A94-8A8A-64F27442B25E.json",
+        "iphone16-study-S3-block0-2026-10-02.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp partial Metal",
+      "scenario": "S3-interruption-recovery",
+      "status": "replication-satisfied"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch Core ML",
+      "scenario": "S3-interruption-recovery",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "local iPhone 16",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch MLX",
+      "scenario": "S3-interruption-recovery",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "blocks": [
+            0
+          ],
+          "operatingSystem": "Version 18.3.1 (Build 22D72)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 1,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [
+        "firebase-iphone16pro-study-S1-block0-2026-10-02.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp CPU",
+      "scenario": "S1-stable-facts",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "blocks": [
+            0
+          ],
+          "operatingSystem": "Version 18.3.1 (Build 22D72)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 1,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [
+        "firebase-iphone16pro-study-S1-block0-2026-10-02.json",
+        "firebase-iphone16pro-study-S1-block1-2026-10-02.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch XNNPACK",
+      "scenario": "S1-stable-facts",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "blocks": [
+            0
+          ],
+          "operatingSystem": "Version 18.3.1 (Build 22D72)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 1,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [
+        "firebase-iphone16pro-study-S1-block0-2026-10-02.json",
+        "firebase-iphone16pro-study-S1-block1-2026-10-02.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp Metal",
+      "scenario": "S1-stable-facts",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "blocks": [
+            0
+          ],
+          "operatingSystem": "Version 18.3.1 (Build 22D72)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 1,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [
+        "firebase-iphone16pro-study-S1-block0-2026-10-02.json",
+        "firebase-iphone16pro-study-S1-block1-2026-10-02.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "MLX Metal",
+      "scenario": "S1-stable-facts",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "blocks": [
+            0
+          ],
+          "operatingSystem": "Version 18.3.1 (Build 22D72)",
+          "runtimeVersions": {
+            "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+            "ExecuTorch": "1.4.0",
+            "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+            "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+            "mlx-swift": "0.31.4",
+            "mlx-swift-lm": "3.31.3"
+          }
+        }
+      ],
+      "completedPrimaryBlocks": 1,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [
+        "firebase-iphone16pro-study-S1-block0-2026-10-02.json"
+      ],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp partial Metal",
+      "scenario": "S1-stable-facts",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch Core ML",
+      "scenario": "S1-stable-facts",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch MLX",
+      "scenario": "S1-stable-facts",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp CPU",
+      "scenario": "S2-workshop-corrections",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch XNNPACK",
+      "scenario": "S2-workshop-corrections",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp Metal",
+      "scenario": "S2-workshop-corrections",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "MLX Metal",
+      "scenario": "S2-workshop-corrections",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp partial Metal",
+      "scenario": "S2-workshop-corrections",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch Core ML",
+      "scenario": "S2-workshop-corrections",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch MLX",
+      "scenario": "S2-workshop-corrections",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp CPU",
+      "scenario": "S3-interruption-recovery",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch XNNPACK",
+      "scenario": "S3-interruption-recovery",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp Metal",
+      "scenario": "S3-interruption-recovery",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "MLX Metal",
+      "scenario": "S3-interruption-recovery",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp partial Metal",
+      "scenario": "S3-interruption-recovery",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch Core ML",
+      "scenario": "S3-interruption-recovery",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone 16 Pro",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch MLX",
+      "scenario": "S3-interruption-recovery",
+      "status": "incomplete"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp CPU",
+      "scenario": "S1-stable-facts",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch XNNPACK",
+      "scenario": "S1-stable-facts",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp Metal",
+      "scenario": "S1-stable-facts",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "MLX Metal",
+      "scenario": "S1-stable-facts",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp partial Metal",
+      "scenario": "S1-stable-facts",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch Core ML",
+      "scenario": "S1-stable-facts",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch MLX",
+      "scenario": "S1-stable-facts",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp CPU",
+      "scenario": "S2-workshop-corrections",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch XNNPACK",
+      "scenario": "S2-workshop-corrections",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp Metal",
+      "scenario": "S2-workshop-corrections",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "MLX Metal",
+      "scenario": "S2-workshop-corrections",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp partial Metal",
+      "scenario": "S2-workshop-corrections",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch Core ML",
+      "scenario": "S2-workshop-corrections",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch MLX",
+      "scenario": "S2-workshop-corrections",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp CPU",
+      "scenario": "S3-interruption-recovery",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch XNNPACK",
+      "scenario": "S3-interruption-recovery",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp Metal",
+      "scenario": "S3-interruption-recovery",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "MLX Metal",
+      "scenario": "S3-interruption-recovery",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "llama.cpp partial Metal",
+      "scenario": "S3-interruption-recovery",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch Core ML",
+      "scenario": "S3-interruption-recovery",
+      "status": "unavailable-infrastructure-no-inference"
+    },
+    {
+      "completeBlockCohorts": [],
+      "completedPrimaryBlocks": 0,
+      "deviceCatalogName": "Firebase iPhone SE 3",
+      "observedRawFiles": [],
+      "requiredCompleteIndependentBlocks": 5,
+      "runtime": "ExecuTorch MLX",
+      "scenario": "S3-interruption-recovery",
+      "status": "unavailable-infrastructure-no-inference"
+    }
+  ],
+  "protocol": "protocol-v1.json",
+  "records": [
+    {
+      "attempt": 0,
+      "block": 0,
+      "completed": true,
+      "device": "iPhone17,1",
+      "file": "firebase-iphone16pro-study-S1-block0-2026-10-02.json",
+      "operatingSystem": "Version 18.3.1 (Build 22D72)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        }
+      ],
+      "runID": "E1BF5FE4-E6E1-46C0-A21B-CD89C925C42F",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S1-stable-facts",
+      "sha256": "0a5f6f7f41a033b7fb539e86dfc7d5eaadd07b6bd3f7579e063410d31cf19047"
+    },
+    {
+      "attempt": 0,
+      "block": 1,
+      "completed": false,
+      "device": "iPhone17,1",
+      "file": "firebase-iphone16pro-study-S1-block1-2026-10-02.json",
+      "operatingSystem": "Version 18.3.2 (Build 22D82)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        }
+      ],
+      "runID": "05BE2338-403A-455B-8ADC-A3DC5CF6B934",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S1-stable-facts",
+      "sha256": "1cafabcc148c982a3849854c7888eaa9e22a67329b4440323cb5fe61d58d0560"
+    },
+    {
+      "attempt": 0,
+      "block": 0,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S1-stable-facts-block0-attempt0-23393F8D-3BF9-4661-9BFC-4CF3BD666BAA.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        }
+      ],
+      "runID": "23393F8D-3BF9-4661-9BFC-4CF3BD666BAA",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S1-stable-facts",
+      "sha256": "c02cae0484c2df034e978ac820b30e07757820ef9a42453826138d87c7537b2d"
+    },
+    {
+      "attempt": 0,
+      "block": 1,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S1-stable-facts-block1-attempt0-65171B1F-9537-4696-933F-2630A031787A.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 12
+        }
+      ],
+      "runID": "65171B1F-9537-4696-933F-2630A031787A",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S1-stable-facts",
+      "sha256": "d3deb0431770a2b90d4c264f6dfc24c64038a924905d1a123094a1f89752b55a"
+    },
+    {
+      "attempt": 0,
+      "block": 2,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S1-stable-facts-block2-attempt0-6AFE8E7F-D948-41BE-9CFC-9C4489694088.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        }
+      ],
+      "runID": "6AFE8E7F-D948-41BE-9CFC-9C4489694088",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S1-stable-facts",
+      "sha256": "36da8627a0d48c334609715fef375b1f11741a0e60b3762feaeec97955ead2e1"
+    },
+    {
+      "attempt": 0,
+      "block": 3,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S1-stable-facts-block3-attempt0-B8144ECB-EEA9-4E45-9C06-24517FE55687.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        }
+      ],
+      "runID": "B8144ECB-EEA9-4E45-9C06-24517FE55687",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S1-stable-facts",
+      "sha256": "b1993a203a9650398abb99d95b7c8aaac693ba99b120803357a7ca91bd7e8d06"
+    },
+    {
+      "attempt": 0,
+      "block": 4,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S1-stable-facts-block4-attempt0-DFF38525-E2CD-4E9A-90AD-5D6B1BD2B3CF.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        }
+      ],
+      "runID": "DFF38525-E2CD-4E9A-90AD-5D6B1BD2B3CF",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S1-stable-facts",
+      "sha256": "f853b8b7b7a26511206d79a30e468b44315136dcfb81af8d5078f9909881b903"
+    },
+    {
+      "attempt": 0,
+      "block": 0,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S2-workshop-corrections-block0-attempt0-4FDFD0E0-3E1E-4348-A043-3937AB2B4568.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        }
+      ],
+      "runID": "4FDFD0E0-3E1E-4348-A043-3937AB2B4568",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S2-workshop-corrections",
+      "sha256": "a744be64842c5909d2999a4b35c4574789b652793b5e07dc687fef20476beb2f"
+    },
+    {
+      "attempt": 0,
+      "block": 1,
+      "completed": false,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S2-workshop-corrections-block1-attempt0-AD099C32-57D7-4F33-92FE-3E1126840F5A.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "running",
+          "runtime": "llama.cpp CPU",
+          "samples": 11
+        }
+      ],
+      "runID": "AD099C32-57D7-4F33-92FE-3E1126840F5A",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S2-workshop-corrections",
+      "sha256": "1cc93517b31296de61263b4400885b78f0d7bb9213ccad47245cf42205de4f1d"
+    },
+    {
+      "attempt": 1,
+      "block": 1,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S2-workshop-corrections-block1-attempt1-1E6C480A-16E1-4124-8543-76385B2636BB.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 12
+        }
+      ],
+      "runID": "1E6C480A-16E1-4124-8543-76385B2636BB",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S2-workshop-corrections",
+      "sha256": "43559b0559cd61581b2cb88a51a197d8e83d7b198543f2e579ca8abac9d11694"
+    },
+    {
+      "attempt": 0,
+      "block": 2,
+      "completed": false,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S2-workshop-corrections-block2-attempt0-F1E9068C-C2FB-4311-AF17-82D2E7D3830C.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": "The operation couldn\u2019t be completed. (Swift.CancellationError error 1.)",
+          "phase": "failed",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 2
+        }
+      ],
+      "runID": "F1E9068C-C2FB-4311-AF17-82D2E7D3830C",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S2-workshop-corrections",
+      "sha256": "a849b820b96f652e22743986b96e18c1b765fd6a9f04a33e8b6094200ca83ed9"
+    },
+    {
+      "attempt": 0,
+      "block": 3,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S2-workshop-corrections-block3-attempt0-4956E41F-C4D1-471F-9CA6-2FCC7D2CC175.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        }
+      ],
+      "runID": "4956E41F-C4D1-471F-9CA6-2FCC7D2CC175",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S2-workshop-corrections",
+      "sha256": "0a5143f2adeb4a6bfee51749556ad1306bd40e0fab160fb7d8a97a0534ddb56e"
+    },
+    {
+      "attempt": 0,
+      "block": 4,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S2-workshop-corrections-block4-attempt0-06853FAA-E68F-4B19-89F6-F93D2A592148.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        }
+      ],
+      "runID": "06853FAA-E68F-4B19-89F6-F93D2A592148",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S2-workshop-corrections",
+      "sha256": "a74c40043d7fbdb3afec3d0eb58de0b85753c44a1fc9b895a0acc9af969ec087"
+    },
+    {
+      "attempt": 0,
+      "block": 5,
+      "completed": false,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S2-workshop-corrections-block5-attempt0-05FEFD60-5228-4172-B1DD-57A230A4AE1C.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [],
+      "runID": "05FEFD60-5228-4172-B1DD-57A230A4AE1C",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S2-workshop-corrections",
+      "sha256": "5339a2f2ee24e17a223bdaa4f283d5117f9d258059000721879813933d1b145d"
+    },
+    {
+      "attempt": 0,
+      "block": 6,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S2-workshop-corrections-block6-attempt0-73EED75C-9890-431E-B521-7F6DAAF765F5.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 12
+        }
+      ],
+      "runID": "73EED75C-9890-431E-B521-7F6DAAF765F5",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S2-workshop-corrections",
+      "sha256": "02e2fd0102bd9213fed020f9d7cd201fd11450c503e62f8a845abd54e6e43ca1"
+    },
+    {
+      "attempt": 0,
+      "block": 7,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S2-workshop-corrections-block7-attempt0-C0C83DCA-88F3-45C0-8880-4B7B7C8079FA.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 12
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 6
+        }
+      ],
+      "runID": "C0C83DCA-88F3-45C0-8880-4B7B7C8079FA",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S2-workshop-corrections",
+      "sha256": "45e12bb1204b993110c8ff99c49d18133ea8cd8f11b3de55787a8d47e9a57096"
+    },
+    {
+      "attempt": 0,
+      "block": 1,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S3-interruption-recovery-block1-attempt0-D4C6D5DD-E25F-458F-BFBA-0B024E5BA9A0.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 7
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 13
+        }
+      ],
+      "runID": "D4C6D5DD-E25F-458F-BFBA-0B024E5BA9A0",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S3-interruption-recovery",
+      "sha256": "88a949238977ec35f16badc15dd2540cd5d449e3c25046bb93ff8b2e95c99c36"
+    },
+    {
+      "attempt": 0,
+      "block": 2,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S3-interruption-recovery-block2-attempt0-C65FB68A-8E0C-4517-A021-EB42B5E4D31B.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 7
+        }
+      ],
+      "runID": "C65FB68A-8E0C-4517-A021-EB42B5E4D31B",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S3-interruption-recovery",
+      "sha256": "b91557418ef15c01c83572c031400730f432af8a2ac8e4ed88e1fd97a9bd004f"
+    },
+    {
+      "attempt": 0,
+      "block": 3,
+      "completed": false,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S3-interruption-recovery-block3-attempt0-90D4FC1B-B6A1-4338-95A4-DD13A52B241C.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": "The operation couldn\u2019t be completed. (Swift.CancellationError error 1.)",
+          "phase": "failed",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 6
+        }
+      ],
+      "runID": "90D4FC1B-B6A1-4338-95A4-DD13A52B241C",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S3-interruption-recovery",
+      "sha256": "7191a8d259bdfdda1474232e1aea56406789cfb599789826d3dfd3ec6d2aea66"
+    },
+    {
+      "attempt": 0,
+      "block": 4,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S3-interruption-recovery-block4-attempt0-BD1C4111-96FA-4FF9-8E8E-117A3F0420E8.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 7
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 13
+        }
+      ],
+      "runID": "BD1C4111-96FA-4FF9-8E8E-117A3F0420E8",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S3-interruption-recovery",
+      "sha256": "108111e8bded99096fc63f3ee4ffb03068d27abee80ca8b058d2418be94fe992"
+    },
+    {
+      "attempt": 0,
+      "block": 5,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iPhone17,3-study-S3-interruption-recovery-block5-attempt0-D38EBA7D-9D20-4A94-8A8A-64F27442B25E.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 7
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 13
+        }
+      ],
+      "runID": "D38EBA7D-9D20-4A94-8A8A-64F27442B25E",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S3-interruption-recovery",
+      "sha256": "b007f65608320dacc8006b2b4ac3db60fb524b1ef29cbe9127994a986112a203"
+    },
+    {
+      "attempt": 0,
+      "block": 0,
+      "completed": true,
+      "device": "iPhone17,3",
+      "file": "iphone16-study-S3-block0-2026-10-02.json",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "rowStates": [
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp CPU",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "xnnpack/Qwen3-0.6B-8da4w-2k.pte": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+            "xnnpack/config.json": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511"
+          },
+          "artifactID": "executorch",
+          "error": null,
+          "phase": "complete",
+          "runtime": "ExecuTorch XNNPACK",
+          "samples": 7
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp Metal",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+            "config.json": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+            "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "model.safetensors": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+            "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+            "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          "artifactID": "mlx",
+          "error": null,
+          "phase": "complete",
+          "runtime": "MLX Metal",
+          "samples": 13
+        },
+        {
+          "artifactHashes": {
+            "Qwen3-0.6B-Q4_K_M.gguf": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+          },
+          "artifactID": "gguf",
+          "error": null,
+          "phase": "complete",
+          "runtime": "llama.cpp partial Metal",
+          "samples": 13
+        }
+      ],
+      "runID": "13C23AE8-4249-4037-8397-CB8B94D14A0E",
+      "runtimeVersions": {
+        "ET tokenizer addon": "a7855194f5bf55f792f8142282dd0ae3613b1d37",
+        "ExecuTorch": "1.4.0",
+        "PCRE2": "2e03e323339ab692640626f02f8d8d6f95bff9c6",
+        "llama.cpp": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+        "mlx-swift": "0.31.4",
+        "mlx-swift-lm": "3.31.3"
+      },
+      "scenario": "S3-interruption-recovery",
+      "sha256": "54cc59f39db156a8b221a9ce062ffb0c92ee728307c8359f474a4a92abfc9c85"
+    }
+  ],
+  "schemaVersion": 1,
+  "status": "in-progress",
+  "submittedPending": [],
+  "unavailableExecutions": [
+    {
+      "catalogOS": "18.4",
+      "device": "iphonese3",
+      "inferenceObserved": false,
+      "matrix": "matrix-2hrzycmftky2m",
+      "outcome": "infrastructure-error-after-three-automatic-attempts",
+      "receipt": "../Results/firebase-iphonese3-study-S1-block0-infrastructure-failure-2026-10-02.json"
+    },
+    {
+      "catalogOS": "26.3",
+      "device": "iphonese3",
+      "inferenceObserved": false,
+      "matrix": "matrix-2ha1dnu69g2ja",
+      "outcome": "infrastructure-error-after-three-automatic-attempts",
+      "receipt": "../Results/firebase-iphonese3-study-S1-block1-infrastructure-failure-2026-10-02.json"
+    }
+  ]
+}

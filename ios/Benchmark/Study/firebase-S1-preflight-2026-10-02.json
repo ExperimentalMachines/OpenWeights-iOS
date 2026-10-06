@@ -1,0 +1,63 @@
+{
+  "status": "terminal-pro-verified-se-infrastructure-failed",
+  "suite": "study",
+  "scenario": "S1-stable-facts",
+  "block": 0,
+  "attempt": 0,
+  "runtimeIDs": [
+    "O1",
+    "O2",
+    "O3",
+    "O4",
+    "O5"
+  ],
+  "devices": [
+    {
+      "model": "iphone16pro",
+      "version": "18.3"
+    },
+    {
+      "model": "iphonese3",
+      "version": "18.4"
+    }
+  ],
+  "xcode": "26.2",
+  "timeoutMinutesPerDevice": 10,
+  "knownPriorRoundedPhysicalMinutes": 2,
+  "maximumAdditionalPhysicalMinutes": 20,
+  "knownMaximumDailyTotalMinutes": 22,
+  "freePhysicalMinutesPerDay": 30,
+  "estimatedExecutionChargeUSD": 0,
+  "budgetAssumptions": [
+    "No other project device usage observed in this session.",
+    "Timeout caps each device execution at ten minutes.",
+    "Storage costs and invoice are not verified."
+  ],
+  "package": "OpenWeightsBench-study-S1-block0-tests.zip",
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsBench-study-S1-block0-tests.zip",
+    "--device=model=iphone16pro,version=18.3",
+    "--device=model=iphonese3,version=18.4",
+    "--xcode-version=26.2",
+    "--timeout=10m",
+    "--async",
+    "--format=json"
+  ],
+  "packageSHA256": "b03471eff65b3ae9e572c6e06f2e7344640005393413d8c8a197c409159310bb",
+  "archiveVerified": true,
+  "resultsURL": "https://console.firebase.google.com/project/zeraphim-wealth-integration/testlab/histories/bh.3932635c5bf30a5c/matrices/7497846086240431274",
+  "matrix": "matrix-2hrzycmftky2m",
+  "proDeviceStatus": "verified",
+  "proObservedOS": "18.3.1 (22D72)",
+  "proRuntimeRequests": 54,
+  "proPhysicalMinutesRounded": 4,
+  "seDeviceStatus": "ERROR-after-three-infrastructure-attempts-no-usable-report",
+  "matrixState": "FINISHED",
+  "billingStatus": "Successful Pro execution rounded to four minutes. Failed infrastructure billing and final invoice are unverified."
+}

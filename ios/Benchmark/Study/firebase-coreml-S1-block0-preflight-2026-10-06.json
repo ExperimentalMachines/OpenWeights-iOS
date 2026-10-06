@@ -1,0 +1,63 @@
+{
+  "approvalRequirement": {
+    "quote": "Estimate each job before submission. Obtain approval for paid execution when required.",
+    "source": "Study/protocol-v1.json"
+  },
+  "authorization": "Previous approval covered the completed iPhone 11 Pro smoke retry only. No new study approval received.",
+  "billingLimitations": [
+    "Remaining daily free allowance and invoice are unverified. Estimate assumes no free allowance.",
+    "Storage/transfer charges and automatic infrastructure-retry charges are unverified and excluded from the requested-execution estimate.",
+    "No requested flaky-test retries. Firebase may separately retry infrastructure failures."
+  ],
+  "catalogEvidence": {
+    "coreml-study-billing-20261006.json": "2cc315ad7625fd7e4c1dd42e54c133fd51d2a975241cfff4802585ce0baa8a1e",
+    "coreml-study-models-20261006.json": "f7bddff4dde7536af313db953a64b170e6ce6bbdf9839819e550c9ba7b0efca7",
+    "coreml-study-versions-20261006.json": "314d82781d3275cc8d10201c76f7cc958a5632cb7634610a6d6a8acb78654284"
+  },
+  "checkedAtUTC": "2026-10-06T08:01:06.540917+00:00",
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsDelegatesBench-CoreML-S1-block0-7767cc534cbe.zip",
+    "--device=model=iphone16pro,version=18.3",
+    "--xcode-version=26.2",
+    "--timeout=45m",
+    "--num-flaky-test-attempts=0",
+    "--no-record-video",
+    "--async",
+    "--format=json"
+  ],
+  "costSource": "https://firebase.google.com/docs/test-lab/usage-quotas-pricing",
+  "dailyPhysicalFreeMinutesBlaze": 30,
+  "device": {
+    "actualOS": "Unknown until execution report.",
+    "capacity": "DEVICE_CAPACITY_MEDIUM",
+    "catalogOS": "18.3",
+    "model": "iphone16pro"
+  },
+  "localValidation": {
+    "factualProbes": "2/3",
+    "file": "coreml-first-block-final-revalidation-f1266a1174ae.json",
+    "formattingProbes": "3/3",
+    "fullGenerations": 6,
+    "limits": "One local block completed. CPU/GPU export, not Neural Engine placement. Local later samples end fair/serious.",
+    "nativeTestsPassed": 2,
+    "sha256": "02112bd63c1d9fc8430d9cb284436f88195a61ade681fb282ccee25cf05e792c"
+  },
+  "package": {
+    "bytes": 1485895393,
+    "file": "OpenWeightsDelegatesBench-CoreML-S1-block0-7767cc534cbe.zip",
+    "sha256": "7767cc534cbe686cc54c0d8e302869dfa608d0bbd60a60f4c39ab0fc540553d3"
+  },
+  "physicalDeviceHourlyUSD": 5,
+  "requestedExecutionEstimateWithoutFreeAllowanceUSD": 3.75,
+  "scope": "One Core ML S1 primary block 0 on one Firebase iPhone 16 Pro. Not approval for further study jobs.",
+  "status": "prepared-awaiting-explicit-paid-study-approval",
+  "timeoutSeconds": 2700,
+  "timeoutSource": "https://firebase.google.com/docs/test-lab/ios/get-started",
+  "xcodeVersion": "26.2"
+}

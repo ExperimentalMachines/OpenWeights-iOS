@@ -1,0 +1,93 @@
+name: OpenWeightsDelegatesBench
+options:
+  deploymentTarget:
+    iOS: '18.0'
+packages:
+  ExecuTorch:
+    url: https://github.com/pytorch/executorch
+    revision: 56cc93a96d5fb8d21554ec5f00fbad5a5b228bc4
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    IPHONEOS_DEPLOYMENT_TARGET: '18.0'
+    DEVELOPMENT_TEAM: DK95L4JCWY
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_BITCODE: false
+    ENABLE_TESTABILITY: true
+    GENERATE_INFOPLIST_FILE: true
+    SWIFT_OPTIMIZATION_LEVEL: -O
+    DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+    SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited) EXECUTORCH_DELEGATES
+targets:
+  OpenWeightsBench:
+    type: application
+    platform: iOS
+    sources:
+    - path: App
+    - path: Resources/model-manifest-delegates.json
+      buildPhase: resources
+    - path: Resources/multiturn-workload.json
+      buildPhase: resources
+    - path: Resources/study-workloads.json
+      buildPhase: resources
+    - path: Models
+      type: folder
+      buildPhase: resources
+    - path: Native/Memory.mm
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.experimentalmachines.openweights.benchmark
+        SWIFT_OBJC_BRIDGING_HEADER: Native/Benchmark-Bridging-Header.h
+        HEADER_SEARCH_PATHS: $(SRCROOT)/Native
+        LIBRARY_SEARCH_PATHS: $(inherited)
+        OTHER_LDFLAGS: -ObjC -force_load "$(BUILT_PRODUCTS_DIR)/libexecutorch_ios.a"
+          -force_load "$(BUILT_PRODUCTS_DIR)/libkernels_optimized_ios.a" -force_load
+          "$(BUILT_PRODUCTS_DIR)/libkernels_llm_ios.a" -force_load "$(BUILT_PRODUCTS_DIR)/libbackend_coreml_ios.a"
+          -force_load "$(BUILT_PRODUCTS_DIR)/libbackend_mlx_ios.a" -lc++
+    info:
+      path: .build/Info-delegates.plist
+      properties:
+        CFBundleDisplayName: OpenWeights Delegates
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+        - UIInterfaceOrientationPortrait
+        - UIInterfaceOrientationLandscapeLeft
+        - UIInterfaceOrientationLandscapeRight
+        - UIInterfaceOrientationPortraitUpsideDown
+        UIFileSharingEnabled: true
+        LSSupportsOpeningDocumentsInPlace: true
+        UIApplicationSupportsIndirectInputEvents: true
+    dependencies:
+    - package: ExecuTorch
+      product: executorch_llm
+    - package: ExecuTorch
+      product: backend_coreml
+    - package: ExecuTorch
+      product: backend_mlx
+    - package: ExecuTorch
+      product: kernels_llm
+    - package: ExecuTorch
+      product: kernels_optimized
+  BenchmarkTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: Tests
+    dependencies:
+    - target: OpenWeightsBench
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.experimentalmachines.openweights.benchmark.tests
+schemes:
+  OpenWeightsBench:
+    build:
+      targets:
+        OpenWeightsBench: all
+        BenchmarkTests:
+        - test
+    test:
+      config: Release
+      targets:
+      - BenchmarkTests
+      gatherCoverageData: false
+    run:
+      config: Release

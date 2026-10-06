@@ -1,0 +1,11 @@
+.build/
+Models/
+*.xcodeproj/
+*.xcworkspace/
+Results/*.xcresult/
+Results/*.log
+Results/*.zip
+Results/*.ipa
+Results/*-attachments/
+__pycache__/
+outputs/
