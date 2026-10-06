@@ -1,0 +1,9 @@
+{
+  "AndroidSource": "core/common/src/commonMain/kotlin/io/github/alpharomercoma/openweights/core/common/model/AnswerLength.kt",
+  "AndroidSourceSHA256": "fc993b9d619f24313bcfd31fe4daa99e481ebb0acc23a0cb7defc7c8be140e5e",
+  "instructions": {
+    "brief": "Answer from what you know. Reply with the answer itself and keep it short: the fewest sentences that answer the question.",
+    "balanced": "Answer from what you know. Reply with the answer itself, at the length the question calls for: a sentence for a simple one, and as long as it takes for one that asks for detail.",
+    "thorough": "Answer from what you know. Reply with the answer itself, and be thorough: cover the parts of the question somebody would ask about next, and use sections when there is more than one."
+  }
+}
