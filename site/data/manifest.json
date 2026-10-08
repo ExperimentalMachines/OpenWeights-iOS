@@ -133,12 +133,16 @@
       "sha256": "781b0eb8f40ad213428b43bfb53fd0ac4711c09f7b4e0b43b62a8efa29f91410"
     },
     "index.html": {
-      "bytes": 19824,
-      "sha256": "525a7420e13d542603b67b38fd47912309cbb7308e3a954bae40ea33b633cbb3"
+      "bytes": 19865,
+      "sha256": "3353950c6422a7bfd03d1b2b2c22dc5b8205f7bbb5235256c1edb6a54c8dfec3"
     },
     "palette.css": {
       "bytes": 2859,
       "sha256": "fb9b59c1c37cd4b762241ba94e4543a4ad376ad9ecf9c67281eb7fde68a8bf48"
+    },
+    "privacy.html": {
+      "bytes": 7101,
+      "sha256": "17de7a0769dc537283b7b99fb16baa8d589d2696ec24f847b8e8a5340bca5a5c"
     },
     "reproduce.py": {
       "bytes": 4517,
