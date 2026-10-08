@@ -20,6 +20,10 @@
       "bytes": 14229,
       "sha256": "7567c6f9a883a4903afd130ca1b55a43d9ee744f046275a1fb09a32af56786e7"
     },
+    "assets/openweights-logo.png": {
+      "bytes": 2961,
+      "sha256": "934cafea5486d118fbce1983d7287c6ef4d128b0365cbdaeecc0affd7a6ee4d5"
+    },
     "assets/reproduction.zip": {
       "bytes": 30173,
       "sha256": "296fed0868c34c0e47fa70ac62c3e8fc713df8deffd76bf73aa145c47d2fa2da"
@@ -129,8 +133,8 @@
       "sha256": "781b0eb8f40ad213428b43bfb53fd0ac4711c09f7b4e0b43b62a8efa29f91410"
     },
     "index.html": {
-      "bytes": 18901,
-      "sha256": "c47772aca79d74f2635be6850d5276da6e75e9cca3adc32848eb4e7f3c07c97f"
+      "bytes": 19824,
+      "sha256": "525a7420e13d542603b67b38fd47912309cbb7308e3a954bae40ea33b633cbb3"
     },
     "palette.css": {
       "bytes": 2859,
@@ -141,8 +145,8 @@
       "sha256": "ffb8d7c27683c6927afcbe31a0b9858ebfd66a2fb8f188c099cf0001b73f6779"
     },
     "style.css": {
-      "bytes": 6453,
-      "sha256": "469140868313c0cdd8c49418cca22da4fb8d58d17fe3ade2910f70eba64352b8"
+      "bytes": 7097,
+      "sha256": "64c9d0b0baa33ea4c2cf1b7a69113dc65daa90944cea4cca27d889842cbdac7d"
     },
     "verify.py": {
       "bytes": 2699,
