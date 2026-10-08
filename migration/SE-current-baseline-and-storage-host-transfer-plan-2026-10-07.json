@@ -1,0 +1,15 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 236195,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/SE-baseline-compatibility-and-storage-host-proof-20261007.zip"
+    },
+    {
+      "bytes": 2184238,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-SE3-current-baseline-pilot-matrix-yuec0dllq1q3a-proof.zip"
+    }
+  ],
+  "purpose": "Retain terminal SE5-configuration45-request full native proof, current reproducible report and host-only storage diagnostic with retained failures. Active baseline input remains local pending next study preparation; no paid job authorized.",
+  "schemaVersion": 1
+}

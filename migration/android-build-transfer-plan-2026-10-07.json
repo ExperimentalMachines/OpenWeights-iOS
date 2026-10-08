@@ -1,0 +1,19 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "directories": [
+    {
+      "localRelativePath": "openweights/core/engine/.cxx",
+      "logicalBytes": 587292130
+    },
+    {
+      "localRelativePath": "openweights/core/engine/build",
+      "logicalBytes": 437579457
+    }
+  ],
+  "limits": [
+    "Keep the approved SDK, JDK and Gradle dependency caches local.",
+    "The successful library and full unit results are also retained in the separate regression proof ZIP."
+  ],
+  "schemaVersion": 1,
+  "status": "completed-android-regression-builds-inactive"
+}

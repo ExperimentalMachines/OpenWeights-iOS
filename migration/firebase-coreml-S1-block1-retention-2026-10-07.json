@@ -1,0 +1,62 @@
+{
+  "actualOperatingSystem": "Version 18.3.2 (Build 22D82)",
+  "analysisSHA256": "c285856f29cf7688b3c237498bfc9e301a6eb7311a7cc4ca5171043e0136ab6f",
+  "archive": {
+    "bytes": 3975678,
+    "file": "firebase-coreml-S1-block1-matrix-36pbwfev7u0h8-proof.zip",
+    "members": 161,
+    "sha256": "6f8bb3825f5f5bf782b760fc2a568eb5e4409454a21430a077f298c78b355f1c"
+  },
+  "completePrimaryBlocksInMatchingCell": 2,
+  "currentReportScopeCorrection": {
+    "byteIdenticalReproductionVerified": true,
+    "file": "docs/research/ios-repeated-artifact-study.md",
+    "reporterSHA256": "0376b6df374f217bfff193086ecd230dcc0c92a4e81ccf17cbd0c89b56616427",
+    "scope": "Editorial correction: ExecuTorch MLX already has an experimental product adapter; Core ML remains benchmark-only. Raw data, analysis, counts, tables and the earlier archived report snapshot are preserved.",
+    "sha256": "d49a17b4d018dd0bea99b413bb7964a9da34b364e1172905a657484c50d539e2"
+  },
+  "failedRowsRetained": 15,
+  "limits": [
+    "Two matching cloud primary blocks do not meet five-block replication. Full A1-A3 remains incomplete.",
+    "All six turn thermal samples are nominal; charging and ambient temperature remain unknown. No power or Neural Engine measurement.",
+    "Final all-four-facts plain JSON passes. The earlier one-word dietary probe fails. No general quality claim.",
+    "Cancellation is not exercised by S1. Preserve the raw unexercised cancellation flag without calling it a runtime failure.",
+    "The submitted package is the retained historical exact locally validated source/binary cohort. Newly rebuilt delegate validation is separate.",
+    "Actual provider invoice and ancillary charges remain unverified."
+  ],
+  "matrixID": "matrix-36pbwfev7u0h8",
+  "nativeMethodsPassed": 2,
+  "plannedCells": 63,
+  "privateArchive": {
+    "bytes": 3975678,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-coreml-S1-block1-matrix-36pbwfev7u0h8-proof.zip",
+    "remotePath": "packages/6f8bb3825f5f5bf782b760fc2a568eb5e4409454a21430a077f298c78b355f1c/firebase-coreml-S1-block1-matrix-36pbwfev7u0h8-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/6f8bb3825f5f5bf782b760fc2a568eb5e4409454a21430a077f298c78b355f1c/firebase-coreml-S1-block1-matrix-36pbwfev7u0h8-proof.zip",
+    "sha256": "6f8bb3825f5f5bf782b760fc2a568eb5e4409454a21430a077f298c78b355f1c",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T19:29:42.299178+00:00"
+  },
+  "providerBytesDownloaded": 27172711,
+  "providerObjectsDownloaded": 37,
+  "rawReports": 48,
+  "recordedAtUTC": "2026-10-06T19:27:25.172362+00:00",
+  "replicatedPlannedCells": 19,
+  "reportSHA256": "cd7555559d1714ee0e28bf2d9710f6faca3df95f53f8e525fd4b8ed77849b703",
+  "reproductionAnalysisAndReportByteIdentical": true,
+  "requiredPrimaryBlocks": 5,
+  "schemaVersion": 1,
+  "status": "approved-cloud-primary-block-complete-two-native-methods-passed-full-evidence-verified",
+  "submittedPackageArchive": {
+    "bytes": 1485895423,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.zip",
+    "remotePath": "packages/899f8fc09879525cfe2818b776a32a8f4c5faade041a7862470cb8a847c1da1b/OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/899f8fc09879525cfe2818b776a32a8f4c5faade041a7862470cb8a847c1da1b/OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.zip",
+    "sha256": "899f8fc09879525cfe2818b776a32a8f4c5faade041a7862470cb8a847c1da1b",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T19:29:31.739198+00:00"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 942209,
+      "localRelativePath": "openweights-ios/ios/Product/Results/gzip-page-host-ios-20261007-proof.zip"
+    }
+  ],
+  "purpose": "Retain exact gzip implementation, reference fixtures and source-bound host/iOS-core compilation proof.",
+  "schemaVersion": 1
+}

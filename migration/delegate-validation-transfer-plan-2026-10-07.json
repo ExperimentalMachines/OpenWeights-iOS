@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/migration-delegates-native-20261006T175840Z-proof.zip",
+      "bytes": 104207
+    }
+  ]
+}

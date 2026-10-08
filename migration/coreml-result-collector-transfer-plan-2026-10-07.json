@@ -1,0 +1,13 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 24353,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/coreml-result-collector-verification-2026-10-07-proof.zip"
+    }
+  ],
+  "limits": [
+    "Completed host integrity controls only, with retained raw/native proof inputs. No new cloud or phone execution is claimed."
+  ],
+  "schemaVersion": 1
+}

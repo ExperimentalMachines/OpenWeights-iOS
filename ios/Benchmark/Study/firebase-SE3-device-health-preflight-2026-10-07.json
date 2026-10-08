@@ -1,0 +1,143 @@
+{
+  "actualBillingVerified": false,
+  "actualOperatingSystem": "Version 18.4 (Build 22E240)",
+  "authorization": {
+    "answer": "Approve this SE diagnostic",
+    "questionItemID": "call_1b326ce526cf428386504cdd82fa251d",
+    "recordedAtUTC": "2026-10-06T20:23:23.877928+00:00",
+    "scope": "one model-free Firebase device-launch diagnostic on iphonese3 catalog18.4, Xcode26.2, five-minute limit; no study retry"
+  },
+  "billingEnabled": true,
+  "catalogDevice": {
+    "deviceCapabilities": [
+      "accelerometer",
+      "arm64",
+      "armv6",
+      "armv7",
+      "auto-focus-camera",
+      "bluetooth-le",
+      "front-facing-camera",
+      "gamekit",
+      "gyroscope",
+      "location-services",
+      "magnetometer",
+      "metal",
+      "microphone",
+      "opengles-1",
+      "opengles-2",
+      "opengles-3",
+      "peer-peer",
+      "still-camera",
+      "video-camera",
+      "wifi",
+      "arkit",
+      "camera-flash",
+      "gps",
+      "healthkit",
+      "sms",
+      "telephony"
+    ],
+    "formFactor": "PHONE",
+    "id": "iphonese3",
+    "name": "iPhone SE 3",
+    "perVersionInfo": [
+      {
+        "deviceCapacity": "DEVICE_CAPACITY_MEDIUM",
+        "versionId": "18.4"
+      },
+      {
+        "deviceCapacity": "DEVICE_CAPACITY_MEDIUM",
+        "versionId": "26.3"
+      }
+    ],
+    "screenDensity": 326,
+    "screenX": 640,
+    "screenY": 1136,
+    "supportedVersionIds": [
+      "18.4",
+      "26.3"
+    ]
+  },
+  "catalogEvidence": {
+    ".build/firebase/device-health-live-billing.json": "2cc315ad7625fd7e4c1dd42e54c133fd51d2a975241cfff4802585ce0baa8a1e",
+    ".build/firebase/device-health-live-capacities.json": "477489a7ee8ed4887fccb22d41b31ca6f6c32a8b872f131b11d0ec4452fd14e1",
+    ".build/firebase/device-health-live-models.json": "f7bddff4dde7536af313db953a64b170e6ce6bbdf9839819e550c9ba7b0efca7",
+    ".build/firebase/device-health-live-versions.json": "314d82781d3275cc8d10201c76f7cc958a5632cb7634610a6d6a8acb78654284"
+  },
+  "catalogVersion": {
+    "id": "18.4",
+    "majorVersion": 18,
+    "minorVersion": 4,
+    "supportedXcodeVersionIds": [
+      "16.4",
+      "26.2"
+    ]
+  },
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsDeviceHealth-SE3-20261007.zip",
+    "--device=model=iphonese3,version=18.4",
+    "--xcode-version=26.2",
+    "--timeout=5m",
+    "--num-flaky-test-attempts=0",
+    "--no-record-video",
+    "--async",
+    "--format=json"
+  ],
+  "earlierFailureProof": "migration/SE-infrastructure-recheck-2026-10-07.json",
+  "freeAllowanceVerified": false,
+  "limits": [
+    "This is compiled, signed and archive-verified only. Native behavior has not been executed locally because the user holds all phone tests.",
+    "No model files, inference libraries, downloads or inference exist in this package. A pass does not establish model fit, runtime compatibility, performance or any completed study cell.",
+    "A native failure with logs would establish that XCTest started. A repeated infrastructure failure without logs would still not identify a model or memory cause.",
+    "This keeps the original SE3 catalog18.4 cohort and full63-cell scope. No protocol amendment is made.",
+    "Fresh paid execution approval is required for this one diagnostic job. It does not authorize a benchmark retry."
+  ],
+  "localPhoneExecution": "none-all-phone-tests-held-by-user",
+  "matrixID": "matrix-2pv90jl9ezi09",
+  "maximumRequestedExecutionUSDWithoutFreeAllowance": 0.42,
+  "package": {
+    "buildReceiptFile": "OpenWeightsDeviceHealth-SE3-20261007.build.json",
+    "buildReceiptSHA256": "c14b92da4ce923c5458eaa2e776e4dda53ba23792b8f3624f4bcfc64d83fb8ff",
+    "bytes": 6468904,
+    "file": "OpenWeightsDeviceHealth-SE3-20261007.zip",
+    "sha256": "fcb0e2cc931038545f790176e74ce5cba9e2b90fa68078b174b660f11ac71dca"
+  },
+  "packageVerification": {
+    "limits": [
+      "Compilation and signature checks are not native execution. All local phone tests remain held by the user.",
+      "There are no model assets or inference libraries in this diagnostic. A pass cannot establish benchmark compatibility or fill any A2 cell.",
+      "The original SE3 catalog18.4 cohort is unchanged. Any future paid execution needs fresh approval."
+    ],
+    "package": {
+      "buildReceiptFile": "OpenWeightsDeviceHealth-SE3-20261007.build.json",
+      "buildReceiptSHA256": "c14b92da4ce923c5458eaa2e776e4dda53ba23792b8f3624f4bcfc64d83fb8ff",
+      "bytes": 6468904,
+      "file": "OpenWeightsDeviceHealth-SE3-20261007.zip",
+      "sha256": "fcb0e2cc931038545f790176e74ce5cba9e2b90fa68078b174b660f11ac71dca"
+    },
+    "selectedPlan": {
+      "file": "device-health-SE-original-cohort.xctestrun",
+      "maximumMethodSeconds": 120,
+      "methods": [
+        "DeviceHealthTests/testLaunchAndAttachDeviceConditions"
+      ],
+      "sha256": "d887ee5b918cd51d391f5d2efe497ac3572c185856103a8ea6db4a2a3f91d3a4"
+    },
+    "sourceInputs": 3,
+    "status": "release-compiled-signed-isolated-plan-verified-no-native-execution",
+    "xcode": "Xcode 26.2\nBuild version 17C52"
+  },
+  "pricingSource": "https://firebase.google.com/docs/test-lab/usage-quotas-pricing",
+  "purpose": "Diagnose whether the original Firebase SE3/iOS18.4 pipeline can launch XCTest and return a native conditions attachment, after two infrastructure-only failures.",
+  "recordedAtUTC": "2026-10-06T20:16:05.342011+00:00",
+  "schemaVersion": 1,
+  "status": "approved-job-completed-native-launch-diagnostic-verified-no-inference",
+  "storageTransferAndAutomaticInfrastructureRetryChargesVerified": false,
+  "timeoutSeconds": 300
+}

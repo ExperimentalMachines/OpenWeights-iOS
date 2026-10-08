@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Archive inactive host build directories with file-by-file round-trip checks."""
+"""Archive inactive build directories with file-by-file round-trip checks."""
 import argparse
 import datetime
 import hashlib
@@ -67,11 +67,20 @@ def main():
     catalog_path = ROOT / 'migration/build-artifact-catalog.json'
     catalog = json.loads(catalog_path.read_text()) if catalog_path.exists() else {'schemaVersion': 1, 'bucket': bucket, 'directories': {}}
     allowed = {WORKSPACE / 'openweights/ios/Product/.build', ROOT / 'ios/Product/.build'}
+    android_builds = {WORKSPACE / 'openweights/core/engine/.cxx',
+                      WORKSPACE / 'openweights/core/engine/build'}
+    completed_benchmark_builds = {
+        WORKSPACE / 'openweights/ios/Benchmark/.build/DerivedData-delegates-coreml-study-20261006',
+        WORKSPACE / '.benchmark-work/Benchmark/DerivedData-device-health',
+        WORKSPACE / '.benchmark-work/Benchmark/DerivedData-device-health-storage',
+        WORKSPACE / '.benchmark-work/Benchmark/DerivedData-device-health-storage-signed'
+    }
     for item in plan['directories']:
         relative = item['localRelativePath']
         local = WORKSPACE / relative
-        if local.parent not in allowed or local.is_symlink():
-            raise RuntimeError('Build plan contains a path outside the allowed host-build directory.')
+        if (local.parent not in allowed and local not in android_builds
+                and local not in completed_benchmark_builds) or local.is_symlink():
+            raise RuntimeError('Build plan contains a path outside the allowed inactive build directories.')
         if not local.exists():
             if catalog['directories'].get(relative, {}).get('status') == 'archived-local-directory-removed':
                 print('Already archived: ' + relative, flush=True)

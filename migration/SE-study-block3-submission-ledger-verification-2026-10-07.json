@@ -1,0 +1,13 @@
+{
+  "analysisSHA256": "d97046b34751572351a31515efddf426400ee27fde99e9b78845466f5b2db910",
+  "ledgerSHA256": "76667620b7ad98774ac6159a99f3e4156b2fd6ddc8dd60e2551cd5683907d721",
+  "newInferenceObserved": false,
+  "pendingMatrixID": "matrix-3g4oz19yc7jiy",
+  "plannedCells": 63,
+  "rawReportsUnchanged": 51,
+  "recordedAtUTC": "2026-10-06T23:23:59.912617+00:00",
+  "replicatedCellsUnchanged": 9,
+  "schemaVersion": 1,
+  "status": "pending-submission-preserved-without-inflating-study-coverage",
+  "unavailableExecutionsPreserved": 3
+}

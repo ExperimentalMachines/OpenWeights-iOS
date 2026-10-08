@@ -1,0 +1,115 @@
+{
+  "actualDevice": "iPhone14,6",
+  "actualOperatingSystem": "Version 18.4 (Build 22E240)",
+  "allSampleThermalBoundariesNominal": true,
+  "archive": {
+    "bytes": 1246363,
+    "file": "firebase-SE3-full-smoke-matrix-2fgikhy1zqvy7-proof.zip",
+    "members": 59,
+    "sha256": "3b8c7f1838ac9112c9e883d37e6c51ad2adca0ce330d4a9a187ce73b27a0eeef"
+  },
+  "cancellationAndRecoveryPassed": true,
+  "contextTokens": 2048,
+  "corruptionRejectionPassed": true,
+  "inputVerification": "migration/firebase-SE3-full-smoke-input-verification-2026-10-07.json",
+  "limits": [
+    "Smoke proves the tested full-Metal configuration on SE3, not the remaining six configurations or repeated-conversation memory fit.",
+    "No A2 primary report or replicated cell is added. Full63-cell scope remains.",
+    "The earlier infrastructure-only failures remain unexplained and preserved.",
+    "All local phone tests remain held. No local test or installation was done.",
+    "Cloud charging and ambient temperature are unknown. No hardware-only, energy or general-quality conclusion.",
+    "The test process was115seconds, but actual invoice, free allowance and ancillary/retry charges remain unverified."
+  ],
+  "loadMs": 11339.47887500003,
+  "loadPeakFootprintBytes": 414417904,
+  "matrixID": "matrix-2fgikhy1zqvy7",
+  "maxOutputTokens": 64,
+  "modelAcquisition": "Pinned public GGUF download appears in native logs. The unchanged source verifies exact size and SHA-256 before returning the artifact to the adapter. The completed native inference and corruption rejection checks passed. This old harness has no per-file acquisition attachment.",
+  "nativeMethodsPassed": 2,
+  "nativeSummary": {
+    "devicesAndConfigurations": [
+      {
+        "device": {
+          "architecture": "arm64e",
+          "deviceId": "00008110-001C6C4826A0A01E",
+          "deviceName": "iPhone",
+          "modelName": "iPhone SE (3rd generation)",
+          "osBuildNumber": "22E240",
+          "osVersion": "18.4",
+          "platform": "iOS"
+        },
+        "expectedFailures": 0,
+        "failedTests": 0,
+        "passedTests": 2,
+        "skippedTests": 0,
+        "testPlanConfiguration": {
+          "configurationId": "1",
+          "configurationName": "Test Scheme Action"
+        }
+      }
+    ],
+    "environmentDescription": "OpenWeightsBench \u00b7 Built with macOS 15.7.4",
+    "expectedFailures": 0,
+    "failedTests": 0,
+    "finishTime": 1791319522.47,
+    "passedTests": 2,
+    "result": "Passed",
+    "skippedTests": 0,
+    "startTime": 1791319408.287,
+    "statistics": [],
+    "testFailures": [],
+    "title": "Test - OpenWeightsBench",
+    "topInsights": [],
+    "totalTestCount": 2
+  },
+  "package": {
+    "buildReceiptFile": "OpenWeightsBench-smoke-tests-build.json",
+    "buildReceiptSHA256": "28d1ef54a7b0af0a68f3ff9ced306921560baf78377bf055196c70e816e0f45b",
+    "bytes": 93614235,
+    "file": "OpenWeightsBench-smoke-tests.zip",
+    "sha256": "c70a5f9de407033836a66928ec6fb785f01fedea7707186b74d20c9032f42090",
+    "sourceSnapshotFile": "xcode26.2-baseline-sources-c5396c6bd355.zip",
+    "sourceSnapshotSHA256": "aab910e3bee367ef8dec6d4a141b6f08b86103ad0d62a75736724ac4e2aa7acc"
+  },
+  "privateArchive": {
+    "bytes": 1246363,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-SE3-full-smoke-matrix-2fgikhy1zqvy7-proof.zip",
+    "remotePath": "packages/3b8c7f1838ac9112c9e883d37e6c51ad2adca0ce330d4a9a187ce73b27a0eeef/firebase-SE3-full-smoke-matrix-2fgikhy1zqvy7-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/3b8c7f1838ac9112c9e883d37e6c51ad2adca0ce330d4a9a187ce73b27a0eeef/firebase-SE3-full-smoke-matrix-2fgikhy1zqvy7-proof.zip",
+    "sha256": "3b8c7f1838ac9112c9e883d37e6c51ad2adca0ce330d4a9a187ce73b27a0eeef",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T20:52:05.119232+00:00"
+  },
+  "providerBytesDownloaded": 12255986,
+  "providerObjectsDownloaded": 36,
+  "raw": {
+    "file": "firebase-SE3-full-smoke-2026-10-07.json",
+    "sha256": "4fd6b76575bcfb0fd8f71eb91760fdf120dc8a510d9f0444d73639346bf6ec71"
+  },
+  "recordedAtUTC": "2026-10-06T20:51:38.407175+00:00",
+  "requests": 9,
+  "runtime": "llama.cpp Metal",
+  "schemaVersion": 1,
+  "status": "actual-SE3-iOS18.4-full-Metal-smoke-native-two-passes-nine-requests-verified",
+  "submissionSnapshot": {
+    "file": "firebase-SE3-full-smoke-matrix-2fgikhy1zqvy7-verified-submission.json",
+    "sha256": "8a57c05916b0b8f0ba0daf744e204f6fbed8626b619ed9929e6375b71d74164e"
+  },
+  "submittedPackageArchive": {
+    "bytes": 93614235,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsBench-smoke-tests.zip",
+    "remotePath": "packages/c70a5f9de407033836a66928ec6fb785f01fedea7707186b74d20c9032f42090/OpenWeightsBench-smoke-tests.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/c70a5f9de407033836a66928ec6fb785f01fedea7707186b74d20c9032f42090/OpenWeightsBench-smoke-tests.zip",
+    "sha256": "c70a5f9de407033836a66928ec6fb785f01fedea7707186b74d20c9032f42090",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T20:52:12.347832+00:00"
+  },
+  "terminalMatrix": {
+    "file": "matrix-2fgikhy1zqvy7-latest.json",
+    "sha256": "e1ed66061fe9d1f48e56e368f546cccda191f215c79da47f2fe0aa42dfff2876"
+  }
+}

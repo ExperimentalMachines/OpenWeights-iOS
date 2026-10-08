@@ -1,0 +1,14 @@
+{
+  "confirmedAtUTC": "2026-10-07T09:07:32.078622+00:00",
+  "userConfirmation": "confirmed",
+  "phoneHold": "lifted-for-new-benchmark",
+  "pilot": "qwen-pilot-20261007-attempt2",
+  "stage": "pilot-and-comparison-measured-privately-archived",
+  "measurementBudgetSeconds": 900,
+  "pilotRequests": 36,
+  "pilotConversations": 6,
+  "broaderBatch": "five-models-20261007-attempt0",
+  "broaderStage": "measure-complete",
+  "broaderRequests": 180,
+  "broaderMeasurementSeconds": 2028.774
+}

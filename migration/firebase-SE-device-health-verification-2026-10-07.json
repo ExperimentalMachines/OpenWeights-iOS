@@ -1,0 +1,188 @@
+{
+  "archive": {
+    "bytes": 294356,
+    "file": "firebase-SE-device-health-2026-10-07-proof.zip",
+    "inputs": 54,
+    "sha256": "d898f7b2024ae7573d511d3a2949fcea7740dfb6b59f6c866d6638ac7cb6519b"
+  },
+  "buildReceipt": {
+    "buildCommand": [
+      "xcodebuild",
+      "-project",
+      ".build/device-health/OpenWeightsDeviceHealth.xcodeproj",
+      "-scheme",
+      "DeviceHealth",
+      "-configuration",
+      "Release",
+      "-destination",
+      "generic/platform=iOS",
+      "-derivedDataPath",
+      "/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/.benchmark-work/Benchmark/DerivedData-device-health",
+      "-allowProvisioningUpdates",
+      "-jobs",
+      "4",
+      "build-for-testing",
+      "PROVISIONING_PROFILE=",
+      "PROVISIONING_PROFILE_SPECIFIER="
+    ],
+    "buildLogSHA256": "a39e4ab5a690b4b4ca1cc9cc37229cf49fb1d3c7b78ddf924b5e6219c5fba1f8",
+    "bundleIdentifier": "org.experimentalmachines.openweights.benchmark",
+    "executables": {
+      "Release-iphoneos/OpenWeightsDeviceHealth.app/OpenWeightsDeviceHealth": "325dae8ff0988b462c71b7c518d59a5f8813f8b1b4854625d1b0cd68a54141d6",
+      "Release-iphoneos/OpenWeightsDeviceHealth.app/PlugIns/DeviceHealthTests.xctest/DeviceHealthTests": "393bcbeed90b6624b2bdbb0fdf3e0d957f0a84e904918de9d2ff406bc118181c"
+    },
+    "limits": [
+      "Compilation and signature checks are not native execution. All local phone tests remain held by the user.",
+      "There are no model assets or inference libraries in this diagnostic. A pass cannot establish benchmark compatibility or fill any A2 cell.",
+      "The original SE3 catalog18.4 cohort is unchanged. Any future paid execution needs fresh approval."
+    ],
+    "linkedLibraries": {
+      "Release-iphoneos/OpenWeightsDeviceHealth.app/OpenWeightsDeviceHealth": "/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/openweights-ios/ios/Benchmark/.build/DerivedData-device-health/Build/Products/Release-iphoneos/OpenWeightsDeviceHealth.app/OpenWeightsDeviceHealth:\n\t/System/Library/Frameworks/Foundation.framework/Foundation (compatibility version 300.0.0, current version 4201.0.0, weak)\n\t/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n\t/System/Library/Frameworks/SwiftUI.framework/SwiftUI (compatibility version 1.0.0, current version 7.2.5)\n\t/System/Library/Frameworks/UIKit.framework/UIKit (compatibility version 1.0.0, current version 9126.2.4, weak)\n\t/usr/lib/swift/libswiftCore.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/swift/libswiftCoreFoundation.dylib (compatibility version 1.0.0, current version 120.100.0, weak)\n\t/usr/lib/swift/libswiftCoreImage.dylib (compatibility version 1.0.0, current version 2.2.0, weak)\n\t/usr/lib/swift/libswiftDarwin.dylib (compatibility version 1.0.0, current version 347.40.2, weak)\n\t/usr/lib/swift/libswiftDispatch.dylib (compatibility version 1.0.0, current version 56.0.0, weak)\n\t/usr/lib/swift/libswiftMetal.dylib (compatibility version 1.0.0, current version 370.64.2, weak)\n\t/usr/lib/swift/libswiftOSLog.dylib (compatibility version 1.0.0, current version 10.0.0, weak)\n\t/usr/lib/swift/libswiftObjectiveC.dylib (compatibility version 1.0.0, current version 951.1.0, weak)\n\t/usr/lib/swift/libswiftQuartzCore.dylib (compatibility version 1.0.0, current version 5.0.0, weak)\n\t/usr/lib/swift/libswiftSpatial.dylib (compatibility version 1.0.0, current version 1.0.0, weak)\n\t/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib (compatibility version 1.0.0, current version 879.2.4, weak)\n\t/usr/lib/swift/libswiftXPC.dylib (compatibility version 1.0.0, current version 105.0.14, weak)\n\t/usr/lib/swift/libswiftos.dylib (compatibility version 1.0.0, current version 1076.40.2, weak)\n\t/usr/lib/swift/libswiftsimd.dylib (compatibility version 1.0.0, current version 23.0.0, weak)\n",
+      "Release-iphoneos/OpenWeightsDeviceHealth.app/PlugIns/DeviceHealthTests.xctest/DeviceHealthTests": "/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/openweights-ios/ios/Benchmark/.build/DerivedData-device-health/Build/Products/Release-iphoneos/OpenWeightsDeviceHealth.app/PlugIns/DeviceHealthTests.xctest/DeviceHealthTests:\n\t@rpath/XCTest.framework/XCTest (compatibility version 0.0.0, current version 24507.0.0)\n\t@rpath/libXCTestSwiftSupport.dylib (compatibility version 1.0.0, current version 24507.0.0)\n\t/System/Library/Frameworks/Foundation.framework/Foundation (compatibility version 300.0.0, current version 4201.0.0)\n\t/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n\t/System/Library/Frameworks/UIKit.framework/UIKit (compatibility version 1.0.0, current version 9126.2.4)\n\t/usr/lib/swift/libswiftCore.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/swift/libswiftCoreFoundation.dylib (compatibility version 1.0.0, current version 120.100.0, weak)\n\t/usr/lib/swift/libswiftCoreImage.dylib (compatibility version 1.0.0, current version 2.2.0, weak)\n\t/usr/lib/swift/libswiftDarwin.dylib (compatibility version 1.0.0, current version 347.40.2, weak)\n\t/usr/lib/swift/libswiftDispatch.dylib (compatibility version 1.0.0, current version 56.0.0, weak)\n\t/usr/lib/swift/libswiftMetal.dylib (compatibility version 1.0.0, current version 370.64.2, weak)\n\t/usr/lib/swift/libswiftOSLog.dylib (compatibility version 1.0.0, current version 10.0.0, weak)\n\t/usr/lib/swift/libswiftObjectiveC.dylib (compatibility version 1.0.0, current version 951.1.0, weak)\n\t/usr/lib/swift/libswiftQuartzCore.dylib (compatibility version 1.0.0, current version 5.0.0, weak)\n\t/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib (compatibility version 1.0.0, current version 879.2.4, weak)\n\t/usr/lib/swift/libswiftXPC.dylib (compatibility version 1.0.0, current version 105.0.14, weak)\n\t/usr/lib/swift/libswiftos.dylib (compatibility version 1.0.0, current version 1076.40.2, weak)\n"
+    },
+    "purpose": "device-launch-diagnostic-no-inference",
+    "recordedAtUTC": "2026-10-06T20:14:38.510446+00:00",
+    "schemaVersion": 1,
+    "sdk": "26.2",
+    "selectedPlan": {
+      "file": "device-health-SE-original-cohort.xctestrun",
+      "maximumMethodSeconds": 120,
+      "methods": [
+        "DeviceHealthTests/testLaunchAndAttachDeviceConditions"
+      ],
+      "sha256": "d887ee5b918cd51d391f5d2efe497ac3572c185856103a8ea6db4a2a3f91d3a4"
+    },
+    "sources": {
+      "DeviceHealth/App.swift": "1a14eb7e65c3f519eeb3c3500d9d95e3bf504ed078127291ff113277fffc9dff",
+      "DeviceHealth/Tests.swift": "3f8d1b5738c347d1a5b003f9fa99158dabc0477e7b3b410c29dc80761c09cc36",
+      "DeviceHealth/project.yml": "04191fe1c5fbd34fa2790f2d79f04f008442356fe6568abfc6421ff7310f2268"
+    },
+    "status": "release-compiled-signed-isolated-plan-verified-no-native-execution",
+    "testBundleIdentifier": "org.experimentalmachines.openweights.benchmark.tests",
+    "xcode": "Xcode 26.2\nBuild version 17C52"
+  },
+  "conditions": {
+    "applicationState": 0,
+    "bundleIdentifier": "org.experimentalmachines.openweights.benchmark",
+    "device": "iPhone14,6",
+    "inferenceExecuted": false,
+    "lowPowerMode": false,
+    "operatingSystem": "Version 18.4 (Build 22E240)",
+    "physicalMemoryBytes": 4076322816,
+    "protectedDataAvailable": true,
+    "purpose": "firebase-device-launch-diagnostic-no-inference",
+    "recordedAt": "2026-10-06T20:24:11Z",
+    "thermalState": 0
+  },
+  "conditionsAttachment": {
+    "file": "Results/firebase-SE-device-health-matrix-2pv90jl9ezi09/attachments/7A83EECC-2DE6-4520-9026-4832B3A4001C.json",
+    "sha256": "e49ddae9497ef378c560b5810b5d2438e1fe390e1f13cfab0c63d77c30cf3ec8"
+  },
+  "downloadManifest": {
+    "file": "Results/firebase-SE-device-health-matrix-2pv90jl9ezi09/download-manifest.json",
+    "sha256": "1103b87e2c168703686852919a07a65e720efbd2f04d6881eb550f3f4d781b82"
+  },
+  "earlierFailures": "migration/SE-infrastructure-recheck-2026-10-07.json",
+  "limits": [
+    "This lightweight source cohort proves native launch and attachment delivery only. It contains no models or inference libraries.",
+    "It does not identify the earlier infrastructure failure cause, establish model fit, repair a benchmark or complete any A2 cell.",
+    "The original SE3 catalog18.4 cohort is kept. Actual OS18.4/22E240 is now observed.",
+    "All local phone tests remained held. No local device installation or test was performed.",
+    "Actual invoice, free allowance, storage/transfer and automatic infrastructure-retry charges remain unverified."
+  ],
+  "matrixID": "matrix-2pv90jl9ezi09",
+  "nativeSummary": {
+    "devicesAndConfigurations": [
+      {
+        "device": {
+          "architecture": "arm64e",
+          "deviceId": "00008110-000C756C3CC0A01E",
+          "deviceName": "iPhone",
+          "modelName": "iPhone SE (3rd generation)",
+          "osBuildNumber": "22E240",
+          "osVersion": "18.4",
+          "platform": "iOS"
+        },
+        "expectedFailures": 0,
+        "failedTests": 0,
+        "passedTests": 1,
+        "skippedTests": 0,
+        "testPlanConfiguration": {
+          "configurationId": "1",
+          "configurationName": "Test Scheme Action"
+        }
+      }
+    ],
+    "environmentDescription": "DeviceHealth \u00b7 Built with macOS 15.7.4",
+    "expectedFailures": 0,
+    "failedTests": 0,
+    "finishTime": 1791318251.534,
+    "passedTests": 1,
+    "result": "Passed",
+    "skippedTests": 0,
+    "startTime": 1791318247.269,
+    "statistics": [],
+    "testFailures": [],
+    "title": "Test - DeviceHealth",
+    "topInsights": [],
+    "totalTestCount": 1
+  },
+  "package": {
+    "buildReceiptFile": "OpenWeightsDeviceHealth-SE3-20261007.build.json",
+    "buildReceiptSHA256": "c14b92da4ce923c5458eaa2e776e4dda53ba23792b8f3624f4bcfc64d83fb8ff",
+    "bytes": 6468904,
+    "file": "OpenWeightsDeviceHealth-SE3-20261007.zip",
+    "sha256": "fcb0e2cc931038545f790176e74ce5cba9e2b90fa68078b174b660f11ac71dca"
+  },
+  "preparationCorrection": "The first signature inspection looked for a standalone test bundle. Xcode embeds it in the host PlugIns directory. Inspection was corrected before packaging or approval.",
+  "privateArchive": {
+    "bytes": 294356,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-SE-device-health-2026-10-07-proof.zip",
+    "remotePath": "packages/d898f7b2024ae7573d511d3a2949fcea7740dfb6b59f6c866d6638ac7cb6519b/firebase-SE-device-health-2026-10-07-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/d898f7b2024ae7573d511d3a2949fcea7740dfb6b59f6c866d6638ac7cb6519b/firebase-SE-device-health-2026-10-07-proof.zip",
+    "sha256": "d898f7b2024ae7573d511d3a2949fcea7740dfb6b59f6c866d6638ac7cb6519b",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T20:31:45.279046+00:00"
+  },
+  "recordedAtUTC": "2026-10-06T20:31:38.551206+00:00",
+  "schemaVersion": 1,
+  "signedBuildArchive": {
+    "archiveBytes": 36966525,
+    "downloadedSHA256Matches": true,
+    "downloadedTreeManifestMatches": true,
+    "localRelativePath": ".benchmark-work/Benchmark/DerivedData-device-health",
+    "logicalBytes": 84590880,
+    "remotePath": "builds/e830ff52874fa94536c90763ef4d1371c1ac27921fce7feef178d3fe76d3f1bb/DerivedData-device-health.tar.gz",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/builds/e830ff52874fa94536c90763ef4d1371c1ac27921fce7feef178d3fe76d3f1bb/DerivedData-device-health.tar.gz",
+    "sha256": "e830ff52874fa94536c90763ef4d1371c1ac27921fce7feef178d3fe76d3f1bb",
+    "status": "archived-local-directory-removed",
+    "verifiedAtUTC": "2026-10-06T20:32:49.968666+00:00"
+  },
+  "status": "actual-SE3-iOS18.4-native-launch-and-attachment-verified-no-inference",
+  "submissionReceipt": {
+    "file": "firebase-SE3-device-health-submission-2026-10-07.json",
+    "sha256": "b64b2dffc724b18f53becddeafc6441175f7c77ed963a65d5ab2f23c796a13b4"
+  },
+  "submittedPackageArchive": {
+    "bytes": 6468904,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/OpenWeightsDeviceHealth-SE3-20261007.zip",
+    "remotePath": "packages/fcb0e2cc931038545f790176e74ce5cba9e2b90fa68078b174b660f11ac71dca/OpenWeightsDeviceHealth-SE3-20261007.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/fcb0e2cc931038545f790176e74ce5cba9e2b90fa68078b174b660f11ac71dca/OpenWeightsDeviceHealth-SE3-20261007.zip",
+    "sha256": "fcb0e2cc931038545f790176e74ce5cba9e2b90fa68078b174b660f11ac71dca",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T20:31:56.683561+00:00"
+  },
+  "testProcessSeconds": 7,
+  "uploadedPackage": {
+    "crc32c_hash": "CyMIxw==",
+    "generation": "1791318216290964",
+    "md5_hash": "npeIz6JPp+dvghBA5vx5bQ==",
+    "size": 6468904,
+    "storage_url": "gs://test-lab-6h3isj77ip6ya-hc6hd6s1qrxbu/2026-10-07_04:23:25.238946_NSTR/OpenWeightsDeviceHealth-SE3-20261007.zip#1791318216290964"
+  },
+  "uploadedPackageMatchesLocalMD5AndSize": true
+}

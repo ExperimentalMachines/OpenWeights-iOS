@@ -1,0 +1,588 @@
+{
+  "ProStorageDiagnosticApprovalQuestionItemID": "call_b530e526834d458bad71ad8bb62353de",
+  "ProStorageDiagnosticMatrixID": "matrix-2vhswnu8naude",
+  "ProStorageDiagnosticObservation": {
+    "defaultCoreMLDirectories": "all-three-missing-in-fresh-diagnostic-sandbox",
+    "filesystemFreeBytes": 81467404288,
+    "inferenceExecuted": false,
+    "priorENOSPCResolved": false,
+    "sameReportedDeviceIdentifierAsFailedCoreMLBlock4": false
+  },
+  "ProStorageDiagnosticPreparation": "migration/device-storage-diagnostic-signed-preparation-2026-10-07.json",
+  "ProStorageDiagnosticStatus": "FINISHED-two-native-passes-no-inference-full-proof-input-and-inactive-signed-build-private-roundtrip-verified",
+  "ProStorageDiagnosticSubmission": "ios/Benchmark/Results/firebase-Pro-device-storage-submission-2026-10-07.json",
+  "ProStorageDiagnosticVerification": "migration/firebase-Pro-storage-diagnostic-verification-2026-10-07.json",
+  "SEBaselinePilotApprovalStatus": "Earlier one-job approval was used once and ended in acquisition failure. It does not authorize a retry.",
+  "SEBaselinePilotCurrentObservation": {
+    "inferenceRequests": 0,
+    "matrixID": "matrix-2jipxlz5aijb0",
+    "nativeInferenceVerified": false,
+    "nativeMethodsFailed": 1,
+    "nativeMethodsPassed": 1,
+    "observedAtUTC": "2026-10-06T21:21:11.967889+00:00",
+    "outcomeSummary": "FAILURE",
+    "state": "FINISHED",
+    "toolResultsStep": {
+      "executionId": "8521848233856143153",
+      "historyId": "bh.3932635c5bf30a5c",
+      "projectId": "zeraphim-wealth-integration",
+      "stepId": "bs.ec2012ed10467193"
+    }
+  },
+  "SEBaselinePilotFailureRetention": "migration/firebase-SE3-baseline-pilot-failure-retention-2026-10-07.json",
+  "SEBaselinePilotInputVerification": "migration/firebase-SE3-baseline-pilot-input-verification-2026-10-07.json",
+  "SEBaselinePilotNextAction": "Historical acquisition failure retained. Separately approved current-build retry completed with three native passes and45requests. Neither approval authorizes another job.",
+  "SEBaselinePilotPackageVerification": "migration/SE3-baseline-pilot-package-verification-2026-10-07.json",
+  "SEBaselinePilotPreflight": "ios/Benchmark/Study/firebase-SE3-baseline-pilot-preflight-2026-10-07.json",
+  "SEBaselinePilotPreparationProcess": {
+    "exitCode": 0,
+    "instruction": "Preparation is complete. Inspect the already submitted matrix before any action. Never resubmit.",
+    "script": "ios/Benchmark/.build/firebase/prepare-SE-baseline-pilot.py",
+    "sessionID": 62922,
+    "status": "terminal-candidate-member-comparison-complete-package-preflight-verified"
+  },
+  "SEBaselinePilotStatus": "FINISHED-one-native-pass-one-download-failure-zero-inference-rows-no-runtime-compatibility-established",
+  "SEBaselinePilotSubmission": "ios/Benchmark/Results/firebase-SE3-baseline-pilot-submission-2026-10-07.json",
+  "SEBaselinePilotSubmissionProcess": {
+    "exitCode": 0,
+    "log": "ios/Benchmark/.build/firebase/SE-baseline-pilot-submit-20261007.log",
+    "matrixID": "matrix-2jipxlz5aijb0",
+    "sessionID": 63019,
+    "status": "terminal-native-acquisition-failure-retained-do-not-resubmit"
+  },
+  "SECurrentBaselinePilotApprovalQuestionItemID": "call_d32d36444be345fc85b71f1802fcc9da",
+  "SECurrentBaselinePilotApprovalStatus": "Explicit current-build single-job approval used once. No further job authorized.",
+  "SECurrentBaselinePilotDownloadHelper": "ios/Benchmark/.build/firebase/download-SE-current-baseline-pilot.py",
+  "SECurrentBaselinePilotLastObservation": "Native summary and XML agree: three methods passed, zero failures/skips, 45 completed requests across five configurations. All12 fresh files verified on attempt1. No growing-history primary block added.",
+  "SECurrentBaselinePilotObserver": "ios/Benchmark/.build/firebase/observe-SE-current-baseline-pilot.py",
+  "SECurrentBaselinePilotPackageVerification": "migration/SE3-current-baseline-pilot-package-verification-2026-10-07.json",
+  "SECurrentBaselinePilotPreflight": "ios/Benchmark/Study/firebase-SE3-current-baseline-pilot-preflight-2026-10-07.json",
+  "SECurrentBaselinePilotPreparationProcess": {
+    "exitCode": 0,
+    "log": "ios/Benchmark/.build/firebase/SE-current-baseline-pilot-preparation-20261007.log",
+    "sessionID": 41663,
+    "status": "current-signed-local-validated-package-prepared-live-catalog-and12-public-file-availability-checked"
+  },
+  "SECurrentBaselinePilotStatus": "FINISHED-three-native-passes-five-configurations-45-requests-input-and-full-proof-private-roundtrip-verified",
+  "SECurrentBaselinePilotSubmission": "ios/Benchmark/Results/firebase-SE3-current-baseline-pilot-submission-2026-10-07.json",
+  "SECurrentBaselinePilotSubmissionProcess": {
+    "exitCode": 0,
+    "matrixID": "matrix-yuec0dllq1q3a",
+    "sessionID": 89522,
+    "status": "terminal-native-three-passes-full-proof-retained-do-not-resubmit"
+  },
+  "SECurrentBaselinePilotSubmitHelper": "ios/Benchmark/.build/firebase/submit-SE-current-baseline-pilot.py",
+  "SECurrentBaselinePilotUploadedInputVerified": true,
+  "SECurrentBaselinePilotVerification": "migration/firebase-SE3-current-baseline-pilot-verification-2026-10-07.json",
+  "SECurrentStudyS1Block2ApprovalQuestionItemID": "call_4b38e7b53ab4410ea423c821278a72e2",
+  "SECurrentStudyS1Block2ApprovalStatus": "Single approved job used once. All three automatic infrastructure attempts belong to this same matrix. No further paid job approved.",
+  "SECurrentStudyS1Block2FailureReceipt": "ios/Benchmark/Results/firebase-SE3-current-study-S1-block2-infrastructure-failure-2026-10-07.json",
+  "SECurrentStudyS1Block2LastObservation": {
+    "actualDevice": null,
+    "actualOperatingSystem": null,
+    "automaticInfrastructureAttempts": 3,
+    "executionState": "ERROR",
+    "inferenceObserved": false,
+    "nativeCaseRecordsObserved": 0,
+    "outcomeSummary": "INCONCLUSIVE",
+    "providerError": "Internal System Error 3",
+    "providerObjectKind": "exact-submitted-input-ZIP-only",
+    "recordedAtUTC": "2026-10-06T23:05:32.945080+00:00",
+    "state": "FINISHED"
+  },
+  "SECurrentStudyS1Block2MatrixID": "matrix-phcho7u3nupba",
+  "SECurrentStudyS1Block2ObserverStatus": "Terminal job. Local input was privately verified and evicted. Do not rerun the observer or resubmit.",
+  "SECurrentStudyS1Block2PackageVerification": "migration/SE3-current-study-S1-block2-package-verification-2026-10-07.json",
+  "SECurrentStudyS1Block2Preflight": "ios/Benchmark/Study/firebase-SE3-current-study-S1-block2-preflight-2026-10-07.json",
+  "SECurrentStudyS1Block2ProviderInfrastructureObservation": {
+    "executionStates": [
+      "RUNNING"
+    ],
+    "file": ".build/firebase/matrix-phcho7u3nupba-infrastructure-observation-20261006T222743Z.json",
+    "matrixState": "PENDING",
+    "providerErrorMessages": [
+      "Infrastructure error occurred."
+    ],
+    "recordedAtUTC": "2026-10-06T22:27:43.116054+00:00",
+    "sha256": "7a0d335bbc1ad3d361013c02d5a5ae177d77a9b8b009d2b394cb578d062051ad",
+    "terminal": false
+  },
+  "SECurrentStudyS1Block2ProviderRetryObservations": [
+    {
+      "executionStates": [
+        "RUNNING"
+      ],
+      "file": ".build/firebase/matrix-phcho7u3nupba-infrastructure-observation-20261006T222743Z.json",
+      "matrixState": "PENDING",
+      "providerErrorMessages": [
+        "Infrastructure error occurred."
+      ],
+      "recordedAtUTC": "2026-10-06T22:27:43.116054+00:00",
+      "sha256": "7a0d335bbc1ad3d361013c02d5a5ae177d77a9b8b009d2b394cb578d062051ad",
+      "terminal": false
+    },
+    {
+      "file": ".build/firebase/matrix-phcho7u3nupba-infrastructure-retries-observation-20261006T2236Z.json",
+      "limits": [
+        "Provider reports infrastructure retries for attempts 1 and 2 and a start for attempt 3. This is the same submitted matrix, not additional study replication.",
+        "No native result or runtime failure is established by this nonterminal observation."
+      ],
+      "progressMessages": [
+        [
+          "Starting attempt 1.",
+          "Infrastructure error occurred. Retrying...",
+          "Starting attempt 2.",
+          "Infrastructure error occurred. Retrying...",
+          "Starting attempt 3."
+        ]
+      ],
+      "recordedAtUTC": "2026-10-06T22:36:34.994809+00:00",
+      "sha256": "9feee1d04f3aeb7664af2f467db2d2e7a1c82a33d4c48f401d015b425e0900b0",
+      "state": "PENDING"
+    }
+  ],
+  "SECurrentStudyS1Block2Retention": "migration/firebase-SE3-current-study-S1-block2-infrastructure-retention-2026-10-07.json",
+  "SECurrentStudyS1Block2Status": "FINISHED-INCONCLUSIVE-provider-infrastructure-failure-three-automatic-attempts-zero-native-cases-no-inference-input-and-full-proof-private-roundtrip-verified",
+  "SECurrentStudyS1Block2Submission": "ios/Benchmark/Results/firebase-SE3-current-study-S1-block2-submission-2026-10-07.json",
+  "SECurrentStudyS1Block2SubmissionProcess": {
+    "exitCode": 0,
+    "matrixID": "matrix-phcho7u3nupba",
+    "sessionID": 30792,
+    "status": "terminal-provider-infrastructure-failure-retained-do-not-resubmit"
+  },
+  "SECurrentStudyS1Block2UploadedInputVerified": true,
+  "SECurrentStudyS1Block3ApprovalQuestionItemID": "call_a85e862c4a924d82863b1f16eb45f6b1",
+  "SECurrentStudyS1Block3LastObservation": {
+    "executionStates": [
+      "RUNNING"
+    ],
+    "outcomeSummary": null,
+    "recordedAtUTC": "2026-10-06T23:22:42.038857+00:00",
+    "state": "PENDING"
+  },
+  "SECurrentStudyS1Block3LedgerVerification": "migration/SE-study-block3-submission-ledger-verification-2026-10-07.json",
+  "SECurrentStudyS1Block3MatrixID": "matrix-3g4oz19yc7jiy",
+  "SECurrentStudyS1Block3ModelAvailability": "All12public pinned files return HTTP200 with matching content-length. This checks availability/metadata only, not full SHA256.",
+  "SECurrentStudyS1Block3Observer": "ios/Benchmark/.build/firebase/observe-SE-current-study-S1-block3.py",
+  "SECurrentStudyS1Block3PackageSHA256": "4b3c2ad77917b9dd7f15a514ec531d3d097abf30c18a5cd2f30c5db8c5c9a7d5",
+  "SECurrentStudyS1Block3PackageVerification": "migration/SE3-current-study-S1-block3-package-verification-2026-10-07.json",
+  "SECurrentStudyS1Block3Preflight": "ios/Benchmark/Study/firebase-SE3-current-study-S1-block3-preflight-2026-10-07.json",
+  "SECurrentStudyS1Block3PreparationProcess": {
+    "exitCode": 0,
+    "log": "ios/Benchmark/.build/firebase/SE-study-S1-block3-preparation-20261007.log",
+    "script": "ios/Benchmark/.build/firebase/prepare-SE-current-study-S1-block3.py",
+    "sessionID": 74585,
+    "status": "candidate-package-verified-no-cloud-submission"
+  },
+  "SECurrentStudyS1Block3Status": "submitted-once-provider-execution-RUNNING-matrix-PENDING-input-size-and-MD5-verified-no-native-result-yet",
+  "SECurrentStudyS1Block3Submission": "ios/Benchmark/Results/firebase-SE3-current-study-S1-block3-submission-2026-10-07.json",
+  "SECurrentStudyS1Block3SubmissionProcess": {
+    "exitCode": 0,
+    "instruction": "Do not resubmit. Poll this existing process and then observe its matrix.",
+    "log": "ios/Benchmark/.build/firebase/SE-study-S1-block3-submission-helper-20261007.log",
+    "matrixID": "matrix-3g4oz19yc7jiy",
+    "script": "ios/Benchmark/.build/firebase/submit-SE-current-study-S1-block3.py",
+    "sessionID": 67273,
+    "status": "terminal-submission-CLI-approved-job-live-do-not-resubmit",
+    "submissionReceipt": "ios/Benchmark/Results/firebase-SE3-current-study-S1-block3-submission-2026-10-07.json"
+  },
+  "SECurrentStudyS1Block3UploadedInputVerified": true,
+  "SEDeviceLaunchDiagnosticCLIProcess": {
+    "exitCode": 0,
+    "instruction": "Inspect this existing submission and receipt before doing anything. Never resubmit merely because observation times out.",
+    "log": "ios/Benchmark/.build/firebase/SE-device-health-submit-20261007.log",
+    "matrixID": "matrix-2pv90jl9ezi09",
+    "script": "ios/Benchmark/.build/firebase/submit-SE-device-health.py",
+    "sessionID": 4579,
+    "status": "terminal-native-result-verified-do-not-resubmit"
+  },
+  "SEDeviceLaunchDiagnosticPreflight": "ios/Benchmark/Study/firebase-SE3-device-health-preflight-2026-10-07.json",
+  "SEDeviceLaunchDiagnosticStatus": "FINISHED-one-native-pass-full-evidence-package-and-inactive-build-privately-retained-no-inference",
+  "SEDeviceLaunchDiagnosticSubmission": "ios/Benchmark/Results/firebase-SE3-device-health-submission-2026-10-07.json",
+  "SEDeviceLaunchDiagnosticVerification": "migration/firebase-SE-device-health-verification-2026-10-07.json",
+  "SEFailureAndFigureArchiveProcess": {
+    "exitCode": 0,
+    "log": ".build/archive-transfers/SE-pilot-failure-and-figures-20261007.log",
+    "plan": "migration/SE-pilot-failure-and-figure-transfer-plan-2026-10-07.json",
+    "sessionID": 67827,
+    "status": "complete-private-roundtrip-verified-named-ZIPs-evicted-remote-receipts-attached"
+  },
+  "SEFullSmokeApprovalQuestion": "One SE3 catalog18.4 Xcode26.2 smoke with15minute limit, unchanged93.61MB c70a5f9de407 package, USD1.25 execution excluding unverified extras.",
+  "SEFullSmokeCLIProcess": {
+    "exitCode": 0,
+    "instruction": "Inspect the existing submission receipt, process and log first. Never resubmit because observation times out.",
+    "log": "ios/Benchmark/.build/firebase/SE-full-smoke-submit-20261007.log",
+    "matrixID": "matrix-2fgikhy1zqvy7",
+    "script": "ios/Benchmark/.build/firebase/submit-SE-full-smoke.py",
+    "sessionID": 48004,
+    "status": "cli-terminal-native-result-verified-do-not-resubmit"
+  },
+  "SEFullSmokeInputVerification": "migration/firebase-SE3-full-smoke-input-verification-2026-10-07.json",
+  "SEFullSmokePreflight": "ios/Benchmark/Study/firebase-SE3-full-smoke-preflight-2026-10-07.json",
+  "SEFullSmokeStatus": "FINISHED-two-native-passes-nine-full-Metal-requests-full-evidence-and-input-package-private-roundtrip-verified",
+  "SEFullSmokeSubmission": "ios/Benchmark/Results/firebase-SE3-full-smoke-submission-2026-10-07.json",
+  "SEFullSmokeVerification": "migration/firebase-SE3-full-smoke-verification-2026-10-07.json",
+  "SEInfrastructureRecheck": "migration/SE-infrastructure-recheck-2026-10-07.json",
+  "SENextCompatibilityCheck": "Five baseline configurations passed native SE compatibility. Core ML and ExecuTorch MLX require separate SE validation. Growing-history study remains incomplete. Every further paid job needs fresh approval.",
+  "SEStudyBlock2RearchiveAfterPreparation": {
+    "exitCode": 0,
+    "log": ".build/archive-transfers/SE-study-input-rearchive-after-block3-20261007.log",
+    "sessionID": 93215,
+    "status": "exact-restored-block2-input-private-fresh-SHA256-and-ZIP-CRC-verified-evicted-after-block3-derivation"
+  },
+  "activeCloudJobs": [
+    "matrix-3g4oz19yc7jiy"
+  ],
+  "androidInactiveBuildTransferPlan": "migration/android-build-transfer-plan-2026-10-07.json",
+  "androidInstallationProof": "migration/android-toolchain-installation-2026-10-07.json",
+  "androidRegression": "migration/android-shared-engine-regression-2026-10-07.json",
+  "androidRegressionProof": "migration/android-regression-verification-2026-10-07.json",
+  "cloudBlock2NativeCollectionProcess": {
+    "exitCode": 0,
+    "script": "ios/Benchmark/.build/firebase/download-coreml-S1-block2.py",
+    "sessionID": 63549,
+    "status": "terminal-native-evidence-verified-two-passes-six-turns"
+  },
+  "cloudBlock2ReceiptBindingCorrection": "migration/firebase-coreml-S1-block2-receipt-binding-2026-10-07.json",
+  "cloudBlock2Retention": "migration/firebase-coreml-S1-block2-retention-2026-10-07.json",
+  "cloudBlock2RetentionStatus": "complete-full171-member-proof-private-roundtrip-verified-local-proof-ZIP-evicted",
+  "cloudBlock2UploadedPackage": {
+    "crc32c_hash": "KHQIng==",
+    "generation": "1791316394943106",
+    "localSHA256": "92a065a525633c3bcaad8fec480ff39b15add8c4805da4875f9c617f77b2222d",
+    "localSizeAndMD5Match": true,
+    "md5_hash": "88WY+EapEY2pN0Bb3Ltvlw==",
+    "size": 1489291853,
+    "storage_url": "gs://test-lab-6h3isj77ip6ya-hc6hd6s1qrxbu/2026-10-07_03:29:32.049555_CMRv/OpenWeightsDelegatesBench-CoreML-S1-block2-92a065a52563.zip#1791316394943106"
+  },
+  "cloudBlock3InputReuseProof": "migration/firebase-coreml-S1-block3-input-reuse-2026-10-07.json",
+  "cloudBlock3NativeCollectionProcess": {
+    "exitCode": 0,
+    "script": "ios/Benchmark/.build/firebase/download-coreml-S1-block3.py",
+    "sessionID": 96852,
+    "status": "terminal-full-native-evidence-verified-two-passes-six-turns"
+  },
+  "cloudBlock3Preflight": "ios/Benchmark/Study/firebase-coreml-S1-block3-preflight-2026-10-07.json",
+  "cloudBlock3Retention": "migration/firebase-coreml-S1-block3-retention-2026-10-07.json",
+  "cloudBlock3RetentionStatus": "complete-private-roundtrip-verified-local-proof-ZIP-evicted",
+  "cloudBlock3Submission": "ios/Benchmark/Results/firebase-coreml-S1-block3-submission-2026-10-07.json",
+  "cloudBlock3SubmissionCLIProcess": {
+    "exitCode": 0,
+    "instruction": "Inspect this existing process and receipt before doing anything. Do not submit this job again.",
+    "log": "ios/Benchmark/.build/firebase/coreml-S1-block3-submit-20261007.log",
+    "matrixID": "matrix-b4vgabbu3fofa",
+    "script": "ios/Benchmark/.build/firebase/submit-coreml-S1-block3.py",
+    "sessionID": 4603,
+    "status": "terminal-native-result-verified-do-not-resubmit"
+  },
+  "cloudBlock4CurrentObservation": {
+    "actualOperatingSystem": "Version18.3.2/22D82",
+    "inferenceSamples": 0,
+    "matrixID": "matrix-2taqpjj8qiv6h",
+    "nativeInferenceVerified": false,
+    "nativeMethodsFailed": 1,
+    "nativeMethodsPassed": 1,
+    "outcomeSummary": "FAILURE",
+    "rawReportPending": false,
+    "state": "FINISHED"
+  },
+  "cloudBlock4FailureArchiveProcess": {
+    "exitCode": 0,
+    "log": ".build/archive-transfers/coreml-cloud-block4-failure-20261007.log",
+    "plan": "migration/coreml-S1-cloud-block4-failure-transfer-plan-2026-10-07.json",
+    "sessionID": 28069,
+    "status": "terminal-complete-full182-member-proof-and-inactive1.49GB-input-privately-roundtrip-verified-evicted-restore-receipts-attached"
+  },
+  "cloudBlock4FailureRetention": "migration/firebase-coreml-S1-block4-failure-retention-2026-10-07.json",
+  "cloudBlock4InputReuseProof": "migration/firebase-coreml-S1-block4-input-reuse-2026-10-07.json",
+  "cloudBlock4NativeCollectionProcess": {
+    "exitCode": 0,
+    "sessionID": 64347,
+    "status": "terminal-full36-provider-object-generation-size-MD5-verified-native-load-failure-retained"
+  },
+  "cloudBlock4NativeFailure": "Bundled hashes passed. Model initialization failed saving compiled CoreML model. Device APFS logs show seven OpenWeightsBench ENOSPC entries at the same time. Zero generation samples. This is disk exhaustion, not measured RAM or model-speed failure.",
+  "cloudBlock4Preflight": "ios/Benchmark/Study/firebase-coreml-S1-block4-preflight-2026-10-07.json",
+  "cloudBlock4Submission": "ios/Benchmark/Results/firebase-coreml-S1-block4-submission-2026-10-07.json",
+  "cloudBlock4SubmissionProcess": {
+    "authorizationQuestionItemID": "call_5b798daf767e492b8fa0fa3e852f6225",
+    "exitCode": 0,
+    "log": "ios/Benchmark/.build/firebase/coreml-S1-block4-submit-20261007.log",
+    "matrixID": "matrix-2taqpjj8qiv6h",
+    "sessionID": 3947,
+    "status": "terminal-native-load-failure-retained-do-not-resubmit"
+  },
+  "cloudCoreMLS1MatchingPrimaryBlocks": 4,
+  "cloudCurrentObservationUTC": "2026-10-06T21:24:01.121742+00:00",
+  "cloudCurrentProviderObservations": [
+    {
+      "block": 2,
+      "completeTurns": 6,
+      "inferenceVerified": true,
+      "matrixID": "matrix-1jgc3mvu4dnif",
+      "nativeMethodsPassed": 2,
+      "retention": "migration/firebase-coreml-S1-block2-retention-2026-10-07.json",
+      "state": "FINISHED"
+    },
+    {
+      "block": 3,
+      "completeTurns": 6,
+      "inferenceVerified": true,
+      "matrixID": "matrix-b4vgabbu3fofa",
+      "nativeMethodsPassed": 2,
+      "retention": "migration/firebase-coreml-S1-block3-retention-2026-10-07.json",
+      "state": "FINISHED"
+    }
+  ],
+  "cloudObservation": "Four of five matching complete Pro Core ML S1 blocks on actual iOS 18.3.2/22D82. Final block failed saving compiled model with APFS ENOSPC and zero inference. Current SE S1 block2 ended in provider infrastructure failure with zero observed native cases. Strict replication remains9of63.",
+  "cloudRetention": "migration/firebase-coreml-S1-block1-retention-2026-10-07.json",
+  "cloudSubmission": "ios/Benchmark/Results/firebase-coreml-S1-block1-submission-2026-10-07.json",
+  "completedHistoricalCoreMLBuildRetention": "migration/completed-coreml-S1-build-retention-2026-10-07.json",
+  "completedLocalStudyExecution": "ios/Benchmark/Results/study-coreml-S2-workshop-corrections-block1-20261006T184345Z-execution.json",
+  "completedUIBuildArchive": "migration/native-ui-navigation-2026-10-07.json#signedBuildArchive",
+  "coreMLCollectionCommands": {
+    "2": [
+      "python3",
+      "Study/collect_coreml_result.py",
+      "--preflight",
+      "Study/firebase-coreml-S1-block2-preflight-2026-10-07.json",
+      "--submission",
+      "Results/firebase-coreml-S1-block2-submission-2026-10-07.json",
+      "--matrix-file",
+      ".build/firebase/matrix-1jgc3mvu4dnif-latest.json",
+      "--native-dir",
+      "Results/firebase-coreml-S1-block2-matrix-1jgc3mvu4dnif",
+      "--package-object",
+      ".build/firebase/coreml-S1-block2-uploaded-object.json"
+    ],
+    "3": [
+      "python3",
+      "Study/collect_coreml_result.py",
+      "--preflight",
+      "Study/firebase-coreml-S1-block3-preflight-2026-10-07.json",
+      "--submission",
+      "Results/firebase-coreml-S1-block3-submission-2026-10-07.json",
+      "--matrix-file",
+      ".build/firebase/matrix-b4vgabbu3fofa-latest.json",
+      "--native-dir",
+      "Results/firebase-coreml-S1-block3-matrix-b4vgabbu3fofa",
+      "--package-object",
+      ".build/firebase/coreml-S1-block3-uploaded-package-object.json",
+      "--plan-object",
+      ".build/firebase/coreml-S1-block3-uploaded-plan-object.json"
+    ],
+    "4": [
+      "python3",
+      "Study/collect_coreml_result.py",
+      "--preflight",
+      "Study/firebase-coreml-S1-block4-preflight-2026-10-07.json",
+      "--submission",
+      "Results/firebase-coreml-S1-block4-submission-2026-10-07.json",
+      "--matrix-file",
+      ".build/firebase/matrix-2taqpjj8qiv6h-latest.json",
+      "--native-dir",
+      "Results/firebase-coreml-S1-block4-matrix-2taqpjj8qiv6h",
+      "--package-object",
+      ".build/firebase/coreml-S1-block4-uploaded-package-object.json",
+      "--plan-object",
+      ".build/firebase/coreml-S1-block4-uploaded-plan-object.json"
+    ]
+  },
+  "coreMLResultCollector": "ios/Benchmark/Study/collect_coreml_result.py",
+  "coreMLResultCollectorVerification": "migration/coreml-result-collector-shared-results-verification-2026-10-07.json",
+  "currentAnalysis": "ios/Benchmark/Results/study-analysis-source-build-separated-schema5-grading3-2026-10-07.json",
+  "currentAnalysisSchemaVersion": 5,
+  "currentCloudSubmissionCLIProcess": {
+    "exitCode": 0,
+    "instruction": "Do not resubmit. Poll this existing process and then observe its matrix.",
+    "log": "ios/Benchmark/.build/firebase/SE-study-S1-block3-submission-helper-20261007.log",
+    "matrixID": "matrix-3g4oz19yc7jiy",
+    "script": "ios/Benchmark/.build/firebase/submit-SE-current-study-S1-block3.py",
+    "sessionID": 67273,
+    "status": "terminal-submission-CLI-approved-job-live-do-not-resubmit",
+    "submissionReceipt": "ios/Benchmark/Results/firebase-SE3-current-study-S1-block3-submission-2026-10-07.json"
+  },
+  "currentGradingVersion": 3,
+  "currentStudyReportReproduction": {
+    "byteIdenticalReproduction": true,
+    "file": "docs/research/ios-repeated-artifact-study.md",
+    "ledgerSnapshotNote": "Earlier report-update receipt binds the terminal-block2 ledger snapshot. Current ledger additionally records one pending block3 job; new ledger verification proves it adds no replication.",
+    "reportAndLedgerControlsPassed": 12,
+    "sha256": "22067e17047c361ebdc3824b2edb06dbc2c916efdb7bd90b05a79d9d89a54358",
+    "unavailableExecutionsRetained": 3,
+    "verification": "migration/SE-study-terminal-report-update-verification-2026-10-07.json"
+  },
+  "dailySignalRecord": "/Users/zeraphim/Documents/Files/ThisIsZeraphim/context-bank/strategy/daily/2026-10-07.md",
+  "dailySignalsSavedThisTurn": [
+    {
+      "date": "2026-10-07",
+      "outcome": "signed-ordinary-gzip-product-two-native-method-preparation-private434member-proof",
+      "proof": "migration/gzip-signed-product-preparation-verification-2026-10-07.json"
+    }
+  ],
+  "deviceCohortFigureStatus": "Nine host controls pass. Actual five-block local Core ML figure reproduces all four assets byte-for-byte. Actual four-block cloud selection refused. Corrected preview inspected and full 75-member proof privately retained. No new study block added.",
+  "deviceCohortFigureVerification": "migration/device-cohort-figure-verification-2026-10-07.json",
+  "failedRowsCurrent": 16,
+  "fetchDecoderHostCutoverVerification": "migration/fetch-decoder-host-cutover-verification-2026-10-07.json",
+  "fetchDecoderPlatformAlternative": {
+    "decision": "../Context/Decisions/0009-ios-utf32-surrogate-replacement.md",
+    "proof": "migration/fetch-decoder-platform-proposal-2026-10-07.json",
+    "questionItemID": "call_VbOFImiA3ym33Fz2peQabSd8",
+    "status": "approved-Unicode-replacement-policy-with-scoped-evidence-P13-incomplete"
+  },
+  "fullScope": [
+    "A1 Firebase readiness and independent checkout validation",
+    "A2 seven configurations x three devices x three scenarios, five matching primary blocks per cell",
+    "A3 all P1-P21 actual Android feature parity or approved verified platform alternatives"
+  ],
+  "gzipLiveHostProcess": {
+    "exitCode": 0,
+    "harnessPath": "ios/Product/.build/gzip-live-harness",
+    "runnerLog": "ios/Product/.build/gzip-live-host-runner-20261007.log",
+    "scratchPath": "ios/Product/.build/gzip-live-harness-build",
+    "script": "ios/Benchmark/.build/firebase/run-gzip-live-host.py",
+    "sessionID": 70069,
+    "status": "terminal-five-live-Mac-canonical-compatibility-checks-passed-source-inputs-unchanged-no-native-phone-execution"
+  },
+  "gzipLiveHostProofArchiveProcess": {
+    "log": ".build/archive-transfers/gzip-live-host-proof-20261007.log",
+    "plan": "migration/gzip-live-host-proof-transfer-plan-2026-10-07.json",
+    "sessionID": 20602,
+    "status": "running-private-fresh-download-SHA256-and-ZIP-CRC-retention"
+  },
+  "gzipLiveHostVerification": "migration/gzip-live-host-verification-2026-10-07.json",
+  "gzipPageDecoding": {
+    "completedBuildArchivesVerified": true,
+    "gzipTests": 12,
+    "iOSMinimumDeployment": "17.0",
+    "inactiveLogicalBytesFreed": 394910244,
+    "liveMacCasesPassed": 5,
+    "nativeExecution": false,
+    "nativeLiveHTTPSVerified": false,
+    "nativePreparedMethods": 2,
+    "passedHostTests": 50,
+    "privateProofVerified": true,
+    "signedProductLinkVerified": true,
+    "status": "host-verified-ios-core-compiled-signed-product-link-verified-two-native-methods-prepared-native-unexecuted-P13-incomplete",
+    "verification": "migration/gzip-page-host-ios-verification-2026-10-07.json"
+  },
+  "gzipSignedProductBuildProcess": {
+    "buildDirectory": "ios/Product/.build/DerivedData-gzip-integration",
+    "exitCode": 0,
+    "log": "ios/Product/.build/gzip-signed-product-build-20261007.log",
+    "nativeExecution": false,
+    "phoneTestHoldHonored": true,
+    "script": "ios/Benchmark/.build/firebase/build-gzip-signed-product.py",
+    "sessionID": 48993,
+    "status": "terminal-signed-ordinary-product-build-for-testing-and-linkage-verified-no-phone-access"
+  },
+  "gzipSignedProductPreparation": "migration/gzip-signed-product-preparation-verification-2026-10-07.json",
+  "gzipSignedProductProofArchiveProcess": {
+    "exitCode": 0,
+    "log": ".build/archive-transfers/gzip-signed-product-proof-20261007.log",
+    "plan": "migration/gzip-signed-product-proof-transfer-plan-2026-10-07.json",
+    "sessionID": 97754,
+    "status": "complete-private-fresh-download-SHA256-and-ZIP-CRC-verified434member-proof-local-ZIP-evicted-active-signed-products-retained"
+  },
+  "hostAnalysisAndFigureControls": {
+    "failed": 0,
+    "log": "ios/Benchmark/.build/firebase/study-controls-load-sentinel-and-cohort-figures-20261007.log",
+    "passed": 42
+  },
+  "limits": [
+    "This progress record is not the final completion audit.",
+    "Only matrix-3g4oz19yc7jiy is live. Every further paid job needs fresh approval.",
+    "Strict replication remains9of63. No native study result has been observed for the current job.",
+    "All local phone tests remain held.",
+    "Signed generic product linkage and compiled gzip methods do not close P13."
+  ],
+  "localPerformanceHold": {
+    "answer": "Continue without phone benchmarks for now",
+    "questionItemID": "call_ZU9WAsE48e76U6KDkhceZpIY",
+    "resumeRequires": "User readiness and fresh nominal-temperature/unplugged-power observation.",
+    "scope": "All local phone tests, including functional UI and performance measurements, are held by the user. Continue host app work, cloud-result collection and approved cloud work."
+  },
+  "localPhoneTestHold": {
+    "answer": "Keep all phone tests on hold",
+    "questionItemID": "call_BWNDTbbSn7NdxqPVn4lyXojc",
+    "resumeRequires": "User explicitly resumes phone tests. Performance measurements also require fresh nominal-temperature and unplugged-power observations."
+  },
+  "localStudyBlocksRemaining": 8,
+  "localStudyCompletedPrimaryBlocks": {
+    "Core ML S1": 5,
+    "Core ML S2": 2,
+    "Core ML S3": 0
+  },
+  "localStudyRetention": "migration/coreml-S2-block1-retention-2026-10-07.json",
+  "nativeCutoverProof": "migration/native-validation-2026-10-07.json",
+  "nativeDownloadHelpers": {
+    "CoreMLS1Block4": "ios/Benchmark/.build/firebase/download-coreml-S1-block4.py",
+    "SEBaselinePilot": "ios/Benchmark/.build/firebase/download-SE-baseline-pilot.py",
+    "executionGate": "Existing matrix must be terminal FINISHED. Never resubmit existing jobs."
+  },
+  "nativeMemoryUIPreparation": "migration/native-memory-ui-preparation-2026-10-07.json",
+  "nativeUIFailureProof": "migration/native-ui-startup-failure-2026-10-07.json",
+  "nativeUIValidationProof": "migration/native-ui-navigation-2026-10-07.json",
+  "nextAction": "Observe the same approved live SE S1 block3 matrix and collect every provider attempt when terminal. Do not resubmit or restart it. Continue independent host/product parity work under the local phone-test hold. Signed gzip native plan remains unexecuted.",
+  "nextCloudPackageStrategy": "Completed historical CoreML block2 ZIP passed private fresh-download SHA/CRC verification and was evicted. Restore exact input from its catalog receipt if needed. Do not run a blind paid Pro retry.",
+  "nextCloudSubmission": "ios/Benchmark/Results/firebase-SE3-current-study-S1-block3-submission-2026-10-07.json",
+  "nextLocalPrimaryBlocks": [
+    "Core ML S2 blocks 2-4",
+    "Core ML S3 blocks 0-4"
+  ],
+  "objectiveFile": "/Users/zeraphim/.codex/attachments/0844be38-a972-4754-befd-7a9513343942/pasted-text-1.txt",
+  "ordinaryAppRestore": "migration/ordinary-app-restore-2026-10-07.json",
+  "ordinaryBuild": "ios/Product/.build/DerivedData-ordinary/Build/Products/openweights-product-build.json",
+  "ordinaryMemoryUISignedPreparation": "migration/ordinary-memory-ui-signed-preparation-2026-10-07.json",
+  "ordinaryMemoryUISignedPreparationLimits": "Frozen signed preparation predates current gzip WebGzip/WebHTTPResponse/WebPageText changes. No claim that this signed build contains the new gzip implementation.",
+  "ordinaryNativeExecution": "ios/Product/Results/ordinary-native-script-and-conditions-20261006T190817Z-execution.json",
+  "ordinaryNativeVerification": "migration/ordinary-namespace-native-verification-2026-10-07.json",
+  "ordinaryUIBuild": "ios/Product/.build/DerivedData-ui-validation/Build/Products/openweights-ui-validation-build.json",
+  "ordinaryUIExecutionStatus": "five-method-signed-preparation-verified-at-retained-source-snapshot-before-gzip-change-no-native-execution-all-phone-tests-held",
+  "ordinaryUIFiveMethodBuildProcess": {
+    "exitCode": 0,
+    "log": "ios/Product/.build/ordinary-memory-ui-build-20261007.log",
+    "sessionID": 75337,
+    "status": "terminal-generic-iOS-build-for-testing-signed-inputs-verified-no-phone-access"
+  },
+  "ordinaryUIInactiveBuildArchiveProcess": {
+    "exitCode": 0,
+    "log": ".build/archive-transfers/ordinary-UI-three-method-build-20261007.log",
+    "plan": "migration/ordinary-UI-three-method-build-transfer-plan-2026-10-07.json",
+    "sessionID": 2654,
+    "status": "complete-private-full-tree-roundtrip-verified-inactive-old-directory-evicted"
+  },
+  "ordinaryUIPreparation": "migration/ordinary-ui-preparation-2026-10-07.json",
+  "paidAuthorization": "SE S1 block3 attempt0 one-job approval used once for matrix-3g4oz19yc7jiy. No other paid job authorized.",
+  "pendingGates": [
+    "Fresh approval for each additional paid Firebase job",
+    "Public publication and app distribution authorization"
+  ],
+  "plannedCells": 63,
+  "previousGoalTurnClassification": "progress: signed ordinary gzip product and two native methods prepared,434member proof privately verified,and one freshly approved SE S1 block3 submitted",
+  "primarySourceRepository": "ExperimentalMachines/OpenWeights-iOS",
+  "privateArchiveProof": "migration/validation-archive-verification-2026-10-07.json",
+  "rawReportsCurrent": 51,
+  "recordedAtUTC": "2026-10-06T23:32:06.164863+00:00",
+  "replicatedCellsAtStart": 19,
+  "replicatedCellsCurrent": 9,
+  "replicatedCellsHistoricalArtifactRuntimeOSCount": 19,
+  "replicationCountStatus": "Source/build-separated analyzer and ledger now verify9of63. Historical19count and prior figures retained, with pooled local S2/S3 explicitly superseded.",
+  "separateStudyPlanVerification": "migration/separate-study-plan-verification-2026-10-07.json",
+  "startingPushedRevision": "3409e9d37facaac14d5d1539abae9c4eeefb917e",
+  "startingRemoteRevisionVerified": "3409e9d37facaac14d5d1539abae9c4eeefb917e",
+  "status": "goal-active-cloud-and-host-app-work-all-phone-tests-held-by-user",
+  "strictBuildAuditArchiveStatus": "complete-private-fresh-download-SHA-and-ZIP-CRC-verified109member-proof-local-ZIP-evicted",
+  "studyLedgerDeviceAccountingArchiveStatus": "complete-private-fresh-download-SHA-and-ZIP-CRC-verified-64-member-proof-local-ZIP-evicted",
+  "studyLedgerDeviceAccountingControls": {
+    "failed": 0,
+    "passed": 6
+  },
+  "studyLedgerDeviceAccountingVerification": "migration/study-ledger-device-accounting-verification-2026-10-07.json",
+  "studySourceBuildCohortAudit": "migration/study-source-build-cohort-audit-2026-10-07.json",
+  "studySourceBuildCohortCorrection": "migration/study-source-build-cohort-correction-verification-2026-10-07.json",
+  "studySourceBuildControls": {
+    "failed": 0,
+    "passed": 58
+  },
+  "studySourceBuildCorrectionArchiveStatus": "complete-private-fresh-download-SHA-and-ZIP-CRC-verified129member-proof-local-ZIP-evicted"
+}

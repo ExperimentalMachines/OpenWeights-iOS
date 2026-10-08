@@ -30,19 +30,37 @@
         "skippedTests": 0,
         "totalTestCount": 3
       },
+      "verification": "ios/Benchmark/Results/migration-benchmark-native-20261006T172938Z-verification.json",
       "xcode": "Xcode 26.2\nBuild version 17C52"
     },
     "delegates": {
       "compiledSourceFiles": 20,
       "compiledSourcesAndExecutablesMatch": true,
+      "configurations": [
+        "ExecuTorch Core ML",
+        "ExecuTorch MLX"
+      ],
       "executables": {
         "Release-iphoneos/OpenWeightsBench.app/OpenWeightsBench": "6056533b67c3c2b56f88b8611c8741be702d98d20ea752601edebebc01cdb971",
         "Release-iphoneos/OpenWeightsBench.app/PlugIns/BenchmarkTests.xctest/BenchmarkTests": "a1ccee6b760f4a0fbbce56d6c028ed2634dafa1cb56b12eec1ac5d856f8d92c3"
       },
+      "executionReceipt": "ios/Benchmark/Results/migration-delegates-native-20261006T175840Z-execution.json",
+      "executionReceiptSHA256": "6c75dc78f8dd889c6d2eb977637ab5f2f1ac7c8c406814212b033592dfad104f",
+      "rawReport": "ios/Benchmark/Results/migration-delegates-native-20261006T175840Z-attachments/553F3D22-7FFB-4EE4-A7F6-BAADF663898D.json",
+      "rawReportSHA256": "3acd4a4d86acadcd66223e66a3400aa6184db41cf37e6cd3923acf903f92fe99",
       "receipt": "ios/Benchmark/.build/DerivedData-delegates/Build/Products/openweights-build.json",
       "receiptSHA256": "a09c12ee0a7ccec4564337265664b75de633a4734b64a147e3997047a940f8b3",
+      "requests": 18,
       "sdk": "26.2",
-      "status": "signed-build-verified",
+      "status": "native-selected-migration-validation-passed",
+      "testSummary": {
+        "failedTests": 0,
+        "passedTests": 3,
+        "result": "Passed",
+        "skippedTests": 0,
+        "totalTestCount": 3
+      },
+      "verification": "ios/Benchmark/Results/migration-delegates-native-20261006T175840Z-verification.json",
       "xcode": "Xcode 26.2\nBuild version 17C52"
     },
     "product": {
@@ -71,7 +89,7 @@
       "xcode": "Xcode 26.2\nBuild version 17C52"
     }
   },
-  "checkedAtUTC": "2026-10-06T17:35:47.527359+00:00",
+  "checkedAtUTC": "2026-10-06T18:07:38.240674+00:00",
   "freshHostChecks": {
     "SwiftCore": {
       "failed": 0,
@@ -86,8 +104,8 @@
   "limits": [
     "The product cohort covers six selected native methods, not complete Android feature parity.",
     "The 45-request baseline is migration validation, not a new primary study block.",
-    "Delegate targets compile but their newly built binaries have not executed on the phone.",
-    "Raw bundles and signed products remain outside Git. Historical source fingerprints are preserved."
+    "Raw bundles and signed products remain outside Git. Historical source fingerprints are preserved.",
+    "The 18-request delegate pilot validates the rebuilt binary cohort but adds no primary study blocks."
   ],
-  "status": "independent-checkout-product-and-baseline-device-validation-verified-delegate-execution-pending"
+  "status": "independent-checkout-product-baseline-and-delegate-device-validation-verified"
 }

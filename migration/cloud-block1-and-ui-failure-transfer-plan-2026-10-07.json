@@ -1,0 +1,22 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 1485895423,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.zip"
+    },
+    {
+      "bytes": 3975678,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-coreml-S1-block1-matrix-36pbwfev7u0h8-proof.zip"
+    },
+    {
+      "bytes": 2388763,
+      "localRelativePath": "openweights-ios/ios/Product/Results/ordinary-ui-target-binding-failure-2026-10-07.zip"
+    }
+  ],
+  "limits": [
+    "Completed cloud block 1 package and full evidence only. The prepared block 2 package and active UI build remain local.",
+    "Round-trip SHA and ZIP CRC verification must pass before eviction."
+  ],
+  "schemaVersion": 1
+}

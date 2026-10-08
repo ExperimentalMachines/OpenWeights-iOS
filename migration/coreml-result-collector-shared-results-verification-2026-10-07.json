@@ -1,0 +1,46 @@
+{
+  "actualNativeCollection": {
+    "block": 2,
+    "matrixID": "matrix-1jgc3mvu4dnif",
+    "nativeMethodsPassed": 2,
+    "sourceProof": "ios/Benchmark/Results/iPhone17,1-study-S1-stable-facts-coreml-block2-attempt0-726F2E29-A5E8-44C1-80D1-6F9F15956233-source.json",
+    "turns": 6
+  },
+  "corrections": [
+    "The first export command used the wrong relative working directory. It was corrected before export.",
+    "The first collector run verified all native inputs but failed to serialize a relative attachment path after writing byte-identical raw evidence and the submission status. No source proof was written.",
+    "Path normalization then exposed the shared Results symlink. The collector now accepts only resolved native paths inside the canonical Results directory and stores the logical Results-relative path. Three regression controls cover relative inputs, outside paths and shared symlinks.",
+    "The existing raw report was verified unchanged before the successful rerun. Historical source proofs were not overwritten.",
+    "Live receipt polling exposed mutable input references. Submission and terminal matrix snapshots are now immutable, with two regression controls; block2 retains its original source proof and explicit binding correction."
+  ],
+  "hostControls": {
+    "analysisTests": 7,
+    "collectorIntegrityTests": 24,
+    "log": "ios/Benchmark/.build/firebase/study-controls-collector-immutable-receipts-20261007.log",
+    "totalPassed": 31
+  },
+  "limits": [
+    "Host fixtures are integrity controls, not additional model measurements.",
+    "Successful collection is validated on one actual native block. Separate-plan block3 collection still depends on its own native evidence."
+  ],
+  "previousVerification": "migration/coreml-result-collector-verification-2026-10-07.json",
+  "privateArchive": {
+    "bytes": 6733464,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-coreml-S1-block2-matrix-1jgc3mvu4dnif-proof.zip",
+    "remotePath": "packages/46957740b207cd62ac1d5abd495bb750334db147eb9b0fe94b4a64b81df5978a/firebase-coreml-S1-block2-matrix-1jgc3mvu4dnif-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/46957740b207cd62ac1d5abd495bb750334db147eb9b0fe94b4a64b81df5978a/firebase-coreml-S1-block2-matrix-1jgc3mvu4dnif-proof.zip",
+    "sha256": "46957740b207cd62ac1d5abd495bb750334db147eb9b0fe94b4a64b81df5978a",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T20:46:44.171553+00:00"
+  },
+  "receiptBindingCorrection": "migration/firebase-coreml-S1-block2-receipt-binding-2026-10-07.json",
+  "recordedAtUTC": "2026-10-06T20:44:03.034665+00:00",
+  "schemaVersion": 1,
+  "sources": {
+    "ios/Benchmark/Study/collect_coreml_result.py": "09a647bd3661492a5dffdaf4703fe2c4d5c8514617f4c50c71596c6f0b3999d0",
+    "ios/Benchmark/Study/test_collect_coreml_result.py": "8f91ee4819a7e547349c7da940217687d32ef91e2f51260802ad9fc5abe101bf"
+  },
+  "status": "relative-native-path-and-shared-Results-symlink-fixed-and-validated-on-real-cloud-block"
+}

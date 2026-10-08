@@ -1,0 +1,13 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 54037,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/separate-study-plan-verifier-2026-10-07-proof.zip"
+    }
+  ],
+  "limits": [
+    "Host verifier evidence and exact already-executed local plan only. No native or new paid cloud execution is claimed."
+  ],
+  "schemaVersion": 1
+}

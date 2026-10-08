@@ -1,0 +1,51 @@
+{
+  "archive": {
+    "bytes": 54037,
+    "file": "separate-study-plan-verifier-2026-10-07-proof.zip",
+    "sha256": "9e262d82cde4afce733e711df25a068412f87ccef419fa1b4598c1d03f1660d2"
+  },
+  "completedLocalExecution": {
+    "file": "study-coreml-S1-stable-facts-block3-20261006T085005Z-execution.json",
+    "selectedPlanMatchesByteForByte": true,
+    "sha256": "117847bd4b5a36b80c0cea0061d368531a31917667bca62218c2199230340c26"
+  },
+  "controls": {
+    "failed": 0,
+    "passed": 12,
+    "scope": "Synthetic host integrity controls, not native model or device execution."
+  },
+  "limits": [
+    "The external plan changes only declared study environment keys. Test hosts, test bundles, method selection, timeouts and all other settings must match the embedded plan.",
+    "The exact block 3 plan already passed its retained local native operation with the same signed binaries. The new Firebase separate-plan submission path has not executed.",
+    "The currently approved block 2 job remains unchanged and uploading. No new paid job is approved or submitted.",
+    "Future reuse requires verification of the uploaded GCS object and its generation/checksum, exact separate plan, current device/Xcode catalog and fresh paid-execution approval."
+  ],
+  "officialCapabilitySource": "https://docs.cloud.google.com/sdk/gcloud/reference/firebase/test/ios/run",
+  "privateArchive": {
+    "bytes": 54037,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/separate-study-plan-verifier-2026-10-07-proof.zip",
+    "remotePath": "packages/9e262d82cde4afce733e711df25a068412f87ccef419fa1b4598c1d03f1660d2/separate-study-plan-verifier-2026-10-07-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/9e262d82cde4afce733e711df25a068412f87ccef419fa1b4598c1d03f1660d2/separate-study-plan-verifier-2026-10-07-proof.zip",
+    "sha256": "9e262d82cde4afce733e711df25a068412f87ccef419fa1b4598c1d03f1660d2",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T19:51:16.178455+00:00"
+  },
+  "realArchiveVerification": {
+    "archive": "OpenWeightsDelegatesBench-CoreML-S1-block2-92a065a52563.zip",
+    "separatePlan": {
+      "file": "coreml-study-S1-stable-facts-block3-attempt0.xctestrun",
+      "sha256": "0d4d1e2ececc636d17eae5be6f850028ca091e4bc9949cf9e682029873d118ab"
+    },
+    "sha256": "92a065a525633c3bcaad8fec480ff39b15add8c4805da4875f9c617f77b2222d",
+    "tests": [
+      "BenchmarkTests/testStudyBlock",
+      "BenchmarkTests/testMultiTurnProbeGrading"
+    ],
+    "xcode": "Xcode 26.2\nBuild version 17C52"
+  },
+  "recordedAtUTC": "2026-10-06T19:48:52.254537+00:00",
+  "schemaVersion": 1,
+  "status": "host-verifier-controls-and-exact-retained-block3-plan-verified-cloud-path-not-executed"
+}

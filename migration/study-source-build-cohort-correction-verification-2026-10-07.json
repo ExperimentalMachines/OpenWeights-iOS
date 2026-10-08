@@ -1,0 +1,90 @@
+{
+  "archive": {
+    "bytes": 1006326,
+    "file": "study-source-build-cohort-correction-20261007-proof.zip",
+    "members": 129,
+    "sha256": "b88380232a72fb02cb3d708a80247ae0c6d008711d8cb4bc1942d10ed51bef84"
+  },
+  "completeGuardedBlocksPerAffectedCell": 4,
+  "currentAnalysis": {
+    "failedRuntimeRows": 16,
+    "file": "study-analysis-source-build-separated-schema5-grading3-2026-10-07.json",
+    "gradingVersion": 3,
+    "rawReports": 51,
+    "reproduced": true,
+    "schemaVersion": 5,
+    "sha256": "d97046b34751572351a31515efddf426400ee27fde99e9b78845466f5b2db910",
+    "turnCells": 401
+  },
+  "currentLedger": {
+    "file": "ios/Benchmark/Study/execution-ledger-2026-10-03.json",
+    "plannedCells": 63,
+    "replicatedCells": 9,
+    "reproduced": true,
+    "sha256": "f54f4089b7f000f61c257147af45353b3e8cb38edf0f651bc74f45bef7d38473"
+  },
+  "currentReport": {
+    "file": "docs/research/ios-repeated-artifact-study.md",
+    "reproducedByteForByte": true,
+    "sha256": "0f3d669f760d6b5405cab70ca9b556e47d2000c38eba004e60a6618d481e47b4"
+  },
+  "earlierDifferentBuildBlocksPerAffectedCell": 1,
+  "figure": {
+    "assets": {
+      "docs/research/assets/ios-study-source-build-20261007/ios-study-S1-local-final-turn-seven-configurations.json": "cdc19b7036da43886bff6b1264385e1784a681879a90108296a70caa8b26dcfb",
+      "docs/research/assets/ios-study-source-build-20261007/ios-study-S1-local-final-turn-seven-configurations.pdf": "7ed7685db71841df168d02830e249a5e092f3f240b8ccc6ca746b9894ec859ef",
+      "docs/research/assets/ios-study-source-build-20261007/ios-study-S1-local-final-turn-seven-configurations.png": "0367bd8c61d33bfdc98ca11e176846bd2049bf97b409fa5d11f2ae755579467f",
+      "docs/research/assets/ios-study-source-build-20261007/ios-study-S1-local-final-turn-seven-configurations.svg": "cdf9bed4a637650eaad9082a99ba48aeda8bb80cc505652838b27eca03edce60"
+    },
+    "assetsReproducedByteForByte": 4,
+    "directory": "docs/research/assets/ios-study-source-build-20261007",
+    "previewInspected": true,
+    "replicatedConfigurations": 7,
+    "scenario": "S1-stable-facts"
+  },
+  "historicalAnalysis": {
+    "file": "study-analysis-coreml-S2-two-cloud-S1-four-plus-storage-failure-schema4-grading3-2026-10-07.json",
+    "historicalReplicatedCells": 19,
+    "schemaVersion": 4,
+    "sha256": "f30734a856c3b4722c0fd7071271c7d3d3be73e5279a47edda7f4a85769edb21"
+  },
+  "hostControls": {
+    "failed": 0,
+    "log": "ios/Benchmark/.build/firebase/source-build-cohort-study-controls-20261007.log",
+    "logSHA256": "fbe201de78b5640d9e22acff79d51e01e9c62143e5fd504e06ffb55d5125da76",
+    "passed": 58
+  },
+  "implementation": {
+    "ios/Benchmark/Study/analyze_study.py": "fc7458968de08877c48effbd39f0eab7a0ce8cd664570af1904154479d21c82c",
+    "ios/Benchmark/Study/build_cohort.py": "d7f66b6c2c8b75706431b39f8cb00421c926942826354e40ec64141916b446ee",
+    "ios/Benchmark/Study/plot_device_cohorts.py": "4fe353bb389cdb36e1812c7f3c32aab5de5bdac9b5d83ed4b1dc2e77ff91a879",
+    "ios/Benchmark/Study/report_study.py": "9a9c2b60c0b7195bccc4c8b83584769f07529c3c5b2b064e8c80009c92af2704",
+    "ios/Benchmark/Study/update_ledger.py": "7e13361a26b98323829270d13d675b002e6101e58d62a52f805eb60a268c17a5"
+  },
+  "limits": [
+    "This changes cohort grouping and replication accounting, not raw measurements, grading, engine code, cache policy or model outputs.",
+    "Initial S3 execution used Xcode26.5 but compiled receipt says26.2. Split is the foreground-guard source and executable fingerprints, not an established compile-toolchain difference.",
+    "Historical pooled analyses and figures remain retained and are labelled as superseded for source/build replication. Current S1 figure is valid within each artifact/build configuration.",
+    "No new local phone test. Phone hold remains. Current SE study is a separate live paid job, with no native result yet included here.",
+    "Matching cache/protocol/context/output controls are included in the ledger cohort. Source proof/raw hash mismatches are refused.",
+    "Full A1-A3 remains incomplete. No protocol-scope amendment, public publication, commit/push or app distribution."
+  ],
+  "localBaselineAffectedCells": 10,
+  "privateArchive": {
+    "bytes": 1006326,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/study-source-build-cohort-correction-20261007-proof.zip",
+    "remotePath": "packages/b88380232a72fb02cb3d708a80247ae0c6d008711d8cb4bc1942d10ed51bef84/study-source-build-cohort-correction-20261007-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/b88380232a72fb02cb3d708a80247ae0c6d008711d8cb4bc1942d10ed51bef84/study-source-build-cohort-correction-20261007-proof.zip",
+    "sha256": "b88380232a72fb02cb3d708a80247ae0c6d008711d8cb4bc1942d10ed51bef84",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T22:25:07.461828+00:00"
+  },
+  "recordedAtUTC": "2026-10-06T22:24:46.490587+00:00",
+  "sameFailureRetryAndEmptyReportEvidence": true,
+  "sameRawReportsHashesAndRunIDs": true,
+  "schemaVersion": 1,
+  "sourceProofsRawBindingsVerified": 51,
+  "status": "source-build-cohort-accounting-corrected-real-inputs-and-current-report-figure-reproduce"
+}

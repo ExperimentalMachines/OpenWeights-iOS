@@ -7,5 +7,5 @@ let package = Package(
     products: [.library(name: "OpenWeightsCore", targets: ["OpenWeightsCore"])],
     dependencies: [.package(url: "https://github.com/scinfu/SwiftSoup", exact: "2.13.5"),
                    .package(url: "https://github.com/swiftlang/swift-markdown", exact: "0.5.0")],
-    targets: [.target(name: "OpenWeightsCore", dependencies: ["SwiftSoup", .product(name: "Markdown", package: "swift-markdown")], linkerSettings: [.linkedLibrary("iconv")]), .testTarget(name: "OpenWeightsCoreTests", dependencies: ["OpenWeightsCore"], resources: [.copy("Fixtures")])]
+    targets: [.target(name: "OpenWeightsCore", dependencies: ["SwiftSoup", .product(name: "Markdown", package: "swift-markdown")], linkerSettings: [.linkedLibrary("iconv"), .linkedLibrary("z")]), .testTarget(name: "OpenWeightsCoreTests", dependencies: ["OpenWeightsCore"], resources: [.copy("Fixtures")])]
 )

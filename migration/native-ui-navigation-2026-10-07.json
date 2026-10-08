@@ -1,0 +1,80 @@
+{
+  "archive": {
+    "bytes": 10156394,
+    "file": "native-ui-navigation-20261006T183852Z-proof.zip",
+    "members": 477,
+    "sha256": "eb06fc9628aca10583094f0e441ca30f870a0bdbf7f064c47f9f7e955a070b56"
+  },
+  "bundleIdentifier": "org.experimentalmachines.openweights.benchmark",
+  "device": {
+    "build": "23G90",
+    "model": "iPhone 16",
+    "operatingSystem": "26.6.2"
+  },
+  "execution": "ios/Product/Results/native-ui-navigation-20261006T183852Z-execution.json",
+  "executionSHA256": "f8c52526fb0ae833fc17177079a48c590a50d1601bd4d7f9916cd1a95d749f35",
+  "failedAttemptProof": "migration/native-ui-startup-failure-2026-10-07.json",
+  "inspectedScreenshots": [
+    "Discovery filter controls",
+    "Watch scheduling disclosure",
+    "File tools screen"
+  ],
+  "limits": [
+    "Benchmark-slot namespace uses a separate container and helper binding. Ordinary product namespace was not rebuilt or validated by this cohort.",
+    "This proves selected touch navigation and controlled process lifecycle only. It does not close an entire parity row.",
+    "No VoiceOver traversal, external Files provider, OS permission delivery, real download, background grant or natural OS termination was tested.",
+    "Private native result bundles contain device metadata. Publication requires review."
+  ],
+  "privateArchive": {
+    "bytes": 10156394,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Product/Results/native-ui-navigation-20261006T183852Z-proof.zip",
+    "remotePath": "packages/eb06fc9628aca10583094f0e441ca30f870a0bdbf7f064c47f9f7e955a070b56/native-ui-navigation-20261006T183852Z-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/eb06fc9628aca10583094f0e441ca30f870a0bdbf7f064c47f9f7e955a070b56/native-ui-navigation-20261006T183852Z-proof.zip",
+    "sha256": "eb06fc9628aca10583094f0e441ca30f870a0bdbf7f064c47f9f7e955a070b56",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T18:44:39.036676+00:00"
+  },
+  "schemaVersion": 1,
+  "screenshots": {
+    "17C7FB5A-016F-4E6C-BF4C-1C3CA919E02F.png": "c226ad63a523a592cf34a8101c36b3d8c6fe5a0c4b02e45796eed0dc54140e82",
+    "279DE13D-73BD-4C8A-A5B3-FE89D313175F.png": "9c8237baec2d40a7963500794366f172df5cb06b6ed647c905a75f962dc5091c",
+    "49492813-08C1-4594-AF79-F704C20B7B53.png": "2e56dca8de295e959b2da7d6975946c3190978bd6de095917721a2ad0473db09",
+    "6A726815-4742-441A-B42D-45BECA596E7D.png": "3e7b6372965ade3a8c1673c84bb9212449a3a0746bb42c569393533a2569836a",
+    "9ACE59A6-4955-4B29-89F2-8D6EB255B780.png": "8a866c6809aa403b2fce1695c1ca5652e33bd1d69540d4df575e908eba323da7",
+    "A4EB8FA9-A70B-44B6-8D2B-578686A781BB.png": "d8cfd070533ce0eef124788ac4020ab051f300b7d72f01634b1ddb344b1a255f",
+    "BFE89A54-617A-4E26-96C1-6F8E7FB4707A.png": "7c2cefcd4bb0ff67f8eabc82e06ffe38a95fb3cb9f6cecb125ec5946fa2e9880",
+    "C094385D-F8A1-4C1F-96D1-844CB2C47D7A.png": "426b870fdc2dd2cec79c63eb406fb6d5446ae35c50e2a255e752a4bbb2484b72",
+    "D0C2D1B9-1131-41CD-A952-5C513240026F.png": "e9ee7bcc1fd86260cd7e8fc20154e0d34120f8f0052b640c5de988639e475cc4"
+  },
+  "signedBuildArchive": {
+    "archiveBytes": 390724800,
+    "downloadedSHA256Matches": true,
+    "downloadedTreeManifestMatches": true,
+    "localRelativePath": "openweights-ios/ios/Product/.build/DerivedData-ui-validation",
+    "logicalBytes": 1307880640,
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/builds/49eb33d955a027f5ea7897858bde1ae1e49dfbd49b05d99e65f71500fc0f9741/DerivedData-ui-validation.tar.gz",
+    "sha256": "49eb33d955a027f5ea7897858bde1ae1e49dfbd49b05d99e65f71500fc0f9741",
+    "status": "archived-local-directory-removed",
+    "verifiedAtUTC": "2026-10-06T18:57:54.717763+00:00"
+  },
+  "sourceInputs": 408,
+  "status": "three-native-ui-methods-passed-and-manifest-verified",
+  "testSummary": {
+    "failedTests": 0,
+    "passedTests": 3,
+    "result": "Passed",
+    "skippedTests": 0,
+    "totalTestCount": 3
+  },
+  "userDeviceSetupConfirmation": {
+    "answer": "Enabled, phone unlocked",
+    "questionItemID": "call_8a965c3ef6a845bc88db2392534a8bca"
+  },
+  "verifiedFlows": [
+    "Native Models/Watches/Settings/Chat tab touches and Settings links to usage, saved memory and file tools.",
+    "Open discovery filters and cancel back to discovery without initiating a transfer.",
+    "Actual Home press, foreground activation, controlled termination and process relaunch."
+  ]
+}

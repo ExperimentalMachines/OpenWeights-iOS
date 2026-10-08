@@ -65,6 +65,7 @@ struct MultiTurnWorkload: Codable, Sendable {
 enum MultiTurnRunner {
     static func run(cancellation: Cancellation, configurations: [EngineConfiguration] = BenchmarkRunner.configurations,
                     workload suppliedWorkload: MultiTurnWorkload? = nil, study: StudyMetadata? = nil,
+                    publicationArtifact: Artifact? = nil,
                     progress: @escaping @Sendable (String) -> Void) async throws -> URL {
         let previousIdle = await MainActor.run {
             let previous = UIApplication.shared.isIdleTimerDisabled
@@ -80,7 +81,8 @@ enum MultiTurnRunner {
         guard let manifestURL = Bundle.main.url(forResource: BenchmarkRunner.manifestName, withExtension: "json") else {
             throw BenchmarkFailure.message("Model manifest missing")
         }
-        let manifest = try JSONDecoder().decode(Manifest.self, from: Data(contentsOf: manifestURL))
+        let bundledManifest = try JSONDecoder().decode(Manifest.self, from: Data(contentsOf: manifestURL))
+        let manifest = publicationArtifact.map { Manifest(upstream: $0.repo, artifacts: [$0]) } ?? bundledManifest
         let runID = UUID().uuidString
         let destination = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
             .appendingPathComponent("benchmark-\(runID).json")
@@ -88,16 +90,16 @@ enum MultiTurnRunner {
         let device = withUnsafePointer(to: &system.machine) {
             $0.withMemoryRebound(to: CChar.self, capacity: 1) { String(cString: $0) }
         }
-        var report = BenchmarkReport(schemaVersion: 2, runID: runID, startedAt: Date(), purpose: study == nil ? "multi-turn-scaling-pilot" : "repeated-conversation-artifact-study",
+        var report = BenchmarkReport(schemaVersion: 2, runID: runID, startedAt: Date(), purpose: publicationArtifact != nil ? "publication-conversation-v1" : study == nil ? "multi-turn-scaling-pilot" : "repeated-conversation-artifact-study",
             device: device, operatingSystem: ProcessInfo.processInfo.operatingSystemVersionString,
             physicalMemoryBytes: ProcessInfo.processInfo.physicalMemory, availableMemoryAtStart: OWAvailableMemoryBytes(),
             lowPowerMode: ProcessInfo.processInfo.isLowPowerModeEnabled, contextTokens: 2048, maxOutputTokens: 64,
             runtimeVersions: BenchmarkRunner.runtimeVersions,
             measurementNotes: [
                 "One six-turn conversation per artifact per report block. Actual assistant outputs carry into subsequent turns.",
-                "Prefix-enabled adapters retain cache, then replay identical recorded prompts with a reset before each turn.",
+                publicationArtifact != nil ? "Publication profile retains prefix cache and performs no reset replay or interruption test. One configuration per fresh XCTest invocation." : "Prefix-enabled adapters retain cache, then replay identical recorded prompts with a reset before each turn.",
                 "ExecuTorch adapters reset internally before each request. Their sole sequence uses rebuild-each-turn policy.",
-                "Reset replays run after the retained-cache conversation. Fixed order and warm framework caches affect comparisons.",
+                publicationArtifact != nil ? "Models must already be verified in the device cache. No downloads are permitted in measurement invocations. Fewer than eight generated tokens are excluded from headline throughput." : "Reset replays run after the retained-cache conversation. Fixed order and warm framework caches affect comparisons.",
                 "Native totalPromptTokens is evaluated promptTokens plus cachedTokens. Explicit prompt counts can be reconstructed from recorded messages and the pinned tokenizer.",
                 "First text includes prompt preparation and detokenization. Very short answers give noisy streaming throughput.",
                 "Footprint is whole-process memory sampled every 50 ms, not isolated engine memory. No power measurement.",
@@ -107,6 +109,7 @@ enum MultiTurnRunner {
                 BenchmarkRunner.artifactComparisonNote,
                 "One conversation does not establish general conversational quality."],
             rows: [], completed: false, multiTurnWorkload: workload, study: study)
+        if publicationArtifact != nil { report.processIdentifier = ProcessInfo.processInfo.processIdentifier }
         func persist() throws {
             let encoder = JSONEncoder(); encoder.outputFormatting = [.prettyPrinted, .sortedKeys]; encoder.dateEncodingStrategy = .iso8601
             try encoder.encode(report).write(to: destination, options: .atomic)
@@ -119,7 +122,8 @@ enum MultiTurnRunner {
         }
         var directories: [String: URL] = [:]
         for artifact in manifest.artifacts where configurations.contains(where: { $0.artifactID == artifact.id }) {
-            directories[artifact.id] = try await ModelStore.prepare(artifact, cancellation: cancellation, progress: progress) { event in
+            directories[artifact.id] = try await ModelStore.prepare(artifact, cancellation: cancellation, progress: progress,
+                allowDownload: publicationArtifact == nil) { event in
                 report.acquisitions = (report.acquisitions ?? []) + [event]
                 try persist()
             }
@@ -133,7 +137,10 @@ enum MultiTurnRunner {
                 if clockMilliseconds() > deadline { throw BenchmarkFailure.message("Phone did not cool to nominal within three minutes. Partial report saved.") }
                 try await Task.sleep(nanoseconds: 2_000_000_000)
             }
-            let artifact = manifest.artifacts.first { $0.id == configuration.artifactID }!
+            guard let artifact = manifest.artifacts.first(where: { $0.id == configuration.artifactID }),
+                  let directory = directories[configuration.artifactID] else {
+                throw BenchmarkFailure.message("Configuration artifact missing from manifest")
+            }
             var row = BenchmarkRow(engine: configuration.name, artifact: artifact)
             report.rows.append(row)
             func checkpoint() throws { report.rows[report.rows.count - 1] = row; try persist() }
@@ -141,7 +148,7 @@ enum MultiTurnRunner {
             let engine = configuration.factory()
             do {
                 let start = clockMilliseconds(), recorder = SampleRecorder()
-                try await engine.load(directory: directories[configuration.artifactID]!)
+                try await engine.load(directory: directory)
                 row.loadMs = clockMilliseconds() - start
                 row.loadPeakFootprintBytes = recorder.finish().2
                 row.backend = engine.backend; row.phase = "running"
@@ -171,7 +178,7 @@ enum MultiTurnRunner {
                     messages.append(["role": "assistant", "content": sample.output])
                     try checkpoint()
                 }
-                if configuration.reusesPrefix {
+                if configuration.reusesPrefix && publicationArtifact == nil {
                     for (index, prompt) in recordedPrompts.enumerated() {
                         await engine.reset()
                         progress("\(configuration.name): reset replay turn \(index + 1)/\(workload.turns.count)")

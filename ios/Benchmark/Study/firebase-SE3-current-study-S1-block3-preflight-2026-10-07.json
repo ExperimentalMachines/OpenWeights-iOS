@@ -1,0 +1,206 @@
+{
+  "acquisition": {
+    "behavior": "Download pinned public Hub revision files, up to3bounded transient retries, freshly resolve redirects, verify exact bytes and SHA256 before inference. Retain per-file acquisition events.",
+    "modelBytes": 1256035493,
+    "pinnedFiles": 12,
+    "priorFreshCloudDownloadsAllFirstAttempt": true,
+    "priorNativeCloudVerification": "migration/firebase-SE3-current-baseline-pilot-verification-2026-10-07.json",
+    "retryBranchExercisedOnPriorCloudRun": false
+  },
+  "approvalGate": "The replacement goal requires fresh approval for every paid job. This preflight does not authorize submission.",
+  "archiveVerifierOutput": {
+    "archive": "OpenWeightsBench-SE3-current-S1-block3-attempt0-20261007.zip",
+    "sha256": "4b3c2ad77917b9dd7f15a514ec531d3d097abf30c18a5cd2f30c5db8c5c9a7d5",
+    "tests": [
+      "BenchmarkTests/testStudyBlock",
+      "BenchmarkTests/testMultiTurnProbeGrading"
+    ],
+    "xcode": "Xcode 26.2\nBuild version 17C52"
+  },
+  "authorization": {
+    "answer": "Approve this SE S1 block 3",
+    "packageSHA256": "4b3c2ad77917b9dd7f15a514ec531d3d097abf30c18a5cd2f30c5db8c5c9a7d5",
+    "questionItemID": "call_a85e862c4a924d82863b1f16eb45f6b1",
+    "recordedAtUTC": "2026-10-06T23:20:59.886484+00:00",
+    "scope": "One Firebase SE3 catalog iOS18.4/Xcode26.2 S1 primary block3 attempt0 with20minute limit, exact90.67MB package4b3c2ad77917b9dd7f15a514ec531d3d097abf30c18a5cd2f30c5db8c5c9a7d5. New study selection locally unexecuted under phone hold disclosed. Execution estimateUSD1.67 without free minutes plus unknown storage/transfer and automatic infrastructure-retry charges. No other jobs authorized."
+  },
+  "catalogOS": "18.4",
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsBench-SE3-current-S1-block3-attempt0-20261007.zip",
+    "--device=model=iphonese3,version=18.4",
+    "--xcode-version=26.2",
+    "--timeout=20m",
+    "--num-flaky-test-attempts=0",
+    "--no-record-video",
+    "--async",
+    "--format=json"
+  ],
+  "deviceCatalog": "iphonese3",
+  "limits": [
+    "This new growing-history selection is locally unexecuted while all phone tests remain held. Prior local and SE pilot compatibility proves these binaries, not this new study selection.",
+    "The provider infrastructure failure of block2 is retained with zero observed native cases. Block3 is a new independent primary block, not a replacement record or scope amendment.",
+    "CoreML and ExecuTorch MLX need separate archives. Full seven-configuration63-cell scope is unchanged.",
+    "Submission requires exact live catalog/command/cost preflight and fresh approval. No new paid job is authorized."
+  ],
+  "liveCatalogDetails": {
+    "model": {
+      "deviceCapabilities": [
+        "accelerometer",
+        "arm64",
+        "armv6",
+        "armv7",
+        "auto-focus-camera",
+        "bluetooth-le",
+        "front-facing-camera",
+        "gamekit",
+        "gyroscope",
+        "location-services",
+        "magnetometer",
+        "metal",
+        "microphone",
+        "opengles-1",
+        "opengles-2",
+        "opengles-3",
+        "peer-peer",
+        "still-camera",
+        "video-camera",
+        "wifi",
+        "arkit",
+        "camera-flash",
+        "gps",
+        "healthkit",
+        "sms",
+        "telephony"
+      ],
+      "formFactor": "PHONE",
+      "id": "iphonese3",
+      "name": "iPhone SE 3",
+      "perVersionInfo": [
+        {
+          "deviceCapacity": "DEVICE_CAPACITY_MEDIUM",
+          "versionId": "18.4"
+        },
+        {
+          "deviceCapacity": "DEVICE_CAPACITY_MEDIUM",
+          "versionId": "26.3"
+        }
+      ],
+      "screenDensity": 326,
+      "screenX": 640,
+      "screenY": 1136,
+      "supportedVersionIds": [
+        "18.4",
+        "26.3"
+      ]
+    },
+    "version": {
+      "id": "18.4",
+      "majorVersion": 18,
+      "minorVersion": 4,
+      "supportedXcodeVersionIds": [
+        "16.4",
+        "26.2"
+      ]
+    }
+  },
+  "liveCatalogSourceFiles": [
+    ".build/firebase/SE-study-S1-block3-live-models-20261007.json",
+    ".build/firebase/SE-study-S1-block3-live-versions-20261007.json"
+  ],
+  "liveCatalogVerified": true,
+  "maximumRequestedExecutionUSDWithoutFreeAllowance": 1.67,
+  "nativeStudyPlanLocallyExecuted": false,
+  "package": {
+    "buildReceiptFile": "OpenWeightsBench-SE3-current-S1-block3-attempt0-20261007-build.json",
+    "buildReceiptSHA256": "03c7cfa0b780a031ebc93677a53545c6ba0f9527fdf4191c89064161d5a0b741",
+    "bytes": 90667866,
+    "file": "OpenWeightsBench-SE3-current-S1-block3-attempt0-20261007.zip",
+    "sha256": "4b3c2ad77917b9dd7f15a514ec531d3d097abf30c18a5cd2f30c5db8c5c9a7d5",
+    "sourceSnapshotFile": "study-baseline-sources-9369be7829c5.zip",
+    "sourceSnapshotSHA256": "b271cb3cb216dac778139d087eeb736230cf6baf150ee4b2a79198798c24d046"
+  },
+  "packageVerification": "migration/SE3-current-study-S1-block3-package-verification-2026-10-07.json",
+  "plan": {
+    "environment": {
+      "APP_DISTRIBUTOR_ID_OVERRIDE": "com.apple.AppStore",
+      "DYLD_INSERT_LIBRARIES": "/usr/lib/libRPAC.dylib",
+      "OS_ACTIVITY_DT_MODE": "YES",
+      "OW_STUDY_ATTEMPT": "0",
+      "OW_STUDY_BLOCK": "3",
+      "OW_STUDY_SCENARIO": "S1-stable-facts",
+      "PERFC_ENABLE_EXTENDED_DIAGNOSTIC_FORMAT": "1",
+      "PERFC_ENABLE_PROFILE_MODE": "1",
+      "PERFC_RESET_INSERT_LIBRARIES": "1",
+      "PERFC_SUPPRESS_SYSTEM_REPORTS": "1",
+      "SQLITE_ENABLE_THREAD_ASSERTIONS": "1",
+      "TERM": "dumb"
+    },
+    "file": "SE-current-study-S1-stable-facts-block3-attempt0-20261007.xctestrun",
+    "maximumMethodSeconds": 900,
+    "methods": [
+      "BenchmarkTests/testStudyBlock",
+      "BenchmarkTests/testMultiTurnProbeGrading"
+    ],
+    "sha256": "43f5fc604fc112df0511aee67af4d86d3c84e55e840ca0111bff10fa059da502"
+  },
+  "precedingUnavailableExecution": {
+    "attempt": 0,
+    "block": 2,
+    "classification": "provider-infrastructure-failure-zero-observed-native-cases",
+    "matrixID": "matrix-phcho7u3nupba",
+    "relationship": "New isolated block3 with its own rotated runtime order after unavailable block2. Preserve preceding failure in attempted-job accounting; no prior report overwritten.",
+    "retention": "migration/firebase-SE3-current-study-S1-block2-infrastructure-retention-2026-10-07.json",
+    "scenario": "S1-stable-facts"
+  },
+  "preparedAtUTC": "2026-10-06T23:19:29.365060+00:00",
+  "previousNativeValidation": {
+    "SECompatibilityRequests": 45,
+    "localPilotRequests": 45,
+    "verification": "migration/firebase-SE3-current-baseline-pilot-verification-2026-10-07.json"
+  },
+  "pricingBasis": "One physical device at USD5/hour, up to20requested minutes, rounded up to USD1.67. Actual execution, free allowance, storage/transfer and automatic infrastructure-retry charges are unverified. Install/result collection excluded from execution billing.",
+  "pricingSource": "https://firebase.google.com/docs/test-lab/usage-quotas-pricing",
+  "priorActualOS": "18.4/22E240",
+  "profileExpiresAtUTC": "2026-10-08T14:45:03+00:00",
+  "proposedStudy": {
+    "attempt": 0,
+    "block": 3,
+    "expectedConfigurations": 5,
+    "expectedPrimaryTurnsPerRuntime": 6,
+    "expectedSamples": 54,
+    "order": [
+      "MLX Metal",
+      "llama.cpp partial Metal",
+      "llama.cpp CPU",
+      "ExecuTorch XNNPACK",
+      "llama.cpp Metal"
+    ],
+    "primary": true,
+    "resetReplayTurnsPerPrefixRuntime": 6,
+    "scenario": "S1-stable-facts"
+  },
+  "publicFileAvailability": {
+    "allAvailableWithMatchingSize": true,
+    "file": ".build/firebase/SE-study-S1-block3-public-file-availability-20261007.json",
+    "files": 12,
+    "fullSHA256CheckedInHostPreflight": false,
+    "method": "public-pinned-HEAD-no-credentials"
+  },
+  "purpose": "SE current source cohort independent S1 primary block3 attempt0 following retained block2 infrastructure failure",
+  "schemaVersion": 1,
+  "status": "approved-single-submission-starting",
+  "submissionHelper": {
+    "approvalRequired": true,
+    "executed": false,
+    "file": ".build/firebase/submit-SE-current-study-S1-block3.py",
+    "syntaxChecked": true
+  },
+  "timeoutSeconds": 1200,
+  "xcode": "26.2"
+}

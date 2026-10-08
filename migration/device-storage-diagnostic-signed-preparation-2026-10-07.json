@@ -1,0 +1,54 @@
+{
+  "codeSigningVerified": true,
+  "executables": {
+    "Release-iphoneos/OpenWeightsDeviceHealth.app/OpenWeightsDeviceHealth": "3bceaf0dde34ad1fdface8098c02c12ea9cfeade1fa373b675b7320eced7fe2e",
+    "Release-iphoneos/OpenWeightsDeviceHealth.app/PlugIns/DeviceHealthTests.xctest/DeviceHealthTests": "6748f9236bab6c9cd35827e12ad8cc83942d2f31d35da0807db08745bbe7500c"
+  },
+  "genericSignedBuildVerified": true,
+  "genericUnsignedBuildVerified": true,
+  "hostControlsPassed": 8,
+  "limits": [
+    "The local phone-test hold remains. This diagnostic has eight passing host controls and a signed generic iOS build, but neither native method has run in this new binary.",
+    "Read-only filesystem capacity and bounded default app-owned CoreML-directory totals. No inference, model/framework download or deletion. Filenames and absolute paths are omitted.",
+    "Firebase can assign a different physical Pro. This establishes only its current capacity, not the capacity or space ownership on the prior failed device.",
+    "Important-usage capacity can include purgeable bytes. Missing metrics stay absent, not measured zero. Directory logical sizes are not APFS allocated storage.",
+    "The model-free control does not validate CoreML loading, its peak disk need or an ENOSPC fix. No study block or parity row is closed.",
+    "No paid execution occurs until fresh approval for this exact single diagnostic."
+  ],
+  "nativeExecution": false,
+  "package": {
+    "buildReceiptFile": "OpenWeightsDeviceStorage-Pro-20261007-build.json",
+    "buildReceiptSHA256": "10cbf74d443f082f0cbe8bcc7833d482c08eef0ab303f3defe6339e7e44504be",
+    "bytes": 6562613,
+    "file": "OpenWeightsDeviceStorage-Pro-20261007.zip",
+    "sha256": "1f6471b04ea98e5fe5e097b2b4f4477739bfdff7189fb92a488f44cd6fe876cf",
+    "sourceSnapshotFile": "device-storage-sources-20261007.zip",
+    "sourceSnapshotSHA256": "7b34d9fa8edb5362c42ea7449daa8f9aa3af5d79648a7817c6d264aea26397ef"
+  },
+  "plan": {
+    "file": "Pro-device-storage-diagnostic-20261007.xctestrun",
+    "maximumMethodSeconds": 120,
+    "methods": [
+      "DeviceHealthTests/testLaunchAndAttachDeviceConditions",
+      "DeviceHealthTests/testAttachStorageConditionsWithoutInferenceOrCleanup"
+    ],
+    "sha256": "b881b831d24353b46fb3c274450905488e30bb49debefd6ed6dbdd1d51b6188d"
+  },
+  "preflight": "ios/Benchmark/Study/firebase-Pro-device-storage-preflight-2026-10-07.json",
+  "provisioningExpiresAtUTC": "2026-10-08T14:45:03+00:00",
+  "recordedAtUTC": "2026-10-06T21:59:57.053985+00:00",
+  "schemaVersion": 1,
+  "signedBuildLog": "ios/Benchmark/.build/firebase/device-health-storage-signed-build-20261007.log",
+  "signedBuildLogSHA256": "12aa415e3938215d4679127a771c9b1144ece6761843d8af5453568fd0d62912",
+  "sourceHashes": {
+    "ios/Benchmark/DeviceHealth/App.swift": "1a14eb7e65c3f519eeb3c3500d9d95e3bf504ed078127291ff113277fffc9dff",
+    "ios/Benchmark/DeviceHealth/StorageSnapshot.swift": "37069a81509ac1ac783856eb8b0824090535004842b5485803b7b712f4cda123",
+    "ios/Benchmark/DeviceHealth/StorageSnapshotHostChecks.swift": "3ab36cd45827b33e94d9e59a95b428d92e689f78b9f59c65452924524f02085a",
+    "ios/Benchmark/DeviceHealth/Tests.swift": "0885551606b64f180767105efe466394402b9aef8e39f6aa25e61b56254daa4c",
+    "ios/Benchmark/DeviceHealth/project.yml": "c210ddde2e2079fac81b981eb089847959c3d1e2afcd384a51f1e1b414622a5c"
+  },
+  "status": "signed-archive-prepared-awaiting-fresh-approval-no-native-execution",
+  "submitHelper": "ios/Benchmark/.build/firebase/submit-Pro-storage-diagnostic.py",
+  "submitHelperExecuted": false,
+  "submitHelperSyntaxChecked": true
+}

@@ -1,0 +1,57 @@
+{
+  "genericIOSBuild": {
+    "appSHA256": "c6a9c24c4e48763e4fe20a1ee0ae11a11c976e7b9e583e1e49b8925ec64af65a",
+    "codeSigningAllowed": false,
+    "destination": "generic/platform=iOS",
+    "log": "ios/Benchmark/.build/firebase/device-health-storage-generic-build-20261007.log",
+    "logSHA256": "031e3ef1beeca4748c686686d9b08618e1441d508b4fb104fc075f771ae56f13",
+    "nativeExecution": false,
+    "sourceCopiesMatchCanonical": true,
+    "testsSHA256": "913b4bf75d1ecfd349e4e869a9b2c2024868736f3faae57274526210d6027af7",
+    "xcode": "26.2/17C52",
+    "xctestrun": ".benchmark-work/Benchmark/DerivedData-device-health-storage/Build/Products/DeviceHealth_iphoneos26.2-arm64.xctestrun",
+    "xctestrunSHA256": "f52a23467accf7de65d5ed50564823fdb6144c57086de3cead50b9a5bc3cb069"
+  },
+  "hostControls": {
+    "executableSHA256": "49722491d676922ea475de524f44068658dd54a5f53a600ab53a233fce93fad0",
+    "failed": 0,
+    "log": "ios/Benchmark/.build/firebase/storage-snapshot-host-controls-20261007.log",
+    "logSHA256": "b0d874e7ccb613e0afdece85531f6a953f337a6888ffc3bb4c7fe0050c0e63cf",
+    "passed": 8
+  },
+  "limits": [
+    "No phone or cloud execution of this diagnostic. All local phone tests held.",
+    "Unsigned build is not a Firebase-ready execution package. No new paid job authorized.",
+    "Default directory review does not prove exact prebuilt binary source linkage or macro overrides.",
+    "Fresh diagnostic capacity cannot establish capacity on the prior failed lab device.",
+    "Important-usage available capacity may include purgeable space. Directory sizes are logical sizes, not APFS allocated storage.",
+    "No file deletion, inference, missing-capacity zero substitution or performance claim."
+  ],
+  "recordedAtUTC": "2026-10-06T21:48:51.440314+00:00",
+  "retainedFailures": [
+    "ios/Benchmark/.build/firebase/storage-diagnostic-failures",
+    "ios/Benchmark/.build/firebase/device-health-storage-generic-build-20261007-failed-missing-plist.log",
+    "ios/Benchmark/.build/firebase/device-health-storage-generic-build-20261007-failed-source-path.log"
+  ],
+  "schemaVersion": 1,
+  "sourceHashes": {
+    "ios/Benchmark/DeviceHealth/App.swift": "1a14eb7e65c3f519eeb3c3500d9d95e3bf504ed078127291ff113277fffc9dff",
+    "ios/Benchmark/DeviceHealth/StorageSnapshot.swift": "37069a81509ac1ac783856eb8b0824090535004842b5485803b7b712f4cda123",
+    "ios/Benchmark/DeviceHealth/StorageSnapshotHostChecks.swift": "3ab36cd45827b33e94d9e59a95b428d92e689f78b9f59c65452924524f02085a",
+    "ios/Benchmark/DeviceHealth/Tests.swift": "0885551606b64f180767105efe466394402b9aef8e39f6aa25e61b56254daa4c",
+    "ios/Benchmark/DeviceHealth/project.yml": "c210ddde2e2079fac81b981eb089847959c3d1e2afcd384a51f1e1b414622a5c"
+  },
+  "status": "host-controls-and-unsigned-generic-iOS-build-pass-no-native-execution",
+  "unsignedBuildArchive": {
+    "archiveBytes": 37421775,
+    "downloadedSHA256Matches": true,
+    "downloadedTreeManifestMatches": true,
+    "localRelativePath": ".benchmark-work/Benchmark/DerivedData-device-health-storage",
+    "logicalBytes": 87193609,
+    "remotePath": "builds/147e5fef3bdb4bb0f9f05b57613b07b2a43194ef6f7d7223326c74ac563e80d1/DerivedData-device-health-storage.tar.gz",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/builds/147e5fef3bdb4bb0f9f05b57613b07b2a43194ef6f7d7223326c74ac563e80d1/DerivedData-device-health-storage.tar.gz",
+    "sha256": "147e5fef3bdb4bb0f9f05b57613b07b2a43194ef6f7d7223326c74ac563e80d1",
+    "status": "archived-local-directory-removed",
+    "verifiedAtUTC": "2026-10-06T21:58:49.152998+00:00"
+  }
+}

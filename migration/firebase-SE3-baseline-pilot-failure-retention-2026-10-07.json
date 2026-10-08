@@ -1,0 +1,81 @@
+{
+  "actualDevice": "iPhone14,6",
+  "actualOperatingSystem": "Version 18.4 (Build 22E240)",
+  "archive": {
+    "bytes": 820093,
+    "file": "firebase-SE3-baseline-pilot-matrix-2jipxlz5aijb0-failure-proof.zip",
+    "members": 59,
+    "sha256": "47372571ad4f25ec25e13c4035b00b7045f10c3c56a58192e3bc0cc36e7e7b4b"
+  },
+  "corruptionRejectionPassed": true,
+  "error": {
+    "artifactFile": "Qwen3-0.6B-8da4w-2k.pte",
+    "code": -1005,
+    "description": "The network connection was lost.",
+    "domain": "NSURLErrorDomain",
+    "phase": "model-acquisition-before-adapter-load",
+    "signedRedirectQueryStringsOmittedFromTrackedProof": true
+  },
+  "inferenceRequests": 0,
+  "inputVerification": "migration/firebase-SE3-baseline-pilot-input-verification-2026-10-07.json",
+  "limits": [
+    "No model inference or cancellation/recovery was reached. This is an acquisition failure, not evidence of runtime incompatibility, memory exhaustion or poor performance.",
+    "The old signed package remains preserved. It lacks the bounded pinned-URL transport retries in the separately verified current baseline build.",
+    "Compatibility is not A2 replication. The planned63-cell study is unchanged.",
+    "Provider reports158seconds execution, but actual invoice/free allowance/storage/transfer/retry charges are unverified.",
+    "No retry is authorized by the failed job approval. Prepare exact new candidate and obtain fresh approval. All local phone tests remain held."
+  ],
+  "matrixID": "matrix-2jipxlz5aijb0",
+  "nativeMethodsFailed": 1,
+  "nativeMethodsPassed": 1,
+  "nativeSummaryFileSHA256": "42f57b676adb3c230aa9fa9b96ee13cf5109689f4181cd3c973b77502f58c71e",
+  "package": {
+    "buildReceiptFile": "OpenWeightsBench-smoke-tests-build.json",
+    "buildReceiptSHA256": "28d1ef54a7b0af0a68f3ff9ced306921560baf78377bf055196c70e816e0f45b",
+    "bytes": 93521668,
+    "file": "OpenWeightsBench-SE3-baseline-pilot-20261007.zip",
+    "sha256": "8dbb7c8d1255e0efe1dd8dfce12815493de15caf15a67dfaf9a8a2ccd2e86169",
+    "sourceSnapshotFile": "xcode26.2-baseline-sources-c5396c6bd355.zip",
+    "sourceSnapshotSHA256": "aab910e3bee367ef8dec6d4a141b6f08b86103ad0d62a75736724ac4e2aa7acc"
+  },
+  "privateArchive": {
+    "bytes": 820093,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-SE3-baseline-pilot-matrix-2jipxlz5aijb0-failure-proof.zip",
+    "remotePath": "packages/47372571ad4f25ec25e13c4035b00b7045f10c3c56a58192e3bc0cc36e7e7b4b/firebase-SE3-baseline-pilot-matrix-2jipxlz5aijb0-failure-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/47372571ad4f25ec25e13c4035b00b7045f10c3c56a58192e3bc0cc36e7e7b4b/firebase-SE3-baseline-pilot-matrix-2jipxlz5aijb0-failure-proof.zip",
+    "sha256": "47372571ad4f25ec25e13c4035b00b7045f10c3c56a58192e3bc0cc36e7e7b4b",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T21:19:52.153001+00:00"
+  },
+  "providerBytesDownloaded": 5623097,
+  "providerObjectsDownloaded": 36,
+  "raw": {
+    "file": "firebase-SE3-baseline-pilot-failed-2026-10-07.json",
+    "sha256": "a0927c2d30ea62c2a1ef2b4d0af4da11a4628806b99c2747b57950b149015ddf"
+  },
+  "recordedAtUTC": "2026-10-06T21:19:00.967829+00:00",
+  "runtimeRows": 0,
+  "schemaVersion": 1,
+  "status": "SE3-native-network-acquisition-failure-retained-no-runtime-compatibility-claim",
+  "submissionSnapshot": {
+    "file": "firebase-SE3-baseline-pilot-matrix-2jipxlz5aijb0-verified-submission.json",
+    "sha256": "4e8ccb897f16e7b09eba1e33781232701fe57ceba8cc6048aea0cf966cb8c78f"
+  },
+  "submittedPackageArchive": {
+    "bytes": 93521668,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/OpenWeightsBench-SE3-baseline-pilot-20261007.zip",
+    "remotePath": "packages/8dbb7c8d1255e0efe1dd8dfce12815493de15caf15a67dfaf9a8a2ccd2e86169/OpenWeightsBench-SE3-baseline-pilot-20261007.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/8dbb7c8d1255e0efe1dd8dfce12815493de15caf15a67dfaf9a8a2ccd2e86169/OpenWeightsBench-SE3-baseline-pilot-20261007.zip",
+    "sha256": "8dbb7c8d1255e0efe1dd8dfce12815493de15caf15a67dfaf9a8a2ccd2e86169",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T21:20:12.996388+00:00"
+  },
+  "terminalMatrix": {
+    "file": "matrix-2jipxlz5aijb0-latest.json",
+    "sha256": "7a887207462c6f8a6f6450ff0d1a34737f3a412aa650f1c4147a65fdf822b678"
+  }
+}

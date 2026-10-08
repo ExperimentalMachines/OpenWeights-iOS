@@ -1,0 +1,68 @@
+{
+  "checkedAtUTC": "2026-10-07T08:36:39.213023+00:00",
+  "nativeArchitectureSourceSHA256": "f091320e6870d533847b73cf24f6022b23479b8053cb575b9a33bffdd43d11dd",
+  "nativeSourceRevision": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+  "records": [
+    {
+      "architecture": "gemma3",
+      "artifactSHA256": "8270790f3ab69fdfe860b7b64008d9a19986d8df7e407bb018184caa08798ebd",
+      "boundedBytesRead": 65536,
+      "declaredInPinnedNativeSource": true,
+      "ggufVersion": 3,
+      "httpStatus": 206,
+      "id": "gemma-3-1b-it",
+      "nativeDeviceCompatibility": "unexecuted",
+      "revision": "f0b45be0aac41bd6a100a4b5734cad5f67255bfb",
+      "tensorCount": 340
+    },
+    {
+      "architecture": "lfm2",
+      "artifactSHA256": "b1b3de114215d9507409a662a501a631095a479a419584e8a2ded6304b19b4f5",
+      "boundedBytesRead": 65536,
+      "declaredInPinnedNativeSource": true,
+      "ggufVersion": 3,
+      "httpStatus": 206,
+      "id": "lfm2.5-1.2b-instruct",
+      "nativeDeviceCompatibility": "unexecuted",
+      "revision": "8ed288026e23958ad9dfa92d53ed773a8eee7125",
+      "tensorCount": 148
+    },
+    {
+      "architecture": "qwen3",
+      "artifactSHA256": "0becaa825564295d82e9af4d008bca5f8b7f5f73bf1c6a0b58f7c53ef26b47fd",
+      "boundedBytesRead": 65536,
+      "declaredInPinnedNativeSource": true,
+      "ggufVersion": 3,
+      "httpStatus": 206,
+      "id": "qwen3-1.7b",
+      "nativeDeviceCompatibility": "unexecuted",
+      "revision": "d7f544eead698dbd1f15126ef60b45a1e1933222",
+      "tensorCount": 310
+    },
+    {
+      "architecture": "llama",
+      "artifactSHA256": "6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff",
+      "boundedBytesRead": 65536,
+      "declaredInPinnedNativeSource": true,
+      "ggufVersion": 3,
+      "httpStatus": 206,
+      "id": "llama-3.2-3b-instruct",
+      "nativeDeviceCompatibility": "unexecuted",
+      "revision": "5ab33fa94d1d04e903623ae72c95d1696f09f9e8",
+      "tensorCount": 255
+    },
+    {
+      "architecture": "smollm3",
+      "artifactSHA256": "8334b850b7bd46238c16b0c550df2138f0889bf433809008cc17a8b05761863e",
+      "boundedBytesRead": 65536,
+      "declaredInPinnedNativeSource": true,
+      "ggufVersion": 3,
+      "httpStatus": 206,
+      "id": "smollm3-3b",
+      "nativeDeviceCompatibility": "unexecuted",
+      "revision": "4965cb60b150737b68a0408c36aeefb65078f894",
+      "tensorCount": 326
+    }
+  ],
+  "scope": "Bounded header inspection and manifest binding, not native loading/inference verification"
+}

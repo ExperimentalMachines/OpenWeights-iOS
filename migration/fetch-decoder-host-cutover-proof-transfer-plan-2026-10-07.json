@@ -1,0 +1,11 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 7412916,
+      "localRelativePath": "openweights-ios/ios/Product/Results/fetch-decoder-host-cutover-approved-policy-20261007-proof.zip"
+    }
+  ],
+  "purpose": "Retain exact host cutover, approved Unicode policy and complete historical native decoder proof before local proof ZIP eviction.",
+  "schemaVersion": 1
+}

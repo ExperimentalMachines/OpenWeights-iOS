@@ -240,4 +240,13 @@ copied-file checksums.
 
 Historical proof files retain their original paths and hashes.
 
+Study archive verification supports Firebase's separate `--xctestrun-file` plan.
+It refuses changes to test hosts, bundles, method selection, timeouts and all
+non-study settings. Twelve host integrity controls pass, and the exact completed
+local Core ML S1 block 3 plan verifies against the retained signed package.
+The separate-plan path passed the approved Core ML Pro S1 block 3 execution with two native methods and six conversation turns. See
+[migration/separate-study-plan-verification-2026-10-07.json](migration/separate-study-plan-verification-2026-10-07.json).
+
+The current study analysis requires exact raw-hash-bound source proofs and separates source, executable and toolchain cohorts. Nine of 63 cells have five matching complete primary blocks. The earlier 19-cell count pooled different builds in local baseline S2/S3. Historical results remain retained. See [the corrected report](docs/research/ios-repeated-artifact-study.md).
+
 </details>

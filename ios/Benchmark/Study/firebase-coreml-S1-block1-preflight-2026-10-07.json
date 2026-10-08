@@ -1,0 +1,115 @@
+{
+  "actualBillingVerified": false,
+  "actualOperatingSystem": "Version 18.3.2 (Build 22D82)",
+  "attempt": 0,
+  "authorization": {
+    "answer": "Approve this Core ML block",
+    "questionItemID": "call_rC7jIzqIq5cADDuVPjCroZ7R",
+    "recordedAtUTC": "2026-10-06T18:03:36.429616+00:00",
+    "scope": "one Core ML S1 primary block 1 on iphone16pro catalog 18.3, Xcode 26.2, 45-minute limit"
+  },
+  "billingEnabled": true,
+  "block": 1,
+  "catalogDevice": {
+    "deviceCapabilities": [
+      "accelerometer",
+      "arm64",
+      "armv6",
+      "armv7",
+      "auto-focus-camera",
+      "bluetooth-le",
+      "front-facing-camera",
+      "gamekit",
+      "gyroscope",
+      "location-services",
+      "magnetometer",
+      "metal",
+      "microphone",
+      "opengles-1",
+      "opengles-2",
+      "opengles-3",
+      "peer-peer",
+      "still-camera",
+      "video-camera",
+      "wifi",
+      "arkit",
+      "camera-flash",
+      "gps",
+      "healthkit",
+      "nfc",
+      "sms",
+      "telephony"
+    ],
+    "formFactor": "PHONE",
+    "id": "iphone16pro",
+    "name": "iPhone 16 Pro",
+    "perVersionInfo": [
+      {
+        "deviceCapacity": "DEVICE_CAPACITY_MEDIUM",
+        "versionId": "18.3"
+      }
+    ],
+    "screenDensity": 460,
+    "screenX": 1206,
+    "screenY": 2622,
+    "supportedVersionIds": [
+      "18.3"
+    ]
+  },
+  "catalogEvidence": {
+    ".build/firebase/goal-billing-20261007.json": "32ed122aff01df20987cdb48c3818f12739f196f9d5f900541a819f8030a03e0",
+    ".build/firebase/goal-capacities-20261007.json": "477489a7ee8ed4887fccb22d41b31ca6f6c32a8b872f131b11d0ec4452fd14e1",
+    ".build/firebase/goal-models-20261007.json": "f7bddff4dde7536af313db953a64b170e6ce6bbdf9839819e550c9ba7b0efca7",
+    ".build/firebase/goal-versions-20261007.json": "314d82781d3275cc8d10201c76f7cc958a5632cb7634610a6d6a8acb78654284"
+  },
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.zip",
+    "--device=model=iphone16pro,version=18.3",
+    "--xcode-version=26.2",
+    "--timeout=45m",
+    "--num-flaky-test-attempts=0",
+    "--no-record-video",
+    "--async",
+    "--format=json"
+  ],
+  "executionCheckout": "/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/openweights-ios",
+  "freeAllowanceVerified": false,
+  "limits": [
+    "This approval covers one submitted primary block. Further paid jobs require fresh authorization.",
+    "Exact selected plan and binaries match the completed locally verified S1 block 1. Package includes unused MLX model and delegate libraries.",
+    "Actual OS will be checked in returned native results and kept in separate cohorts if it changes. Catalog capacity is not a live queue-state measurement.",
+    "The goal and protocol require fresh authorization for each new paid job. Prior approval is consumed by successful block 0.",
+    "This is the retained locally executed package, not the newly rebuilt delegate binaries currently undergoing separate migration validation."
+  ],
+  "matrixID": "matrix-36pbwfev7u0h8",
+  "maximumRequestedExecutionUSDWithoutFreeAllowance": 3.75,
+  "originalPreflight": "Study/firebase-coreml-S1-block1-preflight-2026-10-06.json",
+  "package": {
+    "bytes": 1485895423,
+    "file": "OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.zip",
+    "sha256": "899f8fc09879525cfe2818b776a32a8f4c5faade041a7862470cb8a847c1da1b",
+    "verification": "Results/OpenWeightsDelegatesBench-CoreML-S1-block1-899f8fc09879.json"
+  },
+  "packageReverifiedSHA256": "899f8fc09879525cfe2818b776a32a8f4c5faade041a7862470cb8a847c1da1b",
+  "pricingSource": "https://firebase.google.com/docs/test-lab/usage-quotas-pricing",
+  "rawResultsFile": "iPhone17,1-study-S1-stable-facts-coreml-block1-attempt0-249C4BF5-2DE7-4BE7-BA78-19345869F326.json",
+  "recordedAtUTC": "2026-10-06T18:02:36.454546+00:00",
+  "runtime": "ExecuTorch Core ML",
+  "scenario": "S1-stable-facts",
+  "selectedCatalogDevice": {
+    "actualOSUnverifiedBeforeExecution": true,
+    "model": "iphone16pro",
+    "version": "18.3"
+  },
+  "status": "approved-job-completed-two-native-methods-and-full-primary-report-verified",
+  "storageTransferAndAutomaticInfrastructureRetryChargesVerified": false,
+  "submissionReceipt": "Results/firebase-coreml-S1-block1-submission-2026-10-07.json",
+  "timeoutSeconds": 2700,
+  "toolchain": "Xcode 26.2 / 17C52"
+}

@@ -1,6 +1,18 @@
 {
+  "SE3CurrentStudyInfrastructureOutcome": {
+    "automaticAttempts": 3,
+    "inferenceObserved": false,
+    "matrixID": "matrix-phcho7u3nupba",
+    "nativeCaseRecords": 0,
+    "outcome": "INCONCLUSIVE-infrastructureFailure",
+    "retention": "migration/firebase-SE3-current-study-S1-block2-infrastructure-retention-2026-10-07.json",
+    "state": "FINISHED"
+  },
+  "SE3FullMetalNativeSmoke": "migration/firebase-SE3-full-smoke-verification-2026-10-07.json",
+  "androidSharedEngineRegression": "migration/android-regression-verification-2026-10-07.json",
+  "approvedCloudCoreMLBlock1": "migration/firebase-coreml-S1-block1-retention-2026-10-07.json",
   "artifactsCopied": false,
-  "checkedAtUTC": "2026-10-06T17:35:47.527359+00:00",
+  "checkedAtUTC": "2026-10-06T18:07:38.240674+00:00",
   "copiedFileLogicalBytes": 6456563,
   "copiedFilesChecked": 492,
   "dependencies": [
@@ -18,7 +30,28 @@
     }
   ],
   "gitPublicationStatus": "Inspect Git history and the private remote for commit/push status.",
+  "gzipPageDecoding": {
+    "gzipTests": 12,
+    "iOSCoreCompilationPassed": true,
+    "liveMacChecksPassed": 5,
+    "liveMacCompatibilityVerification": "migration/gzip-live-host-verification-2026-10-07.json",
+    "nativeExecution": false,
+    "nativeLiveHTTPSVerified": false,
+    "parityP13Complete": false,
+    "passedHostTests": 50,
+    "preparedNativeMethods": 2,
+    "signedProductLinkVerified": true,
+    "signedProductPreparation": "migration/gzip-signed-product-preparation-verification-2026-10-07.json",
+    "verification": "migration/gzip-page-host-ios-verification-2026-10-07.json"
+  },
   "huggingFaceCreatedOrUploaded": true,
+  "independentDelegateBuildAndDeviceValidation": {
+    "failedTests": 0,
+    "passedTests": 3,
+    "proof": "ios/Benchmark/Results/migration-delegates-native-20261006T175840Z-verification.json",
+    "requests": 18,
+    "skippedTests": 0
+  },
   "independentNativeValidation": "migration/native-validation-2026-10-07.json",
   "independentProductBuildAndDeviceValidation": {
     "failedTests": 0,
@@ -26,13 +59,25 @@
     "proof": "ios/Product/Results/migration-product-native-20261006T172240Z-verification.json",
     "skippedTests": 0
   },
+  "ordinaryAppRestoration": "migration/ordinary-app-restore-2026-10-07.json",
+  "ordinaryNamespaceNativeValidation": "migration/ordinary-namespace-native-verification-2026-10-07.json",
+  "ordinaryUIBuildPreparation": "migration/ordinary-ui-preparation-2026-10-07.json",
   "originalSourcesModified": false,
   "pending": [
-    "Device validation of the newly built delegate benchmark binaries",
     "Remaining original A1-A3 study and Android parity requirements"
   ],
+  "phoneTestStatus": "All local phone tests held by user. Ordinary UI compilation is verified but its native methods have not executed.",
   "privateArchivalProof": "migration/archive-move-verification-2026-10-07.json",
   "schemaVersion": 1,
+  "scopedNativeUIValidation": {
+    "completeParity": false,
+    "failedMethods": 0,
+    "namespace": "benchmark-slot",
+    "passedMethods": 3,
+    "proof": "migration/native-ui-navigation-2026-10-07.json",
+    "skippedMethods": 0
+  },
   "sourceManifestSHA256": "53ba4dfef7623d92464dd2bcea6667b2da83d41c7f4384deb2c00cba701d755d",
-  "status": "independent-checkout-product-and-baseline-device-validation-verified-delegate-execution-pending"
+  "status": "independent-checkout-product-baseline-and-delegate-device-validation-verified",
+  "studySourceBuildCohortCorrection": "migration/study-source-build-cohort-correction-verification-2026-10-07.json"
 }

@@ -1,0 +1,68 @@
+{
+  "archive": {
+    "bytes": 7412916,
+    "file": "fetch-decoder-host-cutover-approved-policy-20261007-proof.zip",
+    "members": 90,
+    "sha256": "46a36b2700610e9c05a3ea5632df2b4eaca5286df31e0151326685e91ab761c0"
+  },
+  "historicalNative": {
+    "file": "ios/Product/Results/fetch-compatibility-build-e8539d6c2da8.json",
+    "fullResultBundleAndAttachmentsHashesRevalidated": true,
+    "methodsPassed": 6,
+    "newNativeExecution": false,
+    "sha256": "969b2b09b889fb8f458f04068fc84a257c83896c8195216450acc14cf0cb3fca"
+  },
+  "host": {
+    "JDKAgreements": 9,
+    "file": "ios/Product/Results/fetch-decoder-host-f1a2f728737b.json",
+    "outcomesPassed": 10,
+    "sha256": "202fc4ba68e2418cd18f4ef7607e6ce0780b95fa311050f08d374b7e35fcef35"
+  },
+  "inactiveHostBuild": {
+    "archiveBytes": 93454005,
+    "downloadedSHA256Matches": true,
+    "downloadedTreeManifestMatches": true,
+    "localRelativePath": "openweights-ios/ios/Product/.build/fetch-compatibility-harness-build",
+    "logicalBytes": 220775894,
+    "remotePath": "builds/3e93c11343efa20bb5a8b7e5470bc3ef00bcf3c8fc4eaece31f3bb5274e31860/fetch-compatibility-harness-build.tar.gz",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/builds/3e93c11343efa20bb5a8b7e5470bc3ef00bcf3c8fc4eaece31f3bb5274e31860/fetch-compatibility-harness-build.tar.gz",
+    "sha256": "3e93c11343efa20bb5a8b7e5470bc3ef00bcf3c8fc4eaece31f3bb5274e31860",
+    "status": "archived-local-directory-removed",
+    "verifiedAtUTC": "2026-10-06T22:38:15.204006+00:00"
+  },
+  "limits": [
+    "Independent decoder reference is standalone JDK 21 Charset, not Android SDK/OkHttp device instrumentation. Android source uses OkHttp ResponseBody.string().",
+    "Native decoder proof is historical and bound to exact signed sources. This turn ran only the current host harness while all phone tests are held.",
+    "One invalid UTF-32 surrogate case is directly verified. This does not prove every surrogate value, codec or malformed sequence.",
+    "Only the decoding function and fixture are byte-identical to the historical native source. The complete current product build has changed and is not claimed executed by that historical run.",
+    "P13 remains open for broader page, compression, provider, UI, lifecycle and accessibility verification.",
+    "JDK tree remains active in shared storage, with its historical path preserved. No model inference or phone access occurred."
+  ],
+  "privateArchive": {
+    "bytes": 7412916,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Product/Results/fetch-decoder-host-cutover-approved-policy-20261007-proof.zip",
+    "remotePath": "packages/46a36b2700610e9c05a3ea5632df2b4eaca5286df31e0151326685e91ab761c0/fetch-decoder-host-cutover-approved-policy-20261007-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/46a36b2700610e9c05a3ea5632df2b4eaca5286df31e0151326685e91ab761c0/fetch-decoder-host-cutover-approved-policy-20261007-proof.zip",
+    "sha256": "46a36b2700610e9c05a3ea5632df2b4eaca5286df31e0151326685e91ab761c0",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T22:39:56.598706+00:00"
+  },
+  "proposal": {
+    "authorization": {
+      "answer": "Approve Unicode replacement policy",
+      "questionItemID": "call_VbOFImiA3ym33Fz2peQabSd8",
+      "recordedAtUTC": "2026-10-06T22:38:18.816183+00:00"
+    },
+    "file": "migration/fetch-decoder-platform-proposal-2026-10-07.json",
+    "sha256": "f6f8d65f0394092dbf8f83c1d31a64d917f722d4cdca8ab96c2e231a72ff8203"
+  },
+  "recordedAtUTC": "2026-10-06T22:39:38.875753+00:00",
+  "retainedFailure": {
+    "file": "ios/Product/Results/fetch-decoder-host-missing-JDK-observation-2026-10-07.json",
+    "sha256": "1868880ddc2f90a7f79aea2ca3e827854ec82b7bf89eae8c6c6cafc2f619ae51"
+  },
+  "schemaVersion": 1,
+  "status": "host-reference-cutover-verified-and-Unicode-policy-approved-P13-incomplete"
+}

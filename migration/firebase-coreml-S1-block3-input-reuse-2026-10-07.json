@@ -1,0 +1,31 @@
+{
+  "limits": [
+    "The CLI makes a server-side per-job package copy, so cloud storage can still grow. No new local full package or full upload was needed.",
+    "This verifies submitted objects, not hashes of installed remote executables or completed inference.",
+    "The original archive embeds block 2. The separately submitted exact plan selects block 3 and must be confirmed in native raw study metadata before counting it."
+  ],
+  "matrixID": "matrix-b4vgabbu3fofa",
+  "objects": {
+    "package": {
+      "crc32c_hash": "KHQIng==",
+      "generation": "1791316865007014",
+      "localSHA256": "92a065a525633c3bcaad8fec480ff39b15add8c4805da4875f9c617f77b2222d",
+      "matchesLocalMD5AndSize": true,
+      "md5_hash": "88WY+EapEY2pN0Bb3Ltvlw==",
+      "size": 1489291853,
+      "storage_url": "gs://test-lab-6h3isj77ip6ya-hc6hd6s1qrxbu/2026-10-07_04:01:02.778495_rlGK/OpenWeightsDelegatesBench-CoreML-S1-block2-92a065a52563.zip#1791316865007014"
+    },
+    "plan": {
+      "crc32c_hash": "dVPaAQ==",
+      "generation": "1791316865571307",
+      "localSHA256": "0d4d1e2ececc636d17eae5be6f850028ca091e4bc9949cf9e682029873d118ab",
+      "matchesLocalMD5AndSize": true,
+      "md5_hash": "g38Qv1/ByooRLFZAtbQe4Q==",
+      "size": 3845,
+      "storage_url": "gs://test-lab-6h3isj77ip6ya-hc6hd6s1qrxbu/2026-10-07_04:01:02.778495_rlGK/coreml-study-S1-stable-facts-block3-attempt0.xctestrun#1791316865571307"
+    }
+  },
+  "recordedAtUTC": "2026-10-06T20:02:48.020834+00:00",
+  "schemaVersion": 1,
+  "status": "remote-input-copy-and-separate-plan-checksums-verified-native-results-pending"
+}

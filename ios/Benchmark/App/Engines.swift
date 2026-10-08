@@ -13,14 +13,17 @@ import Tokenizers
 final class LlamaEngine: BenchmarkEngine, @unchecked Sendable {
     private let queue = DispatchQueue(label: "org.experimentalmachines.benchmark.llama", qos: .userInitiated)
     private let gpuLayers: Int32
+    private let filename: String
     private var session: OWSession?
     var backend: String { session?.backend() ?? "unloaded" }
-    init(gpuLayers: Int32) { self.gpuLayers = gpuLayers }
+    init(gpuLayers: Int32, filename: String = "Qwen3-0.6B-Q4_K_M.gguf") {
+        self.gpuLayers = gpuLayers; self.filename = filename
+    }
     func load(directory: URL) async throws {
         try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
             queue.async {
                 do {
-                    self.session = try OWSession(path: directory.appendingPathComponent("Qwen3-0.6B-Q4_K_M.gguf").path, gpuLayers: self.gpuLayers)
+                    self.session = try OWSession(path: directory.appendingPathComponent(self.filename).path, gpuLayers: self.gpuLayers)
                     continuation.resume()
                 } catch { continuation.resume(throwing: error) }
             }

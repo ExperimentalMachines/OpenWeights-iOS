@@ -1,0 +1,11 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 36869783,
+      "localRelativePath": "openweights-ios/ios/Product/Results/gzip-signed-product-prepared-20261007-proof.zip"
+    }
+  ],
+  "purpose": "Retain exact signed product integration and unexecuted two-method native preparation proof. Keep the complete active signed build local under the phone-test hold.",
+  "schemaVersion": 1
+}

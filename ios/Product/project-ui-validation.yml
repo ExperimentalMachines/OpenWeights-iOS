@@ -1,0 +1,31 @@
+include: [project.yml]
+name: OpenWeightsUIValidation
+settings:
+  base:
+    OW_APP_BUNDLE_ID: org.experimentalmachines.openweights.ios
+    OW_SCRIPT_BINDING_CONDITION: ""
+targets:
+  NativeNavigationTests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: UITests
+    dependencies:
+      - target: OpenWeights
+    info:
+      path: .build/NativeNavigationTests-Info.plist
+      properties:
+        OWTargetAppBundleIdentifier: $(OW_APP_BUNDLE_ID)
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.experimentalmachines.openweights.ios.uinavigation
+        TEST_TARGET_NAME: OpenWeights
+schemes:
+  UIValidation:
+    build:
+      targets:
+        OpenWeights: all
+        NativeNavigationTests: [test]
+    test:
+      config: Release
+      targets: [NativeNavigationTests]
+      gatherCoverageData: false

@@ -1,0 +1,83 @@
+{
+  "archive": {
+    "bytes": 201968,
+    "file": "firebase-SE3-current-study-S1-block2-matrix-phcho7u3nupba-infrastructure-proof.zip",
+    "members": 32,
+    "sha256": "3de29643624a160773c84f3e34a8bc95cf5babdb822ffbccbbdc3ac5ed1ec437"
+  },
+  "automaticInfrastructureAttempts": 3,
+  "failureReceipt": {
+    "file": "firebase-SE3-current-study-S1-block2-infrastructure-failure-2026-10-07.json",
+    "sha256": "9526bc20defa888e6485cb70443bd4916b57fee077fdd39fc79f3ca7a37a5c3b"
+  },
+  "inferenceObserved": false,
+  "initialNativePrefixDownloaderRefusal": {
+    "exception": "AssertionError",
+    "reason": "No objects in the expected native-device folder. Full job-root listing found the input ZIP only."
+  },
+  "limits": [
+    "No native test case, runtime row or inference sample is observed in the retained provider records.",
+    "No actual device/OS, model-fit, runtime-compatibility, memory-failure or performance conclusion follows.",
+    "The provider classifies this as infrastructure failure. Its root cause is not established.",
+    "All three automatic infrastructure attempts belong to one matrix, not three independent study blocks.",
+    "The approval is exhausted. No further paid execution is authorized. Actual invoice and retry charges are unknown.",
+    "All local phone tests remain held. Full63-cell protocol is unchanged."
+  ],
+  "matrixID": "matrix-phcho7u3nupba",
+  "nativeCaseRecordsObserved": 0,
+  "privateArchive": {
+    "bytes": 201968,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-SE3-current-study-S1-block2-matrix-phcho7u3nupba-infrastructure-proof.zip",
+    "remotePath": "packages/3de29643624a160773c84f3e34a8bc95cf5babdb822ffbccbbdc3ac5ed1ec437/firebase-SE3-current-study-S1-block2-matrix-phcho7u3nupba-infrastructure-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/3de29643624a160773c84f3e34a8bc95cf5babdb822ffbccbbdc3ac5ed1ec437/firebase-SE3-current-study-S1-block2-matrix-phcho7u3nupba-infrastructure-proof.zip",
+    "sha256": "3de29643624a160773c84f3e34a8bc95cf5babdb822ffbccbbdc3ac5ed1ec437",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T22:56:51.773857+00:00"
+  },
+  "providerBytesDownloaded": 90667866,
+  "providerGenerationSizeAndMD5Verified": true,
+  "providerInputArchive": {
+    "bytes": 90667866,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-SE-current-study-S1-block2-matrix-phcho7u3nupba/OpenWeightsBench-SE3-current-S1-block2-attempt0-20261007.zip",
+    "remotePath": "packages/9b3abc6f26c282dd79baef658d37e7a3de9fbc0182cfca2089b65138f320e2fa/OpenWeightsBench-SE3-current-S1-block2-attempt0-20261007.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/9b3abc6f26c282dd79baef658d37e7a3de9fbc0182cfca2089b65138f320e2fa/OpenWeightsBench-SE3-current-S1-block2-attempt0-20261007.zip",
+    "sha256": "9b3abc6f26c282dd79baef658d37e7a3de9fbc0182cfca2089b65138f320e2fa",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T22:51:10.747925+00:00"
+  },
+  "providerObjectsDownloaded": 1,
+  "recordedAtUTC": "2026-10-06T22:56:34.279307+00:00",
+  "schemaVersion": 1,
+  "status": "completed-SE-study-infrastructure-failure-retained-no-inference-observed",
+  "submissionSnapshot": {
+    "file": "firebase-SE3-current-study-S1-block2-matrix-phcho7u3nupba-terminal-submission.json",
+    "sha256": "5c70a859491f4e71e24ec451de0599344b7239bfc3f9c7b607ac44c5fd96656c"
+  },
+  "submittedPackageArchive": {
+    "bytes": 90667866,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/OpenWeightsBench-SE3-current-S1-block2-attempt0-20261007.zip",
+    "remotePath": "packages/9b3abc6f26c282dd79baef658d37e7a3de9fbc0182cfca2089b65138f320e2fa/OpenWeightsBench-SE3-current-S1-block2-attempt0-20261007.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/9b3abc6f26c282dd79baef658d37e7a3de9fbc0182cfca2089b65138f320e2fa/OpenWeightsBench-SE3-current-S1-block2-attempt0-20261007.zip",
+    "sha256": "9b3abc6f26c282dd79baef658d37e7a3de9fbc0182cfca2089b65138f320e2fa",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T22:51:03.727430+00:00"
+  },
+  "terminalMatrix": {
+    "file": ".build/firebase/matrix-phcho7u3nupba-latest.json",
+    "sha256": "2a51d483835573a677988672fa347829b91428ad7ada7bab76d5e0661bcce87a"
+  },
+  "terminalNativeCases": {
+    "file": ".build/firebase/SE-current-study-S1-block2-toolresults-terminal-cases.json",
+    "sha256": "910527181d9f2405f2b6edc8ed6bbdf3fa94ffed7d2587bb86c997233b984d6a"
+  },
+  "terminalToolResultsStep": {
+    "file": ".build/firebase/SE-current-study-S1-block2-toolresults-terminal-step.json",
+    "sha256": "a70b220d8d6185ce0026968bcf24f16ccb76972ff6799983d7f491d0bfc7e7f8"
+  }
+}

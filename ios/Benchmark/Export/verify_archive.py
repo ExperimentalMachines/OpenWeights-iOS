@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Verify a retained immutable archive against its receipt and source snapshot."""
 import argparse
+import copy
 import hashlib
 import json
 import plistlib
@@ -15,6 +16,15 @@ def digest_stream(stream):
     return value.hexdigest()
 
 
+def plan_bindings(plan):
+    """Keep test hosts, selection, timeouts and every non-study setting fixed."""
+    result = copy.deepcopy(plan)
+    environment = result['BenchmarkTests'].get('EnvironmentVariables', {})
+    for name in ['OW_STUDY_SCENARIO', 'OW_STUDY_BLOCK', 'OW_STUDY_ATTEMPT', 'OW_STUDY_RUNTIME']:
+        environment.pop(name, None)
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('archive', type=Path)
@@ -25,9 +35,13 @@ def main():
     parser.add_argument('--block', type=int)
     parser.add_argument('--attempt', type=int, default=0)
     parser.add_argument('--runtime')
+    parser.add_argument('--xctestrun-file', type=Path,
+                        help='Verify a separate study plan against the archive bindings, as supported by Firebase.')
     args = parser.parse_args()
     if args.suite == 'study' and (args.scenario is None or args.block is None):
         parser.error('A study archive requires its scenario and block.')
+    if args.xctestrun_file and args.suite != 'study':
+        parser.error('A separate plan is supported only for the retained study suite.')
     receipt = json.loads(args.receipt.read_text())
     with zipfile.ZipFile(args.archive) as package:
         for name, expected in receipt['executables'].items():
@@ -38,6 +52,11 @@ def main():
         if len(plans) != 1:
             raise SystemExit('Expected exactly one test plan.')
         plan = plistlib.loads(package.read(plans[0]))
+        if args.xctestrun_file:
+            override = plistlib.loads(args.xctestrun_file.read_bytes())
+            if plan_bindings(override) != plan_bindings(plan):
+                raise SystemExit('Separate study plan changes test hosts, selection, timeouts or non-study settings.')
+            plan = override
         expected_tests = (['BenchmarkTests/testFirebaseSmoke', 'BenchmarkTests/testArtifactVerificationRejectsCorruption']
                           if args.suite == 'smoke' else ['BenchmarkTests/testStudyBlock', 'BenchmarkTests/testMultiTurnProbeGrading'])
         if plan['BenchmarkTests'].get('OnlyTestIdentifiers') != expected_tests:
@@ -61,8 +80,12 @@ def main():
                 if digest_stream(stream) != expected:
                     raise SystemExit(f'Source snapshot hash mismatch: {name}')
     with args.archive.open('rb') as stream:
-        print(json.dumps({'archive': args.archive.name, 'sha256': digest_stream(stream),
-                          'xcode': receipt['xcode'], 'tests': expected_tests}))
+        result = {'archive': args.archive.name, 'sha256': digest_stream(stream),
+                  'xcode': receipt['xcode'], 'tests': expected_tests}
+        if args.xctestrun_file:
+            result['separatePlan'] = {'file': args.xctestrun_file.name,
+                                     'sha256': hashlib.sha256(args.xctestrun_file.read_bytes()).hexdigest()}
+        print(json.dumps(result))
 
 
 if __name__ == '__main__':

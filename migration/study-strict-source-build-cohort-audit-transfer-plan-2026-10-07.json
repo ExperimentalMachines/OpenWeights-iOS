@@ -1,0 +1,11 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 663261,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/study-strict-source-build-cohort-audit-20261007-proof.zip"
+    }
+  ],
+  "purpose": "Preserve exact51raw reports, their51source proofs, historical analyzer/ledger and preliminary strict build-cohort audit before correcting pooling. Do not overwrite historical outputs.",
+  "schemaVersion": 1
+}

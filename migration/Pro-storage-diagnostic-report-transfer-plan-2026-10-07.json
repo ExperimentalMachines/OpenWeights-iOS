@@ -1,0 +1,11 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 171385,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/Pro-storage-native-report-and-private-receipts-20261007.zip"
+    }
+  ],
+  "purpose": "Freeze the reproduced report, exact analysis and ledger, diagnostic and SE native verification, private round-trip receipts and current continuation. This supplements the immutable full diagnostic proof without replacing it.",
+  "schemaVersion": 1
+}

@@ -247,3 +247,39 @@ approval. No new cloud execution or study replication is authorized.
 The separately signed gguf-ios16.6-bundled-v1 candidate carries the exact pinned GGUF in the application bundle and preserves original fixtures, native libraries and inference settings. It bypasses remote acquisition in the selected benchmark methods, without claiming the earlier CDN timeout or infrastructure failures are fixed. The frozen native source archive is authoritative for reused libraries. The separate raw runtime variant prevents pooling with older remote-delivery or full-framework packages.
 
 [Protocol](Study/older-ios-bundled-gguf-addendum.json) and [clean package proof](Results/gguf16-bundled-package-revalidation-0104eef7f0e4.json) retain source-before/after guards, signing, exact model bytes, smoke/S1 plans and binary iOS 16.6 minimums. The first source-equivalence rejection and superseded package with HF cache resources remain preserved. Clean smoke and S1 archives are prepared but have not run on the phone. Exact local validation must pass before another paid cloud proposal. No new older-device approval or execution exists, and original study requirements remain intact.
+
+
+## Figures with separate device and OS cohorts
+
+`Study/plot_device_cohorts.py` exports PNG, SVG and PDF for one pinned artifact,
+with complete-primary-block medians and IQRs for final-turn first text, decode
+speed and sampled process footprint. Select each actual device and exact OS
+string explicitly. It refuses fewer than five complete blocks, ambiguous
+artifact/cache cohorts, differing runtime/artifact/cache settings and invalid
+metric denominators. OS and lab conditions remain separate labels. The figure
+does not isolate hardware effects or rank general model quality.
+
+For example, after both exact cohorts have five matching complete blocks:
+
+```sh
+python Study/plot_device_cohorts.py Results/ANALYSIS.json \
+  --output-dir Results/device-cohort-figures \
+  --engine 'ExecuTorch Core ML' --scenario S1-stable-facts \
+  --cohort 'iPhone17,3=Version 26.6.2 (Build 23G90)' \
+  --cohort 'iPhone17,1=Version 18.3.2 (Build 22D82)'
+```
+
+Use the pinned `Study/plot-requirements.txt` plotting environment. Provenance
+records the input analysis/source hashes, selected cells, tool versions and
+asset hashes. [Host verification](../../migration/device-cohort-figure-verification-2026-10-07.json)
+records nine controls, byte-identical reproduction of the actual five-block
+local figure, and refusal of the actual four-block cloud cohort. The local
+preview is a renderer check, not a new study measurement. Historical local
+figures and `plot_study.py` remain unchanged.
+
+
+## Source and build cohort correction, 2026-10-07
+
+Analysis schema 5 requires every raw report to have a source proof with its exact filename and SHA-256. Compile source maps, executable hashes and Xcode/SDK identity define a build cohort. The analyzer separates load and turn distributions by this cohort along with artifact, protocol, device/OS and cache controls. The ledger checks the same raw/source binding and refuses older unseparated analyses.
+
+The initial 19-of-63 count pooled different builds in baseline S2/S3. Each affected cell has four complete foreground-guard blocks plus one earlier block. Strict matching currently satisfies nine cells. All 51 raw reports and 16 failed runtime rows remain retained. Historical figures and their frozen analyses are preserved, and the current S1 seven-configuration figure reproduces from the source/build-separated analysis. The phone-test hold remains.

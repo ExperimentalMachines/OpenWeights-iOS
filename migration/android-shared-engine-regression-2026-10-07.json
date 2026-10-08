@@ -1,0 +1,46 @@
+{
+  "androidRevision": "1675d39582b72174a5eb1e3fefeda57b15034100",
+  "command": [
+    "./gradlew",
+    ":core:engine:testDebugUnitTest",
+    ":core:engine:assembleDebug",
+    "--no-daemon",
+    "--console=plain",
+    "--max-workers=6",
+    "-Pandroid.builder.sdkDownload=false"
+  ],
+  "exitCode": 0,
+  "finishedAtUTC": "2026-10-06T18:49:25.766302+00:00",
+  "label": "android-shared-engine-regression-20261006T184825Z",
+  "limits": [
+    "Android engine unit tests and debug library assembly only. No Android device inference or full-app validation."
+  ],
+  "llamaRevision": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+  "log": "/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/.benchmark-work/Android/android-shared-engine-regression-20261006T184825Z.log",
+  "logSHA256": "4b3a23508896d43a6cccb5f9e5cc3dba07259b7c4f6767a1fd1c99b6f6e188f6",
+  "sourceHashesAfter": {
+    "build-logic/convention/src/main/kotlin/AndroidCommon.kt": "83619c01fc244a6a317645dc0785a1e225bbe3613cbde1fcce3f395442ee6d8b",
+    "core/engine/build.gradle.kts": "b134c7ed55b632c4360797fce6005b39e2d31ac3e8ebf745ae35c468e1b818b6",
+    "core/engine/src/main/cpp/CMakeLists.txt": "612aa334be75e3924b672acacc578905a3d8223b0195db04eb28923e6bcdf3a7",
+    "core/engine/src/main/cpp/PatchGGMLGraphOffset.cmake": "4f49cf5fdb5a910af0e90eb7006f4be2aaeffa2033199301fff122cd42c76f5e",
+    "core/engine/src/main/cpp/engine_session.cpp": "776beb71e7fdeaf4e4ad2f224cd09c21ad2189ac22f65f9e1f3641f0e4b38c40",
+    "core/engine/src/main/cpp/engine_session.h": "d3ac2097fd60962592d8536a5573f7be0952dc03ca4bbce69ea955d46efff19a",
+    "core/engine/src/main/cpp/llama_jni.cpp": "cad11449be3c5c3c20806bd147887d8b04ca107564e2242fcd30ab4b2d70d824",
+    "gradle/libs.versions.toml": "4310397e71d8baf40779ff9539e451e774f15bb97f83f74ebfd8fa9c64c0afbd",
+    "gradle/wrapper/gradle-wrapper.properties": "fc913ffa0625b544190844a506086ca0b93c4361986e820e10dd64c088257bf7"
+  },
+  "sourceHashesBefore": {
+    "build-logic/convention/src/main/kotlin/AndroidCommon.kt": "83619c01fc244a6a317645dc0785a1e225bbe3613cbde1fcce3f395442ee6d8b",
+    "core/engine/build.gradle.kts": "b134c7ed55b632c4360797fce6005b39e2d31ac3e8ebf745ae35c468e1b818b6",
+    "core/engine/src/main/cpp/CMakeLists.txt": "612aa334be75e3924b672acacc578905a3d8223b0195db04eb28923e6bcdf3a7",
+    "core/engine/src/main/cpp/PatchGGMLGraphOffset.cmake": "4f49cf5fdb5a910af0e90eb7006f4be2aaeffa2033199301fff122cd42c76f5e",
+    "core/engine/src/main/cpp/engine_session.cpp": "776beb71e7fdeaf4e4ad2f224cd09c21ad2189ac22f65f9e1f3641f0e4b38c40",
+    "core/engine/src/main/cpp/engine_session.h": "d3ac2097fd60962592d8536a5573f7be0952dc03ca4bbce69ea955d46efff19a",
+    "core/engine/src/main/cpp/llama_jni.cpp": "cad11449be3c5c3c20806bd147887d8b04ca107564e2242fcd30ab4b2d70d824",
+    "gradle/libs.versions.toml": "4310397e71d8baf40779ff9539e451e774f15bb97f83f74ebfd8fa9c64c0afbd",
+    "gradle/wrapper/gradle-wrapper.properties": "fc913ffa0625b544190844a506086ca0b93c4361986e820e10dd64c088257bf7"
+  },
+  "startedAtUTC": "2026-10-06T18:48:25.406039+00:00",
+  "status": "android-regression-terminal-awaits-inspection",
+  "submoduleStatus": "c9c8ccfab584f9f7610057c4633dbd3df7e012cc core/engine/src/main/cpp/OpenCL-Headers (v2026.05.29-4-gc9c8ccf)\n 18fdcd58286376124f938948aa8ed156079c1c16 core/engine/src/main/cpp/OpenCL-ICD-Loader (v2026.05.29-1-g18fdcd5)\n b2e5e9b28b2484fbf94b543432ece638996a8b97 core/engine/src/main/cpp/llama.cpp (b2e5e9b)\n 954dc53628e36891f93c359aa60895c2ae3dac6b core/sandbox/src/main/cpp/quickjs (v0.16.1)"
+}

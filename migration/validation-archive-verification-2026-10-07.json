@@ -1,0 +1,52 @@
+{
+  "accountIsPro": false,
+  "accountReportedStorageBytes": 8565708318,
+  "allowanceSource": "https://huggingface.co/docs/hub/storage-limits",
+  "archivedProofs": [
+    {
+      "bytes": 205924,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/migration-benchmark-native-20261006T172938Z-proof.zip",
+      "remotePath": "packages/5ce97c3dcddfbd7fa3b72873157e692ad17bf63e07fd9bfa41e665b5b6bf95f7/migration-benchmark-native-20261006T172938Z-proof.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/5ce97c3dcddfbd7fa3b72873157e692ad17bf63e07fd9bfa41e665b5b6bf95f7/migration-benchmark-native-20261006T172938Z-proof.zip",
+      "sha256": "5ce97c3dcddfbd7fa3b72873157e692ad17bf63e07fd9bfa41e665b5b6bf95f7",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T18:01:39.047225+00:00"
+    },
+    {
+      "bytes": 104207,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/migration-delegates-native-20261006T175840Z-proof.zip",
+      "remotePath": "packages/92f6d15ee930b61da59cf8b2c783b3fafab28239b140823e06176f2c44aca90d/migration-delegates-native-20261006T175840Z-proof.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/92f6d15ee930b61da59cf8b2c783b3fafab28239b140823e06176f2c44aca90d/migration-delegates-native-20261006T175840Z-proof.zip",
+      "sha256": "92f6d15ee930b61da59cf8b2c783b3fafab28239b140823e06176f2c44aca90d",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T18:07:44.718808+00:00"
+    },
+    {
+      "bytes": 8977822,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights-ios/ios/Product/Results/migration-product-native-20261006T172240Z-proof.zip",
+      "remotePath": "packages/e5045e62fbeca831a1b3b47aa22ca40e0f9fb3869168810f0f9ffc054316d2b9/migration-product-native-20261006T172240Z-proof.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/e5045e62fbeca831a1b3b47aa22ca40e0f9fb3869168810f0f9ffc054316d2b9/migration-product-native-20261006T172240Z-proof.zip",
+      "sha256": "e5045e62fbeca831a1b3b47aa22ca40e0f9fb3869168810f0f9ffc054316d2b9",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T18:05:26.507999+00:00"
+    }
+  ],
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "bucketBytes": 8565708318,
+  "bucketObjects": 80,
+  "checkedAtUTC": "2026-10-06T18:15:08.803958+00:00",
+  "documentedFreePrivateAllowanceBytes": 100000000000,
+  "limits": [
+    "Current free headroom is inferred from the documented allowance and account inventory, not an API quota guarantee.",
+    "Only the three completed proof ZIP copies were removed in this batch. Raw reports, original xcresults and active signed builds remain local."
+  ],
+  "private": true,
+  "quotaLimitReturnedByAPI": false,
+  "status": "three-migration-proof-archives-remote-round-trip-verified"
+}

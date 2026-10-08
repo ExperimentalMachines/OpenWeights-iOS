@@ -1,0 +1,11 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 587754,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/study-ledger-SE-device-accounting-20261007-proof.zip"
+    }
+  ],
+  "purpose": "Retain tested SE ledger accounting correction, six controls, exact51-report input, old/new report source snapshots and reproducible current report. No active model/build or paid input removed.",
+  "schemaVersion": 1
+}

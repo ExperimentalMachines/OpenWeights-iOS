@@ -1,0 +1,17 @@
+{
+  "protocol": "openweights-ios-publication-v1",
+  "status": "frozen-after-Qwen-pilot-before-five-model-comparison",
+  "pilot": "Publication/outputs/qwen-pilot-20261007-attempt2",
+  "workloadSHA256": "c584c1da2ca3871e3022b8505758993683d78ba79755d46795a288137903be29",
+  "nativeReceiptSHA256": "b62615831f3d277c4fa582c99eb8eafea55638f872b438d7b1651ec5ee62e9e2",
+  "scorerSHA256": "78362aa952c9fddb43ad396812767bd7f4da3c558b45e4b7ecb2ef33aaca8a01",
+  "sampling": {
+    "repetitions": 3,
+    "turns": 6,
+    "maxOutputTokens": 64,
+    "contextTokens": 2048,
+    "minimumThroughputTokens": 8
+  },
+  "recall": "Explicit positive diet labels and JSON objects are factually graded independently of strict formatting. Unscorable and missing values remain visible.",
+  "measurementChangesFromPreparedPilot": false
+}

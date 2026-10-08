@@ -1,0 +1,68 @@
+{
+  "SEMetalSmokeProof": "migration/firebase-SE3-full-smoke-verification-2026-10-07.json",
+  "exactLocalPilot": {
+    "configurationsPassed": 5,
+    "nativePilotMethodsPassed": 1,
+    "proofFile": "iphone16-xcode26.2-baseline-pilot-source.json",
+    "proofSHA256": "84fa82f0309495efdc42b40d307d97c77af7fb8411647695f41557b5c2406004",
+    "rawFile": "iphone16-xcode26.2-baseline-pilot-2026-10-02.json",
+    "rawSHA256": "7d463d418a3e83e181f6691cbdc456943608740bb46b111dc1d301a8d670dab7",
+    "requestsPassed": 45
+  },
+  "executables": {
+    "Release-iphoneos/OpenWeightsBench.app/OpenWeightsBench": "40a383bd95285cde3792d2b17a09842710eb42a0a5dc61dab3b068c77b3c8846",
+    "Release-iphoneos/OpenWeightsBench.app/PlugIns/BenchmarkTests.xctest/BenchmarkTests": "18f29e17cf1de372deb20b37f53b5aed6316a43d9dc4f0d9d8097ce501842b32"
+  },
+  "inputArchive": {
+    "bytes": 93614235,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsBench-smoke-tests.zip",
+    "remotePath": "packages/c70a5f9de407033836a66928ec6fb785f01fedea7707186b74d20c9032f42090/OpenWeightsBench-smoke-tests.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/c70a5f9de407033836a66928ec6fb785f01fedea7707186b74d20c9032f42090/OpenWeightsBench-smoke-tests.zip",
+    "sha256": "c70a5f9de407033836a66928ec6fb785f01fedea7707186b74d20c9032f42090",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T20:52:12.347832+00:00"
+  },
+  "limits": [
+    "Only external test selection differs from the full-Metal smoke archive. Every signed product and model manifest is unchanged.",
+    "The selected pilot method completed45 requests on identical signed binaries locally before the phone-test hold. The additional corruption method passed on SE3 in the preceding smoke.",
+    "No SE multi-runtime native execution is established by preparation. Local phone tests stay held.",
+    "The pilot has no between-adapter thermal cooldown and is compatibility validation, not the repeated-study protocol. Inspect actual conditions.",
+    "FullMetal is included again because the fixed pilot method selects all five configurations. The specific reason is validation of the four remaining baseline configurations in this immutable suite.",
+    "CoreML and ExecuTorchMLX remain separate configurations requiring SE validation. No A2 primary block is added."
+  ],
+  "onlyChangedArchiveMember": "OpenWeights-smoke.xctestrun",
+  "originalArchiveMembers": 534,
+  "package": {
+    "buildReceiptFile": "OpenWeightsBench-smoke-tests-build.json",
+    "buildReceiptSHA256": "28d1ef54a7b0af0a68f3ff9ced306921560baf78377bf055196c70e816e0f45b",
+    "bytes": 93521668,
+    "file": "OpenWeightsBench-SE3-baseline-pilot-20261007.zip",
+    "sha256": "8dbb7c8d1255e0efe1dd8dfce12815493de15caf15a67dfaf9a8a2ccd2e86169",
+    "sourceSnapshotFile": "xcode26.2-baseline-sources-c5396c6bd355.zip",
+    "sourceSnapshotSHA256": "aab910e3bee367ef8dec6d4a141b6f08b86103ad0d62a75736724ac4e2aa7acc"
+  },
+  "plan": {
+    "file": "OpenWeights-smoke.xctestrun",
+    "maximumMethodSeconds": 900,
+    "methods": [
+      "BenchmarkTests/testPilotBenchmark",
+      "BenchmarkTests/testArtifactVerificationRejectsCorruption"
+    ],
+    "sha256": "3a0f26bdd74aa6c3e23d992b37877ac4290f035b5457614581fd9b45cea6dc1d"
+  },
+  "preparationCorrection": "The first member comparison reused mutable ZipInfo objects while writing, so its in-memory source header offsets changed and later reading failed with Bad magic number. The original remote ZIP and completed candidate bytes were unchanged. The helper now copies ZipInfo before writing. This rerun preserves the existing candidate and verifies every member against a fresh verified source download before approval. No native test was run.",
+  "recordedAtUTC": "2026-10-06T20:55:37.187017+00:00",
+  "requestsIfComplete": 45,
+  "runtimeOrder": [
+    "llama.cpp CPU",
+    "ExecuTorch XNNPACK",
+    "llama.cpp Metal",
+    "MLX Metal",
+    "llama.cpp partial Metal"
+  ],
+  "schemaVersion": 1,
+  "status": "immutable-signed-binaries-and-sources-preserved-new-isolated-pilot-selection-prepared-no-SE-execution",
+  "unchangedOtherMembers": 533
+}

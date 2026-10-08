@@ -1,0 +1,66 @@
+{
+  "approvalRequirement": "The active A1-A3 goal requires a concrete proposal and approval for additional platform differences before counting them resolved.",
+  "approvalScope": "Only the malformed UTF-32 surrogate replacement policy. It does not approve other codec, page, feature or study differences.",
+  "authorization": {
+    "answer": "Approve Unicode replacement policy",
+    "questionItemID": "call_VbOFImiA3ym33Fz2peQabSd8",
+    "recordedAtUTC": "2026-10-06T22:38:18.816183+00:00"
+  },
+  "decisionRecord": "../Context/Decisions/0009-ios-utf32-surrogate-replacement.md",
+  "hostVerification": {
+    "JDKAgreements": 9,
+    "declaredOutcomesPassed": 10,
+    "file": "ios/Product/Results/fetch-decoder-host-f1a2f728737b.json",
+    "javaHome": "/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/.benchmark-work/Android/jdk21/jdk-21.0.12.1+1/Contents/Home",
+    "nativeFixtureResultsMatchCurrentHost": true,
+    "sha256": "202fc4ba68e2418cd18f4ef7607e6ce0780b95fa311050f08d374b7e35fcef35"
+  },
+  "limitations": [
+    "Independent decoder reference is standalone JDK 21 Charset, not Android SDK/OkHttp device instrumentation. Android source uses OkHttp ResponseBody.string().",
+    "Native decoder proof is historical and bound to exact signed sources. This turn ran only the current host harness while all phone tests are held.",
+    "One invalid UTF-32 surrogate case is directly verified. This does not prove every surrogate value, codec or malformed sequence.",
+    "Only the decoding function and fixture are byte-identical to the historical native source. The complete current product build has changed and is not claimed executed by that historical run.",
+    "P13 remains open for broader page, compression, provider, UI, lifecycle and accessibility verification."
+  ],
+  "nativeVerification": {
+    "OS": "26.6.2/23G90",
+    "decoderFunctionBytesMatchHistoricalSignedSource": true,
+    "device": "iPhone 16",
+    "file": "ios/Product/Results/fetch-compatibility-build-e8539d6c2da8.json",
+    "fixtureFileBytesMatchHistoricalSignedSource": true,
+    "historicalRun": true,
+    "nativeAttachment": {
+      "file": "ios/Product/Results/product-fetch-compatibility-native-20261003T235853Z-attachments/DB40FE89-2560-44E6-B17C-7C7B162B080E.json",
+      "sha256": "e8bc6e734c6247a9d396b0a5bd46d60a472568a00c8d709df1203e8ba182a9ec"
+    },
+    "nativeMethodsFailed": 0,
+    "nativeMethodsPassed": 6,
+    "nativeMethodsSkipped": 0,
+    "sha256": "969b2b09b889fb8f458f04068fc84a257c83896c8195216450acc14cf0cb3fca",
+    "sourceSnapshot": {
+      "file": "product-sources-e8539d6c2da8.zip",
+      "sha256": "b02f9a99af240b440eea66895e02dc734c4ae76960584fb7447c7acc1af2dbb2"
+    },
+    "unchangedDecoderFunctionSHA256": "ec784a6a94d1ece2c8acb6ab9fd624525f401b52f7a4591d0ca5046ded9b7075"
+  },
+  "parityItem": "P13",
+  "proposal": "Replace isolated surrogate values in fetched UTF-32 text with Unicode replacement character U+FFFD, preserving valid Swift Unicode text. Do not emulate the invalid scalar preserved by the standalone JDK reference.",
+  "recordedAtUTC": "2026-10-06T22:37:10.902054+00:00",
+  "schemaVersion": 1,
+  "sharedJDKRelocation": {
+    "file": "migration/shared-jdk21-relocation-2026-10-07.json",
+    "sha256": "ea6db232889214477725bf443dae577f293e0946174632400f700e70e22d4a41"
+  },
+  "status": "approved-platform-policy-with-scoped-host-and-historical-native-evidence",
+  "verifiedExample": {
+    "JDK21CodePoints": [
+      55296
+    ],
+    "contentType": "text/plain; charset=UTF-32BE",
+    "iOSCodePoints": [
+      65533
+    ],
+    "inputHex": "0000d800",
+    "renderedIOS": "\ufffd"
+  }
+}

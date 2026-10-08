@@ -1,0 +1,10 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 84611,
+      "localRelativePath": "openweights-ios/ios/Product/Results/android-shared-engine-regression-20261006T184625Z-failure-proof.zip"
+    }
+  ],
+  "schemaVersion": 1
+}

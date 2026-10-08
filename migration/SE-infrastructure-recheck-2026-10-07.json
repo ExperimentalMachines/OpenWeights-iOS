@@ -1,0 +1,16 @@
+{
+  "files": {
+    "ios/Benchmark/.build/firebase/matrix-2ha1dnu69g2ja-rechecked-20261007.json": "aa323e31bbc9e7653e3ad69656c7e87468b9ffeb0d5d79ffb565eccde97c8a41",
+    "ios/Benchmark/.build/firebase/matrix-2hrzycmftky2m-rechecked-20261007.json": "34935be36e884e32509a7d8ff0db5694abe68b8b233742b8518951bc4dd2b691",
+    "ios/Benchmark/.build/firebase/se18-infrastructure-step-rechecked-20261007.json": "3d863be60433268577aeecf84546b065e8461fbeaf872c09f5dd8c4cb302ef11",
+    "ios/Benchmark/.build/firebase/se26-infrastructure-step-rechecked-20261007.json": "fd01434c6e8cb67ab1d9642338e8ad7a9234c3ca3cc102f3dbc49f70491f73c8"
+  },
+  "limits": [
+    "Both SE executions remain ERROR with Internal System Error 3 after three automatic attempts. The matrices are FINISHED because their Pro executions also reached terminal state.",
+    "Both SE ToolResults steps are complete/inconclusive with infrastructureFailure=true and empty testExecutionStep. This does not establish memory or runtime incompatibility.",
+    "No manual resubmission or protocol amendment was made. Original SE cells remain open."
+  ],
+  "observedAtUTC": "2026-10-06T19:51:10.055603+00:00",
+  "schemaVersion": 1,
+  "status": "retained-SE-provider-failures-rechecked-no-native-logs-or-reports"
+}

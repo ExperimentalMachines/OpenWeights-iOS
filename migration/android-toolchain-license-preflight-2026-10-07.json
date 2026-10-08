@@ -1,0 +1,59 @@
+{
+  "authorization": {
+    "answer": "Approve license and installation",
+    "questionItemID": "call_UZkowgmITWd1tz7uRUL1OL66",
+    "recordedAtUTC": "2026-10-06T18:32:32.531146+00:00"
+  },
+  "compressedDownloadBytes": 1397810254,
+  "installationHasOccurred": true,
+  "licenseAccepted": true,
+  "licenseTextSHA256": "1f8729233617b193fd619213792ae16a41b95d2bbbf525dfe66998252ba68b16",
+  "licenseURL": "https://developer.android.com/studio/terms",
+  "packages": [
+    {
+      "bytes": 155384151,
+      "license": "android-sdk-license",
+      "officialChecksum": "ad03dc49bfacfd52c110b14104ea548b8a07e830",
+      "officialChecksumType": "sha1",
+      "path": "cmdline-tools;latest",
+      "url": "https://dl.google.com/android/repository/commandlinetools-mac_arm64-16111833_latest.zip"
+    },
+    {
+      "bytes": 67281901,
+      "license": "android-sdk-license",
+      "officialChecksum": "ed8ebf7f8822a4de5686d427f237d2fa30ff7410",
+      "officialChecksumType": "sha1",
+      "path": "platforms;android-37.0",
+      "url": "https://dl.google.com/android/repository/platform-37.0_r02.zip"
+    },
+    {
+      "bytes": 81933386,
+      "license": "android-sdk-license",
+      "officialChecksum": "eb080751b2b2028eb3604f571027d6f7b3c46321",
+      "officialChecksumType": "sha1",
+      "path": "build-tools;37.0.0",
+      "url": "https://dl.google.com/android/repository/build-tools_r37_macosx.zip"
+    },
+    {
+      "bytes": 1049519838,
+      "license": "android-sdk-license",
+      "officialChecksum": "03d29fbb57e3c05a7d53597dd011d856c1456a4f",
+      "officialChecksumType": "sha1",
+      "path": "ndk;29.0.14206865",
+      "url": "https://dl.google.com/android/repository/android-ndk-r29-darwin.zip"
+    },
+    {
+      "bytes": 43690978,
+      "license": "android-sdk-license",
+      "officialChecksum": "a0578a0543942c7eb35822c88a516b87e5b9867a",
+      "officialChecksumType": "sha1",
+      "path": "cmake;4.1.2",
+      "url": "https://dl.google.com/android/repository/cmake-4.1.2-darwin.zip"
+    }
+  ],
+  "purpose": "Android regression validation of shared engine changes only",
+  "recordedAtUTC": "2026-10-06T18:11:41.904965+00:00",
+  "repositoryMetadataSHA256": "fbe1cbda0bb8fd0f260e3f647483995eac3b57e2d7cb58640e2dbe5185f35eeb",
+  "sdkRoot": "/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/.benchmark-work/Android/sdk",
+  "status": "approved-packages-installed"
+}

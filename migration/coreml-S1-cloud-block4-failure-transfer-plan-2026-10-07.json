@@ -1,0 +1,15 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 1780250,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-coreml-S1-block4-matrix-2taqpjj8qiv6h-failure-proof.zip"
+    },
+    {
+      "bytes": 1489291853,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/OpenWeightsDelegatesBench-CoreML-S1-block2-92a065a52563.zip"
+    }
+  ],
+  "purpose": "Retain the completed Pro block4 disk-write failure, all51 raw reports/source proofs, pre-correction analyzer/report and reproduced schema4 analysis. The completed1.49GB submitted input is inactive. Current SE retry package, active models and builds remain local. Restore this exact input if a later job is approved.",
+  "schemaVersion": 1
+}

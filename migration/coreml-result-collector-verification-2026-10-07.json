@@ -1,0 +1,91 @@
+{
+  "allStudyHostControls": {
+    "failed": 0,
+    "log": "ios/Benchmark/.build/firebase/study-controls-with-collector-revision2-20261007.log",
+    "logSHA256": "2f87101cc8f0b4d69e323b65ecbb5d64723982f8369c353265d4b732ce741635",
+    "passed": 26
+  },
+  "archive": {
+    "bytes": 26217,
+    "file": "coreml-result-collector-d23b4a5abf5c-2026-10-07-proof.zip",
+    "sha256": "e9d3c97bc1be08672107cb58f99bce4e257d558b5e02dce677fb7d07186ebf3a"
+  },
+  "controlFixturePackage": {
+    "artifactManifestSHA256": "0a87cdb91aa010cbc621c52c4d6e5070799174150b1e82a51933fa9445a16292",
+    "file": "OpenWeightsDelegatesBench-CoreML-S1-block2-92a065a52563.zip",
+    "scope": "Only report-level validation of the retained block1 attachment; no new native execution or full collection writes.",
+    "sha256": "92a065a525633c3bcaad8fec480ff39b15add8c4805da4875f9c617f77b2222d",
+    "studyWorkloadSHA256": "c528061e987071db50527d832a24a525a5a34920c26d1f42c48bee5c736988e3"
+  },
+  "controls": {
+    "failed": 0,
+    "file": "ios/Benchmark/Study/test_collect_coreml_result.py",
+    "log": "ios/Benchmark/.build/firebase/study-controls-with-collector-revision2-20261007.log",
+    "logSHA256": "2f87101cc8f0b4d69e323b65ecbb5d64723982f8369c353265d4b732ce741635",
+    "passed": 19,
+    "sha256": "e3a758f6b4bfae2e364364dd600df1aa953e2192557b68e6662243ec7c3f8243"
+  },
+  "limits": [
+    "Synthetic controls prove rejection behavior, not new native inference.",
+    "The full collection command has not run against the currently live blocks2/3.",
+    "The validator checks exact packaged prompts and carried assistant replies, independent of whether factual/format probes pass.",
+    "Only complete successful isolated Core ML S1 primary reports are collected. Preserve incomplete and failed native attachments separately without relabeling them successful."
+  ],
+  "previousVerifiedSource": {
+    "archive": {
+      "bytes": 24353,
+      "file": "coreml-result-collector-verification-2026-10-07-proof.zip",
+      "sha256": "b1809152498e7673c9d159bcf4e84b4dc1d7a280e3375468bc528c2f7c9eb9d5"
+    },
+    "controls": {
+      "failed": 0,
+      "file": "ios/Benchmark/Study/test_collect_coreml_result.py",
+      "log": "ios/Benchmark/.build/firebase/study-controls-with-collector-revision2-20261007.log",
+      "logSHA256": "2f87101cc8f0b4d69e323b65ecbb5d64723982f8369c353265d4b732ce741635",
+      "passed": 19,
+      "sha256": "e3a758f6b4bfae2e364364dd600df1aa953e2192557b68e6662243ec7c3f8243"
+    },
+    "privateArchive": {
+      "bytes": 24353,
+      "downloadedSHA256Matches": true,
+      "downloadedZipCRCMatches": true,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/coreml-result-collector-verification-2026-10-07-proof.zip",
+      "remotePath": "packages/b1809152498e7673c9d159bcf4e84b4dc1d7a280e3375468bc528c2f7c9eb9d5/coreml-result-collector-verification-2026-10-07-proof.zip",
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/b1809152498e7673c9d159bcf4e84b4dc1d7a280e3375468bc528c2f7c9eb9d5/coreml-result-collector-verification-2026-10-07-proof.zip",
+      "sha256": "b1809152498e7673c9d159bcf4e84b4dc1d7a280e3375468bc528c2f7c9eb9d5",
+      "status": "archived-local-copy-removed",
+      "verifiedAtUTC": "2026-10-06T20:18:43.660243+00:00"
+    },
+    "script": {
+      "file": "ios/Benchmark/Study/collect_coreml_result.py",
+      "sha256": "d23b4a5abf5c6bf6cec365837bfa006026bc0f1de8cf25b29beaf66fc4ba8758"
+    }
+  },
+  "privateArchive": {
+    "bytes": 26217,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/coreml-result-collector-d23b4a5abf5c-2026-10-07-proof.zip",
+    "remotePath": "packages/e9d3c97bc1be08672107cb58f99bce4e257d558b5e02dce677fb7d07186ebf3a/coreml-result-collector-d23b4a5abf5c-2026-10-07-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/e9d3c97bc1be08672107cb58f99bce4e257d558b5e02dce677fb7d07186ebf3a/coreml-result-collector-d23b4a5abf5c-2026-10-07-proof.zip",
+    "sha256": "e9d3c97bc1be08672107cb58f99bce4e257d558b5e02dce677fb7d07186ebf3a",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T20:24:15.498768+00:00"
+  },
+  "recordedAtUTC": "2026-10-06T20:24:08.606922+00:00",
+  "retainedReportControl": {
+    "actualOS": "Version 18.3.2 (Build 22D82)",
+    "block": 1,
+    "nativeSummarySHA256": "d01e2b62a6626884ed05c965d1455849e644360793b1c993682c84f2231b4a3b",
+    "raw": "iPhone17,1-study-S1-stable-facts-coreml-block1-attempt0-249C4BF5-2DE7-4BE7-BA78-19345869F326.json",
+    "scope": "Report-level validator only, using the unchanged packaged S1 fixture and Core ML artifact. No collection writes or new native execution. The original block1 package has already been verified and archived; it was not restored or revalidated by this control.",
+    "sha256": "09a35d2bcd00321cda10436924e17b2ecd995330ff6ebdd2d25e27bd559f4f04",
+    "sourceProofSHA256": "ceb005fd33d337eb5af5c5c63b3294c7569e2fa2220677edd82015b625ed5b0f"
+  },
+  "schemaVersion": 1,
+  "script": {
+    "file": "ios/Benchmark/Study/collect_coreml_result.py",
+    "sha256": "d23b4a5abf5c6bf6cec365837bfa006026bc0f1de8cf25b29beaf66fc4ba8758"
+  },
+  "status": "nineteen-host-integrity-controls-seven-analysis-controls-and-retained-real-block1-report-validation-pass"
+}

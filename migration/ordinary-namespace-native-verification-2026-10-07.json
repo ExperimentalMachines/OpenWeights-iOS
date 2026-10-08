@@ -1,0 +1,77 @@
+{
+  "archive": {
+    "bytes": 2493380,
+    "file": "ordinary-native-script-and-conditions-20261006T190817Z-proof.zip",
+    "members": 451,
+    "sha256": "35edf1006bfecb3c7e33e663bdeed7873250e2813eab6016f41cf199d0e0401f"
+  },
+  "buildReceipt": "ios/Product/.build/DerivedData-ordinary/Build/Products/openweights-product-build.json",
+  "buildReceiptSHA256": "f32015d829f5d9e09fd48bf5b17d64ed371c17cfc595b7e94b16c96ba7e874b7",
+  "bundleIdentifier": "org.experimentalmachines.openweights.ios",
+  "executables": {
+    "Extensions/InferenceHelper.appex/InferenceHelper": "ed8a6e4b0a455c860c86c97181bb55e35d6decc3bc67869b94e5dd394636df54",
+    "Extensions/ScriptSandbox.appex/ScriptSandbox": "3802bb6455eddad3e71039fc97afcdb1049753cf00d2a4772f4779e5f49168f2",
+    "Frameworks/OWInferenceProbe.framework/OWInferenceProbe": "91e948e2eac0f95e0dd91119a079eaca55c667283dc60949fcaa50e4d29a7e9a",
+    "OpenWeights": "aeaa19ba612b8474c36b8f80700e2cbcd1d16fd7106960857d4d368452fc4898",
+    "PlugIns/ProductTests.xctest/ProductTests": "acc6d777776de670f8aa89f6cad6aae3325d71c4f120cb7a1effb3a6ec17f23f"
+  },
+  "execution": "ios/Product/Results/ordinary-native-script-and-conditions-20261006T190817Z-execution.json",
+  "executionSHA256": "9a271a852e5073ad67998e7be175b00845432cca5c2db14f454c4187a9d99392",
+  "inferenceIncreasedMemoryLimit": false,
+  "limits": [
+    "Selected ordinary-namespace device-condition and script-helper checks only. No full parity or model inference validation in this namespace.",
+    "Earlier touch/navigation proof uses the benchmark-slot container.",
+    "Current ordinary signed build remains active locally. Its exact executables are identified by receipt hashes.",
+    "The ordinary inference helper is built without the increased-memory entitlement. Larger helper model admission remains unverified."
+  ],
+  "observations": {
+    "native-real-device-conditions-observation": {
+      "applicationStateRaw": 0,
+      "backgroundWatchHaltReason": "",
+      "batteryLevel": 0.30000001192092896,
+      "batteryMonitoringEnabled": true,
+      "batteryStateRaw": 1,
+      "completed": true,
+      "foregroundWorkHaltReason": "",
+      "limitations": [
+        "A current device-condition snapshot after the failed cohort, not a measurement of conditions at its earlier failures or proof of their cause."
+      ],
+      "observedAtUTC": "2026-10-06T19:08:25Z",
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "purpose": "native-real-device-conditions-observation",
+      "thermalStateRaw": 1,
+      "watchGuardWouldHalt": false
+    },
+    "native-standard-script-helper-validation-actions-refused": {
+      "completed": true,
+      "hostPID": 70700,
+      "operatingSystem": "Version 26.6.2 (Build 23G90)",
+      "purpose": "native-standard-script-helper-validation-actions-refused",
+      "refusedActions": [
+        "validateAccess",
+        "terminateForValidation"
+      ]
+    }
+  },
+  "privateArchive": {
+    "bytes": 2493380,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Product/Results/ordinary-native-script-and-conditions-20261006T190817Z-proof.zip",
+    "remotePath": "packages/35edf1006bfecb3c7e33e663bdeed7873250e2813eab6016f41cf199d0e0401f/ordinary-native-script-and-conditions-20261006T190817Z-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/35edf1006bfecb3c7e33e663bdeed7873250e2813eab6016f41cf199d0e0401f/ordinary-native-script-and-conditions-20261006T190817Z-proof.zip",
+    "sha256": "35edf1006bfecb3c7e33e663bdeed7873250e2813eab6016f41cf199d0e0401f",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T19:11:05.076727+00:00"
+  },
+  "schemaVersion": 1,
+  "sourceInputs": 405,
+  "status": "ordinary-product-signed-and-two-native-methods-verified",
+  "testSummary": {
+    "failedTests": 0,
+    "passedTests": 2,
+    "result": "Passed",
+    "skippedTests": 0,
+    "totalTestCount": 2
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "acquisition": {
+    "boundedRetryAttempts": 3,
+    "hostControlProof": "model-acquisition-host-81a0c7b88f7b.json",
+    "modelBytes": 1256035493,
+    "perFileAcquisitionEvents": "Hosts, attempts, status and error codes; no signed query strings or localized errors.",
+    "pinnedFiles": 12,
+    "retryPolicy": "Retry pinned Hub URL after transient transport failure, freshly resolve redirect, then require exact file size and SHA256. Never reuse signed CDN redirect.",
+    "retryableNetworkConnectionLostCode": -1005,
+    "sourceFile": "ios/Benchmark/App/ModelStore.swift",
+    "sourceSHA256": "824e517f17080bc754c266f43d119f7468505f506c0cde7bb49581ed350cd57f"
+  },
+  "actualBillingVerified": false,
+  "actualOperatingSystem": "Version 18.4 (Build 22E240)",
+  "authorization": {
+    "answer": "Approve this current-build SE retry",
+    "questionItemID": "call_d32d36444be345fc85b71f1802fcc9da",
+    "recordedAtUTC": "2026-10-06T21:35:58.328914+00:00",
+    "scope": "One current-build SE3 compatibility retry only, catalog iOS18.4, Xcode26.2, 20-minute limit, exact package 0ae580ea65a51b148f698ae62e2f5ad2310ba17abebabfeb2904575663ed973d. No study replication or additional retry authorized."
+  },
+  "billingEnabled": true,
+  "catalogDevice": {
+    "deviceCapabilities": [
+      "accelerometer",
+      "arm64",
+      "armv6",
+      "armv7",
+      "auto-focus-camera",
+      "bluetooth-le",
+      "front-facing-camera",
+      "gamekit",
+      "gyroscope",
+      "location-services",
+      "magnetometer",
+      "metal",
+      "microphone",
+      "opengles-1",
+      "opengles-2",
+      "opengles-3",
+      "peer-peer",
+      "still-camera",
+      "video-camera",
+      "wifi",
+      "arkit",
+      "camera-flash",
+      "gps",
+      "healthkit",
+      "sms",
+      "telephony"
+    ],
+    "formFactor": "PHONE",
+    "id": "iphonese3",
+    "name": "iPhone SE 3",
+    "perVersionInfo": [
+      {
+        "deviceCapacity": "DEVICE_CAPACITY_MEDIUM",
+        "versionId": "18.4"
+      },
+      {
+        "deviceCapacity": "DEVICE_CAPACITY_MEDIUM",
+        "versionId": "26.3"
+      }
+    ],
+    "screenDensity": 326,
+    "screenX": 640,
+    "screenY": 1136,
+    "supportedVersionIds": [
+      "18.4",
+      "26.3"
+    ]
+  },
+  "catalogEvidence": {
+    ".build/firebase/SE-current-baseline-pilot-live-models.json": "f7bddff4dde7536af313db953a64b170e6ce6bbdf9839819e550c9ba7b0efca7",
+    ".build/firebase/SE-current-baseline-pilot-live-versions.json": "314d82781d3275cc8d10201c76f7cc958a5632cb7634610a6d6a8acb78654284",
+    ".build/firebase/SE-current-baseline-pilot-model-availability.json": "ebb3f0beeeae4567e0a89d335b6210057ab39b85d67531787630176230579ffe"
+  },
+  "catalogVersion": {
+    "id": "18.4",
+    "majorVersion": 18,
+    "minorVersion": 4,
+    "supportedXcodeVersionIds": [
+      "16.4",
+      "26.2"
+    ]
+  },
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsBench-SE3-current-baseline-pilot-20261007.zip",
+    "--device=model=iphonese3,version=18.4",
+    "--xcode-version=26.2",
+    "--timeout=20m",
+    "--num-flaky-test-attempts=0",
+    "--no-record-video",
+    "--async",
+    "--format=json"
+  ],
+  "failureRequiringRetry": "migration/firebase-SE3-baseline-pilot-failure-retention-2026-10-07.json",
+  "freeAllowanceVerified": false,
+  "limits": [
+    "Fresh approval is required for this one new20minute job. Earlier SE approval does not authorize a retry.",
+    "Exact selected three-method plan already passed locally. No new phone validation is claimed while local phone tests remain held.",
+    "New separate-checkout signed cohort replaces the historical no-retry binary only for this proposed compatibility check. Preserve historical failure separately.",
+    "All12 pinned public files return HEAD200 with expected length. This does not establish native download or SHA256 verification success.",
+    "Downloads and bounded retries can still fail or exceed test allowance. No cloud network fix or SE runtime compatibility is claimed before execution.",
+    "The optional per-file acquisition events omit signed redirect query strings. Actual report metadata and events must be inspected.",
+    "Compatibility pilot only. No A2 primary block or63-cell scope change. CoreML and ExecuTorchMLX remain separate SE validation needs.",
+    "The immutable20minute XCTest allowance is preserved, within the proposed20minute Firebase limit. Provider setup/result processing do not establish billed execution. Actual billing and extras remain unverified."
+  ],
+  "matrixID": "matrix-yuec0dllq1q3a",
+  "maximumRequestedExecutionUSDWithoutFreeAllowance": 1.67,
+  "nativeMethodsIfComplete": 3,
+  "package": {
+    "buildReceiptFile": "OpenWeightsBench-SE3-current-baseline-pilot-20261007-build.json",
+    "buildReceiptSHA256": "03c7cfa0b780a031ebc93677a53545c6ba0f9527fdf4191c89064161d5a0b741",
+    "bytes": 90759897,
+    "file": "OpenWeightsBench-SE3-current-baseline-pilot-20261007.zip",
+    "sha256": "0ae580ea65a51b148f698ae62e2f5ad2310ba17abebabfeb2904575663ed973d",
+    "sourceSnapshotFile": "study-baseline-sources-9369be7829c5.zip",
+    "sourceSnapshotSHA256": "b271cb3cb216dac778139d087eeb736230cf6baf150ee4b2a79198798c24d046"
+  },
+  "packageVerification": "migration/SE3-current-baseline-pilot-package-verification-2026-10-07.json",
+  "plan": {
+    "byteIdenticalToCompletedLocalExecution": true,
+    "file": "migration-benchmark-native-20261006T172938Z.xctestrun",
+    "maximumMethodSeconds": 1200,
+    "methods": [
+      "BenchmarkTests/testPilotBenchmark",
+      "BenchmarkTests/testArtifactVerificationRejectsCorruption",
+      "BenchmarkTests/testMultiTurnProbeGrading"
+    ],
+    "sha256": "4fae7fb3004c07b5caa7cc10a01d6bcb9200451720f895d710618532ff375592"
+  },
+  "pricingSource": "https://firebase.google.com/docs/test-lab/usage-quotas-pricing",
+  "pricingSourceVerifiedInSession": true,
+  "recordedAtUTC": "2026-10-06T21:22:36.205767+00:00",
+  "requestsIfComplete": 45,
+  "schemaVersion": 1,
+  "status": "approved-job-terminal-three-native-passes-five-configurations-45-requests",
+  "storageTransferAndAutomaticInfrastructureRetryChargesVerified": false,
+  "timeoutSeconds": 1200,
+  "toolchain": "Xcode26.2/17C52"
+}

@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-07",
+  "hostControls": {
+    "command": "python3 -m unittest discover -s ios/Benchmark/Publication -p test_*.py -v",
+    "failed": 0,
+    "passed": 11
+  },
+  "iOSCompilation": {
+    "appModuleCompiled": true,
+    "condition": "GGUF_ONLY",
+    "deviceExecution": false,
+    "nativeLinkingVerified": false,
+    "sdk": "26.5",
+    "signedBuildVerified": false,
+    "swiftLanguageMode": "5",
+    "target": "arm64-apple-ios16.6",
+    "xcode": "26.5 (17F42)",
+    "xctestTypecheckPassed": true
+  },
+  "scope": "Qwen3-0.6B CPU/full Metal pilot: three six-turn conversations per backend, no reset replay. Five-model pins, native validation and private archival automation remain pending.",
+  "sources": {
+    "ios/Benchmark/App/BenchmarkRunner.swift": "85961a2c561fe972bed6bba422305a02bb5224cc1eea6d1edfa5dc6ad9b7c89c",
+    "ios/Benchmark/App/Engines.swift": "353869cde7007a50ddfd86a30f30009f9e700bcf558846995cf135a1e7ec2a48",
+    "ios/Benchmark/App/ModelStore.swift": "c13f0ec099aa5f3f7ff9d5ccb0fc033da4d96ddb111c8e81af45369454fd6cf7",
+    "ios/Benchmark/App/MultiTurnRunner.swift": "63fc37fe814651e85d05dc685b905940ab9643b4c3d952f35df053455b7030a6",
+    "ios/Benchmark/Publication/benchmark.py": "25c7cab270223ddcb1d5150155ff90d1234908d70ab1e55c159ffcb2f6ecd7d2",
+    "ios/Benchmark/Publication/pilot-models.json": "f71af9d52f0f5001ace8b2f6ce2f37b43c161f1d1274266e1ced31d5fa6dc14e",
+    "ios/Benchmark/Publication/test_benchmark.py": "4e6f041fba36c9e04292825e45fb26a19a8f32721dd6218a3b5fcc97afac57ff",
+    "ios/Benchmark/Tests/BenchmarkTests.swift": "7993e1eef2083d6df05c68b8e5072852e513e7dd399f3f79b142836a648d22ab"
+  },
+  "status": "host-verified-device-unexecuted"
+}

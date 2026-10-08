@@ -1,0 +1,32 @@
+{
+  "limits": [
+    "Submitted object binding only. Native inference and actual installed remote binary hashes are not established by these checks.",
+    "No new paid job is authorized beyond the approved single submission.",
+    "The embedded block2 archive is paired with the exact separately submitted block4 plan. Raw native study metadata must confirm block4 before counting replication."
+  ],
+  "matrixID": "matrix-2taqpjj8qiv6h",
+  "objects": {
+    "package": {
+      "crc32c_hash": "KHQIng==",
+      "generation": "1791320787121504",
+      "localSHA256": "92a065a525633c3bcaad8fec480ff39b15add8c4805da4875f9c617f77b2222d",
+      "matchesLocalMD5AndSize": true,
+      "md5_hash": "88WY+EapEY2pN0Bb3Ltvlw==",
+      "size": 1489291853,
+      "storage_url": "gs://test-lab-6h3isj77ip6ya-hc6hd6s1qrxbu/2026-10-07_05:06:24.972681_GBIT/OpenWeightsDelegatesBench-CoreML-S1-block2-92a065a52563.zip#1791320787121504"
+    },
+    "plan": {
+      "crc32c_hash": "JEbrjw==",
+      "generation": "1791320787786663",
+      "localSHA256": "16e0a37d4526941e5690a628dd07ad0ade7268cff0911e6e7baf129595b73a41",
+      "matchesLocalMD5AndSize": true,
+      "md5_hash": "O1HqTan03/Y//YRq8FQ9ng==",
+      "size": 3845,
+      "storage_url": "gs://test-lab-6h3isj77ip6ya-hc6hd6s1qrxbu/2026-10-07_05:06:24.972681_GBIT/coreml-study-S1-stable-facts-block4-attempt0.xctestrun#1791320787786663"
+    }
+  },
+  "preflight": "ios/Benchmark/Study/firebase-coreml-S1-block4-preflight-2026-10-07.json",
+  "recordedAtUTC": "2026-10-06T21:08:54.094383+00:00",
+  "schemaVersion": 1,
+  "status": "approved-single-job-submitted-exact-input-objects-verified-native-results-pending"
+}

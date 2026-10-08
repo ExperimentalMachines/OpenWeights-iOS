@@ -1,0 +1,52 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "directories": [
+    {
+      "localRelativePath": "openweights/ios/Benchmark/.build/DerivedData-delegates-coreml-study-20261006",
+      "logicalBytes": 2056638934
+    }
+  ],
+  "limits": [
+    "Only the completed historical isolated Core ML S1 build is eligible. Newly rebuilt delegate, baseline and product builds remain active/local.",
+    "Cloud block 2 uses the prepared complete signed ZIP in the separate checkout. All five completed local plans are present in the full build tree being archived, with individual hashes recorded.",
+    "Preserve every file and symlink in the private archive. Fresh download, archive SHA and full tree verification must pass before eviction."
+  ],
+  "schemaVersion": 1,
+  "verifiedRetainedPlans": [
+    {
+      "alsoInsideNativeEvidenceZIP": false,
+      "block": 0,
+      "execution": "study-coreml-isolated-20261006T072830Z-execution.json",
+      "planPathInsideBuild": "Build/Products/coreml-study-S1-block0-attempt0.xctestrun",
+      "planSHA256": "d76684e51a74566acc7102e31fd8200ef313a7ec77770b5b3e5fcebf60b8f24a"
+    },
+    {
+      "alsoInsideNativeEvidenceZIP": true,
+      "block": 1,
+      "execution": "study-coreml-S1-stable-facts-block1-20261006T075958Z-execution.json",
+      "planPathInsideBuild": "Build/Products/coreml-study-S1-stable-facts-block1-attempt0.xctestrun",
+      "planSHA256": "b68625d3640868d9d12ad040dc8a0f25ea5177cbc7f150e2343ac3b50cc5e675"
+    },
+    {
+      "alsoInsideNativeEvidenceZIP": true,
+      "block": 2,
+      "execution": "study-coreml-S1-stable-facts-block2-20261006T082415Z-execution.json",
+      "planPathInsideBuild": "Build/Products/coreml-study-S1-stable-facts-block2-attempt0.xctestrun",
+      "planSHA256": "cafaf065fda0e295d8daacc0fb6b1148991911bce6a505f01766aab60824410f"
+    },
+    {
+      "alsoInsideNativeEvidenceZIP": true,
+      "block": 3,
+      "execution": "study-coreml-S1-stable-facts-block3-20261006T085005Z-execution.json",
+      "planPathInsideBuild": "Build/Products/coreml-study-S1-stable-facts-block3-attempt0.xctestrun",
+      "planSHA256": "0d4d1e2ececc636d17eae5be6f850028ca091e4bc9949cf9e682029873d118ab"
+    },
+    {
+      "alsoInsideNativeEvidenceZIP": true,
+      "block": 4,
+      "execution": "study-coreml-S1-stable-facts-block4-20261006T161607Z-execution.json",
+      "planPathInsideBuild": "Build/Products/coreml-study-S1-stable-facts-block4-attempt0.xctestrun",
+      "planSHA256": "16e0a37d4526941e5690a628dd07ad0ade7268cff0911e6e7baf129595b73a41"
+    }
+  ]
+}

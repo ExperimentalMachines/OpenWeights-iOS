@@ -1,0 +1,142 @@
+{
+  "actualBillingVerified": false,
+  "attempt": 0,
+  "authorization": {
+    "answer": "Approve this Core ML block 2",
+    "questionItemID": "call_KQQJzJP4GLm75ePXJ9xfuv8J",
+    "recordedAtUTC": "2026-10-06T19:29:30.182049+00:00",
+    "scope": "one Core ML S1 primary block 2 on iphone16pro catalog 18.3, Xcode 26.2, 45-minute limit"
+  },
+  "billingEnabled": true,
+  "block": 2,
+  "catalogDevice": {
+    "deviceCapabilities": [
+      "accelerometer",
+      "arm64",
+      "armv6",
+      "armv7",
+      "auto-focus-camera",
+      "bluetooth-le",
+      "front-facing-camera",
+      "gamekit",
+      "gyroscope",
+      "location-services",
+      "magnetometer",
+      "metal",
+      "microphone",
+      "opengles-1",
+      "opengles-2",
+      "opengles-3",
+      "peer-peer",
+      "still-camera",
+      "video-camera",
+      "wifi",
+      "arkit",
+      "camera-flash",
+      "gps",
+      "healthkit",
+      "nfc",
+      "sms",
+      "telephony"
+    ],
+    "formFactor": "PHONE",
+    "id": "iphone16pro",
+    "name": "iPhone 16 Pro",
+    "perVersionInfo": [
+      {
+        "deviceCapacity": "DEVICE_CAPACITY_MEDIUM",
+        "versionId": "18.3"
+      }
+    ],
+    "screenDensity": 460,
+    "screenX": 1206,
+    "screenY": 2622,
+    "supportedVersionIds": [
+      "18.3"
+    ]
+  },
+  "catalogEvidence": {
+    ".build/firebase/block2-live-billing.json": "2cc315ad7625fd7e4c1dd42e54c133fd51d2a975241cfff4802585ce0baa8a1e",
+    ".build/firebase/block2-live-capacities.json": "477489a7ee8ed4887fccb22d41b31ca6f6c32a8b872f131b11d0ec4452fd14e1",
+    ".build/firebase/block2-live-models.json": "f7bddff4dde7536af313db953a64b170e6ce6bbdf9839819e550c9ba7b0efca7",
+    ".build/firebase/block2-live-versions.json": "314d82781d3275cc8d10201c76f7cc958a5632cb7634610a6d6a8acb78654284"
+  },
+  "catalogVersion": {
+    "id": "18.3",
+    "majorVersion": 18,
+    "minorVersion": 3,
+    "supportedXcodeVersionIds": [
+      "16.4",
+      "26.2"
+    ]
+  },
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsDelegatesBench-CoreML-S1-block2-92a065a52563.zip",
+    "--device=model=iphone16pro,version=18.3",
+    "--xcode-version=26.2",
+    "--timeout=45m",
+    "--num-flaky-test-attempts=0",
+    "--no-record-video",
+    "--async",
+    "--format=json"
+  ],
+  "freeAllowanceVerified": false,
+  "limits": [
+    "Fresh approval is required before this one paid job. No prior authorization extends to block 2.",
+    "Exact unchanged signed binaries match completed local block 2 and cloud blocks 0-1. Actual cloud OS will be checked before assigning its cohort.",
+    "Models are bundled and verified outside inference timing. S1 does not exercise cancellation.",
+    "This preserves the original 63-cell protocol. Two complete cloud blocks do not satisfy replication."
+  ],
+  "maximumRequestedExecutionUSDWithoutFreeAllowance": 3.75,
+  "package": {
+    "archiveVerifierOutput": {
+      "archive": "OpenWeightsDelegatesBench-CoreML-S1-block2-92a065a52563.zip",
+      "sha256": "92a065a525633c3bcaad8fec480ff39b15add8c4805da4875f9c617f77b2222d",
+      "tests": [
+        "BenchmarkTests/testStudyBlock",
+        "BenchmarkTests/testMultiTurnProbeGrading"
+      ],
+      "xcode": "Xcode 26.2\nBuild version 17C52"
+    },
+    "buildReceipt": {
+      "file": "OpenWeightsDelegatesBench-CoreML-S1-block2-92a065a52563.build.json",
+      "sha256": "95c4576659cdafd85a67ee7cdee8688b521d4452353be2e9e98d798503398579"
+    },
+    "bytes": 1489291853,
+    "completedLocalExecution": {
+      "file": "study-coreml-S1-stable-facts-block2-20261006T082415Z-execution.json",
+      "sha256": "787080fcb64dc0419a099fd2e687eeccbd2e86795d89fc53e4c8dfad059e0e54"
+    },
+    "file": "OpenWeightsDelegatesBench-CoreML-S1-block2-92a065a52563.zip",
+    "limits": [
+      "Prepared package only. A new paid cloud execution needs fresh approval.",
+      "Repackages unchanged signed binaries and bundled models from block 1 with the exact completed local block 2 plan. Does not validate newly rebuilt delegate binaries."
+    ],
+    "selectedPlan": {
+      "file": "coreml-study-S1-stable-facts-block2-attempt0.xctestrun",
+      "matchesCompletedNativePlan": true,
+      "sha256": "cafaf065fda0e295d8daacc0fb6b1148991911bce6a505f01766aab60824410f"
+    },
+    "sha256": "92a065a525633c3bcaad8fec480ff39b15add8c4805da4875f9c617f77b2222d",
+    "sourceSnapshot": {
+      "file": "study-delegates-isolated-sources-f1266a1174ae.zip",
+      "sha256": "ffcb1755459136046acb1d2963e7c12a756249d6533800158a6857f52ab6f935"
+    },
+    "status": "archive-verified-matches-completed-local-primary-block-not-approved-for-cloud"
+  },
+  "pricingSource": "https://firebase.google.com/docs/test-lab/usage-quotas-pricing",
+  "recordedAtUTC": "2026-10-06T19:27:47.389856+00:00",
+  "runtime": "ExecuTorch Core ML",
+  "scenario": "S1-stable-facts",
+  "schemaVersion": 1,
+  "status": "approved-submission-cli-starting",
+  "storageTransferAndAutomaticInfrastructureRetryChargesVerified": false,
+  "timeoutSeconds": 2700,
+  "toolchain": "Xcode 26.2 / 17C52"
+}

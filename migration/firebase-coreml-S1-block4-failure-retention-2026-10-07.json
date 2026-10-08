@@ -1,0 +1,121 @@
+{
+  "actualOperatingSystem": "Version 18.3.2 (Build 22D82)",
+  "analysisFile": "study-analysis-coreml-S2-two-cloud-S1-four-plus-storage-failure-schema4-grading3-2026-10-07.json",
+  "analysisSHA256": "f30734a856c3b4722c0fd7071271c7d3d3be73e5279a47edda7f4a85769edb21",
+  "analysisSchemaVersion": 4,
+  "archive": {
+    "bytes": 1780250,
+    "file": "firebase-coreml-S1-block4-matrix-2taqpjj8qiv6h-failure-proof.zip",
+    "members": 182,
+    "sha256": "509ce6514bf6126e37a2ad38c989c5a08fd152027af49b68cae56fe6199c287f"
+  },
+  "completePrimaryBlocksInMatchingCell": 4,
+  "failedRowsRetained": 16,
+  "gradingVersion": 3,
+  "historicalAnalyzerAndReportDirectory": "ios/Benchmark/.build/firebase/CoreML-block4-pre-load-metric-fix",
+  "historicalSchema3AnalysisFile": "study-analysis-coreml-S2-two-cloud-S1-four-plus-storage-failure-v3-2026-10-07.json",
+  "historicalSchema3AnalysisSHA256": "d5ed75fdd5df501b7a06cb27f533267e769b947327ff0034ce90ee816fc441b4",
+  "hostControls": {
+    "failed": 0,
+    "log": "ios/Benchmark/.build/firebase/study-controls-load-sentinel-and-cohort-figures-20261007.log",
+    "logSHA256": "d3a516aa2075b1fcfd32aa6504e862d4a642d348fe13da15450745b081a6d672",
+    "passed": 42
+  },
+  "inferenceRequests": 0,
+  "inputVerification": "migration/firebase-coreml-S1-block4-input-reuse-2026-10-07.json",
+  "limits": [
+    "Report-level completed=true means the runner saved its terminal report. The runtime row is failed with zero samples and does not satisfy replication.",
+    "All bundled model hashes and sizes passed before model initialization. LoadMs/loadPeakFootprintBytes zero are unrecorded defaults, not measured zero load time or memory.",
+    "Device APFS logs record ENOSPC for OpenWeightsBench at the compiled-model write failure. The source of occupied space and ownership of removable files are not established.",
+    "No inference, quality, latency, cancellation, energy or Neural Engine placement result is added. No new retry is approved.",
+    "No paid retry is authorized. Existing local phone-test hold remains.",
+    "The original63-cell protocol remains unchanged. Failed block4 remains in the primary failure denominator; it must never be silently replaced."
+  ],
+  "loadFailure": {
+    "appENOSPCSyslogLines": [
+      {
+        "line": 87918,
+        "text": "Oct  6 14:12:58 iPhone kernel(apfs)[0] <Notice>: fs_tx_enter_internal:27951: disk2s8 OpenWeightsBench: ENOSPC: ttype INSERT (r 2 d 1 tx 0) blocks 119 free 8180 txn 293 # 2 th 8096 rr 38115 sh 328 fq 92 lim 1 0 freeup 0 wait 0"
+      },
+      {
+        "line": 87921,
+        "text": "Oct  6 14:12:58 iPhone kernel(apfs)[0] <Notice>: fs_tx_enter_internal:27951: disk2s8 OpenWeightsBench: ENOSPC: ttype INSERT (r 2 d 1 tx 0) blocks 119 free 8135 txn 129 # 1 th 8096 rr 38115 sh 209 fq 146 lim 1 0 freeup 0 wait 0"
+      },
+      {
+        "line": 87922,
+        "text": "Oct  6 14:12:58 iPhone kernel(apfs)[0] <Notice>: fs_tx_enter_internal:27951: disk2s8 OpenWeightsBench: ENOSPC: ttype INSERT (r 2 d 1 tx 0) blocks 119 free 8183 txn 129 # 1 th 8096 rr 38115 sh 161 fq 100 lim 1 0 freeup 0 wait 0"
+      },
+      {
+        "line": 87925,
+        "text": "Oct  6 14:12:58 iPhone kernel(apfs)[0] <Notice>: fs_tx_enter_internal:27951: disk2s8 OpenWeightsBench: ENOSPC: ttype INSERT (r 2 d 1 tx 0) blocks 119 free 8152 txn 325 # 4 th 8096 rr 38115 sh 388 fq 109 lim 1 0 freeup 0 wait 0"
+      },
+      {
+        "line": 87926,
+        "text": "Oct  6 14:12:58 iPhone kernel(apfs)[0] <Notice>: fs_tx_enter_internal:27951: disk2s8 OpenWeightsBench: ENOSPC: ttype INSERT (r 2 d 1 tx 0) blocks 119 free 8188 txn 306 # 3 th 8096 rr 38115 sh 333 fq 93 lim 1 0 freeup 0 wait 0"
+      },
+      {
+        "line": 88064,
+        "text": "Oct  6 14:12:58 iPhone kernel(apfs)[0] <Notice>: fs_tx_enter_internal:27951: disk2s8 OpenWeightsBench: ENOSPC: ttype INSERT (r 5 d 0 tx 0) blocks 145 free 8239 txn 190 # 4 th 8096 rr 38115 sh 192 fq 48 lim 1 0 freeup 2 wait 0"
+      },
+      {
+        "line": 92026,
+        "text": "Oct  6 14:12:59 iPhone kernel(apfs)[0] <Notice>: fs_tx_enter_internal:27951: disk2s8 OpenWeightsBench: ENOSPC: ttype INSERT (r 15 d 0 tx 0) blocks 235 free 8223 txn 0 # 0 th 8096 rr 38115 sh 108 fq 90 lim 1 0 freeup 0 wait 0"
+      }
+    ],
+    "compiledModelDiskWriteFailed": true,
+    "executorchErrorCode": 35
+  },
+  "matrixID": "matrix-2taqpjj8qiv6h",
+  "modelFilesVerifiedBeforeLoad": 3,
+  "nativeMethodsFailed": 1,
+  "nativeMethodsPassed": 1,
+  "plannedCells": 63,
+  "privateArchive": {
+    "bytes": 1780250,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-coreml-S1-block4-matrix-2taqpjj8qiv6h-failure-proof.zip",
+    "remotePath": "packages/509ce6514bf6126e37a2ad38c989c5a08fd152027af49b68cae56fe6199c287f/firebase-coreml-S1-block4-matrix-2taqpjj8qiv6h-failure-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/509ce6514bf6126e37a2ad38c989c5a08fd152027af49b68cae56fe6199c287f/firebase-coreml-S1-block4-matrix-2taqpjj8qiv6h-failure-proof.zip",
+    "sha256": "509ce6514bf6126e37a2ad38c989c5a08fd152027af49b68cae56fe6199c287f",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T21:30:20.657746+00:00"
+  },
+  "privateArchiveSHA256MatchesProof": true,
+  "raw": {
+    "file": "iPhone17,1-study-S1-stable-facts-coreml-block4-attempt0-C606F89B-33D7-40D1-B8EE-F6FD381CCBF6.json",
+    "sha256": "fec6289a06573dea5586fd6cb38e8f4b89a1dfa4a4f8c3f46e35314ea07d8624"
+  },
+  "rawReports": 51,
+  "recordedAtUTC": "2026-10-06T21:26:58.491063+00:00",
+  "replicatedPlannedCells": 19,
+  "reportSHA256": "5f627607cd98ff33e5a78e03c598d67f74087d992aaf83287eeef73b7a7ce0dd",
+  "reproductionAnalysisAndReportByteIdentical": true,
+  "requiredPrimaryBlocks": 5,
+  "schemaVersion": 1,
+  "sourceProof": {
+    "file": "iPhone17,1-study-S1-stable-facts-coreml-block4-attempt0-C606F89B-33D7-40D1-B8EE-F6FD381CCBF6-source.json",
+    "sha256": "123fadfd84fe09de7947763a0e1b2ca304d3b4ddee747275a831cb8d8aab41fe"
+  },
+  "status": "terminal-cloud-primary-block4-device-disk-full-load-failure-retained-zero-generations",
+  "submittedPackageArchive": {
+    "bytes": 1489291853,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/OpenWeightsDelegatesBench-CoreML-S1-block2-92a065a52563.zip",
+    "remotePath": "packages/92a065a525633c3bcaad8fec480ff39b15add8c4805da4875f9c617f77b2222d/OpenWeightsDelegatesBench-CoreML-S1-block2-92a065a52563.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/92a065a525633c3bcaad8fec480ff39b15add8c4805da4875f9c617f77b2222d/OpenWeightsDelegatesBench-CoreML-S1-block2-92a065a52563.zip",
+    "sha256": "92a065a525633c3bcaad8fec480ff39b15add8c4805da4875f9c617f77b2222d",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T21:31:40.366496+00:00"
+  },
+  "unmeasuredLoadDefaultsExcluded": {
+    "attempts": 5,
+    "completeBlocks": 4,
+    "measuredLoads": 4,
+    "unmeasuredMetrics": {
+      "loadMs": 1,
+      "loadPeakFootprintBytes": 1
+    }
+  }
+}

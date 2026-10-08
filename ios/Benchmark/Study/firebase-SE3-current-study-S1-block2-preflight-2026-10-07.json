@@ -1,0 +1,129 @@
+{
+  "acquisition": {
+    "behavior": "Download pinned public Hub revision files, up to3bounded transient retries, freshly resolve redirects, verify exact bytes and SHA256 before inference. Retain per-file acquisition events.",
+    "modelBytes": 1256035493,
+    "pinnedFiles": 12,
+    "priorFreshCloudDownloadsAllFirstAttempt": true,
+    "priorNativeCloudVerification": "migration/firebase-SE3-current-baseline-pilot-verification-2026-10-07.json",
+    "retryBranchExercisedOnPriorCloudRun": false
+  },
+  "approvalGate": "The replacement goal requires fresh approval for every paid job. This preflight does not authorize submission.",
+  "archiveVerifierOutput": {
+    "archive": "OpenWeightsBench-SE3-current-S1-block2-attempt0-20261007.zip",
+    "sha256": "9b3abc6f26c282dd79baef658d37e7a3de9fbc0182cfca2089b65138f320e2fa",
+    "tests": [
+      "BenchmarkTests/testStudyBlock",
+      "BenchmarkTests/testMultiTurnProbeGrading"
+    ],
+    "xcode": "Xcode 26.2\nBuild version 17C52"
+  },
+  "authorization": {
+    "answer": "Approve this SE S1 study block",
+    "questionItemID": "call_4b38e7b53ab4410ea423c821278a72e2",
+    "recordedAtUTC": "2026-10-06T22:13:00.711067+00:00",
+    "scope": "One SE3 catalog iOS18.4/Xcode26.2 S1 primary block2 attempt0 with20minute limit, exact signed package9b3abc6f26c282dd79baef658d37e7a3de9fbc0182cfca2089b65138f320e2fa and plan3ce596f4b53d28e5138df8dc1523a75fd73079b7e1e0781af43e883042a7c5a1. Prior pilot compatibility only; new study selection locally unexecuted under phone hold disclosed. No additional paid jobs authorized."
+  },
+  "catalogOS": "18.4",
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsBench-SE3-current-S1-block2-attempt0-20261007.zip",
+    "--device=model=iphonese3,version=18.4",
+    "--xcode-version=26.2",
+    "--timeout=20m",
+    "--num-flaky-test-attempts=0",
+    "--no-record-video",
+    "--async",
+    "--format=json"
+  ],
+  "deviceCatalog": "iphonese3",
+  "limits": [
+    "No current testStudyBlock native execution occurred locally. Local phone tests are held. Prior local and SE pilot compatibility does not validate this new growing-history plan.",
+    "This current separate-checkout source/binary cohort must be analyzed separately from older compiled cohorts. Preserve old failures and OS cohorts.",
+    "SE block0 and block1 infrastructure-only attempts remain in the ledger. This is a new independent block2 attempt0, not a silent retry or overwritten report.",
+    "Cloud execution is not authorized until exact device/catalog/command/cost preflight and fresh single-job approval.",
+    "CoreML and ExecuTorch MLX are not in this baseline archive. Full63-cell scope unchanged."
+  ],
+  "liveCatalogSourceFiles": [
+    ".build/firebase/SE-study-S1-block2-live-models-20261007.json",
+    ".build/firebase/SE-study-S1-block2-live-versions-20261007.json"
+  ],
+  "liveCatalogVerified": true,
+  "maximumRequestedExecutionUSDWithoutFreeAllowance": 1.67,
+  "nativeStudyPlanLocallyExecuted": false,
+  "package": {
+    "buildReceiptFile": "OpenWeightsBench-SE3-current-S1-block2-attempt0-20261007-build.json",
+    "buildReceiptSHA256": "03c7cfa0b780a031ebc93677a53545c6ba0f9527fdf4191c89064161d5a0b741",
+    "bytes": 90667866,
+    "file": "OpenWeightsBench-SE3-current-S1-block2-attempt0-20261007.zip",
+    "sha256": "9b3abc6f26c282dd79baef658d37e7a3de9fbc0182cfca2089b65138f320e2fa",
+    "sourceSnapshotFile": "study-baseline-sources-9369be7829c5.zip",
+    "sourceSnapshotSHA256": "b271cb3cb216dac778139d087eeb736230cf6baf150ee4b2a79198798c24d046"
+  },
+  "packageVerification": "migration/SE3-current-study-S1-block2-package-verification-2026-10-07.json",
+  "plan": {
+    "environment": {
+      "APP_DISTRIBUTOR_ID_OVERRIDE": "com.apple.AppStore",
+      "DYLD_INSERT_LIBRARIES": "/usr/lib/libRPAC.dylib",
+      "OS_ACTIVITY_DT_MODE": "YES",
+      "OW_STUDY_ATTEMPT": "0",
+      "OW_STUDY_BLOCK": "2",
+      "OW_STUDY_SCENARIO": "S1-stable-facts",
+      "PERFC_ENABLE_EXTENDED_DIAGNOSTIC_FORMAT": "1",
+      "PERFC_ENABLE_PROFILE_MODE": "1",
+      "PERFC_RESET_INSERT_LIBRARIES": "1",
+      "PERFC_SUPPRESS_SYSTEM_REPORTS": "1",
+      "SQLITE_ENABLE_THREAD_ASSERTIONS": "1",
+      "TERM": "dumb"
+    },
+    "file": "SE-current-study-S1-stable-facts-block2-attempt0-20261007.xctestrun",
+    "maximumMethodSeconds": 900,
+    "methods": [
+      "BenchmarkTests/testStudyBlock",
+      "BenchmarkTests/testMultiTurnProbeGrading"
+    ],
+    "sha256": "3ce596f4b53d28e5138df8dc1523a75fd73079b7e1e0781af43e883042a7c5a1"
+  },
+  "preparedAtUTC": "2026-10-06T22:12:02.991608+00:00",
+  "previousNativeValidation": {
+    "SECompatibilityRequests": 45,
+    "localPilotRequests": 45,
+    "verification": "migration/firebase-SE3-current-baseline-pilot-verification-2026-10-07.json"
+  },
+  "pricingBasis": "One physical device at USD5/hour, up to20requested minutes, rounded up to USD1.67. Actual execution, free allowance, storage/transfer and automatic infrastructure-retry charges are unverified. Install/result collection excluded from execution billing.",
+  "pricingSource": "https://firebase.google.com/docs/test-lab/usage-quotas-pricing",
+  "priorActualOS": "18.4/22E240",
+  "profileExpiresAtUTC": "2026-10-08T14:45:03+00:00",
+  "proposedStudy": {
+    "attempt": 0,
+    "block": 2,
+    "expectedConfigurations": 5,
+    "expectedPrimaryTurnsPerRuntime": 6,
+    "expectedSamples": 54,
+    "order": [
+      "llama.cpp Metal",
+      "MLX Metal",
+      "llama.cpp partial Metal",
+      "llama.cpp CPU",
+      "ExecuTorch XNNPACK"
+    ],
+    "primary": true,
+    "resetReplayTurnsPerPrefixRuntime": 6,
+    "scenario": "S1-stable-facts"
+  },
+  "purpose": "SE current source cohort first growing-history S1 primary block2 attempt0",
+  "schemaVersion": 1,
+  "status": "approved-single-submission-starting",
+  "submissionHelper": {
+    "approvalRequired": true,
+    "executed": false,
+    "file": ".build/firebase/submit-SE-current-study-S1-block2.py",
+    "syntaxChecked": true
+  },
+  "timeoutSeconds": 1200,
+  "xcode": "26.2"
+}

@@ -1,0 +1,21 @@
+{
+  "limits": [
+    "Native inference is not yet observed. This proof concerns submission and exact input object only.",
+    "Fresh approval is required for every further job. No study replication job is authorized."
+  ],
+  "localSizeAndMD5Match": true,
+  "matrixID": "matrix-2fgikhy1zqvy7",
+  "packageSHA256": "c70a5f9de407033836a66928ec6fb785f01fedea7707186b74d20c9032f42090",
+  "preflight": "ios/Benchmark/Study/firebase-SE3-full-smoke-preflight-2026-10-07.json",
+  "recordedAtUTC": "2026-10-06T20:46:24.823821+00:00",
+  "schemaVersion": 1,
+  "status": "approved-one-job-submitted-input-object-verified-native-results-pending",
+  "submission": "ios/Benchmark/Results/firebase-SE3-full-smoke-submission-2026-10-07.json",
+  "uploadedObject": {
+    "crc32c_hash": "tZYCag==",
+    "generation": "1791319345245723",
+    "md5_hash": "0CeJk3dQCRaLSuGUHGUENQ==",
+    "size": 93614235,
+    "storage_url": "gs://test-lab-6h3isj77ip6ya-hc6hd6s1qrxbu/2026-10-07_04:40:27.989928_hvwE/OpenWeightsBench-smoke-tests.zip#1791319345245723"
+  }
+}

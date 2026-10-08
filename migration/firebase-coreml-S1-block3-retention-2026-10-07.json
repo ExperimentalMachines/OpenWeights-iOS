@@ -1,0 +1,53 @@
+{
+  "actualOperatingSystem": "Version 18.3.2 (Build 22D82)",
+  "analysisSHA256": "8b0f3e09639d6e9288cfa32ca22c780259728adda897ca30cd7ddd172c6a3f2d",
+  "archive": {
+    "bytes": 6003529,
+    "file": "firebase-coreml-S1-block3-matrix-b4vgabbu3fofa-proof.zip",
+    "members": 175,
+    "sha256": "f7b354ab55d006a730368f5b30a9ddf45b380238f6301f39e95cc7eb8352a3e4"
+  },
+  "completePrimaryBlocksInMatchingCell": 4,
+  "failedRowsRetained": 15,
+  "limits": [
+    "Four matching complete cloud primary blocks do not meet five-block replication. Full A1-A3 remains incomplete.",
+    "Block3 final turn starts and ends at serious thermal state. Preserve non-nominal flags and nominal-only sensitivity separately. Cloud charging and ambient temperature are unknown.",
+    "Final all-four-facts plain JSON passes. The earlier one-word dietary probe fails. No general quality claim.",
+    "S1 does not exercise cancellation. No energy or Neural Engine placement claim.",
+    "The separate-plan cloud path is now verified by actual raw study block3 metadata with exact bundled artifact and history checks. Immutable submission and matrix snapshots are retained.",
+    "The exact1.49GB input package remains active for the prepared potential block4. This proof archive does not replace input-package retention."
+  ],
+  "matrixID": "matrix-b4vgabbu3fofa",
+  "nativeMethodsPassed": 2,
+  "plannedCells": 63,
+  "privateArchive": {
+    "bytes": 6003529,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-coreml-S1-block3-matrix-b4vgabbu3fofa-proof.zip",
+    "remotePath": "packages/f7b354ab55d006a730368f5b30a9ddf45b380238f6301f39e95cc7eb8352a3e4/firebase-coreml-S1-block3-matrix-b4vgabbu3fofa-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/f7b354ab55d006a730368f5b30a9ddf45b380238f6301f39e95cc7eb8352a3e4/firebase-coreml-S1-block3-matrix-b4vgabbu3fofa-proof.zip",
+    "sha256": "f7b354ab55d006a730368f5b30a9ddf45b380238f6301f39e95cc7eb8352a3e4",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T21:02:15.998915+00:00"
+  },
+  "providerBytesDownloaded": 99562154,
+  "providerObjectsDownloaded": 37,
+  "raw": {
+    "file": "iPhone17,1-study-S1-stable-facts-coreml-block3-attempt0-5E7BD3F7-1CB6-4268-8170-E771E1B5850F.json",
+    "finalDecodeTokensPerSecond": 2.961998799930006,
+    "finalFirstTextSeconds": 509.0328505839999,
+    "finalThermalEnd": 2,
+    "finalThermalStart": 2,
+    "sha256": "a206e39602bd1c9f42649c8a207e4c291314de44eb4e0f2d2557581bf4012295"
+  },
+  "rawReports": 50,
+  "recordedAtUTC": "2026-10-06T21:00:58.263344+00:00",
+  "replicatedPlannedCells": 19,
+  "reportSHA256": "8b134ceac0b3c39e4e12b660165fd9312cc5fee85da0b2d7028cae753684fdc5",
+  "reproductionAnalysisAndReportByteIdentical": true,
+  "requiredPrimaryBlocks": 5,
+  "schemaVersion": 1,
+  "separatePlanInputVerification": "migration/firebase-coreml-S1-block3-input-reuse-2026-10-07.json",
+  "status": "approved-cloud-primary-block-complete-two-native-methods-passed-full-evidence-verified"
+}

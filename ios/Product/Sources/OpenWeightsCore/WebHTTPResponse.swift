@@ -6,7 +6,8 @@ public struct WebHTTPResponse: Sendable, Equatable {
     public let body: Data
     public let setCookieHeaders: [String]
     public let bodyIsComplete: Bool
-    public init(status: Int, headers: [String: String], body: Data, setCookieHeaders: [String] = [], bodyIsComplete: Bool = true) { self.status = status; self.headers = headers; self.body = body; self.setCookieHeaders = setCookieHeaders; self.bodyIsComplete = bodyIsComplete }
+    public let bodyWasGzipDecoded: Bool
+    public init(status: Int, headers: [String: String], body: Data, setCookieHeaders: [String] = [], bodyIsComplete: Bool = true, bodyWasGzipDecoded: Bool = false) { self.status = status; self.headers = headers; self.body = body; self.setCookieHeaders = setCookieHeaders; self.bodyIsComplete = bodyIsComplete; self.bodyWasGzipDecoded = bodyWasGzipDecoded }
 }
 
 public struct WebHTTPResponseDecoder: Sendable {
@@ -52,8 +53,21 @@ public struct WebHTTPResponseDecoder: Sendable {
             let prefixAllowed = allowsTextPrefix && (200..<300).contains(status)
                 && WebPageText.isReadableContentType(headers["content-type"])
                 && (encoding == nil || encoding == "identity")
-            func response(_ body: Data, complete: Bool = true) -> WebHTTPResponse {
-                WebHTTPResponse(status: status, headers: headers, body: body,
+            let gzipPrefixAllowed = allowsTextPrefix && (200..<300).contains(status) && encoding == "gzip"
+                && WebPageText.isReadableContentType(headers["content-type"])
+            func gzipPrefix(_ body: Data) throws -> WebHTTPResponse? {
+                guard gzipPrefixAllowed, let decoded = try WebGzip.prefix(body, maximumBytes: maximumBody) else { return nil }
+                return WebHTTPResponse(status: status, headers: headers, body: decoded,
+                    setCookieHeaders: fields["set-cookie"] ?? [], bodyIsComplete: false, bodyWasGzipDecoded: true)
+            }
+            func response(_ body: Data, complete: Bool = true) throws -> WebHTTPResponse {
+                if gzipPrefixAllowed {
+                    guard complete else { throw refused("The compressed page transfer is incomplete.") }
+                    let decoded = try WebGzip.decode(body, maximumBytes: maximumBody)
+                    return WebHTTPResponse(status: status, headers: headers, body: decoded.body,
+                        setCookieHeaders: fields["set-cookie"] ?? [], bodyIsComplete: decoded.complete, bodyWasGzipDecoded: true)
+                }
+                return WebHTTPResponse(status: status, headers: headers, body: body,
                     setCookieHeaders: fields["set-cookie"] ?? [], bodyIsComplete: complete)
             }
             guard fields["location"]?.count ?? 0 <= 1 else { throw refused("The page returned ambiguous redirects.") }
@@ -72,7 +86,7 @@ public struct WebHTTPResponseDecoder: Sendable {
                     let sizePart = bytes[offset..<lineEnd].prefix { $0 != 59 }
                     guard !sizePart.isEmpty, sizePart.count <= 16, sizePart.allSatisfy({ (48...57).contains($0) || (65...70).contains($0) || (97...102).contains($0) }),
                           let length = Int(String(decoding: sizePart, as: UTF8.self), radix: 16), length <= Int.max - 2,
-                          prefixAllowed || length <= maximumBody - body.count else { throw refused("The page chunk size is invalid or exceeds its limit.") }
+                          prefixAllowed || gzipPrefixAllowed || length <= maximumBody - body.count else { throw refused("The page chunk size is invalid or exceeds its limit.") }
                     offset = lineEnd + 2; count += 1
                     guard count <= 8_192 else { throw refused("The page has too many chunks.") }
                     if length == 0 {
@@ -84,7 +98,7 @@ public struct WebHTTPResponseDecoder: Sendable {
                             guard trailerEnd - trailerStart <= 16_384 else { throw refused("The page trailers are oversized.") }
                             if trailerEnd == offset {
                                 guard trailerEnd + 2 == bytes.count else { throw refused("The page has data after its completed body.") }
-                                return WebHTTPResponse(status: status, headers: headers, body: body, setCookieHeaders: fields["set-cookie"] ?? [])
+                                return try response(body)
                             }
                             guard let colon = bytes[offset..<trailerEnd].firstIndex(of: 58), colon > offset,
                                   bytes[offset..<colon].allSatisfy({ Self.tokenByte($0) }) else { throw refused("The page trailers are invalid.") }
@@ -94,6 +108,15 @@ public struct WebHTTPResponseDecoder: Sendable {
                             offset = trailerEnd + 2
                         }
                     }
+                    if gzipPrefixAllowed {
+                        let available = bytes.count - offset
+                        if available >= length + 2 {
+                            guard bytes[offset + length] == 13, bytes[offset + length + 1] == 10 else { throw refused("The page chunk terminator is invalid.") }
+                        } else if endOfStream { throw refused("The page ended inside a chunk.") }
+                        var encoded = body
+                        encoded.append(contentsOf: bytes[offset..<(offset + min(length, available))])
+                        if let partial = try gzipPrefix(encoded) { return partial }
+                    }
                     if prefixAllowed, length > maximumBody - body.count {
                         let available = bytes.count - offset
                         if available >= length + 2 {
@@ -102,7 +125,7 @@ public struct WebHTTPResponseDecoder: Sendable {
                         let needed = maximumBody - body.count
                         guard available >= needed else { return nil }
                         body.append(contentsOf: bytes[offset..<(offset + needed)])
-                        return response(body, complete: false)
+                        return try response(body, complete: false)
                     }
                     guard bytes.count - offset >= length + 2 else {
                         guard !endOfStream else { throw refused("The page ended inside a chunk.") }; return nil
@@ -114,22 +137,24 @@ public struct WebHTTPResponseDecoder: Sendable {
             if let lengths = fields["content-length"] {
                 let tokens = lengths.flatMap { $0.components(separatedBy: ",").map { $0.trimmingCharacters(in: .whitespaces) } }
                 guard let first = tokens.first, !first.isEmpty, first.utf8.allSatisfy({ (48...57).contains($0) }),
-                      tokens.allSatisfy({ $0 == first }), let length = Int(first), prefixAllowed || length <= maximumBody else { throw refused("The page has an invalid or oversized content length.") }
+                      tokens.allSatisfy({ $0 == first }), let length = Int(first), prefixAllowed || gzipPrefixAllowed || length <= maximumBody else { throw refused("The page has an invalid or oversized content length.") }
                 guard bytes.count - head <= length else { throw refused("The page has data after its declared body.") }
                 if endOfStream, bytes.count - head != length { throw refused("The page ended before its declared body length.") }
+                if let partial = try gzipPrefix(Data(bytes[head...])) { return partial }
                 if prefixAllowed, length > maximumBody, bytes.count - head >= maximumBody {
-                    return response(Data(bytes[head..<(head + maximumBody)]), complete: false)
+                    return try response(Data(bytes[head..<(head + maximumBody)]), complete: false)
                 }
                 guard bytes.count - head == length else {
                     guard !endOfStream else { throw refused("The page ended before its declared body length.") }; return nil
                 }
-                return WebHTTPResponse(status: status, headers: headers, body: Data(bytes[head...]), setCookieHeaders: fields["set-cookie"] ?? [])
+                return try response(Data(bytes[head...]))
             }
+            if let partial = try gzipPrefix(Data(bytes[head...])) { return partial }
             if prefixAllowed, bytes.count - head >= maximumBody {
-                return response(Data(bytes[head..<(head + maximumBody)]), complete: endOfStream && bytes.count - head == maximumBody)
+                return try response(Data(bytes[head..<(head + maximumBody)]), complete: endOfStream && bytes.count - head == maximumBody)
             }
-            guard bytes.count - head <= maximumBody else { throw refused("The page exceeds its body limit.") }
-            return endOfStream ? WebHTTPResponse(status: status, headers: headers, body: Data(bytes[head...]), setCookieHeaders: fields["set-cookie"] ?? []) : nil
+            guard gzipPrefixAllowed || bytes.count - head <= maximumBody else { throw refused("The page exceeds its body limit.") }
+            return endOfStream ? try response(Data(bytes[head...])) : nil
         }
     }
     private func refused(_ message: String) -> PublicWebError { .refused(message) }

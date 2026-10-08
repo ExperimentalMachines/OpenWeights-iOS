@@ -1,0 +1,12 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "directories": [
+    {
+      "localRelativePath": "openweights-ios/ios/Product/.build/DerivedData-ui-validation",
+      "logicalBytes": 1307880640
+    }
+  ],
+  "proof": "migration/native-ui-navigation-2026-10-07.json",
+  "schemaVersion": 1,
+  "status": "completed-native-ui-build-inactive"
+}

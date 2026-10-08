@@ -2,6 +2,97 @@ import XCTest
 @testable import OpenWeightsBench
 
 final class BenchmarkTests: XCTestCase {
+    #if GGUF_ONLY
+    private func publicationInputs() throws -> (Artifact, MultiTurnWorkload) {
+        let environment = ProcessInfo.processInfo.environment
+        let artifactJSON = try XCTUnwrap(environment["OW_PUBLICATION_ARTIFACT"])
+        let workloadJSON = try XCTUnwrap(environment["OW_PUBLICATION_WORKLOAD"])
+        let artifact = try JSONDecoder().decode(Artifact.self, from: Data(artifactJSON.utf8))
+        let workload = try JSONDecoder().decode(MultiTurnWorkload.self, from: Data(workloadJSON.utf8))
+        guard artifact.files.count == 1, artifact.files[0].file.hasSuffix(".gguf"),
+              !artifact.files[0].file.contains("/"), workload.turns.count == 6,
+              workload.interruptionBeforeTurn == nil else {
+            throw BenchmarkFailure.message("Invalid publication artifact or six-turn workload")
+        }
+        return (artifact, workload)
+    }
+
+    func testPublicationAcquire() async throws {
+        let (artifact, _) = try publicationInputs()
+        let previousIdle = await MainActor.run {
+            let previous = UIApplication.shared.isIdleTimerDisabled
+            UIApplication.shared.isIdleTimerDisabled = true
+            return previous
+        }
+        defer { Task { @MainActor in UIApplication.shared.isIdleTimerDisabled = previousIdle } }
+        _ = try await ModelStore.prepare(artifact, cancellation: Cancellation(), progress: { print($0) })
+    }
+
+    func testPublicationConversation() async throws {
+        guard !ProcessInfo.processInfo.isLowPowerModeEnabled else {
+            throw BenchmarkFailure.message("Turn Low Power Mode off before publication measurements")
+        }
+        let (artifact, workload) = try publicationInputs()
+        let environment = ProcessInfo.processInfo.environment
+        let runtime = try XCTUnwrap(environment["OW_PUBLICATION_RUNTIME"])
+        guard ["llama.cpp CPU", "llama.cpp Metal"].contains(runtime),
+              let repetition = Int(environment["OW_PUBLICATION_REPETITION"] ?? ""), repetition >= 0 else {
+            throw BenchmarkFailure.message("Invalid publication runtime or repetition")
+        }
+        let configuration = EngineConfiguration(name: runtime, artifactID: artifact.id, reusesPrefix: true,
+            factory: { LlamaEngine(gpuLayers: runtime == "llama.cpp CPU" ? 0 : 99, filename: artifact.files[0].file) })
+        let metadata = StudyMetadata(protocolID: "openweights-ios-publication-v1", block: repetition,
+            scenario: workload.id, runtimeOrder: [runtime])
+        let cancellation = Cancellation()
+        let timer = DispatchSource.makeTimerSource(queue: .global(qos: .utility))
+        timer.schedule(deadline: .now() + 600)
+        timer.setEventHandler { cancellation.cancel() }
+        timer.resume()
+        defer { timer.cancel() }
+        let url = try await runAndAttach(.multiTurn, configurations: [configuration], workload: workload,
+            study: metadata, publicationArtifact: artifact, cancellation: cancellation)
+        let decoder = JSONDecoder(); decoder.dateDecodingStrategy = .iso8601
+        let report = try decoder.decode(BenchmarkReport.self, from: Data(contentsOf: url))
+        XCTAssertTrue(report.completed)
+        XCTAssertFalse(report.lowPowerMode)
+        XCTAssertEqual(report.rows.count, 1)
+        let row = try XCTUnwrap(report.rows.first)
+        XCTAssertNil(row.error)
+        XCTAssertEqual(row.samples.compactMap(\.turn), [1, 2, 3, 4, 5, 6])
+        for sample in row.samples {
+            XCTAssertEqual(sample.workload, "multi-turn")
+            XCTAssertGreaterThan(sample.generatedTokens, 0)
+            XCTAssertNotNil(sample.firstCallbackMs)
+            XCTAssertTrue(["eos", "length"].contains(sample.stopReason))
+            if let tokens = sample.totalPromptTokens { XCTAssertLessThanOrEqual(tokens + 64, 2048) }
+        }
+    }
+
+    func testPublicationCloudConversation() async throws {
+        // A Firebase execution starts with an empty app container. Acquisition precedes
+        // the unchanged measurement method and does not load an inference engine.
+        let (artifact, _) = try publicationInputs()
+        let previousIdle = await MainActor.run {
+            let previous = UIApplication.shared.isIdleTimerDisabled
+            UIApplication.shared.isIdleTimerDisabled = true
+            return previous
+        }
+        var acquisitions: [AcquisitionEvent] = []
+        defer {
+            Task { @MainActor in UIApplication.shared.isIdleTimerDisabled = previousIdle }
+            if let data = try? JSONEncoder().encode(acquisitions) {
+                let attachment = XCTAttachment(data: data, uniformTypeIdentifier: "public.json")
+                attachment.name = "publication-cloud-acquisition.json"
+                attachment.lifetime = .keepAlways
+                add(attachment)
+            }
+        }
+        _ = try await ModelStore.prepare(artifact, cancellation: Cancellation(),
+            progress: { print($0) }, observe: { acquisitions.append($0) })
+        try await testPublicationConversation()
+    }
+    #endif
+
     func testPilotBenchmark() async throws {
         let url = try await runAndAttach(.pilot)
         try validatePilot(url, expectedRows: BenchmarkRunner.expectedRows)
@@ -190,15 +281,17 @@ final class BenchmarkTests: XCTestCase {
     }
 
     private func runAndAttach(_ suite: BenchmarkSuite, configurations: [EngineConfiguration]? = nil,
-                              workload: MultiTurnWorkload? = nil, study: StudyMetadata? = nil) async throws -> URL {
+                              workload: MultiTurnWorkload? = nil, study: StudyMetadata? = nil,
+                              publicationArtifact: Artifact? = nil,
+                              cancellation: Cancellation = Cancellation()) async throws -> URL {
         let beganAt = Date()
         let url: URL
         do {
             if let configurations {
-                url = try await MultiTurnRunner.run(cancellation: Cancellation(), configurations: configurations,
-                    workload: workload, study: study) { print($0) }
+                url = try await MultiTurnRunner.run(cancellation: cancellation, configurations: configurations,
+                    workload: workload, study: study, publicationArtifact: publicationArtifact) { print($0) }
             } else {
-                url = try await BenchmarkRunner.run(cancellation: Cancellation(), suite: suite) { print($0) }
+                url = try await BenchmarkRunner.run(cancellation: cancellation, suite: suite) { print($0) }
             }
         } catch {
             let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]

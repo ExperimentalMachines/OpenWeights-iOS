@@ -1,0 +1,50 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "capacitySource": "https://huggingface.co/docs/hub/storage-limits",
+  "completedAndroidBuildArchives": {
+    "openweights/core/engine/.cxx": {
+      "archiveBytes": 132580183,
+      "downloadedSHA256Matches": true,
+      "downloadedTreeManifestMatches": true,
+      "localRelativePath": "openweights/core/engine/.cxx",
+      "logicalBytes": 587292130,
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/builds/87f36aa58b9939335a73bf0f7fac02ca1a142e37b5d8d7d71dba5919c87e7616/.cxx.tar.gz",
+      "sha256": "87f36aa58b9939335a73bf0f7fac02ca1a142e37b5d8d7d71dba5919c87e7616",
+      "status": "archived-local-directory-removed",
+      "verifiedAtUTC": "2026-10-06T18:53:15.982503+00:00"
+    },
+    "openweights/core/engine/build": {
+      "archiveBytes": 133158451,
+      "downloadedSHA256Matches": true,
+      "downloadedTreeManifestMatches": true,
+      "localRelativePath": "openweights/core/engine/build",
+      "logicalBytes": 437579457,
+      "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/builds/181737b19e226899344bbb24fe001b45ec5aecc608ca54597d2777ef14cd4c01/build.tar.gz",
+      "sha256": "181737b19e226899344bbb24fe001b45ec5aecc608ca54597d2777ef14cd4c01",
+      "status": "archived-local-directory-removed",
+      "verifiedAtUTC": "2026-10-06T18:53:42.708523+00:00"
+    }
+  },
+  "completedCloudBlock1Proof": "migration/firebase-coreml-S1-block1-retention-2026-10-07.json",
+  "completedHistoricalCoreMLBuildProof": "migration/completed-coreml-S1-build-retention-2026-10-07.json",
+  "documentedFreePrivateAllowanceBytes": 100000000000,
+  "fullManifestCatalog": "migration/build-artifact-catalog.json",
+  "fullManifestCatalogSHA256": "c2507a5223eb1e8d35fe564cdb008a48280180d07669f12910eeac345c6dafe8",
+  "latestBucketRead": {
+    "bytes": 12292790453,
+    "objects": 116,
+    "private": true,
+    "recordedAtUTC": "2026-10-06T20:13:49.969326+00:00",
+    "scope": "Only this bucket. Account-wide quota usage and other Hub storage are not verified."
+  },
+  "limits": [
+    "Remote object inventory is verified. The documented allowance is not an account quota API response.",
+    "HF quota applies across applicable account repositories and buckets. Other usage must be rechecked before large expansion."
+  ],
+  "observedAtUTC": "2026-10-06T19:35:42.742139+00:00",
+  "private": true,
+  "remoteBytes": 12292735682,
+  "remoteObjects": 114,
+  "schemaVersion": 1,
+  "status": "private-bucket-current-inventory-verified"
+}

@@ -1,0 +1,173 @@
+{
+  "acquisition": {
+    "allVerifiedOnFirstAttempt": true,
+    "artifactBytesVerified": 1256035493,
+    "events": 24,
+    "freshDownloadsVerified": 12,
+    "sourceModelStoreSHA256": "824e517f17080bc754c266f43d119f7468505f506c0cde7bb49581ed350cd57f",
+    "transportRetriesObserved": 0
+  },
+  "actualDevice": "iPhone14,6",
+  "actualOperatingSystem": "Version 18.4 (Build 22E240)",
+  "archive": {
+    "bytes": 2184238,
+    "file": "firebase-SE3-current-baseline-pilot-matrix-yuec0dllq1q3a-proof.zip",
+    "members": 60,
+    "sha256": "6b124026c3d7d04a3cfa3622d308b79a9418ad165514a9758483a385175d920f"
+  },
+  "corruptionRejectionPassed": true,
+  "currentReport": {
+    "file": "docs/research/ios-repeated-artifact-study.md",
+    "reproducesByteForByte": true,
+    "sha256": "7d1877f7e7fa2b12b1555c4467f9456b0b6e2a60bf3d50680ea1b17cde5ee04d"
+  },
+  "currentReportAndStorageHostArchive": {
+    "bytes": 236195,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/SE-baseline-compatibility-and-storage-host-proof-20261007.zip",
+    "remotePath": "packages/83d495cb4e3d744a097e6f816cf92cf8fc8f082acfb427629e392d8c2e5f9693/SE-baseline-compatibility-and-storage-host-proof-20261007.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/83d495cb4e3d744a097e6f816cf92cf8fc8f082acfb427629e392d8c2e5f9693/SE-baseline-compatibility-and-storage-host-proof-20261007.zip",
+    "sha256": "83d495cb4e3d744a097e6f816cf92cf8fc8f082acfb427629e392d8c2e5f9693",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T21:54:47.006129+00:00"
+  },
+  "gradingControlsPassed": true,
+  "inferenceRequests": 45,
+  "limits": [
+    "Compatibility pilot is not a growing-conversation primary study block. All63 planned cells and19 replicated cells remain unchanged.",
+    "CoreML and ExecuTorchMLX are absent and still require SE compatibility validation.",
+    "All12 downloads succeeded on attempt1. Host controls cover retries, but this cloud execution does not stress-test the retry branch or prove network reliability improved.",
+    "No runtime-only ranking, memory-fit conclusion for longer history, energy, general quality or hardware-only claim.",
+    "This new separate-checkout binary/source cohort is retained separately from the old acquisition failure.",
+    "All local phone tests remain held. This approval is exhausted and does not authorize another job.",
+    "Actual invoice/free allowance/storage/transfer/infrastructure-retry charges remain unverified."
+  ],
+  "lowPowerMode": false,
+  "matrixID": "matrix-yuec0dllq1q3a",
+  "nativeMethodsFailed": 0,
+  "nativeMethodsPassed": 3,
+  "nativeSummaryFileSHA256": "c30a33501b12ceb5d8d17130b363656c7c3e321cdebbbe93c3293ec3d9745781",
+  "package": {
+    "buildReceiptFile": "OpenWeightsBench-SE3-current-baseline-pilot-20261007-build.json",
+    "buildReceiptSHA256": "03c7cfa0b780a031ebc93677a53545c6ba0f9527fdf4191c89064161d5a0b741",
+    "bytes": 90759897,
+    "file": "OpenWeightsBench-SE3-current-baseline-pilot-20261007.zip",
+    "sha256": "0ae580ea65a51b148f698ae62e2f5ad2310ba17abebabfeb2904575663ed973d",
+    "sourceSnapshotFile": "study-baseline-sources-9369be7829c5.zip",
+    "sourceSnapshotSHA256": "b271cb3cb216dac778139d087eeb736230cf6baf150ee4b2a79198798c24d046"
+  },
+  "plan": {
+    "byteIdenticalToCompletedLocalExecution": true,
+    "file": "migration-benchmark-native-20261006T172938Z.xctestrun",
+    "maximumMethodSeconds": 1200,
+    "methods": [
+      "BenchmarkTests/testPilotBenchmark",
+      "BenchmarkTests/testArtifactVerificationRejectsCorruption",
+      "BenchmarkTests/testMultiTurnProbeGrading"
+    ],
+    "sha256": "4fae7fb3004c07b5caa7cc10a01d6bcb9200451720f895d710618532ff375592"
+  },
+  "privateArchive": {
+    "bytes": 2184238,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-SE3-current-baseline-pilot-matrix-yuec0dllq1q3a-proof.zip",
+    "remotePath": "packages/6b124026c3d7d04a3cfa3622d308b79a9418ad165514a9758483a385175d920f/firebase-SE3-current-baseline-pilot-matrix-yuec0dllq1q3a-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/6b124026c3d7d04a3cfa3622d308b79a9418ad165514a9758483a385175d920f/firebase-SE3-current-baseline-pilot-matrix-yuec0dllq1q3a-proof.zip",
+    "sha256": "6b124026c3d7d04a3cfa3622d308b79a9418ad165514a9758483a385175d920f",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T21:54:56.764086+00:00"
+  },
+  "providerBytesDownloaded": 21853218,
+  "providerObjectsDownloaded": 38,
+  "raw": {
+    "file": "firebase-SE3-current-baseline-pilot-passed-2026-10-07.json",
+    "sha256": "505e7b67278653f5f41b371aeec0f7a40e44c51b1219f8272631ec7c4d78b24f"
+  },
+  "recordedAtUTC": "2026-10-06T21:51:00.083011+00:00",
+  "requestThermalBoundariesAllNominal": true,
+  "runtimeConfigurations": 5,
+  "runtimes": [
+    {
+      "backend": "CPU|CPU:372",
+      "cancellationLatencyMs": 0.4661669998895377,
+      "engine": "llama.cpp CPU",
+      "loadMs": 11201.136707999976,
+      "maximumObservedProcessFootprintBytes": 319767824,
+      "recoveryStopReason": "eos",
+      "samples": 9
+    },
+    {
+      "backend": "XNNPACK CPU; 2k export; cache reset before each turn",
+      "cancellationLatencyMs": 0.03845799993723631,
+      "engine": "ExecuTorch XNNPACK",
+      "loadMs": 1966.5393340000883,
+      "maximumObservedProcessFootprintBytes": 1062536800,
+      "recoveryStopReason": "eos",
+      "samples": 9
+    },
+    {
+      "backend": "MTL0|MTL0:372|CPU:121",
+      "cancellationLatencyMs": 0.3030830000061542,
+      "engine": "llama.cpp Metal",
+      "loadMs": 434.25345800002106,
+      "maximumObservedProcessFootprintBytes": 300221904,
+      "recoveryStopReason": "length",
+      "samples": 9
+    },
+    {
+      "backend": "MLX Metal; unquantized KV cache; prefix reuse enabled",
+      "cancellationLatencyMs": 6.889750000089407,
+      "engine": "MLX Metal",
+      "loadMs": 840.2075419998728,
+      "maximumObservedProcessFootprintBytes": 970294592,
+      "recoveryStopReason": "length",
+      "samples": 9
+    },
+    {
+      "backend": "MTL0|MTL0:372|CPU:255",
+      "cancellationLatencyMs": 0.48079199995845556,
+      "engine": "llama.cpp partial Metal",
+      "loadMs": 730.0752079999074,
+      "maximumObservedProcessFootprintBytes": 326272728,
+      "recoveryStopReason": "eos",
+      "samples": 9
+    }
+  ],
+  "schemaVersion": 1,
+  "status": "five-SE3-baseline-configurations-native-compatible-pilot-only",
+  "studyCountsUnchanged": {
+    "plannedCells": 63,
+    "rawReports": 51,
+    "replicatedCells": 19
+  },
+  "submissionSnapshot": {
+    "file": "firebase-SE3-current-baseline-pilot-matrix-yuec0dllq1q3a-verified-submission.json",
+    "sha256": "3cfb8dd1b34a202c9b5c0e97fec15eca29f8471dfbed1d58d57ed9ca7d6bf487"
+  },
+  "submittedPackageArchive": {
+    "bytes": 90759897,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/OpenWeightsBench-SE3-current-baseline-pilot-20261007.zip",
+    "remotePath": "packages/0ae580ea65a51b148f698ae62e2f5ad2310ba17abebabfeb2904575663ed973d/OpenWeightsBench-SE3-current-baseline-pilot-20261007.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/0ae580ea65a51b148f698ae62e2f5ad2310ba17abebabfeb2904575663ed973d/OpenWeightsBench-SE3-current-baseline-pilot-20261007.zip",
+    "sha256": "0ae580ea65a51b148f698ae62e2f5ad2310ba17abebabfeb2904575663ed973d",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T21:58:56.400148+00:00"
+  },
+  "terminalMatrix": {
+    "file": "matrix-yuec0dllq1q3a-latest.json",
+    "sha256": "d20b48e0e7b67d079735e0f2fcdb9daf04299a5e42f3720387a8acbafe29d28d"
+  },
+  "uploadedInputVerification": {
+    "bytes": 90759897,
+    "file": "Results/OpenWeightsBench-SE3-current-baseline-pilot-20261007.zip",
+    "gcsObject": "gs://test-lab-6h3isj77ip6ya-hc6hd6s1qrxbu/2026-10-07_05:36:08.801181_nTQG/OpenWeightsBench-SE3-current-baseline-pilot-20261007.zip",
+    "generation": "1791322678766806",
+    "matchesLocalSizeAndMD5": true,
+    "providerMD5": "o+INeNx8/OBwQvhvFCueDg==",
+    "sha256": "0ae580ea65a51b148f698ae62e2f5ad2310ba17abebabfeb2904575663ed973d"
+  }
+}

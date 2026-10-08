@@ -1,0 +1,176 @@
+{
+  "SELaunchDiagnosticProof": "migration/firebase-SE-device-health-verification-2026-10-07.json",
+  "actualBillingVerified": false,
+  "actualOperatingSystem": "Version 18.4 (Build 22E240)",
+  "authorization": {
+    "answer": "Approve this SE full smoke",
+    "questionItemID": "call_029411ca1447472c8555f3def84db5cc",
+    "recordedAtUTC": "2026-10-06T20:40:27.230999+00:00",
+    "scope": "one Firebase SE3 catalog18.4 Xcode26.2 full historical smoke with15minute limit and exact c70a5f9de407 package; no study replication"
+  },
+  "catalogDevice": {
+    "deviceCapabilities": [
+      "accelerometer",
+      "arm64",
+      "armv6",
+      "armv7",
+      "auto-focus-camera",
+      "bluetooth-le",
+      "front-facing-camera",
+      "gamekit",
+      "gyroscope",
+      "location-services",
+      "magnetometer",
+      "metal",
+      "microphone",
+      "opengles-1",
+      "opengles-2",
+      "opengles-3",
+      "peer-peer",
+      "still-camera",
+      "video-camera",
+      "wifi",
+      "arkit",
+      "camera-flash",
+      "gps",
+      "healthkit",
+      "sms",
+      "telephony"
+    ],
+    "formFactor": "PHONE",
+    "id": "iphonese3",
+    "name": "iPhone SE 3",
+    "perVersionInfo": [
+      {
+        "deviceCapacity": "DEVICE_CAPACITY_MEDIUM",
+        "versionId": "18.4"
+      },
+      {
+        "deviceCapacity": "DEVICE_CAPACITY_MEDIUM",
+        "versionId": "26.3"
+      }
+    ],
+    "screenDensity": 326,
+    "screenX": 640,
+    "screenY": 1136,
+    "supportedVersionIds": [
+      "18.4",
+      "26.3"
+    ]
+  },
+  "catalogEvidence": {
+    "SE-full-smoke-live-capacities.json": "477489a7ee8ed4887fccb22d41b31ca6f6c32a8b872f131b11d0ec4452fd14e1",
+    "SE-full-smoke-live-models.json": "f7bddff4dde7536af313db953a64b170e6ce6bbdf9839819e550c9ba7b0efca7",
+    "SE-full-smoke-live-versions.json": "314d82781d3275cc8d10201c76f7cc958a5632cb7634610a6d6a8acb78654284"
+  },
+  "catalogVersion": {
+    "id": "18.4",
+    "majorVersion": 18,
+    "minorVersion": 4,
+    "supportedXcodeVersionIds": [
+      "16.4",
+      "26.2"
+    ]
+  },
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsBench-smoke-tests.zip",
+    "--device=model=iphonese3,version=18.4",
+    "--xcode-version=26.2",
+    "--timeout=15m",
+    "--num-flaky-test-attempts=0",
+    "--no-record-video",
+    "--async",
+    "--format=json"
+  ],
+  "freeAllowanceVerified": false,
+  "limits": [
+    "Local phone tests remain held. Exact archived package was executed successfully previously on Pro, not SE.",
+    "Smoke exercises llama.cpp full Metal only. It does not complete any A2 study cell or validate all seven configurations.",
+    "The original SE3 catalog18.4 cohort is preserved. Actual OS and model fit must be checked from returned native results.",
+    "Sources are the historical build snapshot, not the current working tree. No rebuild or source substitution was made.",
+    "No job has been submitted. Fresh approval is required by the active goal."
+  ],
+  "matrixID": "matrix-2fgikhy1zqvy7",
+  "maximumRequestedExecutionUSDWithoutFreeAllowance": 1.25,
+  "modelAcquisition": {
+    "artifact": {
+      "files": [
+        {
+          "bytes": 396705472,
+          "file": "Qwen3-0.6B-Q4_K_M.gguf",
+          "sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+          "url": "https://huggingface.co/unsloth/Qwen3-0.6B-GGUF/resolve/50968a4468ef4233ed78cd7c3de230dd1d61a56b/Qwen3-0.6B-Q4_K_M.gguf"
+        }
+      ],
+      "id": "gguf",
+      "quantization": "Q4_K_M",
+      "repo": "unsloth/Qwen3-0.6B-GGUF",
+      "revision": "50968a4468ef4233ed78cd7c3de230dd1d61a56b"
+    },
+    "availability": "Pinned public revision HEAD returned HTTP200 and Content-Length396705472; native download and hash verification must pass on target. No bundled weights.",
+    "manifestSHA256": "6b29fdb603eee2edd55c045843f711e78c17f41b1f84ec2a4dabdd4c36bc6e89",
+    "timing": "Download and byte/hash checks happen before benchmark inference timing. Provider execution limit still includes acquisition."
+  },
+  "package": {
+    "buildReceiptFile": "OpenWeightsBench-smoke-tests-build.json",
+    "buildReceiptSHA256": "28d1ef54a7b0af0a68f3ff9ced306921560baf78377bf055196c70e816e0f45b",
+    "bytes": 93614235,
+    "file": "OpenWeightsBench-smoke-tests.zip",
+    "sha256": "c70a5f9de407033836a66928ec6fb785f01fedea7707186b74d20c9032f42090",
+    "sourceSnapshotFile": "xcode26.2-baseline-sources-c5396c6bd355.zip",
+    "sourceSnapshotSHA256": "aab910e3bee367ef8dec6d4a141b6f08b86103ad0d62a75736724ac4e2aa7acc"
+  },
+  "previousNativeExecution": {
+    "file": "Results/firebase-iphone16pro-smoke-source.json",
+    "matrixID": "matrix-3fwpagg6ujov0",
+    "observedOS": "Version 18.3.2 (Build 22D82)",
+    "runtimeRequests": 9,
+    "sameSignedBinaries": true,
+    "sha256": "0107b77046fab666d23cc2fbfbaf08d8f5aa9eb9194ad6b9c1f8f3f6025dc4ac",
+    "testsPassed": 2
+  },
+  "pricingRule": "Physical device USD5/hour rounded up per minute; 15 minutes = USD1.25 excluding unverified storage/transfer and automatic infrastructure retries.",
+  "pricingSource": "https://firebase.google.com/docs/test-lab/usage-quotas-pricing",
+  "profileExpirationUTC": "2026-10-08T14:45:03Z",
+  "purpose": "Check full historical benchmark acquisition, hash verification, llama.cpp Metal inference, cancellation/recovery and native attachments on original SE3 cohort after model-free XCTest launch passed. This does not repeat the completed Pro smoke.",
+  "recordedAtUTC": "2026-10-06T20:39:03.302730+00:00",
+  "schemaVersion": 1,
+  "selectedPlan": {
+    "bundleAndHostPathsVerified": true,
+    "file": "OpenWeights-smoke.xctestrun",
+    "methodLimitSeconds": 900,
+    "methods": [
+      "BenchmarkTests/testFirebaseSmoke",
+      "BenchmarkTests/testArtifactVerificationRejectsCorruption"
+    ],
+    "sha256": "ac5236cd9084e79ec44365fb36b8bee0c6a60344459f86fd3afc21313f83583a"
+  },
+  "signatureVerification": {
+    ".build/firebase/SE-full-smoke-verification/Release-iphoneos/OpenWeightsBench.app": {
+      "exitCode": 0,
+      "output": "ios/Benchmark/.build/firebase/SE-full-smoke-verification/Release-iphoneos/OpenWeightsBench.app: valid on disk\nios/Benchmark/.build/firebase/SE-full-smoke-verification/Release-iphoneos/OpenWeightsBench.app: satisfies its Designated Requirement\n"
+    },
+    ".build/firebase/SE-full-smoke-verification/Release-iphoneos/OpenWeightsBench.app/PlugIns/BenchmarkTests.xctest": {
+      "exitCode": 0,
+      "output": "ios/Benchmark/.build/firebase/SE-full-smoke-verification/Release-iphoneos/OpenWeightsBench.app/PlugIns/BenchmarkTests.xctest: valid on disk\nios/Benchmark/.build/firebase/SE-full-smoke-verification/Release-iphoneos/OpenWeightsBench.app/PlugIns/BenchmarkTests.xctest: satisfies its Designated Requirement\n"
+    }
+  },
+  "status": "approved-job-completed-native-smoke-verified",
+  "storageTransferAndAutomaticInfrastructureRetryChargesVerified": false,
+  "timeoutSeconds": 900,
+  "verification": {
+    "archive": "OpenWeightsBench-smoke-tests.zip",
+    "sha256": "c70a5f9de407033836a66928ec6fb785f01fedea7707186b74d20c9032f42090",
+    "tests": [
+      "BenchmarkTests/testFirebaseSmoke",
+      "BenchmarkTests/testArtifactVerificationRejectsCorruption"
+    ],
+    "xcode": "Xcode 26.2\nBuild version 17C52"
+  }
+}

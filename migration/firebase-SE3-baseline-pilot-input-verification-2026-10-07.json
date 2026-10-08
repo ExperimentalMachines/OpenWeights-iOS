@@ -1,0 +1,22 @@
+{
+  "limits": [
+    "Submitted object binding only. Native inference and actual installed remote binary hashes are not established by these checks.",
+    "No new paid job is authorized beyond the approved single submission."
+  ],
+  "matrixID": "matrix-2jipxlz5aijb0",
+  "objects": {
+    "package": {
+      "crc32c_hash": "E9Q7iA==",
+      "generation": "1791320620859618",
+      "localSHA256": "8dbb7c8d1255e0efe1dd8dfce12815493de15caf15a67dfaf9a8a2ccd2e86169",
+      "matchesLocalMD5AndSize": true,
+      "md5_hash": "w2TTIvT3hPoRQnQ6HFJZ/A==",
+      "size": 93521668,
+      "storage_url": "gs://test-lab-6h3isj77ip6ya-hc6hd6s1qrxbu/2026-10-07_05:01:42.625980_Nadi/OpenWeightsBench-SE3-baseline-pilot-20261007.zip#1791320620859618"
+    }
+  },
+  "preflight": "ios/Benchmark/Study/firebase-SE3-baseline-pilot-preflight-2026-10-07.json",
+  "recordedAtUTC": "2026-10-06T21:08:50.724210+00:00",
+  "schemaVersion": 1,
+  "status": "approved-single-job-submitted-exact-input-objects-verified-native-results-pending"
+}

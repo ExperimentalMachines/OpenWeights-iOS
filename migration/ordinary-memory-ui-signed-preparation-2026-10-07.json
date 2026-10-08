@@ -1,0 +1,32 @@
+{
+  "buildLog": "ios/Product/.build/ordinary-memory-ui-build-20261007.log",
+  "buildLogSHA256": "00cb47d737c72cb1d9247035296f9b7fed687f2fbd9ff1fbeb58eb3303925f83",
+  "buildReceipt": "ios/Product/.build/DerivedData-ui-validation/Build/Products/openweights-ui-validation-build.json",
+  "buildReceiptSHA256": "17da47e337bdcbf958071011793e260223581b2e251c27d2d22785298908481a",
+  "bundleIdentifier": "org.experimentalmachines.openweights.ios",
+  "canonicalBuildDirectory": ".benchmark-work/Product/DerivedData-ui-memory-validation",
+  "compiledMethodNamesPresentInSignedBinary": [
+    "testNativeTabsAndSettingsNavigation",
+    "testNativeDiscoveryFiltersCancelWithoutDownload",
+    "testNativeMemoryEditorValidationAndCancel",
+    "testNativeMemoryToolPreferencesPersistAndRestore",
+    "testNativeHomeReturnAndProcessRelaunch"
+  ],
+  "currentSourceAndExecutableHashesMatch": true,
+  "executables": {
+    "Release-iphoneos/NativeNavigationTests-Runner.app/NativeNavigationTests-Runner": "557328a12b424a2337673638bc426b497089472e821009acfaeb6475bb831fba",
+    "Release-iphoneos/NativeNavigationTests-Runner.app/PlugIns/NativeNavigationTests.xctest/NativeNavigationTests": "c41bea2c997c837bf9cf0186c41d2eccba6e1463c62ff7f5ecd6e4b69893538d",
+    "Release-iphoneos/OpenWeights.app/OpenWeights": "9b80c67af29d93e09138d214368d5c99cfdbd0d7ffe024fa9876ff6c0158ae1f"
+  },
+  "historicalThreeMethodPreparation": "migration/ordinary-ui-preparation-2026-10-07.json",
+  "limits": [
+    "Host build-for-testing only. No native execution or phone access occurred.",
+    "All local phone tests remain held until the user explicitly resumes them.",
+    "Memory checks cover editor validation, cancelled drafts and two tool preferences. They do not establish fact CRUD, tool approvals, accessibility, provider or full P17 parity."
+  ],
+  "recordedAtUTC": "2026-10-06T21:05:07.492625+00:00",
+  "schemaVersion": 1,
+  "sourceInputs": 408,
+  "status": "five-ordinary-UI-methods-compiled-signed-target-binding-and-current-source-hashes-verified-native-execution-held",
+  "testTargetBundleIdentifier": "org.experimentalmachines.openweights.ios"
+}

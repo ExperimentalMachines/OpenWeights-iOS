@@ -1,0 +1,11 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 3664212,
+      "localRelativePath": "openweights-ios/ios/Product/Results/gzip-live-host-23086f6c1938-full-proof.zip"
+    }
+  ],
+  "purpose": "Retain source-bound actual Mac public DNS/TLS gzip tool compatibility evidence. No phone or model inference.",
+  "schemaVersion": 1
+}

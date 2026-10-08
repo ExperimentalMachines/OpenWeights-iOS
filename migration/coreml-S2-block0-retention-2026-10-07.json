@@ -1,0 +1,41 @@
+{
+  "archive": {
+    "bytes": 687291,
+    "file": "study-coreml-S2-workshop-corrections-block0-20261006T180801Z-proof.zip",
+    "members": 128,
+    "sha256": "7c729529c6af6c669618ee59c7facdfbaf8a3ac11ecf40a12dab0fc3d0216fd0"
+  },
+  "details": {
+    "completedTurns": 6,
+    "independentPrimaryBlocksInThisCell": 1,
+    "plannedReplicatedCells": 63,
+    "rawReportSHA256": "ab3128ac9c343c8706dd03f7248413dc49c7c700875c11c14493f8c25df5c8ca",
+    "rawReports": 46,
+    "replicatedCells": 19,
+    "reproducedAnalysisSHA256": "4048e32021e29622b62c85365fb6089237fba0581194c3b9d4f6b8900bf41605",
+    "reproducedReportSHA256": "4bc494f8acf37563ac837c4186ea7d6b6fb6a0e0efa99a2a1b37e9fa7e57fb3e",
+    "retainedFailedRows": 15
+  },
+  "execution": "ios/Benchmark/Results/study-coreml-S2-workshop-corrections-block0-20261006T180801Z-execution.json",
+  "executionSHA256": "d03beb434f51ebcd65015f6c6c8cca377b188739320a070a5c6a4044bb7d4782",
+  "kind": "primary-study",
+  "limits": [
+    "Private evidence includes native device diagnostics. Do not publish without review.",
+    "Signed products remain active locally, identified by receipt hashes.",
+    "This scoped proof does not establish full A1-A3 completion."
+  ],
+  "privateArchive": {
+    "bytes": 687291,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/study-coreml-S2-workshop-corrections-block0-20261006T180801Z-proof.zip",
+    "remotePath": "packages/7c729529c6af6c669618ee59c7facdfbaf8a3ac11ecf40a12dab0fc3d0216fd0/study-coreml-S2-workshop-corrections-block0-20261006T180801Z-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/7c729529c6af6c669618ee59c7facdfbaf8a3ac11ecf40a12dab0fc3d0216fd0/study-coreml-S2-workshop-corrections-block0-20261006T180801Z-proof.zip",
+    "sha256": "7c729529c6af6c669618ee59c7facdfbaf8a3ac11ecf40a12dab0fc3d0216fd0",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T18:39:01.843755+00:00"
+  },
+  "recordedAtUTC": "2026-10-06T18:38:37.837520+00:00",
+  "schemaVersion": 1,
+  "status": "retained-execution-and-member-manifest-verified"
+}

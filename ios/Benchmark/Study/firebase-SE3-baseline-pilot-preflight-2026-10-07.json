@@ -1,0 +1,337 @@
+{
+  "actualBillingVerified": false,
+  "actualOperatingSystem": "Version 18.4 (Build 22E240)",
+  "authorization": {
+    "answer": "Approve this SE baseline compatibility run",
+    "questionItemID": "call_7d74a69f79904a7b967ad83279e9fe2e",
+    "recordedAtUTC": "2026-10-06T21:01:41.831404+00:00",
+    "scope": "one Firebase SE3 catalog18.4 Xcode26.2 five-configuration compatibility pilot with15minute limit and exact8dbb7c8d1255 package; no study replication"
+  },
+  "catalogDevice": {
+    "deviceCapabilities": [
+      "accelerometer",
+      "arm64",
+      "armv6",
+      "armv7",
+      "auto-focus-camera",
+      "bluetooth-le",
+      "front-facing-camera",
+      "gamekit",
+      "gyroscope",
+      "location-services",
+      "magnetometer",
+      "metal",
+      "microphone",
+      "opengles-1",
+      "opengles-2",
+      "opengles-3",
+      "peer-peer",
+      "still-camera",
+      "video-camera",
+      "wifi",
+      "arkit",
+      "camera-flash",
+      "gps",
+      "healthkit",
+      "sms",
+      "telephony"
+    ],
+    "formFactor": "PHONE",
+    "id": "iphonese3",
+    "name": "iPhone SE 3",
+    "perVersionInfo": [
+      {
+        "deviceCapacity": "DEVICE_CAPACITY_MEDIUM",
+        "versionId": "18.4"
+      },
+      {
+        "deviceCapacity": "DEVICE_CAPACITY_MEDIUM",
+        "versionId": "26.3"
+      }
+    ],
+    "screenDensity": 326,
+    "screenX": 640,
+    "screenY": 1136,
+    "supportedVersionIds": [
+      "18.4",
+      "26.3"
+    ]
+  },
+  "catalogEvidence": {
+    ".build/firebase/SE-baseline-pilot-live-models.json": "f7bddff4dde7536af313db953a64b170e6ce6bbdf9839819e550c9ba7b0efca7",
+    ".build/firebase/SE-baseline-pilot-live-versions.json": "314d82781d3275cc8d10201c76f7cc958a5632cb7634610a6d6a8acb78654284",
+    ".build/firebase/SE-baseline-pilot-model-availability.json": "b766b07749fa79fe4c861955c941af87d7de089167f6c5fa357afaf31c8cd5f2"
+  },
+  "catalogVersion": {
+    "id": "18.4",
+    "majorVersion": 18,
+    "minorVersion": 4,
+    "supportedXcodeVersionIds": [
+      "16.4",
+      "26.2"
+    ]
+  },
+  "command": [
+    "gcloud",
+    "firebase",
+    "test",
+    "ios",
+    "run",
+    "--project=zeraphim-wealth-integration",
+    "--test=Results/OpenWeightsBench-SE3-baseline-pilot-20261007.zip",
+    "--device=model=iphonese3,version=18.4",
+    "--xcode-version=26.2",
+    "--timeout=15m",
+    "--num-flaky-test-attempts=0",
+    "--no-record-video",
+    "--async",
+    "--format=json"
+  ],
+  "freeAllowanceVerified": false,
+  "limits": [
+    "Only external test selection differs from the full-Metal smoke archive. Every signed product and model manifest is unchanged.",
+    "The selected pilot method completed45 requests on identical signed binaries locally before the phone-test hold. The additional corruption method passed on SE3 in the preceding smoke.",
+    "No SE multi-runtime native execution is established by preparation. Local phone tests stay held.",
+    "The pilot has no between-adapter thermal cooldown and is compatibility validation, not the repeated-study protocol. Inspect actual conditions.",
+    "FullMetal is included again because the fixed pilot method selects all five configurations. The specific reason is validation of the four remaining baseline configurations in this immutable suite.",
+    "CoreML and ExecuTorchMLX remain separate configurations requiring SE validation. No A2 primary block is added.",
+    "The existing two native methods have separate exact-byte execution evidence. Their combined two-method pilot plan is newly isolated. No new local run is allowed while phone tests are held.",
+    "The goal requires fresh paid-job approval for this single compatibility run. No study replication is authorized."
+  ],
+  "matrixID": "matrix-2jipxlz5aijb0",
+  "maximumRequestedExecutionUSDWithoutFreeAllowance": 1.25,
+  "modelArtifacts": [
+    {
+      "files": [
+        {
+          "bytes": 396705472,
+          "file": "Qwen3-0.6B-Q4_K_M.gguf",
+          "sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+          "url": "https://huggingface.co/unsloth/Qwen3-0.6B-GGUF/resolve/50968a4468ef4233ed78cd7c3de230dd1d61a56b/Qwen3-0.6B-Q4_K_M.gguf"
+        }
+      ],
+      "id": "gguf",
+      "quantization": "Q4_K_M",
+      "repo": "unsloth/Qwen3-0.6B-GGUF",
+      "revision": "50968a4468ef4233ed78cd7c3de230dd1d61a56b"
+    },
+    {
+      "files": [
+        {
+          "bytes": 937,
+          "file": "config.json",
+          "sha256": "15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f",
+          "url": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/config.json"
+        },
+        {
+          "bytes": 335450584,
+          "file": "model.safetensors",
+          "sha256": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+          "url": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/model.safetensors"
+        },
+        {
+          "bytes": 11422654,
+          "file": "tokenizer.json",
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "url": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/tokenizer.json"
+        },
+        {
+          "bytes": 9706,
+          "file": "tokenizer_config.json",
+          "sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+          "url": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/tokenizer_config.json"
+        },
+        {
+          "bytes": 613,
+          "file": "special_tokens_map.json",
+          "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+          "url": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/special_tokens_map.json"
+        },
+        {
+          "bytes": 707,
+          "file": "added_tokens.json",
+          "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+          "url": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/added_tokens.json"
+        },
+        {
+          "bytes": 2776833,
+          "file": "vocab.json",
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "url": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/vocab.json"
+        },
+        {
+          "bytes": 1671853,
+          "file": "merges.txt",
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+          "url": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/merges.txt"
+        }
+      ],
+      "id": "mlx",
+      "quantization": "affine 4-bit",
+      "repo": "mlx-community/Qwen3-0.6B-4bit",
+      "revision": "73e3e38d981303bc594367cd910ea6eb48349da8"
+    },
+    {
+      "files": [
+        {
+          "bytes": 11422654,
+          "file": "tokenizer.json",
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "url": "https://huggingface.co/experimentalmachines/Qwen3-0.6B-ExecuTorch/resolve/909dd2dcbdabdd469625aa6d228c9f362e6764bd/tokenizer.json"
+        },
+        {
+          "bytes": 496570368,
+          "file": "xnnpack/Qwen3-0.6B-8da4w-2k.pte",
+          "sha256": "390189af20d7ee5528069f5aff5672f657c74318af624dd177d52297cae6297d",
+          "url": "https://huggingface.co/experimentalmachines/Qwen3-0.6B-ExecuTorch/resolve/909dd2dcbdabdd469625aa6d228c9f362e6764bd/xnnpack/Qwen3-0.6B-8da4w-2k.pte"
+        },
+        {
+          "bytes": 3112,
+          "file": "xnnpack/config.json",
+          "sha256": "323cd107367ecf4519ac85dcf410586c76c211f31bdab119533cd1565dcc5511",
+          "url": "https://huggingface.co/experimentalmachines/Qwen3-0.6B-ExecuTorch/resolve/909dd2dcbdabdd469625aa6d228c9f362e6764bd/xnnpack/config.json"
+        }
+      ],
+      "id": "executorch",
+      "quantization": "8da4w",
+      "repo": "experimentalmachines/Qwen3-0.6B-ExecuTorch",
+      "revision": "909dd2dcbdabdd469625aa6d228c9f362e6764bd"
+    }
+  ],
+  "modelDownloadBytes": 1256035493,
+  "package": {
+    "buildReceiptFile": "OpenWeightsBench-smoke-tests-build.json",
+    "buildReceiptSHA256": "28d1ef54a7b0af0a68f3ff9ced306921560baf78377bf055196c70e816e0f45b",
+    "bytes": 93521668,
+    "file": "OpenWeightsBench-SE3-baseline-pilot-20261007.zip",
+    "sha256": "8dbb7c8d1255e0efe1dd8dfce12815493de15caf15a67dfaf9a8a2ccd2e86169",
+    "sourceSnapshotFile": "xcode26.2-baseline-sources-c5396c6bd355.zip",
+    "sourceSnapshotSHA256": "aab910e3bee367ef8dec6d4a141b6f08b86103ad0d62a75736724ac4e2aa7acc"
+  },
+  "packageVerification": "migration/SE3-baseline-pilot-package-verification-2026-10-07.json",
+  "pinnedModelAvailabilityChecks": [
+    {
+      "bytes": 396705472,
+      "expectedBytes": 396705472,
+      "file": "Qwen3-0.6B-Q4_K_M.gguf",
+      "immutableURL": "https://huggingface.co/unsloth/Qwen3-0.6B-GGUF/resolve/50968a4468ef4233ed78cd7c3de230dd1d61a56b/Qwen3-0.6B-Q4_K_M.gguf",
+      "matches": true,
+      "status": 200
+    },
+    {
+      "bytes": 937,
+      "expectedBytes": 937,
+      "file": "config.json",
+      "immutableURL": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/config.json",
+      "matches": true,
+      "status": 200
+    },
+    {
+      "bytes": 335450584,
+      "expectedBytes": 335450584,
+      "file": "model.safetensors",
+      "immutableURL": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/model.safetensors",
+      "matches": true,
+      "status": 200
+    },
+    {
+      "bytes": 11422654,
+      "expectedBytes": 11422654,
+      "file": "tokenizer.json",
+      "immutableURL": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/tokenizer.json",
+      "matches": true,
+      "status": 200
+    },
+    {
+      "bytes": 9706,
+      "expectedBytes": 9706,
+      "file": "tokenizer_config.json",
+      "immutableURL": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/tokenizer_config.json",
+      "matches": true,
+      "status": 200
+    },
+    {
+      "bytes": 613,
+      "expectedBytes": 613,
+      "file": "special_tokens_map.json",
+      "immutableURL": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/special_tokens_map.json",
+      "matches": true,
+      "status": 200
+    },
+    {
+      "bytes": 707,
+      "expectedBytes": 707,
+      "file": "added_tokens.json",
+      "immutableURL": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/added_tokens.json",
+      "matches": true,
+      "status": 200
+    },
+    {
+      "bytes": 2776833,
+      "expectedBytes": 2776833,
+      "file": "vocab.json",
+      "immutableURL": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/vocab.json",
+      "matches": true,
+      "status": 200
+    },
+    {
+      "bytes": 1671853,
+      "expectedBytes": 1671853,
+      "file": "merges.txt",
+      "immutableURL": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/merges.txt",
+      "matches": true,
+      "status": 200
+    },
+    {
+      "bytes": 11422654,
+      "expectedBytes": 11422654,
+      "file": "tokenizer.json",
+      "immutableURL": "https://huggingface.co/experimentalmachines/Qwen3-0.6B-ExecuTorch/resolve/909dd2dcbdabdd469625aa6d228c9f362e6764bd/tokenizer.json",
+      "matches": true,
+      "status": 200
+    },
+    {
+      "bytes": 496570368,
+      "expectedBytes": 496570368,
+      "file": "xnnpack/Qwen3-0.6B-8da4w-2k.pte",
+      "immutableURL": "https://huggingface.co/experimentalmachines/Qwen3-0.6B-ExecuTorch/resolve/909dd2dcbdabdd469625aa6d228c9f362e6764bd/xnnpack/Qwen3-0.6B-8da4w-2k.pte",
+      "matches": true,
+      "status": 200
+    },
+    {
+      "bytes": 3112,
+      "expectedBytes": 3112,
+      "file": "xnnpack/config.json",
+      "immutableURL": "https://huggingface.co/experimentalmachines/Qwen3-0.6B-ExecuTorch/resolve/909dd2dcbdabdd469625aa6d228c9f362e6764bd/xnnpack/config.json",
+      "matches": true,
+      "status": 200
+    }
+  ],
+  "pricingSource": "https://firebase.google.com/docs/test-lab/usage-quotas-pricing",
+  "pricingSourceVerifiedInSession": true,
+  "profileExpirationUTC": "2026-10-08T14:45:03Z",
+  "purpose": "Validate the four remaining baseline configurations on the original SE3 device cohort using the fixed five-configuration pilot. FullMetal is included again only because the immutable native pilot selects all five.",
+  "recordedAtUTC": "2026-10-06T20:56:17.114421+00:00",
+  "requestsIfComplete": 45,
+  "runtimeOrder": [
+    "llama.cpp CPU",
+    "ExecuTorch XNNPACK",
+    "llama.cpp Metal",
+    "MLX Metal",
+    "llama.cpp partial Metal"
+  ],
+  "schemaVersion": 1,
+  "selectedPlan": {
+    "file": "OpenWeights-smoke.xctestrun",
+    "maximumMethodSeconds": 900,
+    "methods": [
+      "BenchmarkTests/testPilotBenchmark",
+      "BenchmarkTests/testArtifactVerificationRejectsCorruption"
+    ],
+    "sha256": "3a0f26bdd74aa6c3e23d992b37877ac4290f035b5457614581fd9b45cea6dc1d"
+  },
+  "status": "approved-job-terminal-native-acquisition-failure-zero-inference-rows",
+  "storageTransferAndAutomaticInfrastructureRetryChargesVerified": false,
+  "timeoutSeconds": 900,
+  "xcode": "26.2"
+}

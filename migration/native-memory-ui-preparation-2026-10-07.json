@@ -1,0 +1,42 @@
+{
+  "hostTypecheck": {
+    "command": [
+      "/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/.benchmark-work/Benchmark/toolchains/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-typecheck",
+      "-target",
+      "arm64-apple-ios17.0",
+      "-sdk",
+      "/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/.benchmark-work/Benchmark/toolchains/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk",
+      "-F",
+      "/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/.benchmark-work/Benchmark/toolchains/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/.benchmark-work/Benchmark/toolchains/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib",
+      "UITests/NativeNavigationTests.swift"
+    ],
+    "exitCode": 0,
+    "log": "ios/Product/.build/native-memory-ui-typecheck-corrected-20261007.log",
+    "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limits": [
+    "All phone tests remain held by the user. No native method is executed or claimed passing.",
+    "The existing signed UI build predates these added methods. Rebuild and verify a new signed UI receipt before any phone execution.",
+    "Host typechecking does not verify actual accessibility queries, touch gestures, preference restoration, VoiceOver or native persistence.",
+    "This does not establish memory CRUD or full P17/P19 parity.",
+    "The first manual typecheck omitted the Xcode XCTest Swift module search path and failed import assertions throughout the file. That failed log is retained separately."
+  ],
+  "methods": [
+    "testNativeMemoryEditorValidationAndCancel",
+    "testNativeMemoryToolPreferencesPersistAndRestore"
+  ],
+  "recordedAtUTC": "2026-10-06T20:04:24.776963+00:00",
+  "schemaVersion": 1,
+  "scope": [
+    "Empty, valid and oversized fact editor Save states, Cancel and fresh editor discard. No fact is saved, replaced or removed.",
+    "Memory tool preference switches persist across controlled process relaunch. Each original permission value is captured before changes and restored by a teardown block."
+  ],
+  "source": {
+    "file": "ios/Product/UITests/NativeNavigationTests.swift",
+    "sha256": "e70b45c79cfe95323c7419877ec6f1efd37987a6057405e518539babeac20642"
+  },
+  "status": "source-prepared-host-typecheck-passed-unsigned-unexecuted"
+}

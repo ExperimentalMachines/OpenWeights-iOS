@@ -1,0 +1,90 @@
+{
+  "acquisitionBranches": [
+    "cache-verified"
+  ],
+  "cloudExecuted": true,
+  "cloudMatrices": [
+    {
+      "executions": [
+        {
+          "issues": null,
+          "state": "FINISHED"
+        }
+      ],
+      "generation": "1791368858272770",
+      "matrixID": "matrix-ievukr6xoec7a",
+      "outcome": "SUCCESS",
+      "packageSHA256": "91b44999c482b3bc18f94de7318b8a62c4bf457e705f68cf3caae1be77aed22a",
+      "recordedAtUTC": "2026-10-07T10:36:02.420412+00:00",
+      "runtime": "llama.cpp CPU",
+      "state": "FINISHED",
+      "uploadedBytesAndMD5Verified": true
+    },
+    {
+      "executions": [
+        {
+          "issues": null,
+          "state": "FINISHED"
+        }
+      ],
+      "generation": "1791368886886322",
+      "matrixID": "matrix-3f4oojzakmf5y",
+      "outcome": "SUCCESS",
+      "packageSHA256": "ed308c745ea2289538a854cadbb3e62f57ef116d727e7756ed070a7759f9f7ae",
+      "recordedAtUTC": "2026-10-07T10:36:01.702649+00:00",
+      "runtime": "llama.cpp Metal",
+      "state": "FINISHED",
+      "uploadedBytesAndMD5Verified": true
+    }
+  ],
+  "cloudSubmissionLedger": "outputs/firebase-lfm-pilot-20261007-attempt0/cloud-submissions.json",
+  "hostControlsPassed": 25,
+  "localArchiveRoundTripVerified": true,
+  "localArchiveSHA256": "27bb98394fe6e1f21501c8610c8a154a35c346bc88e91e3bbdf72fc8fc794f16",
+  "localValidationFolder": "Publication/outputs/firebase-lfm-local-validation-20261007-attempt0",
+  "metricsUnchanged": true,
+  "model": "lfm2.5-1.2b-instruct",
+  "paidSubmission": "two approved jobs completed",
+  "preparedFolder": "Publication/outputs/firebase-lfm-pilot-20261007-attempt0",
+  "publicPublication": "not authorized",
+  "records": [
+    {
+      "attachmentExport": "passed",
+      "exitCode": 0,
+      "hostElapsedSeconds": 19.711,
+      "model": "lfm2.5-1.2b-instruct",
+      "nativeStatus": "passed",
+      "package": "OpenWeightsPublication-cpu.zip",
+      "packageBytes": 10917338,
+      "packageSHA256": "91b44999c482b3bc18f94de7318b8a62c4bf457e705f68cf3caae1be77aed22a",
+      "plan": "cpu.xctestrun",
+      "planSHA256": "5168e9b6826bab4a4495d7329fb9e616f09b3b4eab20c209e7ff7770b6dbc93e",
+      "repetition": 0,
+      "result": "000.xcresult",
+      "runtime": "llama.cpp CPU",
+      "stage": "measure",
+      "status": "passed",
+      "timedOut": false
+    },
+    {
+      "attachmentExport": "passed",
+      "exitCode": 0,
+      "hostElapsedSeconds": 9.899,
+      "model": "lfm2.5-1.2b-instruct",
+      "nativeStatus": "passed",
+      "package": "OpenWeightsPublication-metal.zip",
+      "packageBytes": 10917342,
+      "packageSHA256": "ed308c745ea2289538a854cadbb3e62f57ef116d727e7756ed070a7759f9f7ae",
+      "plan": "metal.xctestrun",
+      "planSHA256": "8b19501ba19bcbb255b31dbe8a5a048f78b4a8f838da5a666c0a677f4413a9b9",
+      "repetition": 0,
+      "result": "001.xcresult",
+      "runtime": "llama.cpp Metal",
+      "stage": "measure",
+      "status": "passed",
+      "timedOut": false
+    }
+  ],
+  "requests": 12,
+  "status": "firebase-delivery-pilot-complete"
+}

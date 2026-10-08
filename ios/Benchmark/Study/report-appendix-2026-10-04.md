@@ -307,3 +307,96 @@ product parity remain incomplete. Nothing has been publicly published.
 
 [Fifth-block raw interpretation](../../ios/Benchmark/Results/study-coreml-S1-stable-facts-block4-20261006T161607Z-observer.json).
 [Reproduction proof](../../ios/Benchmark/Results/coreml-local-five-cloud-one-analysis-revalidation-2026-10-07.json).
+
+## SE 3 native launch diagnostic, 2026-10-07
+
+After the two retained infrastructure-only failures, a separately approved model-free control passed one native XCTest on SE 3, actual iOS 18.4 build 22E240. Matrix matrix-2pv90jl9ezi09 returned native logs and a device-conditions attachment. All 33 provider objects were downloaded at recorded generations and verified by size and MD5. The exact package, full proof and inactive signed build were retained in private Hugging Face storage after fresh-download SHA-256 and archive or full-tree checks.
+
+This control contains no models or inference libraries. It establishes that this Firebase device cohort can launch XCTest and return an attachment. It does not explain the earlier infrastructure failures, establish model fit or complete a study cell. Verification and private restore locations are recorded in migration/firebase-SE-device-health-verification-2026-10-07.json in the separate iOS repository.
+
+## SE 3 full-Metal smoke, 2026-10-07
+
+The subsequent separately approved full smoke, matrix-2fgikhy1zqvy7, passed both native methods on SE 3, actual iOS 18.4 build 22E240. Its nine llama.cpp Metal requests include cancellation and recovery. Corruption rejection passed. All request thermal boundaries were nominal and Low Power Mode was off. The pinned 396,705,472-byte GGUF download appears in native logs. The unchanged source verifies its byte count and SHA-256 before adapter loading. This historical smoke has no per-file acquisition attachment.
+
+All 36 provider objects were downloaded at recorded generations and verified by size and MD5. The 59-member proof and exact signed input package were retained privately after fresh-download SHA-256 and ZIP CRC checks. migration/firebase-SE3-full-smoke-verification-2026-10-07.json records the exact sources, signatures, raw report, native summary and private restore locations. This establishes the tested full-Metal smoke on SE 3. It does not explain earlier infrastructure-only failures, validate other configurations, establish growing-conversation fit or add any repeated-study cell. No hardware-only, energy or general-quality claim follows.
+
+
+## SE 3 baseline acquisition failure, 2026-10-07
+
+The separately approved five-configuration compatibility pilot,
+matrix-2jipxlz5aijb0, finished with one native pass and one failure on SE 3,
+actual iOS 18.4 build 22E240. Corruption rejection passed. The pilot failed
+while downloading the pinned XNNPACK `Qwen3-0.6B-8da4w-2k.pte`, with
+NSURLErrorDomain code -1005, network connection lost. Its retained partial
+report has zero adapter rows and no inference requests. This provides no
+runtime compatibility, memory-fit or performance result.
+
+All 36 provider objects passed generation, size and MD5 checks. The complete
+59-member failure proof and exact historical input package passed private HF
+fresh-download SHA-256 and ZIP CRC verification before local ZIP eviction.
+`migration/firebase-SE3-baseline-pilot-failure-retention-2026-10-07.json`
+records the raw report, native summary, sanitized failure and private restore
+locations. The original signed package lacks the bounded pinned-URL retries
+already present in the separately validated current baseline build. A current
+build candidate preserves its locally passed three-method plan and 45-request
+pilot, with per-file acquisition events. Preparation does not establish that
+Firebase downloads have recovered. A new job requires fresh approval. Local
+phone tests remain held, and no repeated-study cell is added.
+
+
+## Cloud Core ML block 4 storage failure and load-metric correction, 2026-10-07
+
+Matrix matrix-2taqpjj8qiv6h passed probe grading but failed its study method on
+Pro iOS 18.3.2 build 22D82. The raw metadata confirms S1 block 4, attempt 0,
+with the exact separately submitted plan. All three bundled Core ML files
+passed byte/hash verification. Model initialization then failed saving its
+compiled model to disk, with ExecuTorch error 35. Device APFS syslog records
+seven ENOSPC entries for OpenWeightsBench at the same time, meaning no space
+left on the device. Zero inference samples were produced. The source of
+occupied device space and any safely removable files remain unverified.
+
+The failed primary attempt remains in the denominator. Core ML S1 on this
+cloud cohort still has four of five complete matching primary blocks, and
+overall replication remains 19 of 63 cells. Report-level `completed=true`
+means the runner finished saving its terminal diagnostic. Its runtime row is
+`failed`, so this report cannot satisfy replication.
+
+The failure also exposed unmeasured load defaults of zero in the analysis.
+Analysis schema 4 excludes zero/missing defaults from load-time and footprint
+distributions, records their excluded counts, and retains real positive load
+measurements even if generation fails later. Grading remains version 3.
+The original schema-3 51-report analysis, report and analyzer are preserved
+in the failure proof. In schema 4, this cloud load cohort has five primary
+attempts but four measured loads and four complete conversations. New host
+controls cover both cases. No zero-time or zero-memory load is claimed.
+
+`migration/firebase-coreml-S1-block4-failure-retention-2026-10-07.json` records
+raw/native evidence, exact input bindings, the device disk-write failure and
+reproducible expanded analysis. This failure does not establish poor inference
+quality, lack of RAM or a new runtime speed result. No further paid Pro job is
+authorized, and local phone tests remain held.
+
+
+## SE 3 current-build baseline compatibility, 2026-10-07
+
+The separately approved retry, matrix-yuec0dllq1q3a, passes all three native methods on SE 3, actual iOS 18.4 build 22E240. The current separate-checkout baseline completes 45 requests across llama.cpp CPU, full Metal, partial Metal, standalone MLX and ExecuTorch XNNPACK. Each configuration completes its cancellation and recovery checks. Corruption rejection and the grading controls also pass. Every recorded request starts and ends at nominal thermal state, with Low Power Mode off. Cloud charging state and ambient temperature remain unknown.
+
+The native attachment retains 24 acquisition events: 12 starts and 12 fresh download verifications, totaling 1,256,035,493 bytes. All files succeed on attempt 1 after the frozen ModelStore checks their exact sizes and SHA-256 values. No cloud transport retry is exercised. The six host acquisition controls establish the retry branch separately. This result does not prove improved network reliability. The earlier historical package's network failure remains preserved.
+
+All 38 provider objects are downloaded at recorded generations and verified by size and MD5. The signed input package, source snapshot, exact test plan, immutable submission, native summary and complete evidence are bound in migration/firebase-SE3-current-baseline-pilot-verification-2026-10-07.json. This is compatibility evidence for the five tested configurations. Core ML, ExecuTorch MLX and growing-conversation study runs remain unverified on SE. No primary study block, replicated cell, universal memory-fit result, hardware-only, energy or general-quality claim is added.
+
+
+## Pro read-only storage diagnostic, 2026-10-07
+
+The separately approved model-free diagnostic, matrix-2vhswnu8naude, passed both native methods on iPhone17,1, actual iOS 18.3.2/22D82, using Xcode 26.2. Its exact signed package is 1f6471b04ea98e5fe5e097b2b4f4477739bfdff7189fb92a488f44cd6fe876cf. Full provider evidence verifies 37 objects and 2,443,300 bytes by stable generation, size and MD5. XCTest XML and xcresult agree on two passes, zero failures/skips. No models, inference or cleanup were performed.
+
+At the recorded instant, filesystem free and available capacity both measured 81,467,404,288 bytes, approximately 75.9 GiB. Important-usage available capacity measured 85,360,284,861 bytes and may include purgeable space. The three default app-owned Core ML cache/trash/database directories were missing in this fresh diagnostic sandbox. This does not measure the prior app cache or Core ML peak disk demand. Private provider evidence establishes a different reported physical-device identifier from the failed block 4. The new snapshot therefore cannot establish the failed phone's capacity, occupied-space ownership, or an ENOSPC fix. Core ML Pro S1 remains 4 of 5 complete primary blocks, and the full study remains 19 of 63 replicated cells. All local phone tests remain held.
+
+[Native diagnostic verification](../../migration/firebase-Pro-storage-diagnostic-verification-2026-10-07.json) binds exact input, source, executable, native attachments and full evidence retention. The read-only diagnostic does not authorize another paid job.
+
+
+## Current SE S1 infrastructure outcome, 2026-10-07
+
+The approved current-build S1 block 2, matrix-phcho7u3nupba, ended inconclusive with Internal System Error 3 after three automatic infrastructure attempts. The terminal Tool Results step explicitly reports infrastructure failure and has zero native case records or suite summaries. A full job-root listing contains only the exact submitted input ZIP, whose generation, size, MD5 and SHA-256 match the approved package. No native study attachment or inference measurement is observed. Actual physical device and OS are unknown. These records do not identify the infrastructure root cause or establish runtime incompatibility, model fit, memory failure or performance.
+
+The original SE compatibility pilot remains a separate 45-request success. All three infrastructure-only SE study submissions remain in the execution ledger. The current job input and its identical provider-returned copy share one verified private HF object. All available provider metadata, approvals, source/plan receipts and restore locators are retained in migration/firebase-SE3-current-study-S1-block2-infrastructure-retention-2026-10-07.json. Study coverage remains nine of 63 source/build-matched cells, with 51 raw inference reports and 16 failed runtime rows. No synthetic inference report was added. The one-job approval is exhausted, and all local phone tests remain held.

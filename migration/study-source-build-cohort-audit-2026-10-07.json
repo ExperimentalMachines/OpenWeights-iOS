@@ -1,0 +1,802 @@
+{
+  "archive": {
+    "bytes": 663261,
+    "file": "study-strict-source-build-cohort-audit-20261007-proof.zip",
+    "members": 109,
+    "sha256": "69380ad5314a02b124ad5b7c143e0cd17b2653b18bcd46265c01ef0aa2a54ff5"
+  },
+  "auditClarification": "The original privately retained audit incorrectly described the initial S3 difference as a compile-toolchain change. The initial collector executed with Xcode26.5 but its build receipt records Xcode26.2/SDK26.2. The strict cohort split is established by changed MultiTurnRunner.swift and executable fingerprints. Counts remain9.",
+  "cohorts": [
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          0
+        ]
+      },
+      "device": "iPhone17,1",
+      "runtime": "llama.cpp CPU",
+      "scenario": "S1-stable-facts"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          0
+        ]
+      },
+      "device": "iPhone17,1",
+      "runtime": "ExecuTorch XNNPACK",
+      "scenario": "S1-stable-facts"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          0
+        ]
+      },
+      "device": "iPhone17,1",
+      "runtime": "llama.cpp Metal",
+      "scenario": "S1-stable-facts"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          0
+        ]
+      },
+      "device": "iPhone17,1",
+      "runtime": "MLX Metal",
+      "scenario": "S1-stable-facts"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          0
+        ]
+      },
+      "device": "iPhone17,1",
+      "runtime": "llama.cpp partial Metal",
+      "scenario": "S1-stable-facts"
+    },
+    {
+      "cohorts": {
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "llama.cpp CPU",
+      "scenario": "S1-stable-facts"
+    },
+    {
+      "cohorts": {
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "ExecuTorch XNNPACK",
+      "scenario": "S1-stable-facts"
+    },
+    {
+      "cohorts": {
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "llama.cpp Metal",
+      "scenario": "S1-stable-facts"
+    },
+    {
+      "cohorts": {
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "MLX Metal",
+      "scenario": "S1-stable-facts"
+    },
+    {
+      "cohorts": {
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "llama.cpp partial Metal",
+      "scenario": "S1-stable-facts"
+    },
+    {
+      "cohorts": {
+        "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "ExecuTorch MLX",
+      "scenario": "S1-stable-facts"
+    },
+    {
+      "cohorts": {
+        "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "ExecuTorch MLX",
+      "scenario": "S2-workshop-corrections"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "llama.cpp CPU",
+      "scenario": "S2-workshop-corrections"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "ExecuTorch XNNPACK",
+      "scenario": "S2-workshop-corrections"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "llama.cpp Metal",
+      "scenario": "S2-workshop-corrections"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "MLX Metal",
+      "scenario": "S2-workshop-corrections"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "llama.cpp partial Metal",
+      "scenario": "S2-workshop-corrections"
+    },
+    {
+      "cohorts": {
+        "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "ExecuTorch MLX",
+      "scenario": "S3-interruption-recovery"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "ExecuTorch XNNPACK",
+      "scenario": "S3-interruption-recovery"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "llama.cpp Metal",
+      "scenario": "S3-interruption-recovery"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "MLX Metal",
+      "scenario": "S3-interruption-recovery"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "llama.cpp partial Metal",
+      "scenario": "S3-interruption-recovery"
+    },
+    {
+      "cohorts": {
+        "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80": [
+          0
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "llama.cpp CPU",
+      "scenario": "S3-interruption-recovery"
+    },
+    {
+      "cohorts": {
+        "60ed45678b6ab518b46db1ba9a252eed7aa1c554082bab8b17dffbe44256ba38": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "ExecuTorch Core ML",
+      "scenario": "S1-stable-facts"
+    },
+    {
+      "cohorts": {
+        "60ed45678b6ab518b46db1ba9a252eed7aa1c554082bab8b17dffbe44256ba38": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "device": "iPhone17,1",
+      "runtime": "ExecuTorch Core ML",
+      "scenario": "S1-stable-facts"
+    },
+    {
+      "cohorts": {
+        "b5e71b31a645e32f073ae14a2c560478ea284e7362caadda97cc249430033953": [
+          0,
+          1
+        ]
+      },
+      "device": "iPhone17,3",
+      "runtime": "ExecuTorch Core ML",
+      "scenario": "S2-workshop-corrections"
+    }
+  ],
+  "historicalArtifactRuntimeOSCohortCount": 19,
+  "limits": [
+    "Historical analyzer and ledger omit source/build fingerprints from cohort identity. This audit has not yet changed or superseded their outputs.",
+    "The S2 baseline block0 and four later complete baseline blocks differ in foreground guard implementation and executable hashes. The initial S3 run used execution Xcode26.5 but its compile receipt is Xcode26.2. Its distinct foreground-guard source/executable cohort is the relevant difference.",
+    "Before asserting original replication requirements met, split build cohorts in analyzer, ledger and report, preserving historical artifacts. Missing source proof must never create pooled matching replication.",
+    "No local phone tests or new study execution performed by this host audit."
+  ],
+  "privateArchive": {
+    "bytes": 663261,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/study-strict-source-build-cohort-audit-20261007-proof.zip",
+    "remotePath": "packages/69380ad5314a02b124ad5b7c143e0cd17b2653b18bcd46265c01ef0aa2a54ff5/study-strict-source-build-cohort-audit-20261007-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/69380ad5314a02b124ad5b7c143e0cd17b2653b18bcd46265c01ef0aa2a54ff5/study-strict-source-build-cohort-audit-20261007-proof.zip",
+    "sha256": "69380ad5314a02b124ad5b7c143e0cd17b2653b18bcd46265c01ef0aa2a54ff5",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T22:17:24.705710+00:00"
+  },
+  "sourceProofs": [
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": true,
+      "raw": "firebase-iphone16pro-study-S1-block0-2026-10-02.json",
+      "sourceProof": "firebase-iphone16pro-study-S1-block0-source.json",
+      "sourceProofSHA256": "e7d0abf4a304e77b1349786977973890f25c767aef8348b6db3db4960718a1be"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": false,
+      "raw": "firebase-iphone16pro-study-S1-block1-2026-10-02.json",
+      "sourceProof": "firebase-iphone16pro-study-S1-block1-source.json",
+      "sourceProofSHA256": "a6d6539e459ee291b8d2611e4c1a3601035a4ddc362dec3a10c28fd9352b0e63"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block0-attempt0-23393F8D-3BF9-4661-9BFC-4CF3BD666BAA.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block0-attempt0-23393F8D-3BF9-4661-9BFC-4CF3BD666BAA-source.json",
+      "sourceProofSHA256": "e9a57c77bb4a684f588aca1ea81370c41de03b33ab3c3a766a2b2ae10145062c"
+    },
+    {
+      "attempt": 1,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": false,
+      "raw": "iPhone17,3-study-S1-stable-facts-block0-attempt1-B85D844F-548C-4F50-A327-9E7D04034BED.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block0-attempt1-B85D844F-548C-4F50-A327-9E7D04034BED-source.json",
+      "sourceProofSHA256": "23fdf3fe1ce99287ec1dd12d53f7a01e64345901d9c2b81ab098c652fd006809"
+    },
+    {
+      "attempt": 2,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block0-attempt2-A7F14333-40E0-4A9F-87AC-C799C1DA2D85.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block0-attempt2-A7F14333-40E0-4A9F-87AC-C799C1DA2D85-source.json",
+      "sourceProofSHA256": "1488ea3007d10ddf7de4bf8abfdad326dad389ce42ab96dbad3794bedb99f6fa"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block1-attempt0-65171B1F-9537-4696-933F-2630A031787A.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block1-attempt0-65171B1F-9537-4696-933F-2630A031787A-source.json",
+      "sourceProofSHA256": "1f24b327131f9a4d96cb208c540568ab1da7d0bb8584c65a8f722ced4cb064a2"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block1-attempt0-AF907B2C-425F-4FC1-9C1E-79479EBAEE12.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block1-attempt0-AF907B2C-425F-4FC1-9C1E-79479EBAEE12-source.json",
+      "sourceProofSHA256": "167490e595e2487f43fe20d17bb464ca29cd1dde715ed7c3937094f071602c26"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block2-attempt0-6AFE8E7F-D948-41BE-9CFC-9C4489694088.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block2-attempt0-6AFE8E7F-D948-41BE-9CFC-9C4489694088-source.json",
+      "sourceProofSHA256": "867224236ae87e49291fe8f5426b3765b916d0bc34ffa71f42123d814f7fde3d"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block2-attempt0-E4B873E1-44FA-4028-B4B5-D3CA068E5576.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block2-attempt0-E4B873E1-44FA-4028-B4B5-D3CA068E5576-source.json",
+      "sourceProofSHA256": "efe354a9a6c744b11054591e481a9c9bfde448019c30ed3fd2f039acd54bbcb3"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block3-attempt0-05063A52-BF85-4B15-95B3-4E565DD4F4B9.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block3-attempt0-05063A52-BF85-4B15-95B3-4E565DD4F4B9-source.json",
+      "sourceProofSHA256": "0bc3d66af933daa183eb04af5d3b116ad329cb8efc9b5720722729a09d1a6f21"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block3-attempt0-B8144ECB-EEA9-4E45-9C06-24517FE55687.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block3-attempt0-B8144ECB-EEA9-4E45-9C06-24517FE55687-source.json",
+      "sourceProofSHA256": "23980d063a80f88a372b51795e72576e2ac43ebd8acb51b1c36345ff48adcc27"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block4-attempt0-1E6E871D-41BE-45B5-A7D2-BD03D906340A.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block4-attempt0-1E6E871D-41BE-45B5-A7D2-BD03D906340A-source.json",
+      "sourceProofSHA256": "639b424605859d1bc4251b9b1babcf5a353398073b336b2bfd76d4499cef5bbb"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block4-attempt0-DFF38525-E2CD-4E9A-90AD-5D6B1BD2B3CF.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block4-attempt0-DFF38525-E2CD-4E9A-90AD-5D6B1BD2B3CF-source.json",
+      "sourceProofSHA256": "e9b9ba09e4db50a3c021a3fa37b7c92d98e29f1839850b32ffb565df3cac9e88"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block5-attempt0-A13C0A65-CC12-4ED7-A168-C002ACBE3432.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block5-attempt0-A13C0A65-CC12-4ED7-A168-C002ACBE3432-source.json",
+      "sourceProofSHA256": "8ae79ae30c88fe356ef2acf22e53906d254ea7614e50c9f844de699e42517aa9"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block0-attempt0-28705138-1426-4292-ABE1-A83E58D5C5B5.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block0-attempt0-28705138-1426-4292-ABE1-A83E58D5C5B5-source.json",
+      "sourceProofSHA256": "b2e2f6bcd36628da038dea4af2e268036829d82bc61d3e3b42a8ccdd674f574f"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80",
+      "completed": true,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block0-attempt0-4FDFD0E0-3E1E-4348-A043-3937AB2B4568.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block0-attempt0-4FDFD0E0-3E1E-4348-A043-3937AB2B4568-source.json",
+      "sourceProofSHA256": "99144b8d6df11e34ece77f4b922c98b7b9524ce536882fe3a3a8f3b6ddec1d2d"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block1-attempt0-3A247D7B-F63E-4CBE-AB29-27BF1D9B1E6D.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block1-attempt0-3A247D7B-F63E-4CBE-AB29-27BF1D9B1E6D-source.json",
+      "sourceProofSHA256": "41b613e7dde13d5b8acb4dc54dd39e5f84b198ea7a187cada25a9398743e59f1"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80",
+      "completed": false,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block1-attempt0-AD099C32-57D7-4F33-92FE-3E1126840F5A.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block1-attempt0-AD099C32-57D7-4F33-92FE-3E1126840F5A-source.json",
+      "sourceProofSHA256": "79964bb4cab4ca0b613e41e2835740419349dd8dd13e079839db464526fb0e7c"
+    },
+    {
+      "attempt": 1,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": true,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block1-attempt1-1E6C480A-16E1-4124-8543-76385B2636BB.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block1-attempt1-1E6C480A-16E1-4124-8543-76385B2636BB-source.json",
+      "sourceProofSHA256": "37279aa82bb5ba929e4d50b8b0aaee6976bfb960e730590992eec8bf2da6e6b9"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block2-attempt0-60FEC251-9772-446B-9F07-C210508DAD49.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block2-attempt0-60FEC251-9772-446B-9F07-C210508DAD49-source.json",
+      "sourceProofSHA256": "7e12065bfbb7ef9869a46cf6da1baeb8ded200e5bf6ff74d1272016e965f8280"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": false,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block2-attempt0-F1E9068C-C2FB-4311-AF17-82D2E7D3830C.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block2-attempt0-F1E9068C-C2FB-4311-AF17-82D2E7D3830C-source.json",
+      "sourceProofSHA256": "5be99877e9c7e0e9aaae679ee165ade25d955230b68884d518147d4f571ca5e3"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": true,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block3-attempt0-4956E41F-C4D1-471F-9CA6-2FCC7D2CC175.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block3-attempt0-4956E41F-C4D1-471F-9CA6-2FCC7D2CC175-source.json",
+      "sourceProofSHA256": "91183c509fd905031af05774226edfd28a3219cc894e4965f2bbb5e28fb3bf8c"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block3-attempt0-E61886BA-4EA6-4F9A-942C-3855FCA59A35.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block3-attempt0-E61886BA-4EA6-4F9A-942C-3855FCA59A35-source.json",
+      "sourceProofSHA256": "4b227a6b1874c05d714fceee50b344998581387ed3271e449a859ab147016f27"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": true,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block4-attempt0-06853FAA-E68F-4B19-89F6-F93D2A592148.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block4-attempt0-06853FAA-E68F-4B19-89F6-F93D2A592148-source.json",
+      "sourceProofSHA256": "4170a85913582fd1a73f54c53d48841c536076bd92439c9c99c1c2ebce9b4ef7"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block4-attempt0-48159A7B-2241-48D5-9BEE-6FC77B9E57B3.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block4-attempt0-48159A7B-2241-48D5-9BEE-6FC77B9E57B3-source.json",
+      "sourceProofSHA256": "ce10f4f4693cc27193bc011d158443bffc97e1a0197c55ce8b1a18af6d5c1310"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": false,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block5-attempt0-05FEFD60-5228-4172-B1DD-57A230A4AE1C.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block5-attempt0-05FEFD60-5228-4172-B1DD-57A230A4AE1C-source.json",
+      "sourceProofSHA256": "6a0bd32651a709592994f2dfa110b6ff4b2979a0874686ada79ccbc9462344b1"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": true,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block6-attempt0-73EED75C-9890-431E-B521-7F6DAAF765F5.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block6-attempt0-73EED75C-9890-431E-B521-7F6DAAF765F5-source.json",
+      "sourceProofSHA256": "de476df20c084591731650c24d980298b436e5cc1a455cabff76b181b65889b8"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": true,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block7-attempt0-C0C83DCA-88F3-45C0-8880-4B7B7C8079FA.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block7-attempt0-C0C83DCA-88F3-45C0-8880-4B7B7C8079FA-source.json",
+      "sourceProofSHA256": "6fb47ea536c1f2ca24ef3698c5af664971e368f6e7f3921a75cccf92cee9aa2e"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S3-interruption-recovery-block0-attempt0-6EAD9A09-2C69-43FD-B96E-C57B9CB7695F.json",
+      "sourceProof": "iPhone17,3-study-S3-interruption-recovery-block0-attempt0-6EAD9A09-2C69-43FD-B96E-C57B9CB7695F-source.json",
+      "sourceProofSHA256": "2e2bc1e2b82319a4e1701275b1cae83c329a151beee3cc7b849e46606d4c81cc"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": true,
+      "raw": "iPhone17,3-study-S3-interruption-recovery-block1-attempt0-D4C6D5DD-E25F-458F-BFBA-0B024E5BA9A0.json",
+      "sourceProof": "iPhone17,3-study-S3-interruption-recovery-block1-attempt0-D4C6D5DD-E25F-458F-BFBA-0B024E5BA9A0-source.json",
+      "sourceProofSHA256": "fc17ec329153a33a5acd974c0eaa8d250b925482cab85411710d20bfa2ef6e78"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S3-interruption-recovery-block1-attempt0-E79879FE-2F33-4257-82ED-EFA4DD20023B.json",
+      "sourceProof": "iPhone17,3-study-S3-interruption-recovery-block1-attempt0-E79879FE-2F33-4257-82ED-EFA4DD20023B-source.json",
+      "sourceProofSHA256": "f4f69eb20777f6634154f2650fc5cd8004efb28eb6b8cd9746f4ec7115ce87b0"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": true,
+      "raw": "iPhone17,3-study-S3-interruption-recovery-block2-attempt0-C65FB68A-8E0C-4517-A021-EB42B5E4D31B.json",
+      "sourceProof": "iPhone17,3-study-S3-interruption-recovery-block2-attempt0-C65FB68A-8E0C-4517-A021-EB42B5E4D31B-source.json",
+      "sourceProofSHA256": "5bc72066345723cd9a232c9e348749a7002c395d4b8d58d37acdea81e1565c06"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S3-interruption-recovery-block2-attempt0-CDA98964-4948-4EFE-B6F8-116F8AC514FC.json",
+      "sourceProof": "iPhone17,3-study-S3-interruption-recovery-block2-attempt0-CDA98964-4948-4EFE-B6F8-116F8AC514FC-source.json",
+      "sourceProofSHA256": "19a4a51170d71dd0367ec5f05027f3bd0ff1e617280dc5a0a47101a75948c898"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S3-interruption-recovery-block3-attempt0-1D120424-8190-46BF-8402-E0B5D3D056AA.json",
+      "sourceProof": "iPhone17,3-study-S3-interruption-recovery-block3-attempt0-1D120424-8190-46BF-8402-E0B5D3D056AA-source.json",
+      "sourceProofSHA256": "50f1a50bab71314ab629e53c71c7bedb51b7cb267293ce71435be1c64d3ee749"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": false,
+      "raw": "iPhone17,3-study-S3-interruption-recovery-block3-attempt0-90D4FC1B-B6A1-4338-95A4-DD13A52B241C.json",
+      "sourceProof": "iPhone17,3-study-S3-interruption-recovery-block3-attempt0-90D4FC1B-B6A1-4338-95A4-DD13A52B241C-source.json",
+      "sourceProofSHA256": "d32709401dc437e8b1b03247272d57f1db79ffaa3e118b176f4160d66a076893"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "eeb7f69e96c8129f7cbd20688d5ef56c1f196f827d2d107851fa9e469a8a5336",
+      "completed": true,
+      "raw": "iPhone17,3-study-S3-interruption-recovery-block4-attempt0-4764A208-8A69-4C96-A269-7F31992CF209.json",
+      "sourceProof": "iPhone17,3-study-S3-interruption-recovery-block4-attempt0-4764A208-8A69-4C96-A269-7F31992CF209-source.json",
+      "sourceProofSHA256": "702488cfdfbd50ed1a530719f25511ce7c8dcea7a9d043c6ca0bdb3854d4feba"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": true,
+      "raw": "iPhone17,3-study-S3-interruption-recovery-block4-attempt0-BD1C4111-96FA-4FF9-8E8E-117A3F0420E8.json",
+      "sourceProof": "iPhone17,3-study-S3-interruption-recovery-block4-attempt0-BD1C4111-96FA-4FF9-8E8E-117A3F0420E8-source.json",
+      "sourceProofSHA256": "ce24e7d2f20c0923526ce82feed28836cdcf7dd18b41686ca5cc0524b00c7130"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "3bb607d181de3617357ea6e7ece2c8696a770f90b230b6741185a986a1f0d95a",
+      "completed": true,
+      "raw": "iPhone17,3-study-S3-interruption-recovery-block5-attempt0-D38EBA7D-9D20-4A94-8A8A-64F27442B25E.json",
+      "sourceProof": "iPhone17,3-study-S3-interruption-recovery-block5-attempt0-D38EBA7D-9D20-4A94-8A8A-64F27442B25E-source.json",
+      "sourceProofSHA256": "d4db3711e08c33496582f9133916e20df99bcd4b38d2376da0277f310b2c2d09"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "5e30ac6d2858261dfeb245a0e0b133567e91d7312094a495ee4914b0174f2a80",
+      "completed": true,
+      "raw": "iphone16-study-S3-block0-2026-10-02.json",
+      "sourceProof": "iphone16-study-S3-block0-source.json",
+      "sourceProofSHA256": "7f732df99d09008bee800101fb3b26c9f4b2e22a9c7be92f943406020cb742f7"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "60ed45678b6ab518b46db1ba9a252eed7aa1c554082bab8b17dffbe44256ba38",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block0-attempt0-BFECCBE7-1F98-48F9-89EF-4B30EF3CBFF9.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block0-attempt0-BFECCBE7-1F98-48F9-89EF-4B30EF3CBFF9-source.json",
+      "sourceProofSHA256": "2572512b5a3a13c20b622cbd6f79309e4a8ceb23ab1791ec4bce45210f77a5e0"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "60ed45678b6ab518b46db1ba9a252eed7aa1c554082bab8b17dffbe44256ba38",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block1-attempt0-0EEF0F19-885C-4821-9291-70B7E1DF0247.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block1-attempt0-0EEF0F19-885C-4821-9291-70B7E1DF0247-source.json",
+      "sourceProofSHA256": "095908b69aa7c4997a185558601175b8a03cd58d4a93cad1a1dd8403f400caaa"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "60ed45678b6ab518b46db1ba9a252eed7aa1c554082bab8b17dffbe44256ba38",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block2-attempt0-5BF7C23B-D836-4A9C-BE19-540E13E20124.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block2-attempt0-5BF7C23B-D836-4A9C-BE19-540E13E20124-source.json",
+      "sourceProofSHA256": "98c0e4afc7a934bb87366b8008e972d3f98e54b5f3b352560b099b0c30ccbfe5"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "60ed45678b6ab518b46db1ba9a252eed7aa1c554082bab8b17dffbe44256ba38",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block3-attempt0-7794D995-C53F-47D9-B50D-4A25DA6EB6B2.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block3-attempt0-7794D995-C53F-47D9-B50D-4A25DA6EB6B2-source.json",
+      "sourceProofSHA256": "67c40f0a9dc4a92b6c53ec7988368cb3f66ed048ed7b575584f7fc091a8112f8"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "60ed45678b6ab518b46db1ba9a252eed7aa1c554082bab8b17dffbe44256ba38",
+      "completed": true,
+      "raw": "iPhone17,1-study-S1-stable-facts-coreml-block0-attempt0-B662ED1B-0A69-42AA-88D5-FF81BA36A73C.json",
+      "sourceProof": "iPhone17,1-study-S1-stable-facts-coreml-block0-attempt0-B662ED1B-0A69-42AA-88D5-FF81BA36A73C-source.json",
+      "sourceProofSHA256": "6fc36ec0d8c2175337b286a19af3c0400d28b68d5976b3d52e5a748eddc32229"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "60ed45678b6ab518b46db1ba9a252eed7aa1c554082bab8b17dffbe44256ba38",
+      "completed": true,
+      "raw": "iPhone17,3-study-S1-stable-facts-block4-attempt0-6B62564D-63DE-45C9-BC3C-245EED0065DE.json",
+      "sourceProof": "iPhone17,3-study-S1-stable-facts-block4-attempt0-6B62564D-63DE-45C9-BC3C-245EED0065DE-source.json",
+      "sourceProofSHA256": "c2eb21dc047a637254a0958d56fc5f944111b3e2e8bf482f0242039a58f9aa9a"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "b5e71b31a645e32f073ae14a2c560478ea284e7362caadda97cc249430033953",
+      "completed": true,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block0-attempt0-2FCB7C5E-FCE2-4377-A086-F84C58AED8DB.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block0-attempt0-2FCB7C5E-FCE2-4377-A086-F84C58AED8DB-source.json",
+      "sourceProofSHA256": "e134d50203fcaa0a759d67dad570fd361bdc3b37d980a26aef16963fa490d2a7"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "b5e71b31a645e32f073ae14a2c560478ea284e7362caadda97cc249430033953",
+      "completed": true,
+      "raw": "iPhone17,3-study-S2-workshop-corrections-block1-attempt0-7EF08BAB-BE5F-488A-87C9-E14E53752C75.json",
+      "sourceProof": "iPhone17,3-study-S2-workshop-corrections-block1-attempt0-7EF08BAB-BE5F-488A-87C9-E14E53752C75-source.json",
+      "sourceProofSHA256": "7417d08553f4d1ba89e699c54c860266ac67d988d93760b2a01ae5cdcc14647b"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "60ed45678b6ab518b46db1ba9a252eed7aa1c554082bab8b17dffbe44256ba38",
+      "completed": true,
+      "raw": "iPhone17,1-study-S1-stable-facts-coreml-block1-attempt0-249C4BF5-2DE7-4BE7-BA78-19345869F326.json",
+      "sourceProof": "iPhone17,1-study-S1-stable-facts-coreml-block1-attempt0-249C4BF5-2DE7-4BE7-BA78-19345869F326-source.json",
+      "sourceProofSHA256": "ceb005fd33d337eb5af5c5c63b3294c7569e2fa2220677edd82015b625ed5b0f"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "60ed45678b6ab518b46db1ba9a252eed7aa1c554082bab8b17dffbe44256ba38",
+      "completed": true,
+      "raw": "iPhone17,1-study-S1-stable-facts-coreml-block2-attempt0-726F2E29-A5E8-44C1-80D1-6F9F15956233.json",
+      "sourceProof": "iPhone17,1-study-S1-stable-facts-coreml-block2-attempt0-726F2E29-A5E8-44C1-80D1-6F9F15956233-source.json",
+      "sourceProofSHA256": "a5afccfe21e3cdb2616521038ae024300dce9aec29cdc6ddf940b13aefa0a732"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "60ed45678b6ab518b46db1ba9a252eed7aa1c554082bab8b17dffbe44256ba38",
+      "completed": true,
+      "raw": "iPhone17,1-study-S1-stable-facts-coreml-block3-attempt0-5E7BD3F7-1CB6-4268-8170-E771E1B5850F.json",
+      "sourceProof": "iPhone17,1-study-S1-stable-facts-coreml-block3-attempt0-5E7BD3F7-1CB6-4268-8170-E771E1B5850F-source.json",
+      "sourceProofSHA256": "6201f3debf2dea59d308b60b6e58ead5a5a45e6a93297d66e24d7f31b9b1999b"
+    },
+    {
+      "attempt": 0,
+      "buildCohortSHA256": "60ed45678b6ab518b46db1ba9a252eed7aa1c554082bab8b17dffbe44256ba38",
+      "completed": true,
+      "raw": "iPhone17,1-study-S1-stable-facts-coreml-block4-attempt0-C606F89B-33D7-40D1-B8EE-F6FD381CCBF6.json",
+      "sourceProof": "iPhone17,1-study-S1-stable-facts-coreml-block4-attempt0-C606F89B-33D7-40D1-B8EE-F6FD381CCBF6-source.json",
+      "sourceProofSHA256": "123fadfd84fe09de7947763a0e1b2ca304d3b4ddee747275a831cb8d8aab41fe"
+    }
+  ],
+  "sourcesWithUnknownRawBinding": [],
+  "status": "strict-build-cohort-audit-confirmed-by-schema5-analysis-ledger-and-host-controls",
+  "strictMatchingBuildCells": 9
+}

@@ -1,0 +1,68 @@
+{
+  "actualCloudRefusal": "iPhone17,1 / Version 18.3.2 (Build 22D82): only 4/5 complete primary blocks.",
+  "actualLocalFigureAssets": [
+    {
+      "bytes": 89260,
+      "file": "ios/Benchmark/.build/figure-cohort-validation-20261007/first/ios-study-S1-executorch-core-ml-device-cohorts-c68591fac1cb.png",
+      "sha256": "784467b951f7f0592e23a72318b26dfb5bb10a7c616b2393ad3a8a797d6a4051"
+    },
+    {
+      "bytes": 17358,
+      "file": "ios/Benchmark/.build/figure-cohort-validation-20261007/first/ios-study-S1-executorch-core-ml-device-cohorts-c68591fac1cb.svg",
+      "sha256": "5ba9465bd9a268a5f0407ecef90501504ffc0915eba3c0b3e8f753b72209900f"
+    },
+    {
+      "bytes": 16831,
+      "file": "ios/Benchmark/.build/figure-cohort-validation-20261007/first/ios-study-S1-executorch-core-ml-device-cohorts-c68591fac1cb.pdf",
+      "sha256": "650ed43bac26a2cc3b56d913693c3565ae9d94ff57e135b7bf6e4bf266d20dd5"
+    },
+    {
+      "bytes": 18369,
+      "file": "ios/Benchmark/.build/figure-cohort-validation-20261007/first/ios-study-S1-executorch-core-ml-device-cohorts-c68591fac1cb.json",
+      "sha256": "d96f9f872dcf940fd9b42eca49be57d2315534e1fa628678e25c0897d253d02c"
+    }
+  ],
+  "allFourOutputsReproduceByteForByte": true,
+  "analysis": "ios/Benchmark/Results/study-analysis-coreml-S2-two-cloud-S1-four-v3-2026-10-07.json",
+  "analysisSHA256": "8b0f3e09639d6e9288cfa32ca22c780259728adda897ca30cd7ddd172c6a3f2d",
+  "archive": {
+    "bytes": 934874,
+    "file": "device-cohort-figure-controls-20261007-proof.zip",
+    "members": 75,
+    "sha256": "09fdf0a65015710b6c1d0ae161078ba128b53466f4bfef0ed251645d7124da9c"
+  },
+  "limits": [
+    "Only the existing five-block local CoreML S1 cohort is rendered. This adds no native execution or completed study cell.",
+    "The matching cloud cohort has four blocks and is deliberately not rendered as replicated. Recheck native block4 before generating a two-device comparison.",
+    "Legacy pinned plotting virtualenv was reused for host rendering. New figure source and outputs belong to the separate iOS repo.",
+    "Existing historical figures and plot_study.py are unchanged. Cohort observations do not isolate hardware, general quality, energy or Neural Engine placement."
+  ],
+  "priorLayoutEvidenceRetained": "ios/Benchmark/.build/figure-cohort-validation-20261007/verification-before-layout-fix.json",
+  "privateArchive": {
+    "bytes": 934874,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/device-cohort-figure-controls-20261007-proof.zip",
+    "remotePath": "packages/09fdf0a65015710b6c1d0ae161078ba128b53466f4bfef0ed251645d7124da9c/device-cohort-figure-controls-20261007-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/09fdf0a65015710b6c1d0ae161078ba128b53466f4bfef0ed251645d7124da9c/device-cohort-figure-controls-20261007-proof.zip",
+    "sha256": "09fdf0a65015710b6c1d0ae161078ba128b53466f4bfef0ed251645d7124da9c",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T21:19:43.984488+00:00"
+  },
+  "recordedAtUTC": "2026-10-06T21:15:30.230303+00:00",
+  "refusedCloudOutputDirectoryNotCreated": true,
+  "schemaVersion": 1,
+  "source": {
+    "file": "ios/Benchmark/Study/plot_device_cohorts.py",
+    "sha256": "762e3a30413adb1fbe1afd9d0b098443122abb13e46ec8e5d75e9da02750c931"
+  },
+  "status": "nine-host-controls-pass-actual-local-five-block-figure-reproduces-cloud-four-block-figure-refused",
+  "tests": {
+    "file": "ios/Benchmark/Study/test_plot_device_cohorts.py",
+    "log": "ios/Benchmark/.build/figure-cohort-validation-20261007/controls.log",
+    "logSHA256": "ccd68a424ff23277251a01c4c20a3ca2c24cbe5f519437a4f77963605875f62e",
+    "passed": 9,
+    "sha256": "40f6af3f9878a612e127b17d2ca7bd82560575db18483aaa443747b7183bab53"
+  },
+  "visualReviewStatus": "Corrected PNG inspected. All three markers and intervals have axis margin, footprint label wraps, and cohort/OS/count/limitations remain readable."
+}

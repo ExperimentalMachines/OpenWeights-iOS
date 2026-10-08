@@ -1,0 +1,12 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 6733464,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-coreml-S1-block2-matrix-1jgc3mvu4dnif-proof.zip",
+      "sha256": "46957740b207cd62ac1d5abd495bb750334db147eb9b0fe94b4a64b81df5978a"
+    }
+  ],
+  "purpose": "Retain the full completed native block2 proof including all provider objects, sources, raw reports, reproduced analysis/report, collector controls and explicit receipt-binding correction. Active input packages are excluded.",
+  "schemaVersion": 1
+}

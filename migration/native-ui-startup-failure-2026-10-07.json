@@ -1,0 +1,26 @@
+{
+  "archive": {
+    "bytes": 2289228,
+    "file": "native-ui-navigation-20261006T182831Z-proof.zip",
+    "members": 446,
+    "sha256": "56e6f60e38ad71b0cd78017f8099f64a5889a887ae59181bb6a93ea1ebbfcfa1"
+  },
+  "details": {
+    "methodsStarted": 0,
+    "passingParityEvidence": false,
+    "reason": "Timed out while enabling automation mode.",
+    "runnerInitializationFailed": true,
+    "selectedMethods": 3
+  },
+  "execution": "ios/Product/Results/native-ui-navigation-20261006T182831Z-execution.json",
+  "executionSHA256": "a2a93bfdfe5345f95539759ac1a427a9d957361fa033f2af31cc82ec3fcb4a0a",
+  "kind": "ui-startup-failure",
+  "limits": [
+    "Private evidence includes native device diagnostics. Do not publish without review.",
+    "Signed products remain active locally, identified by receipt hashes.",
+    "This scoped proof does not establish full A1-A3 completion."
+  ],
+  "recordedAtUTC": "2026-10-06T18:38:38.070804+00:00",
+  "schemaVersion": 1,
+  "status": "retained-execution-and-member-manifest-verified"
+}

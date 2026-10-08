@@ -1,0 +1,12 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "directories": [
+    {
+      "localRelativePath": "openweights-ios/ios/Product/.build/fetch-compatibility-harness-build",
+      "logicalBytes": 220775894,
+      "reason": "Completed host decoder reference run. No native executable, active model or active toolchain."
+    }
+  ],
+  "recordedAtUTC": "2026-10-06T22:37:41.046304+00:00",
+  "schemaVersion": 1
+}

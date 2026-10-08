@@ -1,0 +1,11 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 1006326,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/study-source-build-cohort-correction-20261007-proof.zip"
+    }
+  ],
+  "purpose": "Freeze exact51raw/source proofs, superseded/current analysis, corrected ledger/report,58controls and reproduced four S1 figure assets. Retain privately before local proof ZIP eviction. Active SE package/build/models/toolchains stay local.",
+  "schemaVersion": 1
+}

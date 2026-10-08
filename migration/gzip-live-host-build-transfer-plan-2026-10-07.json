@@ -1,0 +1,17 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "capacityObservation": {
+    "bucketBytes": 14906561454,
+    "bucketFiles": 184,
+    "private": true,
+    "quotaRemainingKnown": false
+  },
+  "directories": [
+    {
+      "localRelativePath": "openweights-ios/ios/Product/.build/gzip-live-harness-build",
+      "logicalBytes": 223328024
+    }
+  ],
+  "purpose": "Archive only the completed inactive live-gzip Mac build after exact-source and actual live-response verification. Preserve active signed products, current SE input, shared module cache, models and toolchain.",
+  "schemaVersion": 1
+}

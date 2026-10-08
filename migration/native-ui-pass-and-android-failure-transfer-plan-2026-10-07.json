@@ -1,0 +1,14 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 10156394,
+      "localRelativePath": "openweights-ios/ios/Product/Results/native-ui-navigation-20261006T183852Z-proof.zip"
+    },
+    {
+      "bytes": 79382,
+      "localRelativePath": "openweights-ios/ios/Product/Results/android-shared-engine-regression-20261006T183951Z-failure-proof.zip"
+    }
+  ],
+  "schemaVersion": 1
+}

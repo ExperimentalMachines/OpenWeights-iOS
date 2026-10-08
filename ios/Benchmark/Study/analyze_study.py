@@ -58,6 +58,9 @@ def formatting(turn, output):
         return False
 
 
+from build_cohort import source_cohort
+
+
 def analyze(paths, minimum):
     cells = defaultdict(lambda: defaultdict(list))
     sources, failures, seen = [], [], set()
@@ -70,7 +73,8 @@ def analyze(paths, minimum):
         if run_id in seen:
             raise ValueError(f'Duplicate runID would inflate replication: {run_id}')
         seen.add(run_id)
-        sources.append({'file': path.name, 'sha256': hashlib.sha256(raw).hexdigest(), 'runID': run_id})
+        cohort = source_cohort(path, raw)
+        sources.append({'file': path.name, 'sha256': hashlib.sha256(raw).hexdigest(), 'runID': run_id, **cohort})
         if not report['completed'] and not report['rows']:
             failed_reports.append({'runID': run_id, 'device': report['device'], 'operatingSystem': report['operatingSystem'], 'reason': 'Report ended before an adapter row was recorded'})
         for row in report['rows']:
@@ -78,7 +82,9 @@ def analyze(paths, minimum):
                         'engine': row['engine'], 'artifactID': row['artifact']['id'],
                         'artifactHashes': {f['file']: f['sha256'] for f in row['artifact']['files']},
                         'runtimeVersions': report['runtimeVersions'], 'contextTokens': report['contextTokens'],
-                        'maxOutputTokens': report['maxOutputTokens']}
+                        'maxOutputTokens': report['maxOutputTokens'],
+                        'buildCohortSHA256': cohort['buildCohortSHA256'],
+                        'protocolID': (report.get('study') or {}).get('protocolID')}
             study = report.get('study')
             if study:
                 block_key = json.dumps([identity, study['scenario'], study['block']], sort_keys=True)
@@ -147,21 +153,27 @@ def analyze(paths, minimum):
         cell = json.loads(key)
         cell.update(independentReports=len(values), fullyCompletedReports=sum(v['adapterComplete'] and v['reportCompleted'] for v in values), metrics={})
         for name in ['loadMs', 'loadPeakFootprintBytes']:
-            numbers = [v[name] for v in values if v[name] is not None]
+            # A failed initializer leaves these fields at zero. That is not a
+            # measured instantaneous load or zero process footprint.
+            numbers = [v[name] for v in values if v[name] is not None and v[name] > 0]
             if numbers: cell['metrics'][name] = summary(numbers)
+        cell['unmeasuredLoadMetrics'] = {name: sum(v[name] is None or v[name] <= 0 for v in values)
+                                       for name in ['loadMs', 'loadPeakFootprintBytes']}
         load_cells.append(cell)
-    return {'schemaVersion': 3, 'gradingVersion': 3, 'status': 'analysis-only-study-completion-unverified',
+    return {'schemaVersion': 5, 'gradingVersion': 3, 'status': 'analysis-only-study-completion-unverified',
             'minimumIndependentBlocksPerCell': minimum, 'sources': sources, 'cells': output,
             'loadCells': load_cells, 'failedRows': failures, 'failedReports': failed_reports, 'retryRows': retry_rows, 'notes': [
                 'Expected-text facts accept exact values, a dietary-rule prefix, a diet suffix and final punctuation. The original combined exact-output check remains strictProbeSuccess.',
                 'Grading version 3 separates structural formatting from correct facts. The old combined answer check remains strictProbeSuccess.',
                 'Format-only grading checks an unwrapped JSON object with required keys, a single alphabetic diet word, or an integer budget. It does not require the correct value.',
                 'Within-report repetitions are collapsed to a median before between-report statistics.',
-                'Artifact hashes, runtime versions and OS remain separate cells.',
+                'Artifact hashes, runtime versions, exact retained source/build fingerprints, protocol ID and OS remain separate cells.',
                 'Explicit retries are retained separately and do not inflate primary replication. Duplicate primary block IDs are rejected.',
                 'Reset-after-interruption policy is derived from the recorded workload interruption turn and the runner reset contract.',
                 'Failures and partial reports remain evidence. Missing planned cells require the execution ledger.',
                 'Fully completed counts and complete-report sensitivity metrics exclude partial blocks without discarding their recorded measurements.',
+                'Analysis schema 4 excludes zero or missing unmeasured load defaults from load distributions and reports their counts. Actual positive load measurements survive later generation failures. Factual and format grading remain version 3.',
+                'Analysis schema 5 requires a raw-hash-bound source proof for every input and prevents different source maps, executable maps or compile toolchains from pooling replication or distributions.',
                 'Analysis alone does not prove the planned device/scenario matrix or product parity.']}
 
 

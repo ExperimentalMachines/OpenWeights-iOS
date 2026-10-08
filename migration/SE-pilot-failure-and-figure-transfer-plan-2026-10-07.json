@@ -1,0 +1,19 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 934874,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/device-cohort-figure-controls-20261007-proof.zip"
+    },
+    {
+      "bytes": 820093,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-SE3-baseline-pilot-matrix-2jipxlz5aijb0-failure-proof.zip"
+    },
+    {
+      "bytes": 93521668,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/OpenWeightsBench-SE3-baseline-pilot-20261007.zip"
+    }
+  ],
+  "purpose": "Retain the completed SE acquisition failure and exact inactive submitted package, plus source-bound figure controls and all50 frozen raw inputs. Active current baseline build and Pro block4 package remain local.",
+  "schemaVersion": 1
+}

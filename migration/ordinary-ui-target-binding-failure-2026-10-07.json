@@ -1,0 +1,21 @@
+{
+  "archive": {
+    "bytes": 2388763,
+    "file": "ordinary-ui-target-binding-failure-2026-10-07.zip",
+    "sha256": "5c2cbff76a75e18051ffd5dd0c39566b6bd64c17ccf2d2a2fa702164a8cda56c"
+  },
+  "privateArchive": {
+    "bytes": 2388763,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Product/Results/ordinary-ui-target-binding-failure-2026-10-07.zip",
+    "remotePath": "packages/5c2cbff76a75e18051ffd5dd0c39566b6bd64c17ccf2d2a2fa702164a8cda56c/ordinary-ui-target-binding-failure-2026-10-07.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/5c2cbff76a75e18051ffd5dd0c39566b6bd64c17ccf2d2a2fa702164a8cda56c/ordinary-ui-target-binding-failure-2026-10-07.zip",
+    "sha256": "5c2cbff76a75e18051ffd5dd0c39566b6bd64c17ccf2d2a2fa702164a8cda56c",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T19:29:51.714600+00:00"
+  },
+  "reason": "Generated UI test Info.plist omitted the arbitrary target identifier build setting. No test method executed.",
+  "sourceInputs": 408,
+  "status": "build-succeeded-post-build-target-check-rejected-before-execution"
+}

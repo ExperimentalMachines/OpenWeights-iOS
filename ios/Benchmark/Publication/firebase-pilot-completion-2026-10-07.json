@@ -1,0 +1,102 @@
+{
+  "actualIOS": "18.3.2",
+  "actualOSBuild": "22D82",
+  "catalogDevice": "iphone16pro",
+  "catalogIOS": "18.3",
+  "conversations": 2,
+  "distinctPhysicalDevices": true,
+  "factualProbesCorrect": 6,
+  "largeProviderEvidenceRemovedBytes": 38806473,
+  "localValidation": "../firebase-lfm-local-validation-20261007-attempt0/local-validation.json",
+  "model": "lfm2.5-1.2b-instruct",
+  "nominalSamples": 12,
+  "privateArchiveRemoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/0d80096bed916217faa444f3b67cacca76878abc8f9270fdbad980c7a6b7d251/firebase-lfm-pilot-20261007-attempt0-proof.zip",
+  "privateArchiveSHA256": "0d80096bed916217faa444f3b67cacca76878abc8f9270fdbad980c7a6b7d251",
+  "privateFreshDownloadSHA256AndZIPCRCVerified": true,
+  "protocol": "openweights-ios-publication-v1",
+  "publicPublication": "not authorized",
+  "records": [
+    {
+      "acquisition": {
+        "artifactID": "lfm2.5-1.2b-instruct",
+        "attempt": 1,
+        "elapsedMs": 49962.42375,
+        "file": "LFM2.5-1.2B-Instruct-Q4_K_M.gguf",
+        "outcome": "download-verified",
+        "receivedFileBytes": 730895168,
+        "responseHost": "us.aws.cdn.hf.co",
+        "sourceHost": "huggingface.co",
+        "statusCode": 200
+      },
+      "actualDevice": {
+        "architecture": "arm64e",
+        "deviceId": "00008140-000078360C08801C",
+        "deviceName": "iPhone",
+        "modelName": "iPhone 16 Pro",
+        "osBuildNumber": "22D82",
+        "osVersion": "18.3.2",
+        "platform": "iOS"
+      },
+      "matrixID": "matrix-ievukr6xoec7a",
+      "matrixOutcome": "SUCCESS",
+      "nativeOutcome": "Passed",
+      "observedBackend": "CPU|CPU:694",
+      "packageSHA256": "91b44999c482b3bc18f94de7318b8a62c4bf457e705f68cf3caae1be77aed22a",
+      "processIdentifier": 715,
+      "providerDownloadVerified": true,
+      "providerObjects": 37,
+      "rawReportSHA256": "857190dea1c55dbdbb0ae6c760f64403350cd974caafbc150f79c4f8ca21fa6e",
+      "resultsURL": "https://console.firebase.google.com/project/zeraphim-wealth-integration/testlab/histories/bh.3932635c5bf30a5c/matrices/5940828096034201070",
+      "runtime": "llama.cpp CPU",
+      "testProgress": [
+        "Starting attempt 1.",
+        "Done. Test time = 77 (secs)",
+        "Starting results processing. Attempt: 1",
+        "Completed results processing. Time taken = 3 (secs)"
+      ]
+    },
+    {
+      "acquisition": {
+        "artifactID": "lfm2.5-1.2b-instruct",
+        "attempt": 1,
+        "elapsedMs": 76174.929208,
+        "file": "LFM2.5-1.2B-Instruct-Q4_K_M.gguf",
+        "outcome": "download-verified",
+        "receivedFileBytes": 730895168,
+        "responseHost": "us.aws.cdn.hf.co",
+        "sourceHost": "huggingface.co",
+        "statusCode": 200
+      },
+      "actualDevice": {
+        "architecture": "arm64e",
+        "deviceId": "00008140-00180CD60A08801C",
+        "deviceName": "iPhone",
+        "modelName": "iPhone 16 Pro",
+        "osBuildNumber": "22D82",
+        "osVersion": "18.3.2",
+        "platform": "iOS"
+      },
+      "matrixID": "matrix-3f4oojzakmf5y",
+      "matrixOutcome": "SUCCESS",
+      "nativeOutcome": "Passed",
+      "observedBackend": "MTL0|MTL0:694|CPU:105",
+      "packageSHA256": "ed308c745ea2289538a854cadbb3e62f57ef116d727e7756ed070a7759f9f7ae",
+      "processIdentifier": 684,
+      "providerDownloadVerified": true,
+      "providerObjects": 37,
+      "rawReportSHA256": "ba06c830ebba63c8f3474caa3be2712966b05a6badb24797192bd973b98ed8d1",
+      "resultsURL": "https://console.firebase.google.com/project/zeraphim-wealth-integration/testlab/histories/bh.3932635c5bf30a5c/matrices/4657921138194092781",
+      "runtime": "llama.cpp Metal",
+      "testProgress": [
+        "Starting attempt 1.",
+        "Done. Test time = 94 (secs)",
+        "Starting results processing. Attempt: 1",
+        "Completed results processing. Time taken = 3 (secs)"
+      ]
+    }
+  ],
+  "requests": 12,
+  "scope": "One cloud repetition per backend validates delivery; does not replace the three-repetition study",
+  "status": "firebase-delivery-pilot-complete",
+  "strictProbesCorrect": 6
+}

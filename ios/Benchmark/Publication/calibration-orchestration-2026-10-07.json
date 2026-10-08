@@ -1,0 +1,15 @@
+{
+  "protocol": "openweights-ios-publication-v1",
+  "status": "orchestration-revision-before-five-model-data",
+  "priorFreeze": "protocol-freeze-2026-10-07.json",
+  "priorRunnerSHA256": "78362aa952c9fddb43ad396812767bd7f4da3c558b45e4b7ecb2ef33aaca8a01",
+  "runnerSHA256": "304a113ab19714685a3e275d2fa79d41e6ec90a961e09894f6d1c9cf75752190",
+  "unchangedMetricAndScoringAST": true,
+  "factualScorerSHA256": "61e2e5b05147b81c1e149694e3edf0580c65be4fa9655783a8ce50d6462cac11",
+  "changes": [
+    "First repetition across every configuration is calibration and remains final-batch evidence.",
+    "Cumulative measurement clock spans calibration and remaining repetitions.",
+    "Full-batch duration estimate is actual calibration time times three with 50 percent headroom. Exceeding budget blocks continuation."
+  ],
+  "hostControlsPassed": 21
+}

@@ -1,0 +1,17 @@
+{
+  "activatedWhenStarted": true,
+  "buildVerification": "migration/ordinary-namespace-native-verification-2026-10-07.json",
+  "bundleIdentifier": "org.experimentalmachines.openweights.ios",
+  "launchReceiptSHA256": "715c44df297d38941047ae5bdce28f06343a1271a8472b83f8022108ca5069a3",
+  "limits": [
+    "Local development device installation and launch only, not distribution or full parity."
+  ],
+  "matchingExecutable": "file:///private/var/containers/Bundle/Application/A0F3F839-5DA7-49B2-B990-52C5353C3286/OpenWeights.app/OpenWeights",
+  "processIdentifier": 70703,
+  "processQuerySHA256": "be52489bea6c6e3040046f8d60245bd931854845ce884d323099c9d2fe4d16ed",
+  "retainedScopedSnapshot": "ios/Product/Results/ordinary-app-restored-after-tests-2026-10-07.json",
+  "retainedScopedSnapshotSHA256": "5391fd1771204b2c23b98c6e49dfe5ebd2e0177550451b18fd816871ca0503d8",
+  "runningProcessConfirmed": true,
+  "schemaVersion": 1,
+  "status": "ordinary-development-app-installed-and-restored"
+}

@@ -1,0 +1,72 @@
+{
+  "acceptedLicenseID": "android-sdk-license",
+  "acceptedLicenseSHA1": "9002c006f4b8d9a16e715a9fa4df30ddb8abf9d9",
+  "additionalBuildTools": {
+    "command": [
+      "android",
+      "--no-metrics",
+      "--sdk=workspace/.benchmark-work/Android/sdk",
+      "sdk",
+      "install",
+      "build-tools;36.0.0"
+    ],
+    "exitCode": 0,
+    "licenseAlreadyApproved": true,
+    "licenseID": "android-sdk-license",
+    "officialBytes": 79121749,
+    "officialSHA1": "199ae0047ee61e842f8ee0c6d3918e44fb9a1f83",
+    "officialURL": "https://dl.google.com/android/repository/build-tools_r36_macosx.zip",
+    "reason": "Existing AGP build requires 36.0.0. First regression invocation failed before tests because it was absent.",
+    "sourceProperties": "Pkg.UserSrc=false\nPkg.Revision=36.0.0\n#Pkg.Revision=36.0.0 rc5",
+    "version": "36.0.0"
+  },
+  "authorization": {
+    "answer": "Approve license and installation",
+    "questionItemID": "call_UZkowgmITWd1tz7uRUL1OL66",
+    "recordedAtUTC": "2026-10-06T18:32:32.531146+00:00"
+  },
+  "bootstrapArchiveSHA256": "58da8f215781cc0208743e88b65ae259780c55e7eb40e50373d377cf369232d6",
+  "bootstrapOfficialSHA1Verified": true,
+  "command": [
+    "/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/.benchmark-work/Android/sdk/cmdline-tools/latest/bin/sdkmanager",
+    "--sdk_root=/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/.benchmark-work/Android/sdk",
+    "--install",
+    "platforms;android-37.0",
+    "build-tools;37.0.0",
+    "ndk;29.0.14206865",
+    "cmake;4.1.2"
+  ],
+  "completedAtUTC": "2026-10-06T18:37:48.464615+00:00",
+  "exitCode": 0,
+  "installed": {
+    "build-tools/37.0.0": {
+      "sourceProperties": "Pkg.UserSrc=false\nPkg.Revision=37.0.0\n",
+      "sourcePropertiesSHA256": "fbd87c8567afbc6dc78e140097fcde234f4a61fa7065e85081d43e442ccd3d24"
+    },
+    "cmake/4.1.2": {
+      "sourceProperties": "Pkg.Revision = 4.1.2\nPkg.Path = cmake;4.1.2\nPkg.Desc = CMake 4.1.2\n",
+      "sourcePropertiesSHA256": "e6308fd6f9d829f3f7f4c80035d516af5bbbe8ecc55d8d1660c244d7ad076f05"
+    },
+    "cmdline-tools/latest": {
+      "sourceProperties": "Pkg.Revision=23.0\nPkg.Path=cmdline-tools;23.0\nPkg.Desc=Android SDK Command-line Tools\n",
+      "sourcePropertiesSHA256": "a22ee118ce3bc68e682c16b4ad7a710f00f3ad7c7b01a4c67b63ad5e384d6b64"
+    },
+    "ndk/29.0.14206865": {
+      "sourceProperties": "Pkg.Desc = Android NDK\nPkg.Revision = 29.0.14206865\nPkg.BaseRevision = 29.0.14206865\nPkg.ReleaseName = r29\n",
+      "sourcePropertiesSHA256": "716f3518a923198cfab037abb32dc3f1b1f7e9a9dcdcda6b66be5906215d2658"
+    },
+    "platforms/android-37.0": {
+      "sourceProperties": "Pkg.Desc=Android SDK Platform 17\nPkg.UserSrc=false\nPlatform.Version=17\nPlatform.CodeName=\nPkg.Revision=2\nAndroidVersion.ApiLevel=37.0\nAndroidVersion.CodeName=\nAndroidVersion.ExtensionLevel=22\nAndroidVersion.IsBaseSdk=true\nAndroidVersion.PreviewSdkInt=0\nAndroidVersion.BetaVersion=\nLayoutlib.Api=15\nLayoutlib.Revision=1\nPlatform.MinToolsRev=22\n",
+      "sourcePropertiesSHA256": "fa89029fc0cee414cb5e44a37cd3033771217eeecb5086577bb6d9b1b03b5b5f"
+    }
+  },
+  "limits": [
+    "SDK Manager retrieves and validates the four package archives. Those temporary downloads are not retained.",
+    "Installation alone does not establish that Android regressions pass."
+  ],
+  "logSHA256": "adc8843cea2d605dc76dda4668e37e0ae231dab6b6934ea7fcc5d70d98bf81ce",
+  "preflightSHA256": "57467736f8798b02693a62b741c0e2fcb1f85f992213f7d182858bcd5f5abfc4",
+  "schemaVersion": 1,
+  "sdkRoot": "/Users/zeraphim/Documents/Files/ThisIsZeraphim/Open Source/ExperimentalMachines/.benchmark-work/Android/sdk",
+  "status": "approved-packages-installed"
+}

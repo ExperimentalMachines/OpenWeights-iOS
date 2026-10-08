@@ -1,0 +1,14 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "directories": [
+    {
+      "localRelativePath": ".benchmark-work/Benchmark/DerivedData-device-health",
+      "logicalBytes": 84590880
+    }
+  ],
+  "inactiveReason": "The signed diagnostic build is terminal and passed on the approved Firebase SE3. Exact input package and full native evidence are being independently retained. No further diagnostic job or local phone test is approved.",
+  "limits": [
+    "Only this completed minimal diagnostic build is named. Active baseline, delegates, product builds, packages, models, SDKs and toolchains remain."
+  ],
+  "schemaVersion": 1
+}

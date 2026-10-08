@@ -1,0 +1,17 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 294356,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-SE-device-health-2026-10-07-proof.zip"
+    },
+    {
+      "bytes": 6468904,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/OpenWeightsDeviceHealth-SE3-20261007.zip"
+    }
+  ],
+  "limits": [
+    "Completed SE diagnostic only, no inference or study replication. Raw native bundles and small reports remain local."
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,11 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 90759897,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/OpenWeightsBench-SE3-current-baseline-pilot-20261007.zip"
+    }
+  ],
+  "purpose": "The SE compatibility job is terminal and all native proof is retained. Archive the completed90.76MB input; the prepared Pro storage diagnostic and signed build remain active. Restore exact baseline input before future native/archive verification.",
+  "schemaVersion": 1
+}

@@ -1,0 +1,14 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 687291,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/study-coreml-S2-workshop-corrections-block0-20261006T180801Z-proof.zip"
+    },
+    {
+      "bytes": 2289228,
+      "localRelativePath": "openweights-ios/ios/Product/Results/native-ui-navigation-20261006T182831Z-proof.zip"
+    }
+  ],
+  "schemaVersion": 1
+}

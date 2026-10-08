@@ -14,7 +14,7 @@ public enum WebPageText {
         guard (200..<300).contains(response.status) else { throw PublicWebError.refused("HTTP \(response.status). The page was not read.") }
         guard response.body.count <= maximumBytes else { throw PublicWebError.refused("The page exceeds the 512 KiB text limit.") }
         let encoding = response.headers["content-encoding"]?.lowercased().trimmingCharacters(in: .whitespaces)
-        guard encoding == nil || encoding == "identity" else { throw PublicWebError.refused("The server returned compressed content despite the text request. Try another source.") }
+        guard encoding == nil || encoding == "identity" || (encoding == "gzip" && response.bodyWasGzipDecoded) else { throw PublicWebError.refused("The server returned unsupported compressed content. Try another source.") }
         let contentType = response.headers["content-type"]
         let type = contentType?.split(separator: ";").first?.trimmingCharacters(in: .whitespaces).lowercased()
         guard isReadableContentType(contentType) else {

@@ -1,0 +1,34 @@
+{
+  "controls": {
+    "failed": 0,
+    "observedCommands": [
+      "python3 -m unittest discover -s Study -p test_report_study.py",
+      "python3 -m unittest discover -s Study -p test_update_ledger.py"
+    ],
+    "testReportStudyPassed": 4,
+    "testUpdateLedgerPassed": 8
+  },
+  "failedRuntimeRows": 16,
+  "limits": [
+    "Host report and ledger verification only. No new inference run or replication block.",
+    "Provider infrastructure failure contributes no native runtime row."
+  ],
+  "plannedCells": 63,
+  "rawReports": 51,
+  "recordedAtUTC": "2026-10-06T23:06:34.806050+00:00",
+  "reportByteIdentical": true,
+  "schemaVersion": 1,
+  "sources": {
+    "docs/research/ios-repeated-artifact-study.md": "22067e17047c361ebdc3824b2edb06dbc2c916efdb7bd90b05a79d9d89a54358",
+    "ios/Benchmark/Results/study-analysis-source-build-separated-schema5-grading3-2026-10-07.json": "d97046b34751572351a31515efddf426400ee27fde99e9b78845466f5b2db910",
+    "ios/Benchmark/Study/execution-ledger-2026-10-03.json": "11c3c57465e5b248252b521532638b7a4f93ad51f6a9ec74b02ebb6145a1e462",
+    "ios/Benchmark/Study/report-appendix-2026-10-04.md": "6203de296953596e99957114b4a46c0c82ac225c8774e1e8a34ca5443b6549c6",
+    "ios/Benchmark/Study/report_study.py": "9a9c2b60c0b7195bccc4c8b83584769f07529c3c5b2b064e8c80009c92af2704",
+    "ios/Benchmark/Study/test_report_study.py": "b1e7af2233749319d29e30335c27ea3db7154a6bdd8cc8965c72fd7a85dc690d",
+    "ios/Benchmark/Study/test_update_ledger.py": "f685fc207264f4a0ca042076dc2d6c4f65f948dcc71c79f720853f42a9a2dea2",
+    "ios/Benchmark/Study/update_ledger.py": "7e13361a26b98323829270d13d675b002e6101e58d62a52f805eb60a268c17a5"
+  },
+  "status": "report-reproduced-and-ledger-preserves-three-infrastructure-outcomes-nine-strict-cells",
+  "strictReplicatedCells": 9,
+  "unavailableExecutionsPreserved": 3
+}

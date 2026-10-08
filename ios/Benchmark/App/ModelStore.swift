@@ -115,6 +115,7 @@ enum ModelStore {
 
     static func prepare(_ artifact: Artifact, cancellation: Cancellation,
                         progress: @escaping @Sendable (String) -> Void,
+                        allowDownload: Bool = true,
                         observe: Observe = { _ in }) async throws -> URL {
         let bundled = artifact.files.allSatisfy { $0.url == nil }
         let root = bundled
@@ -139,6 +140,9 @@ enum ModelStore {
                     elapsedMs: Double(DispatchTime.now().uptimeNanoseconds - began) / 1_000_000,
                     errorDomain: nil, errorCode: nil))
             } else {
+                guard allowDownload else {
+                    throw BenchmarkFailure.message("Verified model cache missing: \(file.file). Run publication acquisition before measurement.")
+                }
                 try await downloadVerified(file, artifactID: artifact.id, destination: destination,
                                            cancellation: cancellation, progress: progress, observe: observe)
             }

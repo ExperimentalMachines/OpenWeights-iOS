@@ -1,0 +1,14 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "directories": [
+    {
+      "localRelativePath": ".benchmark-work/Benchmark/DerivedData-device-health-storage",
+      "logicalBytes": 87193609
+    }
+  ],
+  "inactiveReason": "Unsigned generic build completed and is superseded by the separately verified signed preparation. No process is active for this directory. Preserve its exact full tree and unsigned executable fingerprints before removing it. Signed diagnostic build and next-job package remain active.",
+  "limits": [
+    "Only the exact completed unsigned model-free build is eligible. Signed build, baseline builds, models, toolchains and pending diagnostic remain local."
+  ],
+  "schemaVersion": 1
+}

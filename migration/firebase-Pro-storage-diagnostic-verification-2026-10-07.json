@@ -1,0 +1,167 @@
+{
+  "XMLSHA256": "7493b1e4398edc8f32ae451a9b755504dd123083f29c2540a304ad45098c5cce",
+  "actualDevice": "iPhone17,1",
+  "actualOperatingSystem": "Version 18.3.2 (Build 22D82)",
+  "archive": {
+    "bytes": 314469,
+    "file": "firebase-Pro-device-storage-matrix-2vhswnu8naude-proof.zip",
+    "members": 61,
+    "sha256": "64c7a01261562cb939ae93ea578790eae9db97c89dbf8a06dbcb81759cd897cb"
+  },
+  "authorization": {
+    "answer": "Approve this Pro storage diagnostic",
+    "questionItemID": "call_b530e526834d458bad71ad8bb62353de",
+    "recordedAtUTC": "2026-10-06T22:02:33.005644+00:00",
+    "scope": "One read-only model-free Pro storage diagnostic only, catalog iOS18.3/Xcode26.2, five-minute limit, exact package1f6471b04ea98e5fe5e097b2b4f4477739bfdff7189fb92a488f44cd6fe876cf. No CoreML inference, deletion or additional paid job authorized."
+  },
+  "currentReport": {
+    "failedRuntimeRows": 16,
+    "file": "docs/research/ios-repeated-artifact-study.md",
+    "plannedCells": 63,
+    "rawReports": 51,
+    "replicatedCells": 19,
+    "reproducedByteForByte": true,
+    "sha256": "c9fc5c8dc8c842750a37495c242cfd8d2c272f0e23155fbcd18f7fd85ab10943"
+  },
+  "currentReportAndReceiptsArchive": {
+    "bytes": 171385,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/Pro-storage-native-report-and-private-receipts-20261007.zip",
+    "remotePath": "packages/59c37e20bb3a25280f6d12d6b1a648bbcf1cff20aad28b4fe4d80fee9fdca68d/Pro-storage-native-report-and-private-receipts-20261007.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/59c37e20bb3a25280f6d12d6b1a648bbcf1cff20aad28b4fe4d80fee9fdca68d/Pro-storage-native-report-and-private-receipts-20261007.zip",
+    "sha256": "59c37e20bb3a25280f6d12d6b1a648bbcf1cff20aad28b4fe4d80fee9fdca68d",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T22:11:44.878749+00:00"
+  },
+  "failedBlock4SummarySHA256": "f0f3604c0c1457f7712bda403286b6a6a2f79e90aca478f5ab43da4558b67c28",
+  "inferenceRequests": 0,
+  "laterSourceBuildAudit": {
+    "file": "migration/study-source-build-cohort-audit-2026-10-07.json",
+    "historicalReportedReplicatedCells": 19,
+    "status": "later-audit-detected-pooling-correction-pending",
+    "strictBuildMatchingCells": 9
+  },
+  "launchAttachmentSHA256": "2ff7bae7351f10cd2edcee61bb9d204a065ba15f3686d28460570539fa91a5d0",
+  "limits": [
+    "The reported physical-device identifier differs from the failed CoreML block4. This current snapshot cannot establish prior device capacity, storage ownership or an ENOSPC fix.",
+    "Filesystem free capacity is75.872GiB at one instant. Important-usage capacity can include purgeable space. No peak CoreML disk demand measured.",
+    "All three default app-owned CoreML directories are missing in this fresh diagnostic sandbox. Zero logical counters are not evidence that the prior app cache was empty.",
+    "The exact diagnostic has no models/inference libraries and performs no file deletion. No CoreML loading or growing-history study block executed.",
+    "All local phone tests remain held. Single-job approval exhausted, no additional job authorized.",
+    "Actual billing and free allowance/storage/transfer/automatic infrastructure-retry charges remain unverified.",
+    "A2 remains19 of63 replicated cells. No parity row closed."
+  ],
+  "lowPowerModeAtSnapshot": false,
+  "matrixID": "matrix-2vhswnu8naude",
+  "nativeMethodsFailed": 0,
+  "nativeMethodsPassed": 2,
+  "nativeSummarySHA256": "a3a258e7ef0135478a739d10cad440cc23eb234024908c16e39e0e29814f3b2b",
+  "package": {
+    "buildReceiptFile": "OpenWeightsDeviceStorage-Pro-20261007-build.json",
+    "buildReceiptSHA256": "10cbf74d443f082f0cbe8bcc7833d482c08eef0ab303f3defe6339e7e44504be",
+    "bytes": 6562613,
+    "file": "OpenWeightsDeviceStorage-Pro-20261007.zip",
+    "sha256": "1f6471b04ea98e5fe5e097b2b4f4477739bfdff7189fb92a488f44cd6fe876cf",
+    "sourceSnapshotFile": "device-storage-sources-20261007.zip",
+    "sourceSnapshotSHA256": "7b34d9fa8edb5362c42ea7449daa8f9aa3af5d79648a7817c6d264aea26397ef"
+  },
+  "plan": {
+    "file": "Pro-device-storage-diagnostic-20261007.xctestrun",
+    "maximumMethodSeconds": 120,
+    "methods": [
+      "DeviceHealthTests/testLaunchAndAttachDeviceConditions",
+      "DeviceHealthTests/testAttachStorageConditionsWithoutInferenceOrCleanup"
+    ],
+    "sha256": "b881b831d24353b46fb3c274450905488e30bb49debefd6ed6dbdd1d51b6188d"
+  },
+  "privateArchive": {
+    "bytes": 314469,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-Pro-device-storage-matrix-2vhswnu8naude-proof.zip",
+    "remotePath": "packages/64c7a01261562cb939ae93ea578790eae9db97c89dbf8a06dbcb81759cd897cb/firebase-Pro-device-storage-matrix-2vhswnu8naude-proof.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/64c7a01261562cb939ae93ea578790eae9db97c89dbf8a06dbcb81759cd897cb/firebase-Pro-device-storage-matrix-2vhswnu8naude-proof.zip",
+    "sha256": "64c7a01261562cb939ae93ea578790eae9db97c89dbf8a06dbcb81759cd897cb",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T22:08:44.026564+00:00"
+  },
+  "protectedDataAvailableAtSnapshot": true,
+  "providerBytesDownloaded": 2443300,
+  "providerObjectsDownloaded": 37,
+  "recordedAtUTC": "2026-10-06T22:07:28.996014+00:00",
+  "sameReportedDeviceIdentifierAsFailedCoreMLBlock4": false,
+  "schemaVersion": 1,
+  "signedBuildArchive": {
+    "archiveBytes": 37195098,
+    "downloadedSHA256Matches": true,
+    "downloadedTreeManifestMatches": true,
+    "localRelativePath": ".benchmark-work/Benchmark/DerivedData-device-health-storage-signed",
+    "logicalBytes": 85326124,
+    "remotePath": "builds/bdbf55d53a2e6c161e2d06976ebc961b93408fc4e83a066f9cb2bfcf6dd21708/DerivedData-device-health-storage-signed.tar.gz",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/builds/bdbf55d53a2e6c161e2d06976ebc961b93408fc4e83a066f9cb2bfcf6dd21708/DerivedData-device-health-storage-signed.tar.gz",
+    "sha256": "bdbf55d53a2e6c161e2d06976ebc961b93408fc4e83a066f9cb2bfcf6dd21708",
+    "status": "archived-local-directory-removed",
+    "verifiedAtUTC": "2026-10-06T22:09:07.510097+00:00"
+  },
+  "sourceSnapshotAndExecutableHashesVerified": true,
+  "status": "two-native-diagnostic-passes-current-capacity-observed-prior-disk-failure-unresolved",
+  "storageAttachmentSHA256": "a8d3fb7327fecf8354fa476bd8daf748e57ab8048554a8689fff594b0ca994d5",
+  "storageSnapshot": {
+    "availableBytes": 81467404288,
+    "availableForImportantUsageBytes": 85360284861,
+    "directories": [
+      {
+        "entriesVisited": 0,
+        "errorCount": 0,
+        "label": "default-CoreML-cache",
+        "logicalBytes": 0,
+        "regularFiles": 0,
+        "skippedSymlinks": 0,
+        "state": "missing"
+      },
+      {
+        "entriesVisited": 0,
+        "errorCount": 0,
+        "label": "default-CoreML-trash",
+        "logicalBytes": 0,
+        "regularFiles": 0,
+        "skippedSymlinks": 0,
+        "state": "missing"
+      },
+      {
+        "entriesVisited": 0,
+        "errorCount": 0,
+        "label": "default-CoreML-database",
+        "logicalBytes": 0,
+        "regularFiles": 0,
+        "skippedSymlinks": 0,
+        "state": "missing"
+      }
+    ],
+    "filesystemFreeBytes": 81467404288,
+    "recordedAt": "2026-10-06T22:03:21Z",
+    "schemaVersion": 1
+  },
+  "submittedPackageArchive": {
+    "bytes": 6562613,
+    "downloadedSHA256Matches": true,
+    "downloadedZipCRCMatches": true,
+    "localRelativePath": "openweights-ios/ios/Benchmark/Results/OpenWeightsDeviceStorage-Pro-20261007.zip",
+    "remotePath": "packages/1f6471b04ea98e5fe5e097b2b4f4477739bfdff7189fb92a488f44cd6fe876cf/OpenWeightsDeviceStorage-Pro-20261007.zip",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/packages/1f6471b04ea98e5fe5e097b2b4f4477739bfdff7189fb92a488f44cd6fe876cf/OpenWeightsDeviceStorage-Pro-20261007.zip",
+    "sha256": "1f6471b04ea98e5fe5e097b2b4f4477739bfdff7189fb92a488f44cd6fe876cf",
+    "status": "archived-local-copy-removed",
+    "verifiedAtUTC": "2026-10-06T22:08:35.382356+00:00"
+  },
+  "thermalStateAtSnapshot": 0,
+  "uploadedInputVerification": {
+    "bytes": 6562613,
+    "file": "Results/OpenWeightsDeviceStorage-Pro-20261007.zip",
+    "gcsObject": "gs://test-lab-6h3isj77ip6ya-hc6hd6s1qrxbu/2026-10-07_06:02:41.628209_dmah/OpenWeightsDeviceStorage-Pro-20261007.zip",
+    "generation": "1791324173023851",
+    "matchesLocalSizeAndMD5": true,
+    "providerMD5": "/kTcSTkgpme58FvZRGt6WA==",
+    "sha256": "1f6471b04ea98e5fe5e097b2b4f4477739bfdff7189fb92a488f44cd6fe876cf"
+  }
+}

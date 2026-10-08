@@ -1,0 +1,29 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "capacityObservation": {
+    "bucketBytes": 14699361660,
+    "bucketFiles": 176,
+    "private": true,
+    "quotaRemainingKnown": false
+  },
+  "directories": [
+    {
+      "inactiveReason": "Source-bound host tests and iOS core compilation finished. Exact source hashes and test/module fingerprints retained in verified private proof.",
+      "localRelativePath": "openweights-ios/ios/Product/.build/gzip-validation",
+      "logicalBytes": 161551266
+    },
+    {
+      "inactiveReason": "Source-bound host tests and iOS core compilation finished. Exact source hashes and test/module fingerprints retained in verified private proof.",
+      "localRelativePath": "openweights-ios/ios/Product/.build/gzip-ios-compile",
+      "logicalBytes": 98803378
+    },
+    {
+      "inactiveReason": "Source-bound host tests and iOS core compilation finished. Exact source hashes and test/module fingerprints retained in verified private proof.",
+      "localRelativePath": "openweights-ios/ios/Product/.build/gzip-ios-module-cache",
+      "logicalBytes": 134555600
+    }
+  ],
+  "purpose": "Retain completed gzip host tests and iOS core compilation builds after source-bound verification. No phone execution or signed product link claimed.",
+  "recordedAtUTC": "2026-10-06T23:04:38.736474+00:00",
+  "schemaVersion": 1
+}

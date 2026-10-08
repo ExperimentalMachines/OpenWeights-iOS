@@ -1,0 +1,16 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 90667866,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/OpenWeightsBench-SE3-current-S1-block2-attempt0-20261007.zip"
+    },
+    {
+      "bytes": 90667866,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-SE-current-study-S1-block2-matrix-phcho7u3nupba/OpenWeightsBench-SE3-current-S1-block2-attempt0-20261007.zip"
+    }
+  ],
+  "purpose": "Retain completed job input and its identical provider-returned copy. Both paths resolve to the same content-addressed private object. No model/toolchain/active-build eviction.",
+  "recordedAtUTC": "2026-10-06T22:50:44.335014+00:00",
+  "schemaVersion": 1
+}

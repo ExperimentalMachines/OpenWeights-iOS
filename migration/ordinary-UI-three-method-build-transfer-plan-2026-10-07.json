@@ -1,0 +1,15 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "directories": [
+    {
+      "localRelativePath": "openweights-ios/ios/Product/.build/DerivedData-ui-validation",
+      "logicalBytes": 1307921299
+    }
+  ],
+  "inactiveReason": "The older ordinary UI bundle has three methods and predates the two prepared memory UI methods. No build or test process is active. Preserve its full tree before rebuilding the five-method bundle. All phone tests remain held.",
+  "limits": [
+    "Only this superseded host UI preparation is named. Ordinary installed-product builds, inference models and study packages remain active.",
+    "Verify fresh-download SHA and complete tree manifest before eviction. The historical signed receipt and execution status remain unchanged."
+  ],
+  "schemaVersion": 1
+}

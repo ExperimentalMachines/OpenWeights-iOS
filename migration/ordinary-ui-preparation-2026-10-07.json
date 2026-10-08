@@ -1,0 +1,39 @@
+{
+  "buildLogSHA256": "bacb7d74d6c84c823d50f6779bf78e742544bf9d27ea09b7b82ea69cc1302993",
+  "buildReceipt": ".build/DerivedData-ui-validation/Build/Products/openweights-ui-validation-build.json",
+  "buildReceiptSHA256": "e7413699cfd026fec8c54e34f285ffaa7cbc4d10547f09a4a2ca9224110b5e66",
+  "bundleIdentifier": "org.experimentalmachines.openweights.ios",
+  "executables": {
+    "Release-iphoneos/NativeNavigationTests-Runner.app/NativeNavigationTests-Runner": "6cff050162716d732e81a28cba1a0f73545ec6f9847db9deeaf46d800848e341",
+    "Release-iphoneos/NativeNavigationTests-Runner.app/PlugIns/NativeNavigationTests.xctest/NativeNavigationTests": "fdaab8535a5ce88ffe08413a8ad8a78c490db397313b64e77d1eb615896b83f2",
+    "Release-iphoneos/OpenWeights.app/OpenWeights": "33af1cdb3769e18ba9051bed1979e23142cd2dadf1cc0b19fa222c80c18e737b"
+  },
+  "failedPreparationProof": "migration/ordinary-ui-target-binding-failure-2026-10-07.json",
+  "limits": [
+    "Compilation and target matching only. None of the three native UI methods has executed in this ordinary namespace.",
+    "Earlier three passing UI methods use the benchmark-slot namespace and remain a separate immutable cohort.",
+    "All phone tests are on hold at user request. The active signed UI build remains local for later execution."
+  ],
+  "schemaVersion": 1,
+  "signedBuildArchive": {
+    "archiveBytes": 390765233,
+    "downloadedSHA256Matches": true,
+    "downloadedTreeManifestMatches": true,
+    "localRelativePath": "openweights-ios/ios/Product/.build/DerivedData-ui-validation",
+    "logicalBytes": 1307921299,
+    "remotePath": "builds/c0bdba3f57b26f582ed454e153894f2fa4a33ee2a72aa1648a524040150fb192/DerivedData-ui-validation.tar.gz",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/builds/c0bdba3f57b26f582ed454e153894f2fa4a33ee2a72aa1648a524040150fb192/DerivedData-ui-validation.tar.gz",
+    "sha256": "c0bdba3f57b26f582ed454e153894f2fa4a33ee2a72aa1648a524040150fb192",
+    "status": "archived-local-directory-removed",
+    "verifiedAtUTC": "2026-10-06T20:58:20.339033+00:00"
+  },
+  "sourceInputs": 408,
+  "status": "ordinary-ui-test-bundle-compiled-signed-target-binding-verified-native-execution-held-by-user",
+  "subsequentSourceChanges": {
+    "historicalBuildRetainedBeforeRebuild": true,
+    "proof": "migration/native-memory-ui-preparation-2026-10-07.json",
+    "requiresNewSignedBuildBeforeExecution": true,
+    "scope": "Two added UI methods are host typechecked only. The historical signed three-method receipt above is preserved."
+  },
+  "testTargetBundleIdentifier": "org.experimentalmachines.openweights.ios"
+}

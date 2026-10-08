@@ -1,0 +1,60 @@
+{
+  "fullTreeCatalog": "migration/build-artifact-catalog.json",
+  "fullTreeCatalogSHA256": "c2507a5223eb1e8d35fe564cdb008a48280180d07669f12910eeac345c6dafe8",
+  "limits": [
+    "No active build, model, toolchain or prepared next-job package was removed.",
+    "All five local plans are recoverable inside the full verified build archive. Plan 0 was not present in its older native evidence ZIP and remains preserved here.",
+    "Signed study binaries are also preserved in the privately archived block 1 package and locally prepared block 2 package."
+  ],
+  "privateArchive": {
+    "archiveBytes": 1550918532,
+    "downloadedSHA256Matches": true,
+    "downloadedTreeManifestMatches": true,
+    "localRelativePath": "openweights/ios/Benchmark/.build/DerivedData-delegates-coreml-study-20261006",
+    "logicalBytes": 2056638934,
+    "remotePath": "builds/dce072efabbc98fc64a5ab5bcf9c8c78e7436b6cbbda1b45d68c85bdde228cb3/DerivedData-delegates-coreml-study-20261006.tar.gz",
+    "remoteURI": "hf://buckets/zeraphim/openweights-ios-artifacts/builds/dce072efabbc98fc64a5ab5bcf9c8c78e7436b6cbbda1b45d68c85bdde228cb3/DerivedData-delegates-coreml-study-20261006.tar.gz",
+    "sha256": "dce072efabbc98fc64a5ab5bcf9c8c78e7436b6cbbda1b45d68c85bdde228cb3",
+    "status": "archived-local-directory-removed",
+    "verifiedAtUTC": "2026-10-06T19:34:40.559379+00:00"
+  },
+  "schemaVersion": 1,
+  "status": "completed-historical-coreml-S1-build-private-download-and-full-tree-verified-local-directory-evicted",
+  "verifiedCompletedPlans": [
+    {
+      "alsoInsideNativeEvidenceZIP": false,
+      "block": 0,
+      "execution": "study-coreml-isolated-20261006T072830Z-execution.json",
+      "planPathInsideBuild": "Build/Products/coreml-study-S1-block0-attempt0.xctestrun",
+      "planSHA256": "d76684e51a74566acc7102e31fd8200ef313a7ec77770b5b3e5fcebf60b8f24a"
+    },
+    {
+      "alsoInsideNativeEvidenceZIP": true,
+      "block": 1,
+      "execution": "study-coreml-S1-stable-facts-block1-20261006T075958Z-execution.json",
+      "planPathInsideBuild": "Build/Products/coreml-study-S1-stable-facts-block1-attempt0.xctestrun",
+      "planSHA256": "b68625d3640868d9d12ad040dc8a0f25ea5177cbc7f150e2343ac3b50cc5e675"
+    },
+    {
+      "alsoInsideNativeEvidenceZIP": true,
+      "block": 2,
+      "execution": "study-coreml-S1-stable-facts-block2-20261006T082415Z-execution.json",
+      "planPathInsideBuild": "Build/Products/coreml-study-S1-stable-facts-block2-attempt0.xctestrun",
+      "planSHA256": "cafaf065fda0e295d8daacc0fb6b1148991911bce6a505f01766aab60824410f"
+    },
+    {
+      "alsoInsideNativeEvidenceZIP": true,
+      "block": 3,
+      "execution": "study-coreml-S1-stable-facts-block3-20261006T085005Z-execution.json",
+      "planPathInsideBuild": "Build/Products/coreml-study-S1-stable-facts-block3-attempt0.xctestrun",
+      "planSHA256": "0d4d1e2ececc636d17eae5be6f850028ca091e4bc9949cf9e682029873d118ab"
+    },
+    {
+      "alsoInsideNativeEvidenceZIP": true,
+      "block": 4,
+      "execution": "study-coreml-S1-stable-facts-block4-20261006T161607Z-execution.json",
+      "planPathInsideBuild": "Build/Products/coreml-study-S1-stable-facts-block4-attempt0.xctestrun",
+      "planSHA256": "16e0a37d4526941e5690a628dd07ad0ade7268cff0911e6e7baf129595b73a41"
+    }
+  ]
+}

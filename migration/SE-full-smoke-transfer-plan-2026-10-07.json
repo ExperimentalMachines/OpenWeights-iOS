@@ -1,0 +1,15 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "files": [
+    {
+      "bytes": 1246363,
+      "localRelativePath": "openweights-ios/ios/Benchmark/Results/firebase-SE3-full-smoke-matrix-2fgikhy1zqvy7-proof.zip"
+    },
+    {
+      "bytes": 93614235,
+      "localRelativePath": "openweights/ios/Benchmark/Results/OpenWeightsBench-smoke-tests.zip"
+    }
+  ],
+  "purpose": "Archive the completed approved SE smoke proof and evict its restored historical input package after fresh-download integrity verification. Source snapshots and small raw reports stay local.",
+  "schemaVersion": 1
+}

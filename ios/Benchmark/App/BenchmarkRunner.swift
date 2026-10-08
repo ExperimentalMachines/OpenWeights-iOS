@@ -77,6 +77,7 @@ struct BenchmarkReport: Codable, Sendable {
     var multiTurnWorkload: MultiTurnWorkload? = nil
     var study: StudyMetadata? = nil
     var acquisitions: [AcquisitionEvent]? = nil
+    var processIdentifier: Int32? = nil
 }
 
 struct EngineReply: Sendable {

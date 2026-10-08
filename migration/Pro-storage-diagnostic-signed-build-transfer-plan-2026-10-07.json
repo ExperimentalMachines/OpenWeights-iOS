@@ -1,0 +1,11 @@
+{
+  "bucket": "zeraphim/openweights-ios-artifacts",
+  "directories": [
+    {
+      "localRelativePath": ".benchmark-work/Benchmark/DerivedData-device-health-storage-signed",
+      "logicalBytes": 85326124
+    }
+  ],
+  "inactiveReason": "Both approved cloud native methods finished. Full source, signed package and execution proof are verified. This model-free build is inactive. Preserve the full tree before removal, with restore receipt. No baseline/delegate/product build or models are removed.",
+  "schemaVersion": 1
+}

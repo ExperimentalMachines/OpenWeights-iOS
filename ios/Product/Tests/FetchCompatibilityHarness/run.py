@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-import hashlib,json,subprocess,zipfile
+import argparse,hashlib,json,subprocess,zipfile
 from datetime import datetime,timezone
 from pathlib import Path
 root=Path(__file__).resolve().parents[2]
+parser=argparse.ArgumentParser(description='Replay fetch decoder fixtures against the retained JDK 21 reference.')
+parser.add_argument('--java-home',type=Path,help='Use an explicit JDK directory instead of the shared workspace toolchain.')
+args=parser.parse_args()
 generated=root/'.build/fetch-compatibility-harness';sources=generated/'Sources/FetchCompatibilityHarness';sources.mkdir(parents=True,exist_ok=True)
 inputs=[root/'Package.swift',root/'Package.resolved',Path(__file__),Path(__file__).with_name('Checks.swift'),root/'DeviceTests/FetchDecoderFixtures.swift',Path(__file__).with_name('CharsetReference.java'),Path(__file__).with_name('jdk21-reference.json')]+sorted((root/'Sources/OpenWeightsCore').glob('*.swift'))
 digest=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
@@ -16,7 +19,10 @@ let package = Package(name: "FetchCompatibilityHarness", platforms: [.macOS(.v14
 swift=subprocess.check_output(['swift','--version'],text=True).strip();started=datetime.now(timezone.utc).isoformat()
 identity=hashlib.sha256(json.dumps({'sources':hashes,'swift':swift,'started':started},sort_keys=True).encode()).hexdigest()[:12]
 jdkReceipt=root.parent/'Benchmark/Results/android-jdk21-2026-10-02.json'
-jdkInfo=json.loads(jdkReceipt.read_text());jdk=root.parent/'Benchmark'/jdkInfo['javaHome']
+jdkInfo=json.loads(jdkReceipt.read_text())
+jdkRelative=Path(jdkInfo['javaHome']).relative_to('.build/android-toolchain/jdk21')
+jdk=(args.java_home or root.parents[2]/'.benchmark-work/Android/jdk21'/jdkRelative).resolve()
+if not (jdk/'bin/java').is_file():raise SystemExit('JDK 21 is missing. Restore the shared toolchain or provide --java-home.')
 javaRun=subprocess.run([str(jdk/'bin/java'),'--source','21',str(Path(__file__).with_name('CharsetReference.java'))],capture_output=True,text=True)
 assert javaRun.returncode==0,javaRun.stderr
 javaRows=json.loads(javaRun.stdout);assert javaRows==json.loads(Path(__file__).with_name('jdk21-reference.json').read_text())
@@ -32,6 +38,6 @@ if result.returncode==0:
  assert len(proof['cases'])==len(javaRows)
  for actual,reference in zip(proof['cases'],javaRows):
   assert actual['charset']==reference['charset'] and actual['inputHex']==reference['hex'] and actual['javaCodePoints']==reference['codePoints']
-proof.update(javaRuntime=javaVersion,javaBinarySHA256=digest(jdk/'bin/java'),jdkReceiptSHA256=digest(jdkReceipt),compiledSourceSHA256=hashes,swift=swift,startedAtUTC=started,exitCode=result.returncode,logSHA256=digest(log),sourceSnapshot=f'fetch-decoder-host-{identity}-sources.zip')
+proof.update(javaRuntime=javaVersion,javaHome=str(jdk),javaBinarySHA256=digest(jdk/'bin/java'),jdkReceiptSHA256=digest(jdkReceipt),compiledSourceSHA256=hashes,swift=swift,startedAtUTC=started,exitCode=result.returncode,logSHA256=digest(log),sourceSnapshot=f'fetch-decoder-host-{identity}-sources.zip')
 output.write_text(json.dumps(proof,indent=2,sort_keys=True)+'\n');print(output.name)
 if result.returncode:raise SystemExit(result.returncode)

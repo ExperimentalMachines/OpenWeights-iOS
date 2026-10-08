@@ -1,0 +1,58 @@
+{
+  "acquisition": {
+    "boundedRetryAttempts": 3,
+    "hostControlProof": "model-acquisition-host-81a0c7b88f7b.json",
+    "modelBytes": 1256035493,
+    "perFileAcquisitionEvents": "Hosts, attempts, status and error codes; no signed query strings or localized errors.",
+    "pinnedFiles": 12,
+    "retryPolicy": "Retry pinned Hub URL after transient transport failure, freshly resolve redirect, then require exact file size and SHA256. Never reuse signed CDN redirect.",
+    "retryableNetworkConnectionLostCode": -1005,
+    "sourceFile": "ios/Benchmark/App/ModelStore.swift",
+    "sourceSHA256": "824e517f17080bc754c266f43d119f7468505f506c0cde7bb49581ed350cd57f"
+  },
+  "compiledSourceFiles": 24,
+  "exactLocalExecution": {
+    "configurationsPassed": 5,
+    "file": "migration-benchmark-native-20261006T172938Z-execution.json",
+    "nativeMethodsPassed": 3,
+    "requestsPassed": 45,
+    "sha256": "f28928253f1614a5a89dd414d528afa99afc338fe564addc4f3adc106f1bea09"
+  },
+  "executables": {
+    "Release-iphoneos/OpenWeightsBench.app/OpenWeightsBench": "c9dfcc466eea40a280e11db737cde09972a0b1dfbe17de8b1b909eadcb1a67e2",
+    "Release-iphoneos/OpenWeightsBench.app/PlugIns/BenchmarkTests.xctest/BenchmarkTests": "c686849c3e5a1cbffa61c1166727b4767e74c2216829b3a06c6da61ff8b39d73"
+  },
+  "failureRequiringRetry": "migration/firebase-SE3-baseline-pilot-failure-retention-2026-10-07.json",
+  "limits": [
+    "Prepared from the currently verified separate-checkout binary cohort. The historical failed40a383bd/18f29e17 cohort is retained separately.",
+    "The selected exact three-method plan passed locally before the phone-test hold. No fresh local execution occurred.",
+    "Existing bounded retries address the observed transient download failure, but cloud download success and SE inference are not yet established.",
+    "This compatibility pilot is not a repeated-study block. No scope or63-cell amendment.",
+    "No additional paid job is authorized. Fresh approval is required for a single proposed20minute job. All local phone tests remain held."
+  ],
+  "package": {
+    "buildReceiptFile": "OpenWeightsBench-SE3-current-baseline-pilot-20261007-build.json",
+    "buildReceiptSHA256": "03c7cfa0b780a031ebc93677a53545c6ba0f9527fdf4191c89064161d5a0b741",
+    "bytes": 90759897,
+    "file": "OpenWeightsBench-SE3-current-baseline-pilot-20261007.zip",
+    "sha256": "0ae580ea65a51b148f698ae62e2f5ad2310ba17abebabfeb2904575663ed973d",
+    "sourceSnapshotFile": "study-baseline-sources-9369be7829c5.zip",
+    "sourceSnapshotSHA256": "b271cb3cb216dac778139d087eeb736230cf6baf150ee4b2a79198798c24d046"
+  },
+  "plan": {
+    "byteIdenticalToCompletedLocalExecution": true,
+    "file": "migration-benchmark-native-20261006T172938Z.xctestrun",
+    "maximumMethodSeconds": 1200,
+    "methods": [
+      "BenchmarkTests/testPilotBenchmark",
+      "BenchmarkTests/testArtifactVerificationRejectsCorruption",
+      "BenchmarkTests/testMultiTurnProbeGrading"
+    ],
+    "sha256": "4fae7fb3004c07b5caa7cc10a01d6bcb9200451720f895d710618532ff375592"
+  },
+  "profileExpirationUTC": "2026-10-08T14:45:03+00:00",
+  "recordedAtUTC": "2026-10-06T21:21:17.833933+00:00",
+  "schemaVersion": 1,
+  "sourceInputsAndExecutablesMatch": true,
+  "status": "current-separate-checkout-signed-baseline-native45-request-cohort-prepared-no-SE-retry-execution"
+}

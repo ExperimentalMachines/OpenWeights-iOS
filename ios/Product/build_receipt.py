@@ -38,6 +38,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('action', choices=['capture', 'stamp'], nargs='?', default='stamp')
     parser.add_argument('--expected', type=Path)
+    parser.add_argument('--derived-data', type=Path, default=root / '.build/DerivedData')
     args = parser.parse_args()
     sources = source_hashes()
     before = root / '.build/product-source-inputs-before.json'
@@ -49,7 +50,8 @@ def main():
     xcode = subprocess.check_output(['xcodebuild', '-version'], text=True).strip()
     build = xcode.splitlines()[1].split()[-1]
     native = root.parent / f'Benchmark/.build/native-{build}-ninja/libopenweights_apple.a'
-    products = root / '.build/DerivedData/Build/Products/Release-iphoneos/OpenWeights.app'
+    products_root = args.derived_data.resolve() / 'Build/Products'
+    products = products_root / 'Release-iphoneos/OpenWeights.app'
     info = plistlib.loads((products / 'Info.plist').read_bytes())
     subprocess.run(['codesign', '--verify', '--deep', '--strict', str(products)], check=True)
     signature = subprocess.run(['codesign', '-dv', str(products)], capture_output=True, text=True, check=True).stderr
@@ -106,7 +108,7 @@ def main():
     receipt['scriptSecurityValidationBuild'] = len(validation_actions) == 2
     receipt['scriptValidationWireActionsInHelper'] = validation_actions
     receipt['quickjsRevision'] = subprocess.check_output(['git', '-C', str(repo / 'core/sandbox/src/main/cpp/quickjs'), 'rev-parse', 'HEAD'], text=True).strip()
-    (root / '.build/DerivedData/Build/Products/openweights-product-build.json').write_text(json.dumps(receipt, indent=2, sort_keys=True) + '\n')
+    (products_root / 'openweights-product-build.json').write_text(json.dumps(receipt, indent=2, sort_keys=True) + '\n')
     print('Product executable/source receipt saved.')
 
 
