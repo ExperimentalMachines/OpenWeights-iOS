@@ -1,4 +1,19 @@
+<div align="center">
+
+![OpenWeights logo](docs/assets/branding/readme-logo.png)
+
 # OpenWeights iOS
+
+**Run open-weight AI models on your iPhone.**<br>
+No account, no telemetry. Inference runs on your own hardware.
+
+[![Status](https://img.shields.io/badge/status-experimental-052B42?style=flat-square)](#requirements)
+[![License](https://img.shields.io/badge/license-Apache--2.0-052B42?style=flat-square)](LICENSE)
+[![iOS](https://img.shields.io/badge/iOS-17%2B-052B42?style=flat-square)](#requirements)
+[![Engines](https://img.shields.io/badge/engines-llama.cpp%20%C2%B7%20MLX%20%C2%B7%20ExecuTorch-052B42?style=flat-square)](#three-runtimes-one-build)
+[![Models](https://img.shields.io/badge/models-Hugging%20Face-052B42?style=flat-square)](https://huggingface.co/experimentalmachines)
+
+</div>
 
 OpenWeights iOS is an experimental native iPhone app for running open-weight
 language models on your device. Download or import a compatible model, chat
@@ -10,7 +25,7 @@ built by Experimental Machines with SwiftUI and a shared C++ inference core.
 The repository also includes a separate benchmark harness for measuring how
 models and inference runtimes behave on real iPhones.
 
-## Screenshots
+<div align="center">
 
 <table>
   <tr>
@@ -40,7 +55,41 @@ separate benchmark-slot app container. These are development-build screenshots.
 The original image hashes were checked against the retained local validation
 record before adding these screenshots.
 
-## What the app does
+</div>
+
+## Contents
+
+- [What makes it different](#what-makes-it-different)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Build](#build)
+- [Our models on Hugging Face](#our-models-on-hugging-face)
+- [Measurements and reports](#measurements-and-reports)
+- [Architecture](#architecture)
+- [Documentation map](#documentation-map)
+- [Contributing and contact](#contributing-and-contact)
+- [License](#license)
+
+## What makes it different
+
+**The Hub is the model list.** Search Hugging Face from the app, filter by
+runtime and model metadata, or import compatible weights you already have.
+Compatibility is checked for the selected artifact, rather than promised for
+every search result.
+
+**Three runtimes, one native app.** GGUF models use llama.cpp, compatible MLX
+folders use MLX, and the validated Qwen3 compiled export uses ExecuTorch.
+SwiftUI provides the interface, with inference on the phone.
+
+**Tools within limits you set.** File access is scoped to a folder you choose.
+Memory and file operations have separate switches and approval controls.
+Network features are named, and iOS background scheduling limits remain visible.
+
+**Numbers you can check.** The separate benchmark harness retains model hashes,
+compiled source identities and real-device results. Published measurements
+include reproduction data and state what they do and do not establish.
+
+## Features
 
 - **Find and manage models.** Search Hugging Face by runtime, task, publisher
   and size, download compatible artifacts, or import a local GGUF file.
@@ -60,7 +109,7 @@ Model inference runs on the device. Model discovery and downloads use network
 services, and enabled web tools can make network requests. Watch intervals are
 due times: iOS controls when background work actually runs.
 
-## Inference runtimes and benchmarks
+### Three runtimes, one build
 
 | Runtime | Product integration | Benchmark coverage |
 | --- | --- | --- |
@@ -74,21 +123,19 @@ The benchmark harness measures first-response delay, streaming speed, process
 memory, factual recall and interruption recovery with pinned artifacts and
 retained source/build evidence.
 
-The bounded CPU/Metal benchmark completed 36 conversations and 216 requests
-on iPhone 16 across the Qwen3 pilot and five-model comparison. The
-[published benchmark](https://experimentalmachines.github.io/OpenWeights-iOS/)
-includes results, limitations and downloadable reproduction data. See the
-[benchmark page guide](site/README.md) for the retained files and verification.
-The broader multi-device study and full Android parity are parked with
-evidence preserved. Selected passing checks do not establish full parity or
-a general runtime winner.
+## Requirements
 
-## Build and test
+- An iPhone running iOS 17 or newer. Isolated script and inference helpers use
+  iOS 26 APIs and have separate availability checks.
+- Enough memory and storage for your selected model and context window.
+- To build: macOS, Xcode, XcodeGen and the native dependencies described in the
+  component guides. Current independent signed builds were verified with Xcode 26.2.
 
-Native builds require macOS, Xcode and the dependencies described in the
-component guides. Current independent signed builds were verified with
-Xcode 26.2. Model weights and prebuilt ExecuTorch dependencies are acquired
-separately.
+The app is experimental and built from source. Full Android feature parity and
+broader device coverage remain incomplete. Model weights and prebuilt ExecuTorch
+dependencies are acquired separately.
+
+## Build
 
 From the repository root, prepare and verify the pinned native dependencies:
 
@@ -108,7 +155,27 @@ or [the benchmark build guide](ios/Benchmark/README.md) for the measurement
 harness. The product build requires native libraries prepared with the same
 selected Xcode toolchain.
 
-## Repository layout
+## Our models on Hugging Face
+
+Experimental Machines publishes model artifacts under
+[experimentalmachines](https://huggingface.co/experimentalmachines).
+Choose an artifact compatible with the iOS runtime, rather than assuming that
+an Android ExecuTorch export runs unchanged on iPhone. The product guide
+explains the pinned artifacts used for validation.
+
+## Measurements and reports
+
+The bounded CPU/Metal benchmark completed 36 conversations and 216 requests
+on iPhone 16 across the Qwen3 pilot and five-model comparison. The
+[published benchmark](https://experimentalmachines.github.io/OpenWeights-iOS/)
+includes results, limitations and downloadable reproduction data. See the
+[benchmark page guide](site/README.md) for retained files and verification.
+
+The broader multi-device study and full Android parity are parked with
+evidence preserved. Selected passing checks do not establish full parity or
+a general runtime winner.
+
+## Architecture
 
 | Path | Purpose |
 | --- | --- |
@@ -122,6 +189,35 @@ selected Xcode toolchain.
 Generated builds, model files and full test bundles are excluded from Git.
 Large completed artifacts are archived privately on Hugging Face. See the
 [storage layout](migration/storage-layout.md) for retained paths and restoration.
+
+## Documentation map
+
+| Document | Read it for |
+| --- | --- |
+| [Product guide](ios/Product/README.md) | App builds, dependencies and selected product validation |
+| [Benchmark guide](ios/Benchmark/README.md) | Runtime builds, model exports and study execution |
+| [Parity ledger](ios/Product/parity.md) | Android behavior, iOS acceptance checks and remaining gaps |
+| [Repeated study](docs/research/ios-repeated-artifact-study.md) | Retained measurements, source/build cohorts and limitations |
+| [Benchmark page](site/README.md) | Public report files and aggregate reproduction |
+| [Storage layout](migration/storage-layout.md) | Local evidence, private archives and restoration |
+| [Source manifest](migration/source-manifest.json) | Copied-source provenance and checksums |
+
+## Contributing and contact
+
+Use [issues](https://github.com/ExperimentalMachines/OpenWeights-iOS/issues)
+and pull requests for iOS bugs and contributions. Include the device, iOS
+version, model artifact, runtime and steps to reproduce. Performance claims
+need real-device measurements with the tested build and model identified.
+
+For the Android app, see
+[ExperimentalMachines/openweights](https://github.com/ExperimentalMachines/openweights).
+The README logo and app icon use that project's official artwork from
+`play/graphics/readme-logo.png` and `play/graphics/icon-512.png`.
+
+## License
+
+[Apache License 2.0](LICENSE). Native dependencies and third-party models
+retain their own licenses.
 
 ## Migration and verification details
 

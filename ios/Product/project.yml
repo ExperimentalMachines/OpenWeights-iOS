@@ -60,6 +60,7 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: $(OW_APP_BUNDLE_ID)
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         EX_ENABLE_EXTENSION_POINT_GENERATION: YES
         SWIFT_OBJC_BRIDGING_HEADER: Native/Product-Bridging-Header.h
         HEADER_SEARCH_PATHS: $(SRCROOT)/Native $(SRCROOT)/Native/Vendor $(SRCROOT)/../../core/engine/src/main/cpp $(SRCROOT)/../../core/engine/src/main/cpp/llama.cpp/include $(SRCROOT)/../../core/engine/src/main/cpp/llama.cpp/ggml/include
