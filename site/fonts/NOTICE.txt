@@ -1,0 +1,13 @@
+Bundled font files were extracted without further changes from the approved
+frontend-design-kitchensink.html. That specimen converted the portfolio's TTF
+fonts to WOFF2 without altering glyphs. Embedded metadata records:
+
+Copyright 2019 The Lexend Project Authors (https://github.com/googlefonts/lexend)
+Copyright 2019 The Syne Project Authors (https://gitlab.com/bonjour-monde/fonderie/syne-typeface)
+
+Both identify SIL Open Font License 1.1. The accompanying upstream license files
+retain their own earlier copyright notices. Sources:
+https://raw.githubusercontent.com/google/fonts/main/ofl/lexend/OFL.txt
+https://raw.githubusercontent.com/google/fonts/main/ofl/syne/OFL.txt
+
+Carry these notices and license files with copied font assets.

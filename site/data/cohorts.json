@@ -1,0 +1,20 @@
+{
+  "firebase-lfm-pilot": {
+    "device": "Two iPhone 16 Pro units",
+    "measuredDate": "2026-10-07",
+    "os": "iOS 18.3.2, build 22D82",
+    "repetitions": 1
+  },
+  "iphone16-five-models": {
+    "device": "iPhone 16",
+    "measuredDate": "2026-10-07",
+    "os": "iOS 26.6.2, build 23G90",
+    "repetitions": 3
+  },
+  "qwen-protocol-pilot": {
+    "device": "iPhone 16",
+    "measuredDate": "2026-10-07",
+    "os": "iOS 26.6.2, build 23G90",
+    "repetitions": 3
+  }
+}

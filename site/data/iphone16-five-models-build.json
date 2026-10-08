@@ -1,0 +1,43 @@
+{
+  "benchmarkVariant": "gguf-ios16.6-v1",
+  "deploymentTarget": "16.6",
+  "executables": {
+    "Release-iphoneos/OpenWeightsBench.app/OpenWeightsBench": "6795a50a54071a0468dfb75cd218dbba44d5ba1169cabafcaefabd8a5791f3a6",
+    "Release-iphoneos/OpenWeightsBench.app/PlugIns/BenchmarkTests.xctest/BenchmarkTests": "e56f4854df6906a0621cb98b0aeebe23fe1d924d5a2c70a8045d9faa80f21e63"
+  },
+  "llamaRevision": "b2e5e9b28b2484fbf94b543432ece638996a8b97",
+  "sdk": "26.2",
+  "sources": {
+    "core/engine/src/main/cpp/PatchGGMLGraphOffset.cmake": "4f49cf5fdb5a910af0e90eb7006f4be2aaeffa2033199301fff122cd42c76f5e",
+    "core/engine/src/main/cpp/engine_session.cpp": "776beb71e7fdeaf4e4ad2f224cd09c21ad2189ac22f65f9e1f3641f0e4b38c40",
+    "core/engine/src/main/cpp/engine_session.h": "d3ac2097fd60962592d8536a5573f7be0952dc03ca4bbce69ea955d46efff19a",
+    "core/engine/src/main/cpp/llama.cpp/ggml/src/ggml.c": "e415a848a03c75e8bfe00ac0ce4a96c3aa40dc8afa7dbc89ecde7d2cc70a2212",
+    "ios/Benchmark/App/BenchmarkApp.swift": "7e785c25d63aaa174f8064b68fe399bb6cb6c917cf64d682ea0dad2ead78538e",
+    "ios/Benchmark/App/BenchmarkRunner.swift": "85961a2c561fe972bed6bba422305a02bb5224cc1eea6d1edfa5dc6ad9b7c89c",
+    "ios/Benchmark/App/Cancellation.swift": "c3241ca37bee8f592d4426cc29006e9e826c1db4364339a5e437451199c22307",
+    "ios/Benchmark/App/Engines.swift": "353869cde7007a50ddfd86a30f30009f9e700bcf558846995cf135a1e7ec2a48",
+    "ios/Benchmark/App/ModelStore.swift": "c13f0ec099aa5f3f7ff9d5ccb0fc033da4d96ddb111c8e81af45369454fd6cf7",
+    "ios/Benchmark/App/MultiTurnRunner.swift": "63fc37fe814651e85d05dc685b905940ab9643b4c3d952f35df053455b7030a6",
+    "ios/Benchmark/Export/build_receipt.py": "02745cb63afb81b5f7c31407ffdf8f52ff6a3aa2a07a9282426f4d1f03f5bc7a",
+    "ios/Benchmark/Export/verify_archive.py": "a643099718b16a6ff85dcc5619c03beeeaedf0224231ca00ca0678f4647b4339",
+    "ios/Benchmark/Native/Benchmark-Bridging-Header.h": "89645e10f91005861f06d31ae8a51dedc517fc78bd6e76008b20654043801241",
+    "ios/Benchmark/Native/CMakeLists.txt": "1b560a41b75505b5c3c433bb13d10200a06d37e0916c564d0a82f993a8dc55ba",
+    "ios/Benchmark/Native/Memory.mm": "ad31a6589151ba0b3c137869fc2997d5fdc67f7f8b94d593f1753ccf2ef8e966",
+    "ios/Benchmark/Native/OWSession.h": "972bea20824d01530e12c4e3c0a9d315cceac04b1732f3d2aa7e95ee9f4c70cf",
+    "ios/Benchmark/Native/OWSession.mm": "fba5d75280a085184ae0d17ade80302186d2aa2c1229d7e301c9bb061744e187",
+    "ios/Benchmark/Resources/model-manifest-delegates.json": "0a87cdb91aa010cbc621c52c4d6e5070799174150b1e82a51933fa9445a16292",
+    "ios/Benchmark/Resources/model-manifest.json": "6b29fdb603eee2edd55c045843f711e78c17f41b1f84ec2a4dabdd4c36bc6e89",
+    "ios/Benchmark/Resources/multiturn-workload.json": "b7d461411e16ac8ffac329dd42a13c68ace1eaaf6982e8e8657b6a1301b5164f",
+    "ios/Benchmark/Resources/study-workloads.json": "c528061e987071db50527d832a24a525a5a34920c26d1f42c48bee5c736988e3",
+    "ios/Benchmark/Study/collect_local.py": "3a80e0e820cd4c9757df660161af7f4a8457842d9ed75f7d50cd41d5a5ad450e",
+    "ios/Benchmark/Study/older-ios-gguf-addendum.json": "1cc0efb4b0638381fc11c95031cebc04c978909769170560305c0f2c8a753fa0",
+    "ios/Benchmark/Study/run_local_block.sh": "9b9d014ff3d029d64bfa46d21c7574eb2d17c1392da63bc4a6fc4172a0f5a9fb",
+    "ios/Benchmark/Study/snapshot_build.py": "90377c620d3b1a507e17d432212c5c70aa4e3892e81847aa230c5a362f47dbde",
+    "ios/Benchmark/Tests/BenchmarkTests.swift": "7993e1eef2083d6df05c68b8e5072852e513e7dd399f3f79b142836a648d22ab",
+    "ios/Benchmark/Tests/ModelAcquisitionTests.swift": "20bac675c1076022651e572d87c4cd39768112184bc81387665aa4c880bf14b4",
+    "ios/Benchmark/build-gguf.sh": "685da69ce46d7e5e6635a3e858120f0ce3eab3b09ff64499405e9086838467bf",
+    "ios/Benchmark/package.sh": "f696d295e345f708def45150bb0b724820626cda8c77847e8e00640f8325ced6",
+    "ios/Benchmark/project-gguf.yml": "ada468a2da343996b7832dd3c38a95ac7acdabc1911b0529c98a7d1a38577434"
+  },
+  "xcode": "Xcode 26.2\nBuild version 17C52"
+}

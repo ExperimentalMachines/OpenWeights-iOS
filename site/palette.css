@@ -1,0 +1,61 @@
+/* Faceted Clarity: canonical FRONTEND colors.
+   Adopted from frontend-design-kitchensink.html, derived from jcdiamante-v2.
+   Separate from the editor/document profile in palette.css.
+   Ratios measured against the named, opaque reference pairs using WCAG sRGB.
+   Body >=4.5:1; large text and control/focus boundaries >=3:1.
+   Re-measure after adaptation. Refresh the bundled specimen with its sync helper.
+*/
+:root, [data-theme="light"] {
+  color-scheme: light;
+  --canvas: #f4f8f7;
+  --surface: #ffffff;
+  --raised: #eaf3f3;
+  --soft: #dff7f2;
+  --ink: #0a1220; /* 17.51:1 on --canvas, 18.75:1 on --surface, 16.61:1 on --raised, 16.71:1 on --soft */
+  --muted: #4d6064; /* 6.18:1 on --canvas, 6.62:1 on --surface, 5.87:1 on --raised, 5.90:1 on --soft */
+  --line: #cedcdb; /* Decorative only, not an input boundary. */
+  --control-edge: #617c7b; /* 4.19:1 on --canvas, 4.49:1 on --surface, 3.98:1 on --raised, 4.00:1 on --soft */
+  --accent: #027474; /* 5.23:1 on --canvas, 5.60:1 on --surface, 4.96:1 on --raised, 4.99:1 on --soft */
+  --accent-hover: #063c3d;
+  --on-accent: #ffffff; /* 5.60:1 on --accent; 12.20:1 on hover */
+  --success: #146b50; /* 5.69:1 on --success-bg */
+  --success-bg: #e5f4ec;
+  --warning: #815808; /* 5.75:1 on --warning-bg */
+  --warning-bg: #fff4d6;
+  --danger: #ad3340; /* 5.71:1 on --danger-bg */
+  --danger-bg: #fff0f1;
+  --info: #17617b; /* 6.13:1 on --info-bg */
+  --info-bg: #e7f3fa;
+  --brand-bright: #7fe9d6;
+  --brand-mid: #4dcab6;
+  --brand-deep: #027474;
+  --brand-ink: #030613;
+  --brand-azure: #e2f0f4;
+  --focus: #027474; /* 5.23:1 on --canvas, 5.60:1 on --surface, 4.96:1 on --raised, 4.99:1 on --soft */
+  --shadow: 0 16px 44px rgba(3,6,19,.09);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --canvas: #060a13;
+  --surface: #0d1420;
+  --raised: #152730;
+  --soft: #0b3434;
+  --ink: #edf7f7; /* 18.15:1 on --canvas, 16.91:1 on --surface, 14.10:1 on --raised, 12.38:1 on --soft */
+  --muted: #a9bbbd; /* 9.93:1 on --canvas, 9.25:1 on --surface, 7.72:1 on --raised, 6.77:1 on --soft */
+  --line: #263742; /* Decorative only, not an input boundary. */
+  --control-edge: #7f9397; /* 6.15:1 on --canvas, 5.73:1 on --surface, 4.78:1 on --raised, 4.19:1 on --soft */
+  --accent: #7fe9d6; /* 13.70:1 on --canvas, 12.77:1 on --surface, 10.65:1 on --raised, 9.34:1 on --soft */
+  --accent-hover: #4dcab6;
+  --on-accent: #030613; /* 13.98:1 on --accent; 10.04:1 on hover */
+  --success: #6fe0b8; /* 9.14:1 on --success-bg */
+  --success-bg: #102d26;
+  --warning: #fbbf24; /* 8.83:1 on --warning-bg */
+  --warning-bg: #302713;
+  --danger: #f0959a; /* 7.07:1 on --danger-bg */
+  --danger-bg: #341c25;
+  --info: #a8d8e8; /* 9.50:1 on --info-bg */
+  --info-bg: #152b39;
+  --focus: #7fe9d6; /* 13.70:1 on --canvas, 12.77:1 on --surface, 10.65:1 on --raised, 9.34:1 on --soft */
+  --shadow: 0 16px 44px rgba(0,0,0,.3);
+}

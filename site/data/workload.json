@@ -1,0 +1,45 @@
+{
+  "id": "S1-stable-facts",
+  "interruptionBeforeTurn": null,
+  "system": "You are a helpful assistant. Follow the user's instructions precisely. Remember earlier decisions and use the latest value when a decision changes.",
+  "turns": [
+    {
+      "user": "Workshop facts: codename Birch, venue Porto, budget 620 credits, diet vegan. Remember these facts for this conversation. Acknowledge in one short sentence."
+    },
+    {
+      "padding": "The workshop needs seating, lighting, signage, and a clear check-in process. ",
+      "paddingRepeats": 8,
+      "user": "Suggest two practical priorities for these logistics in two short sentences. Keep our earlier project facts in mind."
+    },
+    {
+      "expectedFields": {
+        "budget": "620",
+        "codename": "Birch"
+      },
+      "user": "Recall our project codename and current budget. Reply only with JSON using keys codename and budget."
+    },
+    {
+      "padding": "Volunteers will prepare signs, arrange chairs, check the lighting, and welcome attendees. ",
+      "paddingRepeats": 12,
+      "user": "Do not change the workshop facts. Name two practical preparation tasks in one short sentence."
+    },
+    {
+      "expectedText": "vegan",
+      "padding": "The team will review the schedule, test the check-in desk, and label every room. ",
+      "paddingRepeats": 12,
+      "user": "What dietary rule did we agree on at the beginning? Reply with only that one word."
+    },
+    {
+      "expectedFields": {
+        "budget": "620",
+        "codename": "Birch",
+        "diet": "vegan",
+        "venue": "Porto"
+      },
+      "padding": "The event plan includes registration, introductions, discussion, a break, and closing remarks. ",
+      "paddingRepeats": 36,
+      "user": "Using our latest decisions, reply only with JSON using keys codename, venue, budget, and diet. Include all four values and no explanation."
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,3 @@
+model,runtime,completedConversations,plannedConversations,nominalSamples,plannedSamples,firstTextSeconds,streamingTokensPerSecond,peakProcessMiB,factualProbesCorrect,factualProbesScorable,factualProbesUnscorable,strictProbesCorrect,observedProbes,plannedProbes
+gguf,llama.cpp CPU,3,3,18,18,0.6326966460347176,57.80383007222945,407.0483703613281,9,9,0,6,9,9
+gguf,llama.cpp Metal,3,3,18,18,0.20005808347463608,96.25714115002859,400.9386291503906,9,9,0,6,9,9

@@ -1,0 +1,13 @@
+model,runtime,turn,nominalSamples,firstTextSeconds,streamingTokensPerSecond
+lfm2.5-1.2b-instruct,llama.cpp CPU,1,1,0.5638514170000563,44.248001753329405
+lfm2.5-1.2b-instruct,llama.cpp CPU,2,1,1.107107333000051,40.01395066383116
+lfm2.5-1.2b-instruct,llama.cpp CPU,3,1,0.5458614159999415,41.413760370114716
+lfm2.5-1.2b-instruct,llama.cpp CPU,4,1,1.2387617499999468,37.687597199255485
+lfm2.5-1.2b-instruct,llama.cpp CPU,5,1,1.2963657499999972,
+lfm2.5-1.2b-instruct,llama.cpp CPU,6,1,3.9364703329999466,33.900371728509434
+lfm2.5-1.2b-instruct,llama.cpp Metal,1,1,0.4190394170000218,66.17251541197844
+lfm2.5-1.2b-instruct,llama.cpp Metal,2,1,0.35982345799996984,64.6805797976054
+lfm2.5-1.2b-instruct,llama.cpp Metal,3,1,0.07589550000010058,65.83402038353401
+lfm2.5-1.2b-instruct,llama.cpp Metal,4,1,0.36377195799991024,65.3188011096891
+lfm2.5-1.2b-instruct,llama.cpp Metal,5,1,0.3700292500000214,
+lfm2.5-1.2b-instruct,llama.cpp Metal,6,1,1.0108960419999202,64.50292304878508

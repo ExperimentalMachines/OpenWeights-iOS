@@ -1,0 +1,75 @@
+{
+  "artifacts": [
+    {
+      "files": [
+        {
+          "bytes": 806058272,
+          "file": "gemma-3-1b-it-Q4_K_M.gguf",
+          "sha256": "8270790f3ab69fdfe860b7b64008d9a19986d8df7e407bb018184caa08798ebd",
+          "url": "https://huggingface.co/unsloth/gemma-3-1b-it-GGUF/resolve/f0b45be0aac41bd6a100a4b5734cad5f67255bfb/gemma-3-1b-it-Q4_K_M.gguf"
+        }
+      ],
+      "id": "gemma-3-1b-it",
+      "quantization": "Q4_K_M",
+      "repo": "unsloth/gemma-3-1b-it-GGUF",
+      "revision": "f0b45be0aac41bd6a100a4b5734cad5f67255bfb"
+    },
+    {
+      "files": [
+        {
+          "bytes": 730895168,
+          "file": "LFM2.5-1.2B-Instruct-Q4_K_M.gguf",
+          "sha256": "b1b3de114215d9507409a662a501a631095a479a419584e8a2ded6304b19b4f5",
+          "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/8ed288026e23958ad9dfa92d53ed773a8eee7125/LFM2.5-1.2B-Instruct-Q4_K_M.gguf"
+        }
+      ],
+      "id": "lfm2.5-1.2b-instruct",
+      "quantization": "Q4_K_M",
+      "repo": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+      "revision": "8ed288026e23958ad9dfa92d53ed773a8eee7125"
+    },
+    {
+      "files": [
+        {
+          "bytes": 1834426944,
+          "file": "Qwen3-1.7B-Q8_0.gguf",
+          "sha256": "0becaa825564295d82e9af4d008bca5f8b7f5f73bf1c6a0b58f7c53ef26b47fd",
+          "url": "https://huggingface.co/unsloth/Qwen3-1.7B-GGUF/resolve/d7f544eead698dbd1f15126ef60b45a1e1933222/Qwen3-1.7B-Q8_0.gguf"
+        }
+      ],
+      "id": "qwen3-1.7b",
+      "quantization": "Q8_0",
+      "repo": "unsloth/Qwen3-1.7B-GGUF",
+      "revision": "d7f544eead698dbd1f15126ef60b45a1e1933222"
+    },
+    {
+      "files": [
+        {
+          "bytes": 2019377696,
+          "file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+          "sha256": "6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff",
+          "url": "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/5ab33fa94d1d04e903623ae72c95d1696f09f9e8/Llama-3.2-3B-Instruct-Q4_K_M.gguf"
+        }
+      ],
+      "id": "llama-3.2-3b-instruct",
+      "quantization": "Q4_K_M",
+      "repo": "bartowski/Llama-3.2-3B-Instruct-GGUF",
+      "revision": "5ab33fa94d1d04e903623ae72c95d1696f09f9e8"
+    },
+    {
+      "files": [
+        {
+          "bytes": 1915305312,
+          "file": "SmolLM3-Q4_K_M.gguf",
+          "sha256": "8334b850b7bd46238c16b0c550df2138f0889bf433809008cc17a8b05761863e",
+          "url": "https://huggingface.co/ggml-org/SmolLM3-3B-GGUF/resolve/4965cb60b150737b68a0408c36aeefb65078f894/SmolLM3-Q4_K_M.gguf"
+        }
+      ],
+      "id": "smollm3-3b",
+      "quantization": "Q4_K_M",
+      "repo": "ggml-org/SmolLM3-3B-GGUF",
+      "revision": "4965cb60b150737b68a0408c36aeefb65078f894"
+    }
+  ],
+  "upstream": "Five Android comparison model families; exact historical artifact identity not established"
+}

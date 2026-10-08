@@ -1,0 +1,159 @@
+{
+  "files": {
+    ".nojekyll": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "README.md": {
+      "bytes": 1924,
+      "sha256": "00581978d257495cad7934c8eb755ccf55094b65e84a6288cb7753bb82de61f4"
+    },
+    "app.js": {
+      "bytes": 7555,
+      "sha256": "99ada026f2074ff56ab566a761179c663d91aa976ff83022808d96a2abe97866"
+    },
+    "assets/favicon.svg": {
+      "bytes": 185,
+      "sha256": "16889624ee1dadffe388e56698db43f9e2931b134d02bfd35f43333964bfe2d2"
+    },
+    "assets/first-text.png": {
+      "bytes": 92770,
+      "sha256": "fb06c083468ba83bf1725fe33d8079aa0de19fc65f125a783f40bf8f31e7053c"
+    },
+    "assets/first-text.svg": {
+      "bytes": 14229,
+      "sha256": "7567c6f9a883a4903afd130ca1b55a43d9ee744f046275a1fb09a32af56786e7"
+    },
+    "assets/reproduction.zip": {
+      "bytes": 30173,
+      "sha256": "296fed0868c34c0e47fa70ac62c3e8fc713df8deffd76bf73aa145c47d2fa2da"
+    },
+    "assets/streaming.png": {
+      "bytes": 90967,
+      "sha256": "24b4e95f1a986249a821a46598e7e40eb82d8e33d63c7931ee5a93e5d73048a8"
+    },
+    "assets/streaming.svg": {
+      "bytes": 14219,
+      "sha256": "0d558633a0adf5f960f52f94c37379c75338eec143647b7f8f504d8fdf1812b1"
+    },
+    "data/cohorts.json": {
+      "bytes": 470,
+      "sha256": "42127bec91ba9aabe6bf87df4e79345532d9fd6efaaa3a42507461452613c793"
+    },
+    "data/denominators.json": {
+      "bytes": 2801,
+      "sha256": "d7d066ba13808c7cf733cf966b1df1abae3555f792c3dcb777aaa3ec8a23cd2d"
+    },
+    "data/firebase-lfm-pilot-build.json": {
+      "bytes": 3977,
+      "sha256": "8412b8df94d7d3e0e4a2f889bfb104cb9edd162aee9a9e8e7f10230288ed6f8b"
+    },
+    "data/firebase-lfm-pilot-models.json": {
+      "bytes": 703,
+      "sha256": "d2fe1f88c2fb4acbb3732eb7babbf2be12afb50b8d7388e0a5c98d50214a96fb"
+    },
+    "data/firebase-lfm-pilot-summary.csv": {
+      "bytes": 485,
+      "sha256": "909036815996a8881e38019bd117769ca2fe27fdbf589845ce138c7f1a82f0f5"
+    },
+    "data/firebase-lfm-pilot-turns.csv": {
+      "bytes": 983,
+      "sha256": "ad0e07daed0298908bf28de850d8f396ae426337f5b00f21f83ae4b8410298ec"
+    },
+    "data/iphone16-five-models-build.json": {
+      "bytes": 3977,
+      "sha256": "185163f548b4aef025ddf57bb9b91681098538b4320e0e595d4a86f75157c8b4"
+    },
+    "data/iphone16-five-models-models.json": {
+      "bytes": 2846,
+      "sha256": "ee62a81969c9023c64af1136898bbea3f6b16ad59e9e46e0e9c12852067bf486"
+    },
+    "data/iphone16-five-models-summary.csv": {
+      "bytes": 1358,
+      "sha256": "f32cdd18cd4cdc35133ee528e6da653b71c16bbf2ce66eb7e5366107934070ed"
+    },
+    "data/iphone16-five-models-turns.csv": {
+      "bytes": 4296,
+      "sha256": "cf8e84129360a0575ae258a2f9cf9e6f1315cf2941aadaafbf31b49f81c10531"
+    },
+    "data/measured-sources.zip": {
+      "bytes": 140164,
+      "sha256": "5014fedd9decd3f86357a3192ee3cc4d930d5a7ee3e1c64e88b54e2616d9ca5b"
+    },
+    "data/observations.json": {
+      "bytes": 134946,
+      "sha256": "41230b874ca425391b304c0f4a3e0ed3252df310e50664cae3d8f03a1a7dba00"
+    },
+    "data/qwen-protocol-pilot-build.json": {
+      "bytes": 3977,
+      "sha256": "185163f548b4aef025ddf57bb9b91681098538b4320e0e595d4a86f75157c8b4"
+    },
+    "data/qwen-protocol-pilot-models.json": {
+      "bytes": 570,
+      "sha256": "c1ea5fedc453c3a0a8dc0735a13257bafee1e09e5d136a256ffa15c6069e0dbb"
+    },
+    "data/qwen-protocol-pilot-summary.csv": {
+      "bytes": 459,
+      "sha256": "3067372ae573c5acd27437e56b7c48d58938db22916b4e11994f881031a4ac85"
+    },
+    "data/qwen-protocol-pilot-turns.csv": {
+      "bytes": 795,
+      "sha256": "05340697e356efa8d5919bf12b084b23f782b492216fae8375c3fa35a4cd2ffe"
+    },
+    "data/results.js": {
+      "bytes": 17854,
+      "sha256": "a80a5dfde2595de1f9807924dda30ba40ef2d265c4c4f1babfae4febfa4eb193"
+    },
+    "data/workload.json": {
+      "bytes": 1920,
+      "sha256": "c584c1da2ca3871e3022b8505758993683d78ba79755d46795a288137903be29"
+    },
+    "fonts.css": {
+      "bytes": 399,
+      "sha256": "9cfa38b2f0204084c9c9fab66d001caa8dcaa06949fb3f2240492fdc91683e27"
+    },
+    "fonts/Lexend-OFL.txt": {
+      "bytes": 4435,
+      "sha256": "da67588af7e0987521d7dffc60ca92e8abee37f30535d94b503ec7bc52d73023"
+    },
+    "fonts/Lexend-Variable.woff2": {
+      "bytes": 71216,
+      "sha256": "f9b170e8f42341a60679e75057e2c68e02b8ab01d277decd2c72d7b84bc3c4c2"
+    },
+    "fonts/NOTICE.txt": {
+      "bytes": 741,
+      "sha256": "969ab1823725ab3d29384ae348a066bfdec51841e4602d547ad2e230ceb48b96"
+    },
+    "fonts/Syne-Bold.woff2": {
+      "bytes": 27176,
+      "sha256": "efa069a9cb5224453499cf7210626b4aebf5db1a799bc249a32c87a663dbf247"
+    },
+    "fonts/Syne-OFL.txt": {
+      "bytes": 4401,
+      "sha256": "781b0eb8f40ad213428b43bfb53fd0ac4711c09f7b4e0b43b62a8efa29f91410"
+    },
+    "index.html": {
+      "bytes": 18901,
+      "sha256": "c47772aca79d74f2635be6850d5276da6e75e9cca3adc32848eb4e7f3c07c97f"
+    },
+    "palette.css": {
+      "bytes": 2859,
+      "sha256": "fb9b59c1c37cd4b762241ba94e4543a4ad376ad9ecf9c67281eb7fde68a8bf48"
+    },
+    "reproduce.py": {
+      "bytes": 4517,
+      "sha256": "ffb8d7c27683c6927afcbe31a0b9858ebfd66a2fb8f188c099cf0001b73f6779"
+    },
+    "style.css": {
+      "bytes": 6453,
+      "sha256": "469140868313c0cdd8c49418cca22da4fb8d58d17fe3ade2910f70eba64352b8"
+    },
+    "verify.py": {
+      "bytes": 2699,
+      "sha256": "16015eb3f4c20e83ff35c4f8ed1b66dbcae8bf0ac941ccb6e28154db0a2f2aad"
+    }
+  },
+  "measuredDate": "2026-10-07",
+  "publishedDate": "2026-10-08",
+  "schemaVersion": 1
+}
